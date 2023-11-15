@@ -1,0 +1,25 @@
+site_name: WAVLINK Docs
+site_description: Documentation for WAVLINK Router Productions
+site_author: WAVLINK
+
+nav: 
+  - Home: index.md
+  - User Guide: user_guide/index.md
+  - FAQ: FAQ/index.md
+  - Tutorials: tutorials/index.md
+  - Interface Guide: interface_guide/index.md
+  - Video Library: video_library/index.md
+  - Community: community/index.md
+
+theme: 
+  name: material
+  logo: images/logo1.jpg
+  features:
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.top
+  favicon: images/logo2.png
+ 
+extra_css:
+  - stylesheets/extra.css
+
