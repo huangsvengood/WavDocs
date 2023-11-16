@@ -1,1 +1,4 @@
-this is User Giude
+### Router
+### Indoor Repeater
+### Outdoor AP
+### Others
