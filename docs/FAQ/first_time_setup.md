@@ -1,1 +1,1 @@
-![first](/docs/Products/img/语言选择.png)
+![first](/docs/Products/img/first_set.png)
