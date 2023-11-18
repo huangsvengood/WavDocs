@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+{% if page.file.name == 'index.md' %}
+<style>
+.sidebar {
+    display: none;
+}
+.content {
+    margin-left: 0;
+}
+</style>
+{% endif %}
+{% endblock %}

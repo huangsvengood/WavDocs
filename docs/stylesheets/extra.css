@@ -52,10 +52,7 @@
 div.product-model{
 	    font-weight: bold;
     }
-.product-model-ap1300 {
-	      font-size: 12px;
-	      font-weight: bold;
-	}
+
 .product-card:hover {
 		  border-color: #b6bde3 !important;
 	  }
@@ -64,3 +61,6 @@ div.product-model{
     grid-template-columns: 50% 50%;
 			      }
 	 }
+img.boxshadow {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
