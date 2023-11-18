@@ -1,8 +1,7 @@
 # Setup Guide
 ## First Time Setup
 - All wavlink devices have a convenient and identical setup process. 
-   >[click here for the first setup.](/docs/FAQ/first_time_setup.md)
-
+   >[click here for the first setup.](/FAQ/first_time_setup/)
 - It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 - The package contains the following contents:
 
@@ -14,14 +13,14 @@
 * 1 x Thank you card
 * 1 x Warranty card
 * 1 x Power adapter (Selected plug type)
-  >Check out [WS-WN536AX6-A's unboxing video](/docs/video_library/unboxing_first_set_up.md).
+  >Check out [WS-WN536AX6-A's unboxing video](/video_library/unboxing_first_set_up/).
 
 ## Wireless
 Wireless Settings manage wifi SSID, security and passwords,it is accessible by going to __Wireless__ on the side menu.
-> [Click here to learn more about the wireless configuration](/docs/feature_guide/wireless.md)
+> [Click here to learn more about the wireless configuration](/feature_guide/wireless/)
 ## Network
 Network Settings You can select six different Internet access modes. You can select different Internet access modes according to your requirements.
-> [Click here to learn more about the network configuration](/docs/feature_guide/pattern_selection.md)
+> [Click here to learn more about the network configuration](/feature_guide/pattern_selection/)
 ## Terminal Management
 ## Mesh Settings
 ## Parental control
