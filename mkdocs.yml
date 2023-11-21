@@ -37,16 +37,16 @@ nav:
       - Pattern selection: feature_guide/pattern_selection.md
       - WAN: feature_guide/wan.md
       - LAN: feature_guide/lan.md
-      - IPV6: feature_guide/ipv6.md
+      - IPv6: feature_guide/ipv6.md
       - Static IP: feature_guide/static_ip.md
     - Mesh Network: 
       - Mesh Table: feature_guide/mesh_network.md
-      - Mesh Topology:  feature_guide/mesh_network.md
+      - Mesh Topology:  feature_guide/mesh_topo.md
     - Parental control: 
-      - WiFi Scheduling: feature_guide/parental_ctrl.md
+      - WiFi Scheduling: feature_guide/parental_wifi.md
       - Web Block: feature_guide/parental_ctrl.md
     - VPN: 
-      - openVPN Client/Server: feature_guide/openVPN.md
+      - OpenVPN Client/Server: feature_guide/openVPN.md
       - WireGuard Client/Server: feature_guide/wireguard.md
       - VPN Client: feature_guide/vpnclient.md
       - ZeroTier: feature_guide/zerotier.md
