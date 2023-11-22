@@ -12,6 +12,20 @@ A Virtual Private Network (VPN) uses encryption technology to transform a public
 <p class="text">
 Through VPN, users can access remote networks or resources on the internet while hiding their real IP address and physical location. VPN can also be used to bypass geographic restrictions and access content that is not accessible in specific countries or regions. Businesses often use VPN to protect their sensitive data and secure the network connection of their employees at remote locations.
 </p>
+## __OpwnVPN Client__
+
+
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/openvpn01.png">
+</div>
+
+
+
+
+
+
+## __OpwnVPN Server__
+
 
 
 
@@ -33,34 +47,30 @@ Through VPN, users can access remote networks or resources on the internet while
 
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn01.png">
+    <img class="boxshadow" src="/images/openvpn02.png">
 </div>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn02.png">
+    <img class="boxshadow" src="/images/openvpn03.png">
 </div>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn03.png">
+    <img class="boxshadow" src="/images/openvpn04.png">
 </div>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn04.png">
+    <img class="boxshadow" src="/images/openvpn05.png">
 </div>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn05.png">
+    <img class="boxshadow" src="/images/openvpn06.png">
 </div>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn06.png">
+    <img class="boxshadow" src="/images/openvpn07.png">
 </div>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn07.png">
-</div>
-
-<div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/openvpn08.png">
+    <img class="boxshadow" src="/images/openvpn08.png">
 </div>
 

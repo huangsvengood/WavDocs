@@ -12,7 +12,7 @@
 Allow you to associate a specific IP address with the MAC address of a client device. By using static IP binding, you can assign a fixed IP address to a specific device so that it automatically obtains the same IP address every time the device connects to the network.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/static_ip01.png">
+    <img class="boxshadow" src="/images/static_ip01.png">
 </div>
 <p class="text">
 Static IP is a fixed IP address, as opposed to Dynamic IP. A static IP is manually assigned to a device or host by a network administrator or service provider and uses the same IP address every time it connects to the network.

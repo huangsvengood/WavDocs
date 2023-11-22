@@ -57,7 +57,7 @@ The main functions of this function include the following :
 
 > - __*Prevent unauthorized access: *__ Device isolation limits access between devices and prevents unauthorized devices from accessing or interfering with other devices on the network. This helps improve the overall security of the network and reduces the risk of potential intrusions.
 
-
+<p class="text">
 Overall, device isolation is an important network security feature that can effectively reduce security risks in the network and provide additional privacy protection. When building a safe and reliable LAN environment, it is highly recommended to consider enabling device isolation.
-
+</p>
 ___

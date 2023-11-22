@@ -17,7 +17,7 @@ DHCP is a protocol that automatically assigns IP addresses. It can automatically
 Used in small networks such as homes or offices, it can easily manage and assign IP addresses, reducing the trouble of manual configuration.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/wan01.png">
+    <img class="boxshadow" src="/images/wan01.png">
 </div>
 ### __PPPOE (Point-to-Point Protocol)__
 <p class="text">
@@ -25,7 +25,7 @@ PPPoE is an authentication protocol used to establish secure connections on WANs
 Used for broadband access methods such as ADSL and optical fiber, which can provide secure network connection methods.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/wan02.png">
+    <img class="boxshadow" src="/images/wan02.png">
 </div>
 ### __Static IP__
 <p class="text">
@@ -34,7 +34,7 @@ Static IP refers to assigning a fixed IP address to the computer, as opposed to 
 </p>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/wan03.png">
+    <img class="boxshadow" src="/images/wan03.png">
 </div>
 ### __PPPOE Dual Access__
 <p class="text">
@@ -42,7 +42,7 @@ Static IP refers to assigning a fixed IP address to the computer, as opposed to 
  Used to improve network bandwidth and stability, suitable for occasions requiring large-traffic data transmission.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/wan04.png">
+    <img class="boxshadow" src="/images/wan04.png">
 </div>
 
 ### __PPTP Dual Access__
@@ -50,7 +50,7 @@ Static IP refers to assigning a fixed IP address to the computer, as opposed to 
 PPTP Dual Access is a network connection method that uses two PPTP VPN connections to achieve dual network access. By using PPTP Dual Access, users can establish two PPTP VPN connections to access the Internet at the same time to improve bandwidth and network reliability.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/wan05.png">
+    <img class="boxshadow" src="/images/wan05.png">
 </div>
 
 ### __L2TP Dual Access(Layer 2 Tunneling Protocol dual access)__
@@ -59,7 +59,7 @@ L2TP dual access is a network access method that uses two L2TP VPN connections. 
 </p>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/wan06.png">
+    <img class="boxshadow" src="/images/wan06.png">
 </div>
 
 ## __Advanced__
