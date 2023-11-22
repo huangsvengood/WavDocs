@@ -26,7 +26,7 @@ Pairing on the Web :
 3 . Click on “Add” and then follow the prompts on the screen.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh01.png">
+    <img class="boxshadow" src="/images/mesh01.png">
 </div>
 - Before adding a device,please confirm that the main router has successfully connected to the Internet.
 
@@ -37,19 +37,19 @@ Pairing on the Web :
 4 . After ensuring that the mesh nodes are placed appropriately and the network is connected, click Next on this page.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh02.png">
+    <img class="boxshadow" src="/images/mesh02.png">
 </div>
 <p class="text">
 5 . Power on the Mesh node, and after it has started up, press the pair button.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh03.png">
+    <img class="boxshadow" src="/images/mesh03.png">
 </div>
 <p class="text">
 6 . Waiting for scan results.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh04.png">
+    <img class="boxshadow" src="/images/mesh04.png">
 </div>
 <p class="text">
 7 . If no available node routes are scanned, check the following points:
@@ -57,26 +57,26 @@ Pairing on the Web :
 - Check whether the Mesh node presses the pairing button. After pressing the pairing button, the indicator light of the Mesh node will flash blue slowly.
 - Check whether the Mesh node has been used. If it has been used, please reset it.
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh06.png">
+    <img class="boxshadow" src="/images/mesh06.png">
 </div>
 
 <p class="text">
 8 . If the scan is successful, device information will appear. Select the scanned device to add it.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh07.png">
+    <img class="boxshadow" src="/images/mesh07.png">
 </div>
 <p class="text">
 9 . Click Refresh after prompting that the addition is successful and wait for about two minutes.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh08.png">
+    <img class="boxshadow" src="/images/mesh08.png">
 </div>
 <p class="text">
-10 . After refreshing, you can view the information of the new device on the add page.
+10 . After refreshing, you can view the information of the new device on the add page.You can modify the device name on this page so that you can better identify it.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/mesh09.png">
+    <img class="boxshadow" src="/images/mesh09.png">
 </div>
 
 ## __Advanced__

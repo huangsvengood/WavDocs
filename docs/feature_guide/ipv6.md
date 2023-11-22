@@ -36,7 +36,7 @@ PPPOE (Point-to-Point Protocol Over Ethernet) is a protocol used to establish ne
 A static IPv6 address is a fixed IPv6 address that you configure manually. When using this method, you need to manually enter network configuration information such as IPv6 address, subnet prefix length, default gateway, and DNS server. This method is usually suitable for specific purposes that require a fixed public IPv6 address, such as servers or network devices.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/ipv6-04.png">
+    <img class="boxshadow" src="/images/ipv6-04.png">
 </div>
 
 ><p class="text">
@@ -55,7 +55,7 @@ IPv6 LAN addresses can be obtained through Automatic Allocation and SLAAC (State
 In automatic allocation mode, IPv6 LAN addresses are automatically allocated by network devices or routers to devices connected to the network. This method usually uses the DHCPv6 (Dynamic Host Configuration Protocol for IPv6) protocol for address allocation. After the device is connected to the network, it will automatically send a DHCPv6 request to the router, and the router will assign an available IPv6 address to the device.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/ipv6_02.png">
+    <img class="boxshadow" src="/images/ipv6_02.png">
 </div>
 
 <p class="text">
@@ -67,7 +67,7 @@ To use automatic allocation, you need to ensure that there is a router or device
 SLAAC(Stateless Address Autoconfiguration) is a stateless address automatic configuration method that automatically assigns IPv6 addresses to devices by taking advantage of IPv6 features. In SLAAC, the device receives a network prefix (Prefix) from the router in the network, and then automatically constructs its own IPv6 address based on the prefix.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/ipv6_05.png">
+    <img class="boxshadow" src="/images/ipv6_05.png">
 </div>
 <p class="text">
 To use SLAAC, you need to ensure that the routers in the network have been configured with IPv6 prefixes and broadcast the prefixes to devices connected to the network. The device automatically generates an IPv6 address based on the prefix, without using DHCPv6 or other configuration.

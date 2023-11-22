@@ -27,6 +27,9 @@ nav:
   - FAQ: 
     - Overview: FAQ/index.md
     - First Time Setup: FAQ/first_time_setup.md
+    - How to Connect to WiFi?: FAQ/How_to_Connect_to_WiFi.md
+    - What is the use of offline terminal management?: FAQ/What_is_the_use_of_offline_terminal_management.md
+    - How to upgrade router firmware?: FAQ/How_to_upgrade_router_firmware.md
   - Tutorials: tutorials/index.md
   - Feature Guide: 
     - Overview: feature_guide/index.md
@@ -42,6 +45,8 @@ nav:
     - Mesh Network: 
       - Mesh Table: feature_guide/mesh_network.md
       - Mesh Topology:  feature_guide/mesh_topo.md
+    - Terminal:
+      - Online/Offline Terminal: feature_guide/terminal.md
     - Parental control: 
       - WiFi Scheduling: feature_guide/parental_wifi.md
       - Web Block: feature_guide/parental_ctrl.md
@@ -73,7 +78,7 @@ nav:
       - Backup and Restore: feature_guide/backup.md
       - Firmware Update: feature_guide/firmware.md
       - Timing Reboot: feature_guide/timing_reboot.md
-      - Router Reboot: feature_guide/router_reboot.md
+      - Router Reboot/Logout: feature_guide/router_reboot.md
   - Video Library: video_library/index.md
   - Community: community/index.md
 

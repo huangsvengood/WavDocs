@@ -14,7 +14,7 @@ The IP address of the router to the LAN. This can be used to log in to the route
 The subnet mask of the router to the local area network, generally 255.255.255.0.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/lan.png">
+    <img class="boxshadow" src="/images/lan.png">
 </div>
 ## __Start address and end address__
 <p class="text">
