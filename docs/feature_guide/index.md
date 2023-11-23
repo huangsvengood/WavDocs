@@ -4,15 +4,15 @@
     }
 </style>
 ---
-> 
-> <p class="text">
+
+<p class="text">
 Here you can view all the functions of the wavlink device. The navigation bar on the left provides you with a good guide.
 </p>
-><p class="text">
+<p class="text">
 They are classified according to different functions. You can view them according to your needs. Here is a general directory for you. 
 </p>
 
-><p class="text">
+<p class="text">
 You can also click the following function and it will jump to the interface you need to help you quickly check the information.
 </p>
 
