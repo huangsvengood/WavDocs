@@ -61,7 +61,6 @@ nav:
       - Dynamic DNS: feature_guide/dynamic_dns.md
       - Cloud App Settings: feature_guide/cloud_app.md
       - UPnP: feature_guide/upnp.md
-      - Save:feature_guide/sve.md
       - Port Forwarding: feature_guide/port_forwarding.md
       - DMZ Management: feature_guide/DMZ_Management.md
       - IPTV/VLAN: feature_guide/IPTV_VLAN.md
@@ -70,7 +69,7 @@ nav:
       - Remote Wakeup: feature_guide/remote_wakeup.md
       - ALG: feature_guide/alg.md
       - Custom DNS Server: feature_guide/cutm_dns-server.md
-      - SQM QOS: feature_guide/sqm.md
+      - SQM QoS: feature_guide/sqm.md
     - More: 
       - Time Zone: feature_guide/time.md
       - Led Control: feature_guide/led_ctrl.md
