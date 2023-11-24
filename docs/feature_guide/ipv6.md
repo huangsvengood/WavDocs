@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ IPV6 Settings
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ IPV6 Settings
 
 <p class="text">
 IPv6 is a next-generation internet protocol with larger address space, improved functionality, and enhanced security. It's introduction is aimed at addressing the growing number of interconnected devices and providing better network performance and security

@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings ➡ Parental Control ➡ Web Block
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Parental Control ➡ Web Block
 
 <p class="text">
 Parents can set up the Internet filtering function and choose to filter out some specified websites or keywords. This helps prevent children from viewing inappropriate content.

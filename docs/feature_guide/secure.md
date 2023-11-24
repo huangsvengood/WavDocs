@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ Advanced Settings  ➡ Security Settings
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Security Settings
 ## __Block ping__
 <p class="text">
 This feature can effectively prevent ping attacks and scans, reducing the risk of network attacks on this device.

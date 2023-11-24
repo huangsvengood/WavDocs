@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings  ➡ System
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
 <p class="text">
 The router administrator password is an important security credential used to protect the router management interface. Regularly changing the administrator password can effectively prevent unauthorized access and improve network security to avoid hacker intrusions or malicious operations.
 </p>

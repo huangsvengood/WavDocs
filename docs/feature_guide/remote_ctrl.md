@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ Advanced Settings  ➡ Remote Control
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Remote Control
 <p class="text">
 By using the "<b>Remote Management</b>" function, you can remotely access and manage the router via the internet by entering "<b>http://WAN IP:port number</b>". Therefore, before using this feature, you need to record the WAN IP address of this device.
 </p>

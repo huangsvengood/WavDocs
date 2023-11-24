@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings  ➡ System
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
 <p class="text">
 Regular router firmware upgrades can help you obtain the latest features and security patches, improve the performance and stability of the router, and fix possible vulnerabilities and security risks.
 </p>

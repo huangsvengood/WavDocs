@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings ➡ Parental Control ➡ Wi-Fi Scheduling
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Parental Control ➡ Wi-Fi Scheduling
 <p class="text">
 The parental control function can help parents manage and monitor their children's activities on the Internet, thereby protecting their children from harmful information and negative influences on the Internet.
 </p>
