@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ Advanced Settings  ➡ UPnP
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ UPnP
 <p class="text">
 UPnP (Universal Plug and Play) is a networking protocol designed to make connections between devices simpler and more automated. 
 </p>

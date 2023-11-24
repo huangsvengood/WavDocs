@@ -6,7 +6,7 @@
 
 # Guest WiFi
 ---
-- In the upper right corner of the admin page ➡ More Settings  ➡ Wireless Management
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ Wireless Management
 
 ## __Guest WiFi Settings__
 <p class="text">

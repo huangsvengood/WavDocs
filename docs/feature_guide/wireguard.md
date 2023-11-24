@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ VPN  ➡ Wireguard Client/Server
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ VPN  ➡ Wireguard Client/Server
 <p class="text">
 WireGuard is a concise, efficient, and secure VPN protocol with advanced encryption algorithms, low latency, high throughput, simple and easy-to-use configuration, and cross platform support.
 </p>

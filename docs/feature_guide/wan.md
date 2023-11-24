@@ -7,7 +7,7 @@
 # WAN Settings
 
 ---
-- In the upper right corner of the admin page ➡ More Settings  ➡ Network
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ Network
 
 ## __WAN Type__
 

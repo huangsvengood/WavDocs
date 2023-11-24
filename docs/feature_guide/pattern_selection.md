@@ -6,7 +6,7 @@
 
 # Pattern selection
 ---
-- In the upper right corner of the admin page ➡ More Settings  ➡ Network
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ Network
 
 ## __Router Mode__
 <p class="text">Convert the wired network of the network provider into a Wi-Fi signal to realize the functions of wireless Internet access and wired Internet access.

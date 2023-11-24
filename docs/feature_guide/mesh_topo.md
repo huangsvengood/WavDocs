@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings ➡ Mesh Network ➡ Mesh Topology
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Mesh Network ➡ Mesh Topology
 
 <p class="text">
 In this interface you can see the network topology diagram, which shows the device access relationship and network connection status.

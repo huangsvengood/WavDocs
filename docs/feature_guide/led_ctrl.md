@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings  ➡ System
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
 <p class="text">
 The router's light is an important indicator light used to indicate the status or operation of the device. By setting the router's lights, you can have a clearer understanding of the working status of the device, discover and troubleshoot problems in a timely manner.
 </p>

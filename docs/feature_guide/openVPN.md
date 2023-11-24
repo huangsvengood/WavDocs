@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings ➡ VPN ➡ OpenVPN Client/Server
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ VPN ➡ OpenVPN Client/Server
 
 <p class="text">
 A Virtual Private Network (VPN) uses encryption technology to transform a public network such as the internet into a private network to provide higher security and privacy protection. 

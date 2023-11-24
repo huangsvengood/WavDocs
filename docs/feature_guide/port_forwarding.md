@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ Advanced Settings  ➡ Port Forwarding
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Port Forwarding
 <p class="text">
 Port forwarding is a network technology that maps a specific port on the public network to a specified server on the local network, allowing internet users to access services on the server in the local network by accessing that port. 
 </p>

@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ LAN Settings
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ LAN Settings
 ## __IP Address__
 <p class="text">
 The IP address of the router to the LAN. This can be used to log in to the router's web management page. You can change this address.

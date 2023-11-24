@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings ➡ Mesh Network ➡ Mesh Table
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Mesh Network ➡ Mesh Table
 <p class="text">
 Mesh networks are widely used in many application scenarios, such as smart homes, Internet of Things, urban coverage, industrial automation, etc. It provides a resilient, reliable and flexible network solution suitable for environments that require a high degree of interconnectivity and self-organization.
 </p>

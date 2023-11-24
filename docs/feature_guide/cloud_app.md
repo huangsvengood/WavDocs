@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ Advanced Settings  ➡ Cloud App Settings
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Cloud App Settings
 <p class="text">
 By enabling this feature, you can remotely control the device from the cloud through the app.
 </p>

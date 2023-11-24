@@ -4,7 +4,7 @@
     }
 </style>
 ---
-- In the upper right corner of the admin page ➡ More Settings  ➡ System
+<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
 <p class="text">
 Regularly backing up router configuration files can help you quickly restore the original configuration in the event of a system failure or upgrade failure, avoiding the inconvenience and loss caused by resetting.
 </p>
