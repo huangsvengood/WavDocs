@@ -67,10 +67,6 @@ You can directly click the check upgrade button to check the upgradeable version
 
 
 
-
-
-
-
 > Precautions:
 
 >- Before upgrading the firmware, make sure you fully understand the contents and precautions of the firmware update. Some upgrades may require special procedures or considerations.

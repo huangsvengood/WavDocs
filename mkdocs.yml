@@ -79,6 +79,7 @@ nav:
       - Timing Reboot: feature_guide/timing_reboot.md
       - Router Reboot/Logout: feature_guide/router_reboot.md
   - Video Library: video_library/index.md
+  - Encyclopedia: Encyclopedia/index.md
   - Community: community/index.md
 
 theme: 
@@ -94,7 +95,10 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-#extra:
-# hide_sidebar:
- #   - index.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
