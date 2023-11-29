@@ -90,6 +90,11 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.path
+    - navigation.instant
+    #- navigation.tabs.sticky
+    - navigation.expand
+    - content.code.select
+    - toc.follow
   favicon: images/logo-icon.png
  
 extra_css:
@@ -101,4 +106,20 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - attr_list
+  - def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 

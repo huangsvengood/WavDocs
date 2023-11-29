@@ -1,7 +1,6 @@
 
 The AX6000 Router upgrades your network to the next generation of Wi-Fi. With combined wireless speeds of up to 2.4GHz 1148Mbps and 5GHz  4804Mbps, the device provides excellent speeds and superior omni-directional wireless range. It has dual frequency 8 stream,supports 160MHz bandwidth.You can run multiple applications in a large home or office. Sending email, browsing the web, and bandwidth-intensive tasks like online gaming or streaming 4K video can be easily accomplished. 
-
-The AX6000 Router provides one 2.5G high-speed wired network port, which can be customized for WAN/LAN purposes.
+The AX6000 Router provides one 2.5G high-speed wired network port, which can be customized for WAN/LAN purposes
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/536ax601.png">
 </div>
@@ -39,29 +38,30 @@ Wireless Settings manage wifi SSID, security and passwords,it is accessible by g
 - Guest WiFi
 > [Click here to learn more about the wireless configuration.](/feature_guide/wireless/)
 
+## Mesh Settings
+- [Mesh Table](/feature_guide/mesh_network/)
+- [Mesh Topology](/feature_guide/mesh_topo/)
 
 ## Terminal Management
-- online Terminal
-- offline Terminal
+- [online Terminal](/feature_guide/terminal/)
+- [offline Terminal](/feature_guide/terminal/)
 
-## Mesh Settings
-- Mesh Table
-- Mesh Topology
+
 
 ## Parental control
-- Wi-Fi Scheduling
-- Web Block
+- [Wi-Fi Scheduling](/feature_guide/parental_wifi)
+- [Web Block](/feature_guide/parental_ctrl)
 
 ## VPN
-- OpenVPN Client/Server
-- WireGuard Client/Server
-- VPN Client
-- Zero Tier
+- [OpenVPN Client/Server](/feature_guide/openVPN/)
+- [WireGuard Client/Server](/feature_guide/wiredguard/)
+- [VPN Client](/feature_guide/vpnclient/)
+- [Zero Tier](/feature_guide/zerotier/)
 ## More
-- Security Settings
-- Remote Control
-- Network Diagnostics
-- Backup and Restore
-- Firmware Update
-- Timing Reboot
+- [Security Settings](/feature_guide/secure/)
+- [Remote Control](/feature_guide/remote_ctrl/)
+- [Network Diagnostics](/feature_guide/network_diango/)
+- [Backup and Restore](/feature_guide/backup/)
+- [Firmware Update](/feature_guide/firmware/)
+- [Timing Reboot](/feature_guide/timing_reboot/)
 
