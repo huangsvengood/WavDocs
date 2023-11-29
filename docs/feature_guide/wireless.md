@@ -29,12 +29,6 @@ The following are several common Wi-Fi encryption methods and their functions :
 </p>
 ___
 ###__Wi-Fi encryption methods__
-> WEP (Wired Equivalent Privacy)
-
-> - Function 
-Provide basic security protection, encrypt data, and prevent unauthorized users from accessing the network.
-> - Disadvantages : 
-Poor security and vulnerable to cracking attacks.
 
 >WPA/WPA2 (Wi-Fi Protected Access)
 
