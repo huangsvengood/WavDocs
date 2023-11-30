@@ -1,18 +1,43 @@
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ Wireless Management
-
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Wireless Settings
+??? note "Click to see how to enter the wireless settings interface" 
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;Enter : In the upper right corner of the admin page ➡ More Settings  ➡ Wireless Management
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless01.png">
+	</div>
+	
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;Enter : In the upper right corner of the admin page ➡ Wireless Settings
+	
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless00.png">
+	</div>
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless02.png">
+	</div>
 
 ## **Wireless network settings**
-<style>
+<!--<style>
     .text {
         font-size: 21px; 
     }
 </style>
+-->
+??? question "View WiFi information"
+	The first :
+	
+	<div style="text-align: center;">
+		<img alt="wifi" class="boxshadow" src="/images/wireless03.png">
+	</div>
+	
+	The second :
+	
+	<div style="text-align: center;">
+		<img alt="wifi" class="boxshadow" src="/images/wireless04.png">
+	</div>
 
 <p class="text">
 Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to provide a better network experience, while turning off the dual-band integration allows you to set up the 2.4G and 5G networks separately.
 </p>
+
 <div style="text-align: center;">
     <img alt="wifi" class="boxshadow" src="/images/wifi.png">
 </div>
@@ -24,34 +49,21 @@ Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to
     <img alt="wifi_" class="boxshadow" src="/images/wifi02.png">
 </div>
 
-<p class="text">
-The following are several common Wi-Fi encryption methods and their functions :
-</p>
-___
-###__Wi-Fi encryption methods__
-
->WPA/WPA2 (Wi-Fi Protected Access)
-
-> - Function : Provide stronger security protection, use pre-shared key (PSK) or enterprise-level authentication method to encrypt data.
-
->WPA2 
-
->- It is an upgraded version of WPA, using a more secure encryption algorithm (such as AES) to provide higher security.
 
 
->WPA3
+!!! info "Wi-Fi encryption methods"	
+	__WPA2-PSK (recommended)__ : This is one of the most commonly used WiFi encryption methods currently. PSK stands for Pre-Shared Key and is a password shared between the device and router, meaning the network uses a pre-set password to encrypt communications. All devices connected to the network must use the same password to access the network.
 
->- Function : It is the latest upgraded version of WPA/WPA2, providing stronger security and protection mechanism.
->- Improvement : Introduced more secure encryption protocols (such as Simultaneous Authentication of Equals, SAE) and password cracking protection.
+	__WPA1-PSK/WPA2-MIX__ : This is a more compatible encryption method. WPA1-PSK/WPA2-MIX uses two different Wi-Fi encryption protocols and supports the use of WPA and WPA2 at the same time. Among them, WPA1-PSK uses the TKIP encryption algorithm, and WPA2-PSK uses the more secure AES encryption algorithm. This hybrid approach is compatible with some older devices while also providing greater security.
 
+	__WPA3-PSK/WPA2-MIX__: WPA3 is the latest version of the WiFi security protocol, providing more advanced security. WPA3-PSK uses stronger encryption algorithms to protect communications and provides enhanced password guessing protection. WPA2-MIX allows support of both WPA3-PSK and WPA2-PSK ciphers.
 
-> *Considering security and compatibility, it is currently recommended to use WPA2 or WPA3 encryption.If your device supports WPA3, then choosing WPA3 will provide higher security. For older devices that may not support WPA3, WPA2 is still a better choice. It is important that no matter which encryption method is used, strong passwords should be set and changed regularly to ensure network security.*
-___
+	__WPA/WPA2-Enterprise__: This is a more secure method of WiFi encryption suitable for enterprise environments. It uses an authentication protocol called 802.1X that requires users to provide personal identification credentials (such as username and password) in order to facilitate the connection. This encryption method also supports the use of remote authentication servers for user authentication. This type of encryption is commonly used on corporate networks to ensure that only authorized users can access the network.
 
 
 
 ## __Advanced__
-### __Chanel__
+### __[Chanel](/Encyclopedia/chanel/)__
 <p class="text">
  You can manually change the channel corresponding to the corresponding wireless network. If you don't know how to select the channel, we recommend that you select Auto, the device will select the best channel according to the surrounding environment to get a better network experience.
 </p>
@@ -60,7 +72,7 @@ ___
     <img alt="wifi_" class="boxshadow" src="/images/wifi_01.png">
 </div>
 
-### __Bandwidth__
+### __[Bandwidth](/Encyclopedia/bandwidth/)__
 <p class="text">
  The bandwidth of the frequency band that the router transmits wireless data.
 </p>
@@ -68,15 +80,15 @@ ___
 <p class="text">
 When enabled, the wireless signal of the corresponding network will be hidden.
 </p>
-### __DFS__
+### __[DFS](/Encyclopedia/dfs/)__
 <p class="text">
-Dynamic Frequency Selection (DFS) - it is recommended to turn on this switch so that the device will automatically avoid channel values that are not allowed in your area.
+Dynamic Frequency Selection (DFS) , it is recommended to turn on this switch so that the device will automatically avoid channel values that are not allowed in your area.
 </p>
-### __TWT__
+### __[TWT](/Encyclopedia/twt/)__
 <p class="text">
 When enabled, the router will automatically optimize resource scheduling between devices, negotiate wake-up times, reduce disorderly competition, increase device sleep time, and improve router lifespan.
 </p>
-### __MU-OFDMA__
+### __[MU-OFDMA](/Encyclopedia/mu-ofdma/)__
 <p class="text">
 After activation, the router will multiplex multiple users to improve transmission efficiency and reduce network latency in a multi-user Internet environment.
 </p>
