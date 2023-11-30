@@ -37,7 +37,7 @@ nav:
       - Wireless Settings: feature_guide/wireless.md
       - Guest WiFi: feature_guide/guest_network.md
     - Network:
-      - Pattern selection: feature_guide/pattern_selection.md
+      - Mode selection: feature_guide/pattern_selection.md
       - WAN: feature_guide/wan.md
       - LAN: feature_guide/lan.md
       - IPv6: feature_guide/ipv6.md

@@ -1,10 +1,15 @@
-<style>
+<!--<style>
     .text {
         font-size: 21px; 
     }
 </style>
+-->
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ LAN Settings
+??? note "Click to see how to enter the LAN Settings interface"
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ LAN Settings
+	<div style="text-align: center;">
+    <img class="boxshadow" src="/images/lan01.png">
+	</div>
 ## __IP Address__
 <p class="text">
 The IP address of the router to the LAN. This can be used to log in to the router's web management page. You can change this address.

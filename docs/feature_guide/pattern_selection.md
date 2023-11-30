@@ -1,12 +1,18 @@
-<style>
+<!--<style>
     .text {
         font-size: 21px; 
     }
 </style>
-
-# Pattern selection
+-->
+# Mode selection
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ Network
+
+??? note "Click to see how to enter the Mode selection interface" 
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ Network ➡Mode selection
+	<div style="text-align: center;">
+    <img class="boxshadow" src="/images/mode06.png">
+	</div>
+
 
 ## __Router Mode__
 <p class="text">Convert the wired network of the network provider into a Wi-Fi signal to realize the functions of wireless Internet access and wired Internet access.
@@ -21,31 +27,33 @@ When extending an existing network in AP mode, please make sure that the WAN por
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/mode02.png">
 </div>
->Note :  If you need to set up the device after successfully connecting to the superior in this mode, you need to connect to the Wi-Fi of the device and enter the setting page through __http://wavlogin.link/__.
+!!! note 
+	If you need to set up the device after successfully connecting to the superior in this mode, you need to connect to the Wi-Fi of the device and enter the setting page through __http://wavlogin.link/__.
 
-## __DHCP__
+## __[DHCP](/Encyclopedia/dhcp/)__
 <p class="text">
 If your network service provider provides you with the automatic allocation function, please choose this Internet access method.
 </p>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/mode03.png">
 </div>
-## __PPPOE__
+## __[PPPOE](/Encyclopedia/pppoe/)__
 <p class="text">
 If your network service provider provides you with a set of user names (accounts) and passwords, please choose this Internet access method.
 </p>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/mode04.png">
 </div>
-## __Static IP__
+## __[Static IP](/Encyclopedia/static_ip/)__
 <p class="text">
 If your network service provider provides you with a specific set of IP parameters, including IP address, subnet mask, gateway, DNS1, DNS2. Please choose this Internet access method.
 </p>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/mode05.png">
 </div>
->Note :  If you do not know how to select an Internet access mode, you only need to connect the upper-layer network cable to the WAN port. Then the device automatically checks the Internet access mode on this page.
-## __Internet VLAN ID__
+!!! note
+	If you do not know how to select an Internet access mode, you only need to connect the upper-layer network cable to the WAN port. Then the device automatically checks the Internet access mode on this page.
+## __[Internet VLAN ID](/Encyclopedia/internet_vlan_id)__
 <p class="text">The Internet ID is used to identify the characteristics of network data. For specific settings, please consult your network operator's customer service personnel or operation and maintenance personnel.
 </p>
 ## __Cloud App__
