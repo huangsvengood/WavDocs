@@ -8,7 +8,6 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		Tools required : Desktop/laptop, two Ethernet cables, router, Ethernet converter
 		
 		Connection methods: wireless connection and wired connection
-		
 		## __Windows wireless connection__
 		1 . Click this icon  <img class="boxshadow" src="/images/win01.png">  (this status of the icon indicates that the computer is not connected to the network), and a wireless connection pop-up window will appear,enable the WiFi function ,find your default WiFi name and click to connect to WiFi.
 
@@ -21,6 +20,19 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			__[SSID](/Encyclopedia/vlan_id/)__(Click to learn about SSID) : WAVLINK-XXXX_XXXX
 			
 			"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.
+		
+		==New devices or reset devices need to log in to the administrator interface for initialization settings.==
+			
+		==There are two ways to log in to the wavlink router management interface:==
+			
+		- ==Log in using the domain name __http://wavlogin.link__ (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address,refer to the steps below for details;if you have successfully logged in using a domain name, __*[please click here to jump](#section1)*__.)==
+		
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/login00.png">
+		</div>	
+		
+		-  ==Log in using your IP address.(If you want to log in using your IP address, please refer to the steps below.)==
+		
 		2 . Click win &nbsp;<img class="boxshadow" src="/images/win05.png">&nbsp; , the navigation bar will pop up,click settings &nbsp;<img class="boxshadow" src="/images/win06.png">&nbsp; in the navigation bar to enter the computer settings page, and click WiFi on the settings page.
 
 		<div style="text-align: center;">
@@ -80,7 +92,8 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/compute02.png">
 		</div>
 		!!! question "http://192.168.10.1"
-			Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.You can also use __http://wavlogin.link__ to login in.
+			Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.
+		## <a name="section1"></a>
 		8 . After entering the website, the password for the first login page is the default password, which is admin. After entering the default password, press the "__Enter__" key on the keyboard or click "__Login__" with the mouse.
 		
 		<div style="text-align: center;">
