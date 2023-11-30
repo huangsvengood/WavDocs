@@ -7,7 +7,28 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 	=== "{==Windows==}"
 		Tools required : Desktop/laptop, two Ethernet cables, router, Ethernet converter
 		
-		Connection methods: wireless connection and wired connection
+		Connection methods: __[wireless connection](/FAQ/first_time_setup/#windows-wireless-connection)__ and __[wired connection](/FAQ/first_time_setup/#windows-wired-connection)__
+		
+		__New devices or reset devices need to log in to the administrator interface for initialization settings.__
+			
+		__There are two ways to log in to the wavlink router management interface :__
+			
+		
+		??? note "Log in using the domain name __*^^http://wavlogin.link^^*__."
+			- Log in using the domain name __*^^http://wavlogin.link^^*__. (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address,refer to the steps below for details;if you have successfully logged in using a domain name, *^^<b>[please click here to jump](#section1)</b>^^*.)
+			
+			
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/login00.png">
+			</div>	
+		??? note "Log in using your IP address __*^^http://192.168.20.1^^*__."
+			- Log in using your IP address __*^^http://192.168.20.1^^*__.(If you want to log in using your IP address, please refer to the steps below.)
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/compute02.png">
+			</div>	
+			!!! question "About IP address(192.168.20.1)"
+				Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.For the actual method of obtaining an IP address, refer to the following steps.
+		
 		## __Windows wireless connection__
 		1 . Click this icon  <img class="boxshadow" src="/images/win01.png">  (this status of the icon indicates that the computer is not connected to the network), and a wireless connection pop-up window will appear,enable the WiFi function ,find your default WiFi name and click to connect to WiFi.
 
@@ -20,18 +41,6 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			__[SSID](/Encyclopedia/vlan_id/)__(Click to learn about SSID) : WAVLINK-XXXX_XXXX
 			
 			"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.
-		
-		==New devices or reset devices need to log in to the administrator interface for initialization settings.==
-			
-		==There are two ways to log in to the wavlink router management interface:==
-			
-		- ==Log in using the domain name __http://wavlogin.link__ (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address,refer to the steps below for details;if you have successfully logged in using a domain name, __*[please click here to jump](#section1)*__.)==
-		
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/login00.png">
-		</div>	
-		
-		-  ==Log in using your IP address.(If you want to log in using your IP address, please refer to the steps below.)==
 		
 		2 . Click win &nbsp;<img class="boxshadow" src="/images/win05.png">&nbsp; , the navigation bar will pop up,click settings &nbsp;<img class="boxshadow" src="/images/win06.png">&nbsp; in the navigation bar to enter the computer settings page, and click WiFi on the settings page.
 
@@ -91,8 +100,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/compute02.png">
 		</div>
-		!!! question "http://192.168.10.1"
-			Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.
+		
 		## <a name="section1"></a>
 		8 . After entering the website, the password for the first login page is the default password, which is admin. After entering the default password, press the "__Enter__" key on the keyboard or click "__Login__" with the mouse.
 		
@@ -100,17 +108,47 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/welcom_page.png">
 		</div>
 		
-		9 . After entering the initial configuration page, you need to choose a networking method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have these three networking methods. A link description is attached below, you can click on the link for details.
-		
+		9 . After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/step9.png">
+		</div>
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/internet.png">
 		</div>
 		
 		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
-		
+			
 		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
-		!!! info "Please click on the link below to learn more"
-			__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
+		??? info "Please click here to switch the Internet connection method"
+			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+		
+			__PPPOE__
+			
+			__Username and password provided by the service provider (ISP)__ : The account name and password usually provided to you by the ISP for establishing a PPPoE connection.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/step91.png">
+			</div>
+			
+			__Static IP__
+			
+			__IP Address__ : You need to assign a static IP address to your device. Make sure the IP address is unique on your network and is on the correct subnet.
+			
+			__Subnet Mask__ : Determine the subnet mask you use. A common subnet mask is 255.255.255.0.
+			
+			__Default gateway__ : Enter the default gateway IP address of your network device (check the user manual).
+			
+			__DNS server__ : You can use the DNS server provided by your ISP, or choose another public DNS server, such as Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1).
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/step92.png">
+			</div>
+			
+			
+			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			
+			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			!!! info "Please click on the link below to learn more"
+				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 		10 . After selecting the Internet access method, enter the basic configuration (time zone, country, WiFi name, etc.) interface, select your country and time zone, and customize your WiFi name, password, and device management password (it is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * ", etc.). 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/time.png">
@@ -119,10 +157,13 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		Please remember the password you set. After the configuration is completed and the interface is refreshed, you will use your customized password to log in to the management interface again.
 		!!! tip
 			__Device management password__ : You can set it the same as the wireless password, or you can turn off the button to set the device management password and wireless password separately.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/step10.png">
+			</div>
 		11 . After setting, click Save and wait for the device configuration to be completed. After the Refresh button appears, click __Refresh__ to complete the initial setting of the device.
 		
 		<div style="text-align: center;">
-		<img alt="wan type" class="boxshadow" src="/images/refresh.png">
+		<img class="boxshadow" src="/images/refresh.png">
 		</div>
 		!!! info "App Download"
 			Scan the QR code with your mobile phone to download the Wav router app and manage your device conveniently.
@@ -142,7 +183,28 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 	=== "{==MacOS==}"
 		Tools required: Wavlink router, Apple computer, network cable, Ethernet converter, Ethernet cable.
 		
-		Connection methods: wireless connection and wired connection
+		Connection methods: __[wireless connection](/FAQ/first_time_setup/#mac-wired-connection)__ and __[wired connection](/FAQ/first_time_setup/#mac-wireless-connection)__
+		
+		__New devices or reset devices need to log in to the administrator interface for initialization settings.__
+			
+		__There are two ways to log in to the wavlink router management interface :__
+			
+		
+		??? note "Log in using the domain name __*^^http://wavlogin.link^^*__."
+			- Log in using the domain name __*^^http://wavlogin.link^^*__. (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address,refer to the steps below for details;if you have successfully logged in using a domain name, *^^<b>[please click here to jump](#section2)</b>^^*.)
+			
+			
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/login00.png">
+			</div>	
+		??? note "Log in using your IP address __*^^http://192.168.20.1^^*__."
+			- Log in using your IP address __*^^http://192.168.20.1^^*__.(If you want to log in using your IP address, please refer to the steps below.)
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/compute02.png">
+			</div>
+				
+			!!! question "About IP address(192.168.20.1)"
+				Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.For the actual method of obtaining an IP address, refer to the following steps.
 		
 		## __Mac wired connection__
 		
@@ -162,6 +224,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		</div>
 		## __Mac wireless connection__
 		1 . Click &nbsp; <img class="boxshadow" src="/images/mac11.png"> &nbsp;  ➡ &nbsp;  <img class="boxshadow" src="/images/mac33.png">&nbsp;, enter the WiFi settings page to enable the WiFi function.
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/mac02.png">
 		</div>
@@ -186,35 +249,65 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/mac06.png">
 		</div>
-		
+		## <a name="section2"></a>
 		4 . Copy the address, open the browser, enter __http://192.168.20.1__ in the address bar and press Enter on the keyboard to enter the router management page.
 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/mac05.png">
 		</div>
-		!!! question "http://192.168.20.1"
-			Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.You can also use __http://wavlogin.link__ to login in.
-		5 . After entering the page, click "__Login Now__" to enter the device's first-time configuration interface. For the first-time configuration of the device, you need to select an Internet access method. The default is __[DHCP](/Encyclopedia/dhcp/)__. If you need to access the Internet through dial-up, please select __[PPPOE](/Encyclopedia/pppoe/)__. If you need to set up a static IP for accessing the Internet, select __[Static IP](/Encyclopedia/static_ip/)__.
 		
+		5 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/step9.png">
+		</div>
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/mac08.png">
-		</div>	
-
-		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+		</div>
 		
+		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			
 		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
-		!!! info "Please click on the link below to learn more"
-			__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
+		??? info "Please click here to switch the Internet connection method"
+			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+		
+			__PPPOE__
+			
+			__Username and password provided by the service provider (ISP)__ : The account name and password usually provided to you by the ISP for establishing a PPPoE connection.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/step91.png">
+			</div>
+			
+			__Static IP__
+			
+			__IP Address__ : You need to assign a static IP address to your device. Make sure the IP address is unique on your network and is on the correct subnet.
+			
+			__Subnet Mask__ : Determine the subnet mask you use. A common subnet mask is 255.255.255.0.
+			
+			__Default gateway__ : Enter the default gateway IP address of your network device (check the user manual).
+			
+			__DNS server__ : You can use the DNS server provided by your ISP, or choose another public DNS server, such as Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1).
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/step92.png">
+			</div>
+			
+			
+			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			
+			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			!!! info "Please click on the link below to learn more"
+				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 
 		6 . After configuring the Internet, select your time zone and country, and customize your WiFi name and password. For device management passwords, you can refer to the instructions below.(it is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * ", etc.)
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/mac09.png">
 		</div>
 		!!! tip
 			__Device management password__ : You can set it the same as the wireless password, or you can turn off the button to set the device management password and wireless password separately.
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/mac010.png">
-		</div>
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/mac010.png">
+			</div>
 		
 		7 . After setting all parameters, click __Save__. The device will start updating. After updating to 100%, click __refresh__.
 		
@@ -239,6 +332,25 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 	=== "{==Android==}"
 		Tools needed : mobile phone, router.
 		
+		__New devices or reset devices need to log in to the administrator interface for initialization settings.__
+			
+		__There are two ways to log in to the wavlink router management interface :__
+					
+		??? note "Log in using the domain name __*^^http://wavlogin.link^^*__."
+			- Log in using the domain name __*^^http://wavlogin.link^^*__. (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address,refer to the steps below for details;if you have successfully logged in using a domain name, *^^<b>[please click here to jump](#section3)</b>^^*.)
+						
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone000.png">
+			</div>	
+		??? note "Log in using your IP address __*^^http://192.168.20.1^^*__."
+			- Log in using your IP address __*^^http://192.168.20.1^^*__.(If you want to log in using your IP address, please refer to the steps below.)
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone04.png">
+			</div>
+				
+			!!! question "About IP address(192.168.20.1)"
+				Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual.
+
 		1 . Connect the ISP network cable to the wan port of the router. After successful connection, the device will automatically identify the network.
 		
 		2 . Open the phone and enter the system settings, click WiFi to enter the WiFi settings page and click to turn on WiFi.
@@ -264,25 +376,54 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone04.png">
 		</div>
-		!!! question "http://192.168.20.1"
-			Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.You can also use __http://wavlogin.link__ to login in.
+		## <a name="section3"></a>
 		6 . Enter the default password admin and click "__Login__ __Now__ " to enter the first-time setup page.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone05.png">
 		</div>
 		
-		7 . For the first configuration, you need to select a networking method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to access the Internet through dial-up, please select __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please select __[Static IP](/Encyclopedia/static_ip/)__. For details on the networking method, you can click the link below.
-		
+		7 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/phone003.png">
+		</div>
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone06.png">
 		</div>
 		
 		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
-		
+			
 		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
-		!!! info "Please click on the link below to learn more"
-			__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
+		??? info "Please click here to switch the Internet connection method"
+			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+		
+			__PPPOE__
+			
+			__Username and password provided by the service provider (ISP)__ : The account name and password usually provided to you by the ISP for establishing a PPPoE connection.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone002.png">
+			</div>
+			
+			__Static IP__
+			
+			__IP Address__ : You need to assign a static IP address to your device. Make sure the IP address is unique on your network and is on the correct subnet.
+			
+			__Subnet Mask__ : Determine the subnet mask you use. A common subnet mask is 255.255.255.0.
+			
+			__Default gateway__ : Enter the default gateway IP address of your network device (check the user manual).
+			
+			__DNS server__ : You can use the DNS server provided by your ISP, or choose another public DNS server, such as Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1).
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone001.png">
+			</div>
+			
+			
+			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			
+			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			!!! info "Please click on the link below to learn more"
+				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 		
 		8 . After selecting the Internet access method, enter the basic configuration (time zone, country, WiFi name, etc.) interface, select the time zone and region that suits your location, and customize your WiFi name and password (it is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * ", etc.). 
 		
@@ -291,6 +432,11 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		</div>
 		!!! tip
 			__Device management password__ : You can set it the same as the wireless password, or you can turn off the button to set the device management password and wireless password separately.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone004.png">
+			</div>
+		
+		
 		9 . After setting, click Save and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone08.png">
@@ -319,6 +465,26 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 	=== "{==iOS==}"
 		Tools needed : mobile phone, router.
 		
+		__New devices or reset devices need to log in to the administrator interface for initialization settings.__
+			
+		__There are two ways to log in to the wavlink router management interface :__
+					
+		??? note "Log in using the domain name __*^^http://wavlogin.link^^*__."
+			- Log in using the domain name __*^^http://wavlogin.link^^*__. (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address,refer to the steps below for details;if you have successfully logged in using a domain name, *^^<b>[please click here to jump](#section4)</b>^^*.)
+						
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone000.png">
+			</div>	
+		??? note "Log in using your IP address __*^^http://192.168.20.1^^*__."
+			- Log in using your IP address __*^^http://192.168.20.1^^*__.(If you want to log in using your IP address, please refer to the steps below.)
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone04.png">
+			</div>
+				
+			!!! question "About IP address(192.168.20.1)"
+				Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual.
+
+		
 		1 . Connect the ISP network cable to the wan port of the router. After successful connection, the device will automatically identify the network.
 		
 		2 . Open the phone and enter the system settings, click WiFi to enter the WiFi settings page and click to turn on WiFi.
@@ -343,25 +509,55 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone04.png">
 		</div>
-		!!! question "http://192.168.20.1"
-			Different devices have different IP addresses. For specific IP addresses, please refer to the specific device manual or the actual acquisition of the device.You can also use __http://wavlogin.link__ to login in.
+		## <a name="section4"></a>
 		6 . Enter the default password admin and click "__Login__ __Now__ " to enter the first-time setup page.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone05.png">
 		</div>
 		
-		7 . For the first configuration, you need to select a networking method. __[DHCP](/Encyclopedia/dhcp/) is selected by default. If you need to access the Internet through dial-up, please select __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a __[static IP](/Encyclopedia/static_ip/)__, please select Static IP. For details on the networking method, you can click the link below.
-		
+		7 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/phone003.png">
+		</div>
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone06.png">
 		</div>
 		
 		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
-		
+			
 		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
-		!!! info "Please click on the link below to learn more"
-			__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
+		??? info "Please click here to switch the Internet connection method"
+			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+		
+			__PPPOE__
+			
+			__Username and password provided by the service provider (ISP)__ : The account name and password usually provided to you by the ISP for establishing a PPPoE connection.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone002.png">
+			</div>
+			
+			__Static IP__
+			
+			__IP Address__ : You need to assign a static IP address to your device. Make sure the IP address is unique on your network and is on the correct subnet.
+			
+			__Subnet Mask__ : Determine the subnet mask you use. A common subnet mask is 255.255.255.0.
+			
+			__Default gateway__ : Enter the default gateway IP address of your network device (check the user manual).
+			
+			__DNS server__ : You can use the DNS server provided by your ISP, or choose another public DNS server, such as Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1).
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone001.png">
+			</div>
+			
+			
+			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			
+			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			!!! info "Please click on the link below to learn more"
+				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
+		
 		
 		8 . After selecting the Internet access method, enter the basic configuration (time zone, country, WiFi name, etc.) interface, select the time zone and region that suits your location, and customize your WiFi name and password (it is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * ", etc.). 
 		
@@ -370,6 +566,10 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		</div>
 		!!! tip
 			__Device management password__ : You can set it the same as the wireless password, or you can turn off the button to set the device management password and wireless password separately.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/phone004.png">
+			</div>
+
 		9 . After setting, click Save and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone08.png">
