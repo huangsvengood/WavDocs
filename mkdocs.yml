@@ -43,7 +43,7 @@ nav:
       - IPv6: feature_guide/ipv6.md
       - Static IP: feature_guide/static_ip.md
     - Mesh Network: 
-      - Mesh Table: feature_guide/mesh_network.md
+      -  How to establish a Mesh network: feature_guide/mesh_network.md
       - Mesh Topology:  feature_guide/mesh_topo.md
     - Terminal:
       - Online/Offline Terminal: feature_guide/terminal.md

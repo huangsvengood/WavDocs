@@ -4,6 +4,7 @@
     }
 </style>
 ---
+??? note "Click to see how to enter the IPTV/VLAN interface"
 <img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ IPTV/VLAN
 ## __IPTV__
 <p class="text">

@@ -4,6 +4,7 @@
     }
 </style>
 ---
+??? note "Click to see how to enter the DMZ Management interface"
 <img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ DMZ Management
 <p class="text">
 Enable DMZ (Demilitarized Zone) management, and enter an IP address to connect to the device. You can specify that the connected device can be accessed through an external network. 
