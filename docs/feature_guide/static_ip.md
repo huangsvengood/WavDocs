@@ -1,11 +1,15 @@
-<style>
+<!--<style>
     .text {
         font-size: 21px; 
     }
 </style>
+-->
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ Static IP Binding
-
+??? note "Click to see how to enter the Static IP Settings interface"
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ Static IP Binding
+	<div style="text-align: center;">
+    <img class="boxshadow" src="/images/static00.png">
+	</div>
 
 ## __Static IP Binding__
 <p class="text">

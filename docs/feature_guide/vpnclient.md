@@ -1,10 +1,15 @@
-<style>
+<!--<style>
     .text {
         font-size: 21px; 
     }
 </style>
+-->
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ VPN  ➡ VPN Client
+??? note "Click to see how to enter the VPN Client interface"
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ VPN  ➡ VPN Client
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/vpn00.png">
+	</div>
 <p class="text">
 A Virtual Private Network (VPN) uses encryption technology to transform a public network such as the internet into a private network to provide higher security and privacy protection.
 </p>
