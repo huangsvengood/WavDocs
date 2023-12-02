@@ -51,8 +51,10 @@ nav:
       - WiFi Scheduling: feature_guide/parental_wifi.md
       - Web Block: feature_guide/parental_ctrl.md
     - VPN: 
-      - OpenVPN Client/Server: feature_guide/openVPN.md
-      - WireGuard Client/Server: feature_guide/wireguard.md
+      - OpenVPN Client: feature_guide/openVPN.md
+      - OpenVPN Server: feature_guide/openVPN_server.md
+      - WireGuard Client: feature_guide/wireguard.md
+      - WireGuard Server: feature_guide/wireguard_server.md
       - VPN Client: feature_guide/vpnclient.md
       - ZeroTier: feature_guide/zerotier.md
     - Advanced Settings:

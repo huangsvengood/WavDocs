@@ -5,8 +5,8 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the OpenVPN Client/Server interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ VPN ➡ OpenVPN Client/Server
+??? note "Click to see how to enter the OpenVPN Client interface"
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ VPN ➡ OpenVPN Client
 	<div style="text-align: center;">
 		<img class="boxshadow" src="/images/openvpn00.png">
 	</div>
@@ -28,79 +28,14 @@ Configure the OpenVPN client on the device you want to connect to the router. Th
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/openvpn01.png">
 </div>
+## __Parameter Description__
 
-## __OpenVPN Server__
-<p class="text">
-Configure the OpenVPN server on the router. This includes specifying IP address ranges, selecting encryption algorithms, configuring access controls, and more.
-</p>
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn02.png">
-</div>
-## __Configuration parameter description__
-### __Interface Type__
-- <b>TUN</b> means using a virtual tunnel interface. This means that OpenVPN will create a virtual network interface (e.g. tun0) and transmit the encrypted data stream through this interface.
-- <b>TAP</b> means using a virtual Ethernet adapter. This means that OpenVPN will create a virtual network interface (e.g. tap0) and transmit the encrypted data stream through this interface. Unlike the tun interface, the tap interface can transmit Ethernet frames rather than just IP packets.
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn03.png">
-</div>
-### __OpenVPN Protocol__
-- <b>TCP</b> means using the TCP protocol as the transport layer protocol of OpenVPN. Compared with UDP, TCP can provide better error detection and correction mechanisms during data transmission, but may produce more delays and network congestion.
-- <b>UDP</b> means using the UDP protocol as the transport layer protocol of OpenVPN. Compared with TCP, UDP does not have the same error detection and correction mechanism as TCP when transmitting data, but it can provide faster transmission speeds and less network congestion.
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn04.png">
-</div>
-### __IP Address__
-- <b>10.8.0.0</b> means that the OpenVPN server will use the 10.8.0.0 subnet as the IP address pool for VPN clients. This means that the OpenVPN server will assign each client connected to the VPN a unique IP address that will be distinguished from other addresses in the 10.8.0.0 subnet.
-### __Subnet Mask__
-- <b>255.255.255.0</b> means that the OpenVPN server will use a 24-bit subnet mask. This means that the OpenVPN server will assign the VPN client an IP address of the form 10.8.0.x, where x ranges from 1 to 254.
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn09.png">
-</div>
-### __OpenVPN Port__
-- <b>1194</b> means that the OpenVPN server will listen on port 1194 to accept client connection requests. This is the default port number for OpenVPN.
-### __Encryption methods supported by OpenVPN__
+__Login with username and password__ : This refers to logging into the VPN using username and password for authentication. Users need to enter the correct username and password to successfully connect to the VPN server.
 
-- AES-256-GCM: This is the AES symmetric encryption algorithm using a 256-bit key length, combined with GCM mode for encryption. GCM mode provides authentication and encryption and has better performance than CBC mode.
+__Status__ : This refers to information showing the current OpenVPN connection status. In this example, the status is displayed as "Disconnected", indicating that there is currently no connection established with the OpenVPN server.
 
-- AES-128-GCM: Similar to above, but uses the AES symmetric encryption algorithm with a 128-bit key length.
-
-- AES-128-CBC: This is the AES symmetric encryption algorithm using a 128-bit key length, combined with CBC mode for encryption. CBC mode is a common block encryption mode, but it is slightly inferior in performance compared to GCM mode.
-
-- CHACHA20-POLY1305: This is a combination of ChaCha20 encryption algorithm and Poly1305 message authentication code for high performance and security.
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn05.png">
-</div>
- Each encryption method has its own characteristics and applicable scenarios. You can choose the appropriate encryption method according to your specific needs. For example, if you are pursuing higher performance, you can consider using the AES encryption algorithm in GCM mode; if you need to balance performance and security, you can consider the CHACHA20-POLY1305 algorithm.
-​
-### __Authentication__
-SHA-256 and SHA-512 are both hash algorithms in the SHA-2 (Secure Hash Algorithm 2) family. The main difference between them is the output length and computational complexity :
-
-- Output length: SHA-256 produces a hash value of 256 bits (32 bytes), while SHA-512 produces a hash value of 512 bits (64 bytes). Therefore, SHA-512 provides a longer hash value and is theoretically more collision resistant.
-
-- Computational complexity: Since the hash value generated by SHA-512 is longer, calculating the SHA-512 hash value requires more computing resources and time compared to SHA-256. This means that SHA-512 may be calculated slightly slower than SHA-256.
-
-- Security: Although both SHA-256 and SHA-512 are widely used and no effective attack method has been found yet, the longer output length of SHA-512 means higher security. Longer hash values increase the difficulty of collisions, making it more difficult to find two different inputs that produce the same hash value through an attack.
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn06.png">
-</div>
-Choose the appropriate hash algorithm according to different security needs and performance requirements. Normally, for most applications, SHA-256 is sufficient to meet security requirements, its output length is short, and its calculation speed is relatively fast. Under specific security needs, or when there is a higher requirement for higher collision resistance, you can choose SHA-512.
-
-### __Username and Password Login__
-Indicates that authentication with a username and password is required to allow the client to connect to the VPN server.
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn07.png">
-</div>
-### __Allow access to LAN__ 
-Indicates that the VPN client is allowed to access local LAN resources.
-
-
-### __Export the configuration file__
-After configuring the VPN connection on the OpenVPN server, you can export the configuration file to the client. The client only needs to import the file to automatically configure VPN connection parameters without manual input.
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/openvpn08.png">
-</div>
-### __Export log files__
-Record VPN connection and data transmission log information on the OpenVPN server, including client IP address, connection time, data transmission volume, etc. Administrators can analyze and optimize VPN connections based on log files, which can also be used for troubleshooting and security auditing.
-
+__Ovpn file upload__ : This refers to uploading the OpenVPN configuration file (usually saved in .ovpn file format). The configuration file contains all the settings and parameters required to connect to a specific OpenVPN server, such as server address, port, encryption method, etc. By uploading the configuration file, the client can obtain the correct connection configuration to establish a secure connection with the server.
+!!! note ""
+	__[Click to see actual use cases for OpenVPN Client]()__.
 ---
 
