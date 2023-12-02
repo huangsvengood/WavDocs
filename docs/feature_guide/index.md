@@ -65,5 +65,16 @@ You can also click the following function and it will jump to the interface you 
 -  [x] __[Timing Reboot](/feature_guide/timing_reboot/)__
 -  [x] __[Router Reboot](/feature_guide/router_reboot/)__
 
+<div class="main">
+	<div>
+		<div class="productMenu en">
+			<h3>
+			Encyclopedia
+			<em class="underline"></em>
+			</h3>
+		</div>
+	</div>
+</div>
+
 
 ---
