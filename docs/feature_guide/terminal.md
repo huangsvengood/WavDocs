@@ -13,7 +13,7 @@
 
 
 <p class="text">
-WiFi terminal equipment refers to devices connected to WiFi networks, that is, mobile devices, computers, smartphones, etc. that use wireless signals to connect to WiFi routers.
+WiFi terminal equipment refers to devices connected to WiFi networks, that is, mobile devices, computers, smartphones, etc. that use wireless signals to connect to WiFi routers.Terminal device management is based on the condition of being connected to the router WiFi, so the terminal device can only be managed after it is connected to WiFi.
 </p>
 ## __Connect to wifi__
 

@@ -5,10 +5,10 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the Wireguard Client/Server interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ VPN  ➡ Wireguard Client/Server
+??? note "Click to see how to enter the Wireguard Client interface"
+	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ VPN  ➡ Wireguard Client
 	<div style="text-align: center;">
-		<img class="boxshadow" src="/images/wireguard00.png">
+		<img class="boxshadow" src="/images/wireguard001.png">
 	</div>
 
 
@@ -43,11 +43,7 @@ Import and configure the VPN connection in the WireGuard client. You can configu
 - <b>Allowips</b> : Indicates the IP address and subnet mask range allowed for peer access.>- <b>Public Key</b> : Represents the peer’s public key.
 - <b>Preshared Key (optional)</b> : Represents a preshared key used for authentication and encrypting communication data.
 - <b>Persistent Keepalive (optional)</b> : Indicates the persistence Keepalive interval, used to keep the connection active.
-## __Wireguard Server__
-<p class="text">
-The <b>IP address</b> and <b>Local Port</b> need to be set when configuring the WireGuard server to provide effective VPN connections to clients. Please make sure to enter the correct IP address and port number when configuring the WireGuard server so that clients can successfully connect to the server and communicate VPN.
-</p>
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/wireguard03.png">
-</div>
+
+!!! note ""
+	__[Click to view actual use cases of WireGuard Client]()__.
 ---
