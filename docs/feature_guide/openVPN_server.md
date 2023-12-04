@@ -80,5 +80,5 @@ After configuring the VPN connection on the OpenVPN server, you can export the c
 Record VPN connection and data transmission log information on the OpenVPN server, including client IP address, connection time, data transmission volume, etc. Administrators can analyze and optimize VPN connections based on log files, which can also be used for troubleshooting and security auditing.
 
 !!! note ""
-	__[Click to see actual use cases for OpenVPN Server]()__.
+	__[Click to see actual use cases for OpenVPN Server](/FAQ/how_to_steup_OpenVPN_Server/)__.
 ---

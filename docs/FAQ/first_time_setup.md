@@ -2,7 +2,7 @@
 The first setup of most wavlink routers is very similar. We provide you with tutorials for different systems. You can choose the method that suits you according to the different devices.
 !!! tip 
 	Nouns in bold and bright colors are clickable links. Click to jump to the detailed explanation page of the noun.For example,"__[Internet VLAN ID](/Encyclopedia/vlan_id/)__".
-!!! example "First Time Setup"
+!!! example ""
 
 	=== "{==Windows==}"
 		Tools required : Desktop/laptop, two Ethernet cables, router, Ethernet converter

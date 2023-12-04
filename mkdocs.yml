@@ -30,6 +30,10 @@ nav:
     - How to Connect to WiFi?: FAQ/How_to_Connect_to_WiFi.md
     - What is the use of offline terminal management?: FAQ/What_is_the_use_of_offline_terminal_management.md
     - How to upgrade router firmware?: FAQ/How_to_upgrade_router_firmware.md
+    - How to setup OpenVPN Server?: FAQ/how_to_steup_OpenVPN_Server.md
+    - How to setup OpenVPN Client?: FAQ/how_to_steup_OpenVPN_Client.md
+    - How to configure WireGuard Server?: FAQ/how_to_configure_the_wireguaid_server.md
+    - How to configure WireGuard Client?: FAQ/how_to_configure_the_wireguaid_client.md
   - Tutorials: tutorials/index.md
   - Feature Guide: 
     - Overview: feature_guide/index.md
@@ -97,7 +101,10 @@ theme:
     - navigation.expand
     - content.code.select
     - toc.follow
+    - content.tooltips
   favicon: images/logo-icon.png
+  icon:
+    annotation: material/arrow-right-circle-outline 
  
 extra_css:
   - stylesheets/extra.css
@@ -124,4 +131,5 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - abbr
 

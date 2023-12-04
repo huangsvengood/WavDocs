@@ -36,6 +36,6 @@ __Status__ : This refers to information showing the current OpenVPN connection s
 
 __Ovpn file upload__ : This refers to uploading the OpenVPN configuration file (usually saved in .ovpn file format). The configuration file contains all the settings and parameters required to connect to a specific OpenVPN server, such as server address, port, encryption method, etc. By uploading the configuration file, the client can obtain the correct connection configuration to establish a secure connection with the server.
 !!! note ""
-	__[Click to see actual use cases for OpenVPN Client]()__.
+	__[Click to see actual use cases for OpenVPN Client](/FAQ/how_to_steup_OpenVPN_Client/)__.
 ---
 
