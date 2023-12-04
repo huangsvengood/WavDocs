@@ -1,20 +1,15 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
 
-<p class="text">
-Here you can view all the functions of the wavlink device. The navigation bar on the left provides you with a good guide.
-</p>
-<p class="text">
-They are classified according to different functions. You can view them according to your needs. Here is a general directory for you. 
-</p>
 
-<p class="text">
+Here you can view all the functions of the wavlink device. The navigation bar on the left provides you with a good guide.
+
+They are classified according to different functions. You can view them according to your needs. Here is a general directory for you. 
+
+
+
 You can also click the following function and it will jump to the interface you need to help you quickly check the information.
-</p>
+
 
 
 ## __Wireless__
@@ -75,6 +70,27 @@ You can also click the following function and it will jump to the interface you 
 		</div>
 	</div>
 </div>
+
+(1)Export Configuration File
+
+(1) consectetur adipiscing elit.
+{ .annotate }
+
+1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be expressed in Markdown.
+
+!!! note 
+	12346
+	
+*[note]: 123456
+
+
+!!! info
+	:material-information-outline:{ title="Important information" }
+
+
+
+
 
 
 ---
