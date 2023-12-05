@@ -60,34 +60,6 @@ You can also click the following function and it will jump to the interface you 
 -  [x] __[Timing Reboot](/feature_guide/timing_reboot/)__
 -  [x] __[Router Reboot](/feature_guide/router_reboot/)__
 
-<div class="main">
-	<div>
-		<div class="productMenu en">
-			<h3>
-			Encyclopedia
-			<em class="underline"></em>
-			</h3>
-		</div>
-	</div>
-</div>
-
-(1)Export Configuration File
-
-(1) consectetur adipiscing elit.
-{ .annotate }
-
-1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be expressed in Markdown.
-
-!!! note 
-	12346
-	
-*[note]: 123456
-
-
-!!! info
-	:material-information-outline:{ title="Important information" }
-
 
 
 
