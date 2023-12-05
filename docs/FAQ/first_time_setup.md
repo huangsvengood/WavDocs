@@ -179,7 +179,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img alt="wan type" class="boxshadow" src="/images/device.png">
 		</div>
 		!!! tip "Forgot password solution"
-			Please press and hold the reset button on the router for 8 seconds. After the router reset, you can log in with the default password.
+			Please press and hold the reset button on the router for __more than 6 seconds__. After the router reset, you can log in with the default password.
 	=== "{==MacOS==}"
 		Tools required: Wavlink router, Apple computer, network cable, Ethernet converter, Ethernet cable.
 		
@@ -328,7 +328,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/mac014.png">
 		</div>
 		!!! tip "Forgot password solution"
-			Please press and hold the reset button on the router for 8 seconds. After the router reset, you can log in with the default password.
+			Please press and hold the reset button on the router for more than 6 seconds. After the router reset, you can log in with the default password.
 	=== "{==Android==}"
 		Tools needed : mobile phone, router.
 		
@@ -461,7 +461,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/phone011.png">
 		</div>	
 		!!! tip "Forgot password solution"
-			Please press and hold the reset button on the router for 8 seconds. After the router reset, you can log in with the default password.
+			Please press and hold the reset button on the router for more than 6 seconds. After the router reset, you can log in with the default password.
 	=== "{==iOS==}"
 		Tools needed : mobile phone, router.
 		
@@ -594,6 +594,6 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/phone011.png">
 		</div>	
 		!!! tip "Forgot password solution"
-			Please press and hold the reset button on the router for 8 seconds. After the router reset, you can log in with the default password.
+			Please press and hold the reset button on the router for more than 6 seconds. After the router reset, you can log in with the default password.
 *** 
 Setup complete! Still have questions? Visit our __[Community Forum](/community)__.

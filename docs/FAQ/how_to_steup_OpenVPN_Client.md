@@ -3,8 +3,6 @@ OpenVPN is a virtual private network (__[VPN]()__) system that implements techno
 
 __OpenVPN Client__ refers to a computer or device running OpenVPN client software. OpenVPN clients can connect to OpenVPN servers to establish secure communication links.
 
-## __How does OpenVPN work?__
-
 ## __Set up OpenVPN Client on wavlink router__
 
 1 . Enter the IP address of the device management interface in the browser address bar, log in to the management interface, click More Settings, and enter the OpenVPN Client interface.
@@ -28,6 +26,9 @@ __OpenVPN Client__ refers to a computer or device running OpenVPN client softwar
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/openvpnclient04.png">
 </div>
+!!! info
+	OpenVPN Server’s configuration file suffix is [&nbsp;&nbsp;__.ovpn__&nbsp;&nbsp;]
+
 5 . After successful application, OpenVPN will automatically identify the connection Sever, and the status will change from Disconnected to connecting, and then to connected.
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/openvpnclient05.png">
@@ -44,7 +45,8 @@ __OpenVPN Client__ refers to a computer or device running OpenVPN client softwar
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/openvpnclient08.png">
 </div>
-
+!!! tip
+	Different versions of openvpn may support different configurations. If you find a connection exception, you can export the log and check the cause of the failure. If it is a problem with the Application scenarios configuration file, you can try to modify the parameters of the configuration file.
 
 
 
