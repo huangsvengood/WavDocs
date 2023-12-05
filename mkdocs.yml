@@ -50,7 +50,7 @@ nav:
       -  How to establish a Mesh network: feature_guide/mesh_network.md
       - Mesh Topology:  feature_guide/mesh_topo.md
     - Terminal:
-      - Online/Offline Terminal: feature_guide/terminal.md
+      - Terminal Management: feature_guide/terminal.md
     - Parental control: 
       - WiFi Scheduling: feature_guide/parental_wifi.md
       - Web Block: feature_guide/parental_ctrl.md

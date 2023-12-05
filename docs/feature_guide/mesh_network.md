@@ -19,7 +19,18 @@ Generally speaking, a Mesh router device supports up to __7 (including existing 
 
 !!! note ""
 	=== "Mesh button for pairing (highly recommended)"
-		Power on all Mesh routers, connect the __master router__ to the Internet __(Connect the network cable to the wan port [⑥ in the picture])__, wait for the indicators of other routes to __flash red for 2 seconds__, then press the [__Pair__] button of the master router, and within __2 minutes__, press the [__Pair__] button of the Mesh route that needs to be added. ] button to complete the pairing (when the Mesh indicator light turns solid __blue__, it means the pairing is successful).
+		1 . __Power on all Mesh routers__ and __connect the master router to the Internet__. (The __master router__ is the first configured router and needs to be __initialized__).
+		!!! info
+			If your router is __brand new__, before configuring mesh networking, you need to __select a mesh router as your master router__. The __master router needs to be initialized__.
+			
+			If you have a router that is __already connected to the Internet and is in use__, you can use it __as your master router__, so you do not need to perform initial configuration,you can __proceed directly to the second step__.			
+			
+			Click to see __[how to perform initial configuration](/FAQ/first_time_setup/).__
+		
+		2 . After the indicator light of other mesh routes __flashes red for 2 seconds__, press the __[Pair]__ button of the master router. __Within 2 minutes__, press the __[Pair]__ button of the Mesh router to be added.
+		!!! info 
+			Your __other mesh routers (subrouter)__ must be in __reset__ state (press and hold the router __[Pair]__ key for __more than 6s__, __④__ in the picture).
+		3 . When the Mesh node indicator __light turns solid blue__, it means the __pairing is successful__.		
 		<div style="text-align: center;">
 			<img class="boxshadow" src="/images/mesh004.png">
 		</div>		
@@ -48,7 +59,7 @@ Generally speaking, a Mesh router device supports up to __7 (including existing 
 		!!! tip 
 			- Before adding a device,please confirm that the main router has successfully __connected to the Internet__.
 
-			- Place the Mesh Node to be added near the main router. If the Mesh Node has been used, please __reset__ it.
+			- Place the Mesh Node to be added near the main router. If the Mesh Node has been used, please __reset__ it.(Press and hold for __more than 6 seconds__ to __reset__ the mesh device)
 
 			- __Power on__ the Mesh node, and after it has started up, __press the pair button__.
 
@@ -59,7 +70,7 @@ Generally speaking, a Mesh router device supports up to __7 (including existing 
 			<img class="boxshadow" src="/images/mesh01.png">
 		</div>
 
-		5 .After ensuring that other Mesh nodes are placed correctly and the __master node network is connected__, click "__Next__" on this page. If the Mesh node is already in use, please __reset__ it.
+		5 . After ensuring that other Mesh nodes are placed correctly and the __master node network is connected__, click "__Next__" on this page. If the Mesh node is already in use, please __reset__ it.
 
 		<div style="text-align: center;">
 			<img class="boxshadow" src="/images/mesh02.png">

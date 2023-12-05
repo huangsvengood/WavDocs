@@ -15,12 +15,7 @@
 	</div>
 
 ## **Wireless network settings**
-<!--<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
--->
+
 ??? question "View WiFi information"
 	The first :
 	
@@ -63,7 +58,7 @@ Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to
 
 
 ## __Advanced__
-### __[Chanel](/Encyclopedia/chanel/)__
+### __Chanel__
 <p class="text">
  You can manually change the channel corresponding to the corresponding wireless network. If you don't know how to select the channel, we recommend that you select Auto, the device will select the best channel according to the surrounding environment to get a better network experience.
 </p>
@@ -72,7 +67,7 @@ Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to
     <img alt="wifi_" class="boxshadow" src="/images/wifi_01.png">
 </div>
 
-### __[Bandwidth](/Encyclopedia/bandwidth/)__
+### __Bandwidth__
 <p class="text">
  The bandwidth of the frequency band that the router transmits wireless data.
 </p>
@@ -80,15 +75,15 @@ Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to
 <p class="text">
 When enabled, the wireless signal of the corresponding network will be hidden.
 </p>
-### __[DFS](/Encyclopedia/dfs/)__
+### __DFS__
 <p class="text">
 Dynamic Frequency Selection (DFS) , it is recommended to turn on this switch so that the device will automatically avoid channel values that are not allowed in your area.
 </p>
-### __[TWT](/Encyclopedia/twt/)__
+### __TWT__
 <p class="text">
 When enabled, the router will automatically optimize resource scheduling between devices, negotiate wake-up times, reduce disorderly competition, increase device sleep time, and improve router lifespan.
 </p>
-### __[MU-OFDMA](/Encyclopedia/mu-ofdma/)__
+### __MU-OFDMA__
 <p class="text">
 After activation, the router will multiplex multiple users to improve transmission efficiency and reduce network latency in a multi-user Internet environment.
 </p>

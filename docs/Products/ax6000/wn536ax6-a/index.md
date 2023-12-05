@@ -22,12 +22,9 @@ The package contains the following contents:
 - 1 x Power  Adapter 
 - 1 x Quick Installation
 
-!!! note ""
-	Check out __[WS-WN536AX6-A's unboxing video](/video_library/unboxing_first_set_up/)__.
-
 
 ## Network
-Network Settings You can select __six different Internet access modes__. You can select different Internet access modes according to your requirements.
+Network Settings You can select __different Internet access modes__. You can select different Internet access modes according to your requirements.
 
 - [Mode Selection](/feature_guide/pattern_selection/)
 - [WAN](/feature_guide/wan/)
@@ -49,16 +46,13 @@ The wireless management function helps users optimize and manage wireless networ
 ## Mesh Settings
 Mesh is a network topology that creates a wireless network with wider coverage by connecting multiple routers together.mesh can provide __greater coverage__, improve __network performance__, achieve __seamless roaming__ and enhance __network stability__, bringing users a better network experience.
 
-- [Mesh Table](/feature_guide/mesh_network/)
-- [Mesh Topology](/feature_guide/mesh_topo/)
-!!! note ""
-	Click to learn __[how to establish a mesh network? ](/feature_guide/mesh_network/)__, __[how to view the network topology diagram?](/feature_guide/mesh_topo/)__
+- __[How to establish a mesh network? ](/feature_guide/mesh_network/)__
+- __[How to view the network topology diagram?](/feature_guide/mesh_topo/)__
+
 	
 ## Terminal Management
 Terminal devices refer to end-user devices connected to the router, such as __computers__, __mobile phones__, __smart homes__, etc.
 
-- [online Terminal](/feature_guide/terminal/)
-- [offline Terminal](/feature_guide/terminal/)
 !!! note ""
 	Click here to learn __[how to manage terminal devices](/feature_guide/terminal/)__.
 
