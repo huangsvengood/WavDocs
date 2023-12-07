@@ -1,10 +1,4 @@
-
 ---
-??? note "Click to see how to enter the OpenVPN Client interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ VPN ➡ OpenVPN Client
-	<div style="text-align: center;">
-		<img class="boxshadow" src="/images/openvpn00.png">
-	</div>
 
 ## __What is OpenVPN?__
 OpenVPN is a virtual private network (__[VPN]()__) system that implements technology to create secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities. It implements client and server applications.
