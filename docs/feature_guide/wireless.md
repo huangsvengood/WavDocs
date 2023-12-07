@@ -36,6 +36,9 @@ Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to
 <div style="text-align: center;">
     <img alt="wifi" class="boxshadow" src="/images/wifi.png">
 </div>
+<div style="text-align: center;">
+    <img alt="wifi" class="boxshadow" src="/images/wireless000.png">
+</div>
 ### __Encryption Method__
 <p class="text">
  Considering security and compatibility, it is currently recommended to use WPA2-PSK or WPA3-PSK/WPA2-MIX encryption.

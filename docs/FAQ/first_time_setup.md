@@ -4,94 +4,173 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 	Nouns in bold and bright colors are clickable links. Click to jump to the detailed explanation page of the noun.For example,"__[Internet VLAN ID](/Encyclopedia/vlan_id/)__".
 !!! example ""
 	=== "==WavRouter APP=="
-		Tools required : wavlink router,phone,WavRouter APP(Scan the QR code on the user manual to download.)
-		!!! note ""
-			New devices or reset devices need to log in to the administrator interface for initialization settings.
-		1 . Scan the QR code on the user manual and download the WavRouter APP.
+		New devices or reset devices need to log in to the administrator interface for initialization settings.
+
+		Tools required : __wavlink router__,__phone__,__WavRouter APP__(Scan the QR code on the __user manual__ to download.)
 		
-		2 . After the download is completed, click to open the WavRouter APP.
+		1 . Scan the QR code on the user manual and __download the WavRouter APP__.
+		
+		2 . After the download is completed, click to __open the WavRouter APP__.
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app001.png">
 		</div>	
-		3 . Click the icon in the upper left corner to open the extension bar, and click
+		
+		3 . Click this icon &nbsp;<img class="boxshadow" src="/images/app111.png"> &nbsp;in the upper left corner to open the extension bar, and click __"Login/Registration"__ to enter the login interface.
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/app112.png">
+		</div>	
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app002.png">
 		</div>	
-		3 . Click the icon in the upper left corner to open the extension bar, and click
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app004.png">
-		</div>	
-		4. Click "Register" to register a user. There are two ways to register a user. You can choose one of the following to register.
+		
+		4 . Click "__Register__" to register a user. There are two ways to register a user. You can choose one of the following to register.
 		!!! note ""
 			=== "Mobile"
-				Fill in your mobile phone number, click Get Verification Code, fill in the verification code received on your mobile phone in the Verification Code line and set a login password (it is recommended to use a password with numbers, uppercase and lowercase letters, and special characters). (If you have an account, you can click to log in directly.)
+				!!! tip ""
+					Tips : If you have an account, you can click to log in directly.
+				
+				1 . Fill in __your mobile phone number__, click __Get Verification Code__.
+				
+				2 . Fill in the __verification code__ received on your mobile phone in the Verification Code line and __set a login password.__ (it is recommended to use a password with __numbers, uppercase and lowercase letters, and special characters__).
+
+				
+				<div style="text-align: center;">
+				<img class="boxshadow" src="/images/app004.png">
+				</div>	
+
+			=== "E-mail"
+				!!! tip ""
+					Tips : If you have an account, you can click to log in directly.
+	
+				1 . Fill in __your email__, click __Get Verification Code__, 
+				
+				2 . Fill in the __verification code__ received in your email in the Verification Code line and __set a login password__ (it is recommended to use a password with __numbers, uppercase and lowercase letters, and special characters__). 
+				
 				<div style="text-align: center;">
 				<img class="boxshadow" src="/images/app005.png">
 				</div>	
-			=== "E-mail"
-				Fill in your email, click Get Verification Code, fill in the verification code received in your email in the Verification Code line and set a login password (it is recommended to use a password with numbers, uppercase and lowercase letters, and special characters). (If you have an account, you can click to log in directly.)
-				<div style="text-align: center;">
-				<img class="boxshadow" src="/images/app006.png">
-				</div>	
-		5 . After the registration is completed, log in as the user you just registered and click this icon to return to the main interface (as shown below).
+				
+		5 . After the registration is completed, __log in as the user you just registered__ and click this icon <img class="boxshadow" src="/images/app113.png"> to __return to the main interface__ (as shown below).
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app026.png">
 		</div>
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app025.png">
 		</div>
-		6 . Click "Connect" and it will automatically jump to choose to connect to your device WiFi.
+		
+		6 .  Click "__Connect__" and it will automatically jump to the WiFi connection interface. You only need to __correctly select your device WiFi__ and __connect__. Like the example below.__(The WiFi name can be found in the user manual.)__
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app007.png">
 		</div>	
-		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app008.png">
 		</div>	
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app009.png">
 		</div>	
-		7 . After the connection is successful, click this icon to return to the main interface, and click the card on the main page.
+		
+		7 . After the connection is successful,click the return button on your phone to __return to the main page__, and __click the card on the main page__.(Like the example below.)
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app010.png">
 		</div>	
+		
+		8 . Enter the default password admin and click "__Login__ __Now__ " to enter the first-time setup page.
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app011.png">
 		</div>	
+		
+		9 . After entering the initial configuration interface, the device system will __automatically detect the Internet connection method__ for you. The Internet connection method __defaults__ to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app012.png">
 		</div>	
 		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/app114.png">
+		</div>
+		
+		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			
+		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+		??? info "Please click here to switch the Internet connection method"
+			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+		
+			__PPPOE__
+			
+			__Username and password provided by the service provider (ISP)__ : The account name and password usually provided to you by the ISP for establishing a PPPoE connection.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/app115.png">
+			</div>
+			
+			__Static IP__
+			
+			__IP Address__ : You need to assign a static IP address to your device. Make sure the IP address is unique on your network and is on the correct subnet.
+			
+			__Subnet Mask__ : Determine the subnet mask you use. A common subnet mask is 255.255.255.0.
+			
+			__Default gateway__ : Enter the default gateway IP address of your network device (check the user manual).
+			
+			__DNS server__ : You can use the DNS server provided by your ISP, or choose another public DNS server, such as Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1).
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/app116.png">
+			</div>
+			
+			
+			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			
+			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			!!! info "Please click on the link below to learn more"
+				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
+		10 . After selecting the Internet connection method, enter the basic configuration (__time zone, country, WiFi name, etc.__) interface, select the time zone and region that suits your location, and __customize your WiFi name and password__ (it is recommended that you use a strong password : The password contains __uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * "__, etc.). 
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/app117.png">
+		</div>	
+		!!! tip
+			__Device management password__ : You can set it the same as the wireless password, or you can turn off the button to set the device management password and wireless password separately.
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/app118.png">
+			</div>	
+		11 . After setting, click Save and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
+		
+		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app013.png">
 		</div>	
+		
+		12 . After clicking Refresh in the previous step, you need to __re-enter the login password__. This login password is the password you customized. After entering the password, click __"Login"__ to log in. 
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app014.png">
 		</div>	
+		
+		13 . After successful login, you can see the following page.The initial configuration is completed
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app015.png">
 		</div>	
+		
+		14 . In order to manage your wavlink device more conveniently, you can __bind your device according to the instructions in the picture__. The next time you log in, the APP will __automatically identify the device__ and __bind__ it, so there is no need to bind it manually.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app016.png">
 		</div>	
+		
+		15 . After entering the correct password, the device binding is completed. __This password is the device management password__.
+		Below are some functions of the APP. If you are interested in learning more, you can click to view them.
+		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app017.png">
 		</div>	
+		
+		16 . If you need to enter the __[PC UI]__ of the device management interface, you can click the browser icon below to enter.
+		
 		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app019.png">
+		<img class="boxshadow" src="/images/app222.png">
 		</div>	
 		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app020.png">
+		<img class="boxshadow" src="/images/app223.png">
 		</div>	
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app021.png">
-		</div>	
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app022.png">
-		</div>	
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app023.png">
-		</div>	
-
 	=== "==Windows=="
 		Tools required : Desktop/laptop, two Ethernet cables, router, Ethernet converter
 		

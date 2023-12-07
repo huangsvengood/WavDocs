@@ -38,8 +38,6 @@ Network Settings You can select __different Internet access modes__. You can sel
 ## Wireless
 The wireless management function helps users optimize and manage wireless networks and improve the performance and stability of wireless networks by providing functions such as __channel selection__, __guest WiFi__, __dual-band integration__, and __Wi-Fi security__ settings.
 
-- [2.4G WiFi/5G WiFi](/feature_guide/wireless/)
-- [Guest WiFi](/feature_guide/guest_network/)
 !!! note ""
 	__[Click here to learn more about the wireless configuration.](/feature_guide/wireless/)__
 
@@ -67,18 +65,11 @@ The parental control feature can help parents establish a reasonable __home netw
 
 ## VPN
 VPN can enhance the security and privacy of home or business networks, providing __remote access__, __data encryption__, __Wi-Fi security__ and other functions, allowing users to use the Internet more freely and safely.
-
-- [OpenVPN Client/Server](/feature_guide/openVPN/)
-- [WireGuard Client/Server](/feature_guide/wiredguard/)
-- [VPN Client](/feature_guide/vpnclient/)
-- [ZeroTier](/feature_guide/zerotier/)
-!!! note ""
-	Click on the four links below for usage details:
 	
-	- __[How to use OpenVPN?]()__
-	- __[How to use WireGuard?]()__
-	- __[How to set up VPN Client?]()__
-	- __[How to use ZeroTier?]()__
+- __[How to use OpenVPN?]()__
+- __[How to use WireGuard?]()__
+- __[How to set up VPN Client?]()__
+- __[How to use ZeroTier?]()__
 ## More
 - [Security Settings](/feature_guide/secure/)
 - [Remote Control](/feature_guide/remote_ctrl/)

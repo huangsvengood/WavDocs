@@ -22,10 +22,42 @@ The method of obtaining IPv6 can vary depending on the network environment and p
     <img class="boxshadow" src="/images/ipv6_01.png">
 </div>
 
+## __Configure ipv6 you should check these :__
+
+__Check network support__ : First, make sure your network environment supports IPv6. You can contact your ISP or administrator to confirm whether they offer IPv6 connectivity.
+
+__Router configuration__ : Enter the router's management interface and find the IPv6 configuration option. You can choose to enable IPv6 and select the appropriate IPv6 connection type. Save and apply settings.
+
+__Device configuration__ : Once your router is configured, you need to configure IPv6 on the device.In your device's network settings, you can find the IPv6 option and enable it. The device will automatically obtain an IPv6 address, or you can manually configure an IPv6 address.
+
+If you have enabled the ipv6 service, we provide __two examples to help you check your ipv6 address__.
+
+!!! note ""
+	=== "Mobile"
+		If you use a mobile phone to connect to the router WiFi, you will see the ipv6 address assigned by the router to the mobile phone in mobile phone __Settings > WiFi settings__.
+
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/ipv6002.png">
+		</div>
+	=== "Compute"
+		If you are using a computer, you can type "__win <img class="boxshadow" src="/images/ipv6003.png">  + R__"  on the keyboard at the same time, enter "__cmd__" in the pop-up search box and click "Enter".
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/ipv6004.png">
+		</div>
+		Enter "__ipconfig__" in the terminal box and hit "__Enter__". You can view your ipv6 address.
+		
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/ipv6005.png">
+		</div>
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/ipv6006.png">
+		</div>
 ### __Automatic Detection__
 <p class="text">
 This method is the most common and simple way to obtain an IPv6 address by automatically detecting the network environment. When you connect to an IPv6-enabled network, your device automatically obtains an IPv6 address. This method generally works on home or public networks and requires no special configuration.
 </p>
+
+
 
 ### __[IPv4+IPv6 PPPOE]()__
 <p class="text">
