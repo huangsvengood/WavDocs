@@ -60,6 +60,9 @@ __OpenVPN Client__ refers to a computer or device running OpenVPN client softwar
 
 
 
+
+
+
 ## __Application scenarios__
 __Remote Access__ : OpenVPN can be used as a __remote access__ solution, allowing users to securely access internal company resources over untrusted networks. Employees can connect to the corporate network through OpenVPN and access files, applications, and internal systems without having to connect directly to the company's LAN.
 
