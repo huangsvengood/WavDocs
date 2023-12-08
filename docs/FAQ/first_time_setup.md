@@ -72,7 +72,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/app009.png">
 		</div>	
 		
-		7 . After the connection is successful,click the return button on your phone to __return to the main page__, and __click the card on the main page__.(Like the example below.)
+		7 . After the connection is successful,click the return button on your phone to __return to the main page__, and __Click "Local Connected" to enter the initial configuration.__.(Like the example below.)
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app010.png">
@@ -139,38 +139,29 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/app013.png">
 		</div>	
 		
-		12 . After clicking Refresh in the previous step, you need to __re-enter the login password__. This login password is the password you customized. After entering the password, click __"Login"__ to log in. 
-		
+		12 . After refreshing, the APP will jump to the interface shown below. You only need to __click the icon &nbsp;<img class="boxshadow" src="/images/app555.png">__ in the upper left corner to return to the main interface to __bind the device__.
 		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app014.png">
+		<img class="boxshadow" src="/images/app223.png">
 		</div>	
 		
-		13 . After successful login, you can see the following page.The initial configuration is completed
-		
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app015.png">
-		</div>	
-		
-		14 . In order to manage your wavlink device more conveniently, you can __bind your device according to the instructions in the picture__. The next time you log in, the APP will __automatically identify the device__ and __bind__ it, so there is no need to bind it manually.
+		13 . In order to manage your wavlink device more conveniently, you need __bind your device according to the instructions in the picture__. The next time you log in, the APP will __automatically identify the device__ and __bind__ it, so there is no need to bind it manually.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app016.png">
 		</div>	
 		
-		15 . After entering the correct password, the device binding is completed. __This password is the device management password__.
+		14 . After entering the correct password, the device binding is completed. __This password is the device management password__.
 		Below are some functions of the APP. If you are interested in learning more, you can click to view them.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app017.png">
 		</div>	
 		
-		16 . If you need to enter the __[PC UI]__ of the device management interface, you can click the browser icon below to enter.
+		15 . After binding, you will see the following interface and __"Network is normal"__ is displayed.If you need more functional configurations, you can enter the __[PC UI]__ of the device management interface to set up. Just click the browser icon below to enter.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app222.png">
 		</div>	
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app223.png">
-		</div>	
+
 	=== "==Windows=="
 		Tools required : Desktop/laptop, two Ethernet cables, router, Ethernet converter
 		

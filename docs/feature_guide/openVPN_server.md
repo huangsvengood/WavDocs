@@ -5,7 +5,8 @@ OpenVPN is a virtual private network (__[VPN]()__) system that implements techno
 
 __OpenVPN Server__ refers to the computer or device running the __OpenVPN service__. The role of an OpenVPN server is to allow client devices to connect to their own private network over the Internet or other networks and establish a secure communication link.
 
-
+!!! tip
+	Our version of OpenVPN is OpenVPN 2.5.3.
 ## __Set up OpenVPN Server on wavlink router__
 
 1 . Enter the IP address of the device management interface in the browser address bar, __log in__ to the management interface, click __More Settings__, and enter __OpenVPN Server__.
