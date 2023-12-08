@@ -5,6 +5,8 @@ OpenVPN is a virtual private network (__[VPN]()__) system that implements techno
 
 __OpenVPN Client__ refers to a computer or device running OpenVPN client software. OpenVPN clients can connect to OpenVPN servers to establish secure communication links.
 
+!!! tip
+	Our version of OpenVPN is OpenVPN 2.5.3.
 ## __Set up OpenVPN Client on wavlink router__
 
 1 . Enter the IP address of the device management interface in the browser address bar, log in to the management interface, click More Settings, and enter the OpenVPN Client interface.

@@ -66,10 +66,12 @@ The parental control feature can help parents establish a reasonable __home netw
 ## VPN
 VPN can enhance the security and privacy of home or business networks, providing __remote access__, __data encryption__, __Wi-Fi security__ and other functions, allowing users to use the Internet more freely and safely.
 	
-- __[How to use OpenVPN?]()__
-- __[How to use WireGuard?]()__
-- __[How to set up VPN Client?]()__
-- __[How to use ZeroTier?]()__
+- __[How to use OpenVPN Client?](/feature_guide/openVPN/)__
+- __[How to use OpenVPN Server?](/feature_guide/openVPN_server/)__
+- __[How to use WireGuard Client?](/feature_guide/wireguard/)__
+- __[How to use WireGuard Server?](/feature_guide/wireguard_server/)__
+- __[How to set up VPN Client?](/feature_guide/vpnclient/)__
+- __[How to use ZeroTier?](/feature_guide/zerotier/)__
 ## More
 - [Security Settings](/feature_guide/secure/)
 - [Remote Control](/feature_guide/remote_ctrl/)
