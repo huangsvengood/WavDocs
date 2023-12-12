@@ -81,7 +81,7 @@ nav:
       - Led Control: feature_guide/led_ctrl.md
       - Change admin password: feature_guide/password_admin.md
       - Backup and Restore: feature_guide/backup.md
-      - Firmware Update: feature_guide/firmware.md
+      - Firmware Upgrade: feature_guide/firmware.md
       - Timing Reboot: feature_guide/timing_reboot.md
       - Router Reboot/Logout: feature_guide/router_reboot.md
   - Video Library: video_library/index.md

@@ -1,11 +1,10 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
 ??? note "Click to see how to enter the Security Settings interface"
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Security Settings
+	<img src="/images/weizhi01.png" width="19" height="19">&nbsp;More Settings > Advanced Settings  > Security Settings
+	<div style="text-align: center;">
+    <img class="boxshadow" src="/images/security001.png">
+	</div>
 ## __Block ping__
 <p class="text">
 This feature can effectively prevent ping attacks and scans, reducing the risk of network attacks on this device.
