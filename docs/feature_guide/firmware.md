@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
+More Settings > System > Firmware Update
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/fiemware001.png">
+</div>
 <p class="text">
 Regular router firmware upgrades can help you obtain the latest features and security patches, improve the performance and stability of the router, and fix possible vulnerabilities and security risks.
 </p>
@@ -21,7 +20,8 @@ On the router management page, click the upload button, select the firmware file
 <p class="text">
 Once the upgrade is complete, the router will automatically reboot to apply the new firmware. It may take a few minutes, please be patient.
 </p>
-> For detailed operation steps, please click [How to upgrade router firmware?](/FAQ/How_to_upgrade_router_firmware?)
+!!! note ""
+	For detailed operation steps, please click __[How to upgrade router firmware?](/FAQ/How_to_upgrade_router_firmware?)__
 
 
 
@@ -30,45 +30,11 @@ Once the upgrade is complete, the router will automatically reboot to apply the 
 You can directly click the check upgrade button to check the upgradeable version for upgrade, or you can directly use one-click upgrade.
 </p>
 <div style="text-align: center;">
-    <img alt="firmware" class="boxshadow" src="/images/update02.png">
+    <img alt="firmware" class="boxshadow" src="/images/firmware00.png">
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-> Precautions:
-
->- Before upgrading the firmware, make sure you fully understand the contents and precautions of the firmware update. Some upgrades may require special procedures or considerations.
->- During the firmware upgrade process, avoid power outages or network connections to avoid causing firmware damage or the router not working properly.
->- If problems occur during the firmware upgrade, you can try using the router's recovery function or contact the manufacturer's technical support for help.
+!!! note "Precautions"	
+	- Before upgrading the firmware, make sure you fully understand the contents and precautions of the firmware update. Some upgrades may require special procedures or considerations.
+	
+	- During the firmware upgrade process, avoid power outages or network connections to avoid causing firmware damage or the router not working properly.
+	
+	- If problems occur during the firmware upgrade, you can try using the router's recovery function or contact the manufacturer's technical support for help.

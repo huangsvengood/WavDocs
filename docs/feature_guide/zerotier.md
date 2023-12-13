@@ -10,6 +10,11 @@ __*Note*__  *: ^^The zerotier on the router is the client, which is also the nod
 
 ## Usage examples
 The following provides you with three usage cases about Zerotier. Please note that the cases in this article are for reference only.
+
+<div style="text-align: center;">
+	<img class="boxshadow" src="/images/zerotiertopo.png">
+</div>
+
 !!! info ""
 		
 	- Usage case 1 : Use zerotier to realize remote server connection between different LANs.

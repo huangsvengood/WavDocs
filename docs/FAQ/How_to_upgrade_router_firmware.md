@@ -1,8 +1,4 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 <p class="text">
 There are several steps for local upgrade :
 </p>
@@ -24,6 +20,18 @@ There are several steps for local upgrade :
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/upgrade02.png">
 </div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/firmware001.png">
+</div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/firmware002.png">
+</div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/firmware003.png">
+</div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/firmware004.png">
+</div>
 <p class="text">
 4 . Back up router configuration : Before upgrading the firmware, it is recommended to back up the current router configuration file to prevent configuration loss due to problems during the upgrade process.
 </p>
@@ -34,7 +42,7 @@ There are several steps for local upgrade :
 5 . Upload firmware file : On the router management page, click the "<b>upload</b>" button and select the previously downloaded firmware file to upload.
 </p>
 <div style="text-align: center;">
-    <img class="boxshadow" src="/images/update01.png">
+    <img class="boxshadow" src="/images/firmware005.png">
 </div>
 <p class="text">
 6 . Start firmware upgrade : After confirming that the uploaded firmware file is correct, click the Start Upgrade button. Wait for the upgrade process to complete without disconnecting power or network connections.

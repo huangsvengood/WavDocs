@@ -39,6 +39,12 @@ If you have enabled the ipv6 service, we provide __two examples to help you chec
 		<div style="text-align: center;">
 			<img class="boxshadow" src="/images/ipv6002.png">
 		</div>
+		
+		You can check whether the ipv6 network is successfully enabled by visiting the ipv6 website __(http://www.test-ipv6.com)__.
+		
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/ipv6007.png">
+		</div>
 	=== "Compute"
 		If you are using a computer, you can type "__win <img class="boxshadow" src="/images/ipv6003.png">  + R__"  on the keyboard at the same time, enter "__cmd__" in the pop-up search box and click "Enter".
 		<div style="text-align: center;">
@@ -52,6 +58,12 @@ If you have enabled the ipv6 service, we provide __two examples to help you chec
 		<div style="text-align: center;">
 			<img class="boxshadow" src="/images/ipv6006.png">
 		</div>
+		
+		You can check whether the ipv6 network is successfully enabled by visiting the ipv6 website __(http://www.test-ipv6.com)__.
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/ipv6008.png">
+		</div>
+		
 ### __Automatic Detection__
 <p class="text">
 This method is the most common and simple way to obtain an IPv6 address by automatically detecting the network environment. When you connect to an IPv6-enabled network, your device automatically obtains an IPv6 address. This method generally works on home or public networks and requires no special configuration.
@@ -73,6 +85,23 @@ A static IPv6 address is a fixed IPv6 address that you configure manually. When 
 </p>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/ipv6-04.png">
+</div>
+
+Example : 
+
+After setting up, click __Save__ and wait for the configuration application. After refreshing, you can access the ipv6 website.
+
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6010.png">
+</div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6011.png">
+</div>
+
+Open the browser and enter __http://ipv6-test.com__ in the address bar to visit the ipv6 test website.
+
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6009.png">
 </div>
 !!! note ""
 	<p class="text">

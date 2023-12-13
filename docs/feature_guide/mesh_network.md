@@ -17,26 +17,110 @@ Mesh networks are widely used in many application scenarios, such as smart homes
 
 Generally speaking, a Mesh router device supports up to __7 (including existing device mesh devices)__. So if you need to add more mesh devices to create a more powerful network in your home, you can simply pair your new mesh devices with your existing network.
 
+<div style="text-align: center;">
+	<img class="boxshadow" src="/images/meshtopo.jpg">
+</div>
+!!! note ""
+	__==Application introduction== :__
+
+	In the factory state, __the Mesh routing set has no master or slave__. __Choose any router to power on__, __connect the Wan port to the Ethernet cable__, and the networking configuration method is the same as that of other routers .
+
+	The steps for setting up Mesh routing networking are basically the same. This article takes one of the wavlink mesh packages as an example to introduce the Mesh routing networking setting method in detail. The setting methods for other Mesh routing are the same.
+
+### __Setting method__
+
+1 . __Select any router in the set to power on__, and __connect the Ethernet cable to the wan port__.
+
+<div style="text-align: center;">
+	<img class="boxshadow" src="/images/mesh005.png">
+</div>
+
+2 . After connecting the line, please confirm that the corresponding interface __(wan port)__ indicator light is __always on or flashing__.
+!!! info "Warm reminder"
+	The default wireless signal name of the router can be found in the __user manual__. If you use a laptop, mobile phone or other wireless terminal to set up the router, please connect to the signal and follow the next step.3 . After entering the website, the password for the first login page is the default password, which is admin. After entering the default password, press the "__Enter__" key on the keyboard or click "__Login__" with the mouse.		
+3 . Open the browser, clear the address bar and enter the router's management address: __http://wavlogin.link__. After logging in, click "__Login Now__" to enter the initial configuration interface.
+
+<div style="text-align: center;">
+	<img class="boxshadow" src="/images/meshlogin.png">
+</div>
+		
+4 . After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to DHCP. If you need to change the Internet connection method, please click the information box below.
+
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/step9.png">
+</div>
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/internet.png">
+</div>
+		
+??? info "Please click here to switch the Internet connection method"
+	After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+		
+	__PPPOE__
+				
+	__Username and password provided by the service provider (ISP)__ : The account name and password usually provided to you by the ISP for establishing a PPPoE connection.
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/step91.png">
+	</div>
+				
+	__Static IP__
+				
+	__IP Address__ : You need to assign a static IP address to your device. Make sure the IP address is unique on your network and is on the correct subnet.
+				
+	__Subnet Mask__ : Determine the subnet mask you use. A common subnet mask is 255.255.255.0.
+				
+	__Default gateway__ : Enter the default gateway IP address of your network device (check the user manual).
+				
+	__DNS server__ : You can use the DNS server provided by your ISP, or choose another public DNS server, such as Google DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1).
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/step92.png">
+	</div>
+				
+				
+	- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+				
+	- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+	!!! info "Please click on the link below to learn more"
+		__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
+5 . After selecting the Internet access method, enter the basic configuration (time zone, country, WiFi name, etc.) interface, select your country and time zone, and customize your WiFi name, password, and device management password (it is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * ", etc.). 
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/time.png">
+</div>
+		
+Please remember the password you set. After the configuration is completed and the interface is refreshed, you will use your customized password to log in to the management interface again.
+??? tip "Device management password"
+	__Device management password__ : You can set it the same as the wireless password, or you can turn off the button to set the device management password and wireless password separately.
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/step10.png">
+	</div>
+6 . After setting, click Save and wait for the device configuration to be completed. After the Refresh button appears, click __Refresh__ to complete the initial setting of the device.
+		
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/refresh.png">
+</div>
+??? info "App Download"
+	Scan the QR code with your mobile phone to download the Wav router app and manage your device conveniently.
+7 . After clicking Refresh, you need to re-enter the login password. This login password is the password you customized. After entering the password, click Login to log in. After successful login, you can see the following page.
+				
+<div style="text-align: center;">
+<img alt="wan type" class="boxshadow" src="/images/device.png">
+</div>
+	
+8 . Mesh pairing. There are two ways to perform mesh pairing. It is recommended that you use the first method for pairing.
 !!! note ""
 	=== "Mesh button for pairing (highly recommended)"
-		1 . __Power on all Mesh routers__ and __connect the master router to the Internet__. (The __master router__ is the first configured router and needs to be __initialized__).
-		!!! info
-			If your router is __brand new__, before configuring mesh networking, you need to __select a mesh router as your master router__. The __master router needs to be initialized__.
-			
-			If you have a router that is __already connected to the Internet and is in use__, you can use it __as your master router__, so you do not need to perform initial configuration,you can __proceed directly to the second step__.			
-			
-			Click to see __[how to perform initial configuration](/FAQ/first_time_setup/).__
 		
-		2 . After the indicator light of other mesh routes __flashes red for 2 seconds__, press the __[Pair]__ button of the master router. __Within 2 minutes__, press the __[Pair]__ button of the Mesh router to be added.
-		!!! info 
-			Your __other mesh routers (subrouter)__ must be in __reset__ state (press and hold the router __[Pair]__ key for __more than 6s__, __④__ in the picture).
-		3 . When the Mesh node indicator __light turns solid blue__, it means the __pairing is successful__.		
+		1 . __Power on other Mesh routers__, and other routers must be in __reset state__ (press the reset button for more than six seconds to reset).
+		
+		2 . Press the "__Pair__" button __(2s)__ of the initially configured mesh route. After pressing, the indicator light of the Mesh route flashes blue slowly.
+		
+		3 . Within 2 minutes, press the "__Pair__" button of the Mesh route you want to add and wait __40-120 seconds__ to complete the pairing (when the Mesh indicator light turns solid blue, it means the pairing is successful).	
+		
 		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/mesh004.png">
-		</div>		
-	
+		<img alt="wan type" class="boxshadow" src="/images/mesh006.png">
+		</div>
+		
 	=== "Add WEB interface to realize pairing"
-		### __Add Mesh Extender__
 		1 . Open the browser, enter __^^http://192.168.x.x^^__ (find it in the user manual) or __^^http://wavlogin.link^^__ in the address bar of the browser, then press the Enter key on the keyboard to enter the device management interface.
 		<div style="text-align: center;">
 			<img class="boxshadow" src="/images/compute02.png">
