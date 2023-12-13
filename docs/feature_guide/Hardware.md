@@ -1,10 +1,6 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Hardware NAT Settings
+More Settings > Advanced Settings > Hardware NAT Settings
 <p class="text">
 Hardware NAT (Network Address Translation) setting refers to using hardware acceleration in network devices to perform network address translation. 
 </p>

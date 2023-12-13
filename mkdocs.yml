@@ -27,13 +27,14 @@ nav:
   - FAQ: 
     - Overview: FAQ/index.md
     - First Time Setup: FAQ/first_time_setup.md
-    - How to Connect to WiFi?: FAQ/How_to_Connect_to_WiFi.md
-    - What is the use of offline terminal management?: FAQ/What_is_the_use_of_offline_terminal_management.md
+ #   - How to Connect to WiFi?: FAQ/How_to_Connect_to_WiFi.md
+ #   - What is the use of offline terminal management?: FAQ/What_is_the_use_of_offline_terminal_management.md
     - How to upgrade router firmware?: FAQ/How_to_upgrade_router_firmware.md
-    - How to setup OpenVPN Server?: FAQ/how_to_steup_OpenVPN_Server.md
-    - How to setup OpenVPN Client?: FAQ/how_to_steup_OpenVPN_Client.md
-    - How to configure WireGuard Server?: FAQ/how_to_configure_the_wireguaid_server.md
-    - How to configure WireGuard Client?: FAQ/how_to_configure_the_wireguaid_client.md
+#    - How to setup OpenVPN Server?: FAQ/how_to_steup_OpenVPN_Server.md
+ #   - How to setup OpenVPN Client?: FAQ/how_to_steup_OpenVPN_Client.md
+  #  - How to configure WireGuard Server?: FAQ/how_to_configure_the_wireguaid_server.md
+   # - How to configure WireGuard Client?: FAQ/how_to_configure_the_wireguaid_client.md
+    - How to check whether the computer supports remote wake-up?: FAQ/How_to_check_whether_the_computer_supports_remote_wake-up.md
   - Tutorials: tutorials/index.md
   - Feature Guide: 
     - Overview: feature_guide/index.md

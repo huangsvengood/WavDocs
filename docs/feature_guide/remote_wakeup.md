@@ -1,10 +1,12 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Remote Wakeup
+More Settings > Advanced Settings > Remote Wakeup
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/lanwake0.png">
+</div>
+
+__[How to check whether the computer supports remote wake-up?](/FAQ/How_to_check_whether_the_computer_supports_remote_wake-up/)__
+
 <p class="text">
 Wake on LAN (WOL) is a technology in which a network card, in conjunction with other software and hardware, sends specific data frames to a network card in standby mode to enable a computer to start from a shutdown state.
 </p>
