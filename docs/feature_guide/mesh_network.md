@@ -5,8 +5,7 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the Mesh Table Settings interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Mesh Network ➡ Mesh Table
+ More Settings > Mesh Network > Mesh Table
 	<div style="text-align: center;">
     <img class="boxshadow" src="/images/mesh001.png">
 	</div>
@@ -31,13 +30,9 @@ Generally speaking, a Mesh router device supports up to __7 (including existing 
 
 1 . __Select any router in the set to power on__, and __connect the Ethernet cable to the wan port__.
 
-<div style="text-align: center;">
-	<img class="boxshadow" src="/images/mesh005.png">
-</div>
-
 2 . After connecting the line, please confirm that the corresponding interface __(wan port)__ indicator light is __always on or flashing__.
 !!! info "Warm reminder"
-	The default wireless signal name of the router can be found in the __user manual__. If you use a laptop, mobile phone or other wireless terminal to set up the router, please connect to the signal and follow the next step.3 . After entering the website, the password for the first login page is the default password, which is admin. After entering the default password, press the "__Enter__" key on the keyboard or click "__Login__" with the mouse.		
+	The default wireless signal name of the router can be found in the __user manual__. If you use a laptop, mobile phone or other wireless terminal to set up the router, please connect to the signal and follow the next step.
 3 . Open the browser, clear the address bar and enter the router's management address: __http://wavlogin.link__. After logging in, click "__Login Now__" to enter the initial configuration interface.
 
 <div style="text-align: center;">

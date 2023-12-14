@@ -1,33 +1,29 @@
 ---
-??? note "Click to see how to enter the wireless settings interface" 
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;Enter : In the upper right corner of the admin page ➡ More Settings  ➡ Wireless Management
-	<div style="text-align: center;">
-		<img class="boxshadow" src="/images/wireless01.png">
-	</div>
-	
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;Enter : In the upper right corner of the admin page ➡ Wireless Settings
-	
-	<div style="text-align: center;">
-		<img class="boxshadow" src="/images/wireless00.png">
-	</div>
-	<div style="text-align: center;">
-		<img class="boxshadow" src="/images/wireless02.png">
-	</div>
+!!! note ""
+	=== "Method 1"
+		More Settings  > Wireless Management > Wireless
+			<div style="text-align: center;">
+				<img class="boxshadow" src="/images/wireless01.png">
+			</div>
+	=== "Method 2"	
+		More Settings >  Wireless Settings
+		
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless02.png">
+		</div>
 
 ## **Wireless network settings**
 
-??? question "View WiFi information"
-	The first :
+!!! question "View WiFi information"
+	=== "The first"	
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless03.png">
+		</div>
 	
-	<div style="text-align: center;">
-		<img alt="wifi" class="boxshadow" src="/images/wireless03.png">
-	</div>
-	
-	The second :
-	
-	<div style="text-align: center;">
-		<img alt="wifi" class="boxshadow" src="/images/wireless04.png">
-	</div>
+	=== "The second"	
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless04.png">
+		</div>
 
 <p class="text">
 Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to provide a better network experience, while turning off the dual-band integration allows you to set up the 2.4G and 5G networks separately.

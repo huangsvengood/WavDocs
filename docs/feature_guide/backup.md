@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
+More Settings  > System > Backup and Restore
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/backadd.png">
+</div>
 <p class="text">
 Regularly backing up router configuration files can help you quickly restore the original configuration in the event of a system failure or upgrade failure, avoiding the inconvenience and loss caused by resetting.
 </p>
@@ -27,11 +26,11 @@ Note that this operation will overwrite all existing configuration options and r
 </p>
 
 
-> Precautions:
+!!! info "Precautions"
 
->- Back up the router configuration files regularly. It is recommended to perform backup operations once a month or quarterly.
->- When restoring the router configuration file, be sure to select the correct backup file and carefully review the configuration information to ensure that the router can operate normally after restoration.
->- Keep the backup file properly and avoid recording it directly next to the router or in a place where it can be easily accessed by others.
+	- Back up the router configuration files regularly. It is recommended to perform backup operations once a month or quarterly.
+	- When restoring the router configuration file, be sure to select the correct backup file and carefully review the configuration information to ensure that the router can operate normally after restoration.
+	- Keep the backup file properly and avoid recording it directly next to the router or in a place where it can be easily accessed by others.
 
 
 

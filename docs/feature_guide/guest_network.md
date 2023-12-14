@@ -6,11 +6,11 @@
 -->
 # Guest WiFi
 ---
-??? note "Click to see how to enter the Guest WiFi interface" 
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡Wireless Management ➡ Guest WiFi
-	<div style="text-align: center;">
-    <img class="boxshadow" src="/images/guest01.png">
-	</div>
+
+More Settings > Wireless Managemen > Guest WiFi
+<div style="text-align: center;">
+   <img class="boxshadow" src="/images/guest01.png">
+</div>
 ## __Guest WiFi Settings__
 <p class="text">
 The guest WiFi provides an independent and secure network environment for online access by visitors, customers, or temporary devices, and is isolated from the main network. Through the guest WiFi, network administrators can provide convenient access while protecting the security and resources of the main network.

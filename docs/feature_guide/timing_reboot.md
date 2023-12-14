@@ -1,11 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
----
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
 
+---
+More Settings  > System > Timing reboot
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/timingadd.png">
+</div>
 
 <p class="text">
 Automatic rebooting will help you clear unnecessary data in the router and automatically select the best wireless channel. 

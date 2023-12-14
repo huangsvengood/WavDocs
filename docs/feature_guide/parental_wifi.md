@@ -5,8 +5,7 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the Parental control interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Parental Control ➡ Wi-Fi Scheduling
+ More Settings > Parental Control > Wi-Fi Scheduling
 	<div style="text-align: center;">
 		<img class="boxshadow" src="/images/parental00.png">
 	</div>

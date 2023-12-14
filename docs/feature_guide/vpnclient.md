@@ -5,8 +5,8 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the VPN Client interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ VPN  ➡ VPN Client
+
+More Settings > VPN  > VPN Client
 	<div style="text-align: center;">
 		<img class="boxshadow" src="/images/vpn00.png">
 	</div>

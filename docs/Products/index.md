@@ -31,9 +31,9 @@
       </a>
     </div>
     <div class="product-card">
-      <a href="ax3000/wn586x3-a/">
+      <a href="ax3000/wn586x3-b/">
         <img src="img/WN586X3.png" >
-        <div class="product-model">WS-WN586X3-A</div>
+        <div class="product-model">WS-WN586X3-B</div>
         
       </a>
     </div>

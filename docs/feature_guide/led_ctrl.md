@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
+ More Settings  > System > Led Control
+ <div style="text-align: center;">
+    <img class="boxshadow" src="/images/ledadd.png">
+</div>
 <p class="text">
 The router's light is an important indicator light used to indicate the status or operation of the device. By setting the router's lights, you can have a clearer understanding of the working status of the device, discover and troubleshoot problems in a timely manner.
 </p>
@@ -18,9 +17,9 @@ In the router management page, find the "<b>Led Control</b>" option. Select on o
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/led_ctrl.png">
 </div>
-> Precautions:
+!!! info "Precautions"
 
-> - In certain situations (such as bedrooms or children's rooms), turning off or limiting the router lights can effectively reduce light pollution and help improve sleep quality.
-> - For users who need to monitor the status of the device 24 hours a day, it is recommended to keep the default light display mode to ensure that the status of the device is known at any time.
+	- In certain situations (such as bedrooms or children's rooms), turning off or limiting the router lights can effectively reduce light pollution and help improve sleep quality.
+	- For users who need to monitor the status of the device 24 hours a day, it is recommended to keep the default light display mode to ensure that the status of the device is known at any time.
 
 ---

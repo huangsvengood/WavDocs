@@ -5,10 +5,8 @@
 </style>
 -->
 # Mode selection
----
-
-??? note "Click to see how to enter the Mode selection interface" 
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ Network ➡Mode selection
+--- 
+ More Settings  > Network > Mode selection
 	<div style="text-align: center;">
     <img class="boxshadow" src="/images/mode06.png">
 	</div>
@@ -30,21 +28,21 @@ When extending an existing network in AP mode, please make sure that the WAN por
 !!! note 
 	If you need to set up the device after successfully connecting to the superior in this mode, you need to connect to the Wi-Fi of the device and enter the setting page through __http://wavlogin.link/__.
 
-## __[DHCP](/Encyclopedia/dhcp/)__
+## __DHCP__
 <p class="text">
 If your network service provider provides you with the automatic allocation function, please choose this Internet access method.
 </p>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/mode03.png">
 </div>
-## __[PPPOE](/Encyclopedia/pppoe/)__
+## __PPPOE__
 <p class="text">
 If your network service provider provides you with a set of user names (accounts) and passwords, please choose this Internet access method.
 </p>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/mode04.png">
 </div>
-## __[Static IP](/Encyclopedia/static_ip/)__
+## __Static IP__
 <p class="text">
 If your network service provider provides you with a specific set of IP parameters, including IP address, subnet mask, gateway, DNS1, DNS2. Please choose this Internet access method.
 </p>
@@ -53,7 +51,7 @@ If your network service provider provides you with a specific set of IP paramete
 </div>
 !!! note
 	If you do not know how to select an Internet access mode, you only need to connect the upper-layer network cable to the WAN port. Then the device automatically checks the Internet access mode on this page.
-## __[Internet VLAN ID](/Encyclopedia/internet_vlan_id)__
+## __Internet VLAN ID__
 <p class="text">The Internet ID is used to identify the characteristics of network data. For specific settings, please consult your network operator's customer service personnel or operation and maintenance personnel.
 </p>
 ## __Cloud App__

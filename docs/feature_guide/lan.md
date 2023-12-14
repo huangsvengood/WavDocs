@@ -5,8 +5,7 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the LAN Settings interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ LAN Settings
+ More Settings > Network > LAN Settings
 	<div style="text-align: center;">
     <img class="boxshadow" src="/images/lan01.png">
 	</div>

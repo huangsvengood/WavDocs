@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ ALG
+More Settings > Advanced Settings > ALG
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/algadd.png">
+</div>
 <p class="text">
 Application Layer Gateway is used to manage and control application-specific communication traffic.
 </p>

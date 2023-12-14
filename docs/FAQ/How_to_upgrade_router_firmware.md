@@ -36,6 +36,9 @@ There are several steps for local upgrade :
 4 . Back up router configuration : Before upgrading the firmware, it is recommended to back up the current router configuration file to prevent configuration loss due to problems during the upgrade process.
 </p>
 <div style="text-align: center;">
+    <img class="boxshadow" src="/images/backadd.png">
+</div>
+<div style="text-align: center;">
     <img class="boxshadow" src="/images/backup.png">
 </div>
 <p class="text">
@@ -53,6 +56,9 @@ There are several steps for local upgrade :
 <p class="text">
 8 . Restore router configuration : If the router configuration is lost during the upgrade process, you can use the previously backed up configuration file to restore it.
 </p>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/backadd.png">
+</div>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/backup.png">
 </div>

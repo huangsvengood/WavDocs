@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
+More Settings  > System > Timing Reboot
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/time_zoneadd.png">
+</div>
 <p class="text">
 Setting the correct time zone in your router is very important as it affects router logging, network access control, scheduled tasks, and other time-related functions. If the router's time zone is set incorrectly, it can cause timestamp errors, affecting network management and security.
 </p>

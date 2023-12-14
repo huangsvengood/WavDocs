@@ -5,8 +5,7 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the Mesh Topology Settings interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Mesh Network ➡ Mesh Topology
+ More Settings > Mesh Network > Mesh Topology
 	<div style="text-align: center;">
 		<img class="boxshadow" src="/images/topo00.png">
 	</div>
