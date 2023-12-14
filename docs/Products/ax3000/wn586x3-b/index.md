@@ -6,6 +6,28 @@
     <img class="boxshadow" src="/images/586x3.png">
 </div>
  
+ 
+| SPECIFICATION |											   | 
+| ------------ | -------------------------------------------- |  
+| Ports         | 1 x10/100/1000Mbps WAN PORT ; 2 x10/100/1000Mbps LAN PORT  | 
+| Button	    | 1 x PAIR&Reset     | 
+| LED	        | 2x LAN, 1 x WAN, 1 x WiFi，1 x PWR，1 x SYS| 
+| Chipset		| MT7981B+MT7976C+MT7531AE			   |
+| Flash			| 128MB |
+| DDR3 RAM		| 256MB |
+| Standard		| IEEE 802.11b/g/n/a/ac/ax |
+| Speed | 802.11ax: 5GHz 2401Mbps and 2.4GHz 574Mbps ;  Compatible with 802.11a/b/g/n/ac Wi-Fi standard |
+| Antennas | 2 x 2.4G 5dBi Omni Directional Antennas / 2 x 5G 5dBi Omni Directional Antennas / 1 x 5G 5dBi Built-in omnidirectional antenna |
+| Power Supply | DC 12V/1A |
+| Rated Voltage/ requency  | input:100-240 Va.c. 50/60Hz |
+| Operating Temperature 	| 0ºC~40ºC |
+| Storage Temperature | -10~70℃ |
+
+
+
+ 
+ 
+ 
 ## First Time Setup
 All wavlink devices have a convenient and identical setup process. 
 !!! note ""

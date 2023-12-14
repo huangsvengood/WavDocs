@@ -134,4 +134,5 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - abbr
+  - tables
 
