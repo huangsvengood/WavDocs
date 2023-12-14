@@ -125,14 +125,15 @@ hide:
 	</div>
 </div>
 
+
 <div class="grid cards" markdown>
-
-- Router
-- Indoor Repeater
-- Outdoor AP
-- Cellular Router
-- Other
-
+ 
+ - __[Router](/Products/)__
+ - __[Indoor Repeater](/Products/#indoor-repeater)__
+ - __[Outdoor AP](/Products/#outdoor-ap)__
+ - __[Cellular Router](/Products/#cellular-router)__
+ - __[Other](/Products/#other)__
+ 
 </div>
 
 <div class="main">
@@ -148,32 +149,28 @@ hide:
 
 <div class="grid cards" markdown>
 
-- Feature
-- Tutorials
-- FAQ
-- Video Library
-- Community
+- __[Feature](/feature_guide/)__ 
+- __[Tutorials](/tutorials/)__
+- __[FAQ](/FAQ/)__
+- __[Video Library](/video_library/)__
+- __[Community](/community/)__
 
 </div>
-
-<div class="main">
-	<div>
-		<div class="productMenu en">
-			<h3>
-			Encyclopedia
-			<em class="underline"></em>
-			</h3>
-		</div>
-	</div>
-</div>
-
+<!--
+<a href="/Products">
 <div class="grid cards" markdown>
-
-- Wireless
-- Guest WiFi
-- FAQ
-- Video Library
-- Community
-
+ - __Router__
+ - __Indoor Repeater__
+ - __Outdoor AP__
+ - __Cellular Router__
+ - __Other__
 </div>
+</a>
 
+
+<a href="/Products">
+<div class="grid cards" markdown>
+ - __Router__
+</div>
+</a>
+-->
