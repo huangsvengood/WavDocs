@@ -72,6 +72,11 @@ VPN can enhance the security and privacy of home or business networks, providing
 - __[How to use WireGuard Server?](/feature_guide/wireguard_server/)__
 - __[How to set up VPN Client?](/feature_guide/vpnclient/)__
 - __[How to use ZeroTier?](/feature_guide/zerotier/)__
+
+## USB Management
+- __[How to use USB management function?](/feature_guide/usb/)__
+
+
 ## More
 - [Security Settings](/feature_guide/secure/)
 - [Remote Control](/feature_guide/remote_ctrl/)

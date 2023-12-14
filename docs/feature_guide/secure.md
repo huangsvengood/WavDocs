@@ -1,7 +1,6 @@
 
 ---
-??? note "Click to see how to enter the Security Settings interface"
-	<img src="/images/weizhi01.png" width="19" height="19">&nbsp;More Settings > Advanced Settings  > Security Settings
+More Settings > Advanced Settings  > Security Settings
 	<div style="text-align: center;">
     <img class="boxshadow" src="/images/security001.png">
 	</div>

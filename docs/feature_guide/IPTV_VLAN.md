@@ -1,11 +1,10 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-??? note "Click to see how to enter the IPTV/VLAN interface"
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ IPTV/VLAN
+
+More Settings > Advanced Settings > IPTV/VLAN
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/iptvadd.png">
+</div>
 ## __IPTV__
 <p class="text">
 By setting up IPTV, you can enjoy multimedia services on your IPTV TV while using the internet. You need to consult your IPTV service provider about selecting the IPTV mode and inputting the VLAN ID. Then you can set the corresponding LAN interface and connect the cable from your IPTV device to the corresponding LAN port on your router.

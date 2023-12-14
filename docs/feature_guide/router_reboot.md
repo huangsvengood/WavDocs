@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ More Settings  ➡ System
+More Settings  > System > Router Reboot/Logout
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/rebootadd.png">
+</div>
 ## __Router Reboot__
 <p class="text">
 When your router has a network failure, you can try to use the restart function to solve the problem. Sometimes, the router may have software errors or memory overflow problems, causing network instability. At this time, restarting the router can clear these problems and return the network to normal.

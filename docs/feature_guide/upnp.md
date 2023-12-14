@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ UPnP
+More Settings > Advanced Settings  > UPnP
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/upnpadd.png">
+</div>
 <p class="text">
 UPnP (Universal Plug and Play) is a networking protocol designed to make connections between devices simpler and more automated. 
 </p>

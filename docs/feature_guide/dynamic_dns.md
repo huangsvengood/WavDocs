@@ -1,11 +1,10 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-??? note "Click to see how to enter the Dynamic DNS interface"
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ Dynamic DNS
+
+More Settings > Advanced Settings > Dynamic DNS
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/dnsadd.png">
+</div>
 <p class="text">
 DDNS (Dynamic Domain Name System) is a function that maps a dynamic IP address to a fixed domain name. When DDNS is enabled, the router will bind your dynamic WAN IP with a fixed domain name, making it easier for you to connect the device remotely. To use this service, you need to sign up for DDNS Service.
 </p>

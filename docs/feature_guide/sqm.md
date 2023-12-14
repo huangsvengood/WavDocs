@@ -1,10 +1,9 @@
-<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
+
 ---
-<img src="/images/weizhi01.png" width="19" height="19">&nbsp;In the upper right corner of the admin page ➡ Advanced Settings  ➡ SQM QoS
+More Settings > Advanced Settings > SQM QoS
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/sqmadd.png">
+</div>
 <p class="text">
 After QOS is enabled, the router will improve the quality of service of the network based on the network priority of the application.
 </p>

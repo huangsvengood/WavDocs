@@ -1,6 +1,9 @@
 
 ---
 More Settings > Advanced Settings > Hardware NAT Settings
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/hardware00.png">
+</div>
 <p class="text">
 Hardware NAT (Network Address Translation) setting refers to using hardware acceleration in network devices to perform network address translation. 
 </p>

@@ -5,8 +5,7 @@
 </style>
 -->
 ---
-??? note "Click to see how to enter the IPv6 Settings interface"
-	<img src="/images/weizhi01.png" width="15" height="15">&nbsp;In the upper right corner of the admin page ➡ More Settings ➡ Network ➡ IPV6 Settings
+ More Settings > Network > IPV6 Settings
 	<div style="text-align: center;">
     <img class="boxshadow" src="/images/ipv600.png">
 	</div>

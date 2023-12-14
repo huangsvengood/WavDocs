@@ -2,7 +2,7 @@
 ---
 More Settings > System > Firmware Update
 <div style="text-align: center;">
-    <img class="boxshadow" src="/images/fiemware001.png">
+    <img class="boxshadow" src="/images/firm.png">
 </div>
 <p class="text">
 Regular router firmware upgrades can help you obtain the latest features and security patches, improve the performance and stability of the router, and fix possible vulnerabilities and security risks.
