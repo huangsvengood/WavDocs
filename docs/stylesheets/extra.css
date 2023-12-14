@@ -135,7 +135,10 @@ img.boxshadow {
     margin-top: 0
 }
 
-
+.table-center {
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 
