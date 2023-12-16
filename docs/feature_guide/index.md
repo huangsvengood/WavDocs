@@ -23,16 +23,18 @@ You can also click the following function and it will jump to the interface you 
 -  [x] __[IPV6](/feature_guide/ipv6/)__
 -  [x] __[Static IP](/feature_guide/static_ip/)__
 ## __Mesh Network__
--  [x] __[Mesh Table](/feature_guide/mesh_network/)__
+-  [x] __[How to establish a Mesh network](/feature_guide/mesh_network/)__
 -  [x] __[Mesh Topology](/feature_guide/mesh_topo/)__
 ## __Terminal__
--  [x] __[Online/Offline Terminal](/feature_guide/terminal/)__
+-  [x] __[Terminal Management](/feature_guide/terminal/)__
 ## __Parental control__
 -  [x] __[WiFi Scheduling](/feature_guide/parental_ctrl/)__
 -  [x] __[Web Block](/feature_guide/parental_ctrl/)__
 ## __VPN__
--  [x] __[openVPN Client/Server](/feature_guide/openVPN/)__
--  [x] __[WireGuard Client/Server](/feature_guide/wireguard/)__
+-  [x] __[openVPN Client](/feature_guide/openVPN/)__
+-  [x] __[openVPN Server](/feature_guide/openVPN_server/)__
+-  [x] __[WireGuard Client](/feature_guide/wireguard/)__
+-  [x] __[WireGuard Server](/feature_guide/wireguard_server/)__
 -  [x] __[VPN Client](/feature_guide/vpnclient/)__
 -  [x] __[ZeroTier](/feature_guide/zerotier/)__
 ## __Advanced Settings__
@@ -51,6 +53,7 @@ You can also click the following function and it will jump to the interface you 
 -  [x] __[ALG](/feature_guide/alg/)__
 -  [x] __[Custom DNS Server](/feature_guide/cutm_dns-server/)__
 -  [x] __[SQM QOS](/feature_guide/sqm/)__
+-  [x] __[USB Management](/feature_guide/usb/)__
 ## __More__
 -  [x] __[Time Zone](/feature_guide/time/)__
 -  [x] __[Led Control](/feature_guide/led_ctrl/)__
