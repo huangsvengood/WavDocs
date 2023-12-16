@@ -62,6 +62,9 @@ nav:
       - WireGuard Server: feature_guide/wireguard_server.md
       - VPN Client: feature_guide/vpnclient.md
       - ZeroTier: feature_guide/zerotier.md
+    - USB:
+      - USB DLNA: feature_guide/usbdlna.md
+      - USB Print Service: feature_guide/usbprint.md
     - Advanced Settings:
       - Security Settings: feature_guide/secure.md
       - Remote Control: feature_guide/remote_ctrl.md
@@ -77,7 +80,7 @@ nav:
       - ALG: feature_guide/alg.md
       - Custom DNS Server: feature_guide/cutm_dns-server.md
       - SQM QoS: feature_guide/sqm.md
-      - USB Management: feature_guide/usb.md
+      - AdGuard: feature_guide/adguard.md
     - More: 
       - Time Zone: feature_guide/time.md
       - Led Control: feature_guide/led_ctrl.md
@@ -136,4 +139,7 @@ markdown_extensions:
   - abbr
   - tables
   - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
