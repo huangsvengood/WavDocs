@@ -80,7 +80,7 @@ nav:
       - ALG: feature_guide/alg.md
       - Custom DNS Server: feature_guide/cutm_dns-server.md
       - SQM QoS: feature_guide/sqm.md
-      - AdGuard: feature_guide/adguard.md
+      - ADGuard: feature_guide/adguard.md
     - More: 
       - Time Zone: feature_guide/time.md
       - Led Control: feature_guide/led_ctrl.md
