@@ -9,7 +9,7 @@
 ## First Time Setup
 All wavlink devices have a convenient and identical setup process. 
 !!! note ""
-	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
+	For details __[click here for the first setup.](/FAQ/indoor_repeater_first_time_setup/)__
 
 It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 The package contains the following contents:
