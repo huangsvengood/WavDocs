@@ -20,19 +20,14 @@ The package contains the following contents:
 
 
 ## Network
-Network Settings You can select __different Internet access modes__. You can select different Internet access modes according to your requirements.
+Network Settings You can select __different modes__. You can select different modes according to your requirements.
 
-- [Mode Selection](/feature_guide/pattern_selection/)
-- [WAN](/feature_guide/wan/)
+- [Mode Selection](/FAQ/indoor_repeater_first_time_setup/#section4)
 - [LAN](/feature_guide/lan/)
-- [IPv6](/feature_guide/ipv6/)
-- [Ststic IP Binding](/feature_guide/static_ip/)
-!!! note ""
-	__[Click here to learn more about the network configuration.](/feature_guide/pattern_selection/)__
 
 
 ## Wireless
-The wireless management function helps users optimize and manage wireless networks and improve the performance and stability of wireless networks by providing functions such as __channel selection__, __guest WiFi__, __dual-band integration__, and __Wi-Fi security__ settings.
+The wireless management function helps users optimize and manage wireless networks and improve the performance and stability of wireless networks by providing functions such as __channel selection__ and  __dual-band integration__.
 
 !!! note ""
 	__[Click here to learn more about the wireless configuration.](/feature_guide/wireless/)__
