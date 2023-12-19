@@ -1,7 +1,7 @@
 
 Here is the first-time wizard for Indoor Repeater. You can refer to this wizard to complete the initial settings of your Indoor Repeater.
 
-Every product requires initialization settings before use. Before initialization settings, we need to power on the device. After powering on, you need to connect the device. The different connection methods are listed below. You can choose any one of them and follow the steps to complete the connection.
+Every product requires initialization settings before use. Before initialization settings, we need to __power on the device__. After powering on, you need to connect the device. The different connection methods are listed below. You can choose any one of them and follow the steps to complete the connection.
 
 !!! note ""
 	=== "WavRouter APP(Phone/Tab)"
@@ -61,7 +61,7 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/app025.png">
 		</div>
 		
-		6 .  Click "__Connect__" and it will automatically jump to the WiFi connection interface. You only need to __correctly select your device WiFi__ and __connect__. Like the example below.__(The WiFi name can be found in the user manual.)__
+		6 .  Click "__Connect__" and it will automatically jump to the WiFi connection interface. You only need to __correctly select your device WiFi__ and __connect__. Like the example below.__(The WiFi name can be found in the user manual or the product bottom label.)__
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app007.png">
@@ -69,7 +69,15 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor001.png">
 		</div>	
-		
+		!!! question "Default WiFi name"
+			The default WiFi name can be found in the user manual or the product bottom label.
+						
+			2.4G SSID: WAVLINK-AX_XXXX
+			
+			5G SSID: WAVLINK-AX_5G_XXXX
+						
+			"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.
+
 		7 . After connection, it will __automatically jump__ to the initialization configuration interface.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor002.png">
@@ -244,7 +252,7 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/indoor009.png">
 		</div>
 		
-		3 . You can __choose to set a new SSID and password for the WiFi of this device__, __or you can keep the password consistent with the previous WiFi (Superior Network)__. It is recommended that you use a strong password.		
+		3 . You can __choose to set a new SSID and password for the WiFi of this device__, __or you can keep the password consistent with the previous WiFi (Superior Network)__. (It is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " __@, ?, * __", etc.	)	
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor010.png">
@@ -277,12 +285,12 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/indoor015.png">
 		</div>
 	=== "AP Mode"
-		__AP Mode__  :  Expand the existing network wired, make sure that the device WAN port is connected to the network through the network cable.
+		__AP Mode__  :  Expand the existing network wired, __make sure that the device WAN port is connected to the network through the network cable__.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoorap.png">
 		</div>		
 		
-		1 . After switching to AP Mode, the system automatically turns on the DHCP service and sets the SSID and password of your WiFi. Click Save.
+		1 . After switching to AP Mode, the system automatically turns on the DHCP service and sets the SSID and password of your WiFi. Click __Save__.(It is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " __@, ?, *__ ", etc.	)	
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor016.png">
@@ -309,7 +317,7 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/indoormesh.png">
 		</div>
 		
-		1 . After switching to Mesh Router Mode, the __Wan Type__ defaults to __DHCP__ (if you need to use PPPOE and Static IP, you need to set it manually), and set the SSID and password of your WiFi. Click __Save__.
+		1 . After switching to Mesh Router Mode, the __Wan Type__ defaults to __DHCP__ (if you need to use PPPOE and Static IP, you need to set it manually), and set the SSID and password of your WiFi. Click __Save__.(It is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " __@, ?, *__ ", etc.)		
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor017.png">
