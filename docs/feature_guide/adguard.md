@@ -105,9 +105,12 @@ AdGuard Home also provides advanced features such as parental controls, statisti
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/adguard034.png">
 </div>
-17 . After the addition is successful, you can see that the advertisement is blocked, as shown below.
+17 . After the addition is successful, you can see that the advertisement is blocked.Even if you click in, you can't access it,as shown below.
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/adguard022.png">
+</div>
+<div style="text-align: center;">
+	<img class="boxshadow" src="/images/adguard035.png">
 </div>
 
 ADGuard also has many other functions, such as __[prohibiting devices from accessing the Internet](/feature_guide/adguard/#disable-devices-from-accessing-the-internet)__, __[prohibiting access to designated websites](/feature_guide/adguard/#block-access-to-specified-websites)__,__[real-time monitoring](/feature_guide/adguard/#real-time-monitoring)__, etc.

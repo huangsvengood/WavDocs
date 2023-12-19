@@ -3,7 +3,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 !!! tip 
 	Nouns in bold and bright colors are clickable links. Click to jump to the detailed explanation page of the noun.For example,"__[Internet VLAN ID](/Encyclopedia/vlan_id/)__".
 !!! example ""
-	=== "==WavRouter APP=="
+	=== "WavRouter APP"
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone.png">
 		</div>	
@@ -165,7 +165,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/app222.png">
 		</div>	
 
-	=== "==Windows=="
+	=== "Windows"
 		1 . Tools required : Desktop/laptop, two Ethernet cables, router, Ethernet converter
 		
 		2 . Connection methods : __wireless connection__ and __wired connection__.Whether it is a wired connection or a wireless connection, you need to __power on the device and connect the Ethernet cable to the wan port of the router.__ As shown below.
@@ -345,7 +345,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		</div>
 		!!! tip "Forgot password solution"
 			Please press and hold the reset button on the router for __more than 6 seconds__. After the router reset, you can log in with the default password.
-	=== "{==MacOS==}"
+	=== "MacOS"
 		1 . Tools required: Wavlink router, Apple computer, network cable, Ethernet converter, Ethernet cable.
 		
 		2 . Connection methods: __wireless connection__ and __wired connection__.Whether it is a wired connection or a wireless connection, you need to __power on the device and connect the Ethernet cable to the wan port of the router.__ As shown below.
@@ -508,7 +508,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		</div>
 		!!! tip "Forgot password solution"
 			Please press and hold the reset button on the router for more than 6 seconds. After the router reset, you can log in with the default password.
-	=== "{==Android==}"
+	=== "Android"
 		Tools needed : mobile phone, router.
 		
 		__New devices or reset devices need to log in to the administrator interface for initialization settings.__
@@ -641,7 +641,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		</div>	
 		!!! tip "Forgot password solution"
 			Please press and hold the reset button on the router for more than 6 seconds. After the router reset, you can log in with the default password.
-	=== "{==iOS==}"
+	=== "iOS"
 		Tools needed : mobile phone, router.
 		
 		__New devices or reset devices need to log in to the administrator interface for initialization settings.__
