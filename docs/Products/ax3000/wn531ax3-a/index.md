@@ -50,7 +50,7 @@ Network Settings You can select __different Internet access modes__. You can sel
 - [WAN](/feature_guide/wan/)
 - [LAN](/feature_guide/lan/)
 - [IPv6](/feature_guide/ipv6/)
-- [Ststic IP Binding](/feature_guide/static_ip/)
+- [Static IP Binding](/feature_guide/static_ip/)
 !!! note ""
 	__[Click here to learn more about the network configuration.](/feature_guide/pattern_selection/)__
 
