@@ -310,7 +310,7 @@ Every product requires initialization settings before use. Before initialization
 				
 				1 . __Power on other Mesh routers__, and other routers must be in __reset state__ (press the reset button for more than six seconds to reset).
 				
-				2 . Press and hold the __"WPS"__ button of the main router for 2s. After pressing, the indicator light of the Mesh route flashes blue slowly.
+				2 . Press and hold the __"WPS"__ button of the main router for __2s__. After pressing, the indicator light of the Mesh route __flashes blue slowly__.
 				
 				3 . Within 2 minutes, press and hold the __"WPS"__ button of the sub-router for __two seconds__, and after waiting __40-120 seconds__, they will complete pairing independently. (When the device indicator light is __solid blue__, it means pairing is successful.)
 				
