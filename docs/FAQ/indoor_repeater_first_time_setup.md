@@ -315,7 +315,7 @@ Every product requires initialization settings before use. Before initialization
 				3 . Within 2 minutes, press and hold the __"WPS"__ button of the sub-router for __two seconds__, and after waiting __40-120 seconds__, they will complete pairing independently. (When the device indicator light is __solid blue__, it means pairing is successful.)
 				
 				<div style="text-align: center;">
-				<img alt="wan type" class="boxshadow" src="/images/mesh006.png">
+				<img class="boxshadow" src="/images/indoormeshtopo.png">
 				</div>
 				
 			=== "Add WEB interface to realize pairing"
