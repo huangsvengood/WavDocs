@@ -4,68 +4,13 @@ Here is the first-time wizard for Indoor Repeater. You can refer to this wizard 
 Every product requires initialization settings before use. Before initialization settings, we need to __power on the device__. After powering on, you need to connect the device. The different connection methods are listed below. You can choose any one of them and follow the steps to complete the connection.
 
 !!! note ""
-	=== "WavRouter APP(Phone/Tab)"
+	=== "Phone/Tab"
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoorphone.png">
 		</div>
 		
-		1 . Scan the QR code on the user manual and __download the WavRouter APP__.
 		
-		2 . After the download is completed, click to __open the WavRouter APP__.
-		
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app001.png">
-		</div>	
-		
-		3 . Click this icon &nbsp;<img class="boxshadow" src="/images/app111.png"> &nbsp;in the upper left corner to open the extension bar, and click __"Login/Registration"__ to enter the login interface.
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app112.png">
-		</div>	
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app002.png">
-		</div>	
-		
-		4 . Click "__Register__" to register a user. There are two ways to register a user. You can choose one of the following to register.
-		!!! note ""
-			=== "Mobile"
-				!!! tip ""
-					Tips : If you have an account, you can click to log in directly.
-				
-				1 . Fill in __your mobile phone number__, click __Get Verification Code__.
-				
-				2 . Fill in the __verification code__ received on your mobile phone in the Verification Code line and __set a login password.__ (it is recommended to use a password with __numbers, uppercase and lowercase letters, and special characters__).
-
-				
-				<div style="text-align: center;">
-				<img class="boxshadow" src="/images/app004.png">
-				</div>	
-
-			=== "E-mail"
-				!!! tip ""
-					Tips : If you have an account, you can click to log in directly.
-	
-				1 . Fill in __your email__, click __Get Verification Code__, 
-				
-				2 . Fill in the __verification code__ received in your email in the Verification Code line and __set a login password__ (it is recommended to use a password with __numbers, uppercase and lowercase letters, and special characters__). 
-				
-				<div style="text-align: center;">
-				<img class="boxshadow" src="/images/app005.png">
-				</div>	
-				
-		5 . After the registration is completed, __log in as the user you just registered__ and click this icon <img class="boxshadow" src="/images/app113.png"> to __return to the main interface__ (as shown below).
-		
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app026.png">
-		</div>
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app025.png">
-		</div>
-		
-		6 .  Click "__Connect__" and it will automatically jump to the WiFi connection interface. You only need to __correctly select your device WiFi__ and __connect__. Like the example below.__(The WiFi name can be found in the user manual or the product bottom label.)__
-		
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/app007.png">
-		</div>	
+		1 .  Click Connect and it will automatically jump to the WiFi connection interface. You only need to __correctly select your device WiFi__ and __connect__. Like the example below.__(The WiFi name can be found in the user manual or the product bottom label.)__
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor001.png">
 		</div>	
@@ -78,24 +23,24 @@ Every product requires initialization settings before use. Before initialization
 						
 			"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.
 
-		7 . After connection, it will __automatically jump__ to the initialization configuration interface.
+		2 . After connection, it will __automatically jump__ to the initialization configuration interface.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor002.png">
 		</div>	
 		
-		8 . Click __"Begin configuration"__ to start the initial configuration of the router.Select the __country and time zone__.
+		3 . Click __"Begin configuration"__ to start the initial configuration of the router.Select the __country and time zone__.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor003.png">
 		</div>	
 		
-		9 . Select a mode for the device. __The default is Repeater Mode__. If you want to choose other modes, please wait __31s__. The following is a list of setting methods for different modes. You can choose any mode you want.
+		4 . Select a mode for the device. __The default is Repeater Mode__. If you want to choose other modes, please wait __31s__. The following is a list of setting methods for different modes. You can choose any mode you want.
 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor004.png">
 		</div>	
 		
-		10 . There are three modes for you to choose from. The Mesh Extender Mode requires no configuration. The device is equivalent to the Mesh Extender Mode in the reset state.
+		5 . There are three modes for you to choose from. The Mesh Extender Mode requires no configuration. The device is equivalent to the Mesh Extender Mode in the reset state.
 		<div style="text-align: center;">
 			<img class="boxshadow" src="/images/indoor024.png">
 		</div>	
@@ -303,7 +248,21 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/indoor025.png">
 		</div>
 		
-		3 . If you want to change the device mode, you can go to __Advanced > Mode Selection__ and select the mode you want to change.
+		3 . After the initial configuration is refreshed, you need to log in to the management interface again and enter the password you just set to log in.
+		
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/indoor012.png">
+		</div>
+		
+		4 . After successful login, you can see the following interface.
+		
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/indoor013.png">
+		</div>
+	
+		
+		
+		5 . If you want to change the device mode, you can go to __Advanced > Mode Selection__ and select the mode you want to change.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor026.png">
@@ -311,13 +270,15 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor015.png">
 		</div>
-	=== "Mesh Router Mode"
-		__Mesh Router Mode__  :  Converts a network from a network provider's wired network to a Wi-Fi signal for wireless and wired networking. This mode also supports Mesh networking, which can be set up to pair subroutes to form a networking.
+	=== "Mesh Mode"
+		__Mesh Mode__  :  Converts a network from a network provider's wired network to a Wi-Fi signal for wireless and wired networking. This mode also supports Mesh networking, which can be set up to pair subroutes to form a networking.
 
 	
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoormesh.png">
 		</div>
+		!!! danger ""
+			__The following are the steps to configure the main route. The sub-route only needs to be in reset state.__
 		
 		1 . After switching to Mesh Router Mode, the __Wan Type__ defaults to __DHCP__ (if you need to use PPPOE and Static IP, you need to set it manually), and set the SSID and password of your WiFi. Click __Save__.(It is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " __@, ?, *__ ", etc.)		
 		
@@ -330,8 +291,103 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor025.png">
 		</div>
+		
+		3 . After the initial configuration is refreshed, you need to log in to the management interface again and enter the password you just set to log in.
+		
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/indoor012.png">
+		</div>
+		
+		4 . After successful login, you can see the following interface.
+		
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/indoor013.png">
+		</div>
 
-		3 . If you want to change the device mode, you can go to __Advanced > Mode Selection__ and select the mode you want to change.
+		5 . Mesh pairing. There are two ways to perform mesh pairing. It is recommended that you use the first method for pairing.
+		!!! note ""
+			=== "Mesh button for pairing (highly recommended)"
+				
+				1 . __Power on other Mesh routers__, and other routers must be in __reset state__ (press the reset button for more than six seconds to reset).
+				
+				2 . Press and hold the __"WPS"__ button of the main router for 2s. After pressing, the indicator light of the Mesh route flashes blue slowly.
+				
+				3 . Within 2 minutes, press and hold the __"WPS"__ button of the sub-router for __two seconds__, and after waiting __40-120 seconds__, they will complete pairing independently. (When the device indicator light is __solid blue__, it means pairing is successful.)
+				
+				<div style="text-align: center;">
+				<img alt="wan type" class="boxshadow" src="/images/mesh006.png">
+				</div>
+				
+			=== "Add WEB interface to realize pairing"
+				1 . Enter __" Advanced > Mesh Network "__.							
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor027.png">
+				</div>
+			
+				2 . Click on “__Add__” and then follow the prompts on the screen.
+
+
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor028.png">
+				</div>
+
+				3 . After ensuring that other Mesh nodes are placed correctly and the __master node network is connected__, click "__Next__" on this page. If the Mesh node is already in use, please __reset__ it.
+
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor029.png">
+				</div>
+
+				4 . Make sure that the Mesh node has been powered on. After powering on, __press and hold the WPS button of the mesh device for 2 seconds__.
+
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor030.png">
+				</div>
+
+				5 . Click "__Start scanning__" and wait for the scanning results.
+
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor031.png">
+				</div>
+
+
+				<p class="text">
+				6 . If the scan is successful, device information will appear. Select the scanned device to add it.
+				</p>
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor033.png">
+				</div>
+
+				??? warning "Scan node failed"
+					If no available node routes are scanned, check the following points:
+					
+					- Check whether the Mesh node __presses the pairing button__. After pressing the pairing button, the indicator light of the Mesh node will flash blue slowly.
+					
+					- Check whether the Mesh node has been used. If it has been used, please __reset__ it.
+					
+					- If none of the above problems appear, please click __Rescan__.
+					- After checking, add the device again.
+					
+					<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor032.png">
+					</div>
+
+
+				7 . Click Refresh after prompting that the addition is successful and wait for about __two minutes__.
+
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor034.png">
+				</div>
+
+				8 . After refreshing, you can view the information of the new device on the add page.If you need to view __the Mesh Topology__, you can click __"Mesh Topology"__ in the upper right corner. If you want to __delete the Extender__, you can also click the __delete option__. As shown below.
+
+				<div style="text-align: center;">
+					<img class="boxshadow" src="/images/indoor035.png">
+				</div>
+				!!! tip
+					A Mesh router device supports up to __7 (including existing device mesh devices)__.
+
+				
+		6 . If you want to change the device mode, you can go to __Advanced > Mode Selection__ and select the mode you want to change.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor026.png">
