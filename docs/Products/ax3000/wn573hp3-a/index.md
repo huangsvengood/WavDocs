@@ -3,11 +3,6 @@ The AX3000 HighPower Wi-Fi AP/Repeater is mainly used for providing free Wi-Fi s
 The AP/Repeater simultaneously supports 2.4G and 5G wireless network connection, and it can supports 2.4G and 5G transmission speeds of up to 3000Mbps.Built-in directional antenna provides better wireless performance, transmission rate, stability technology, using its channel selection function to automatically avoid channel conflicts.
 
 
-## First Time Setup
-All wavlink devices have a convenient and identical setup process. 
-!!! note ""
-	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
-
 It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 The package contains the following contents:
 
@@ -22,6 +17,14 @@ The package contains the following contents:
 - 1 x PoE Converter
 - 1 x Ethernet Cable
 - Several Screws
+
+
+
+## First Time Setup
+All wavlink devices have a convenient and identical setup process. 
+!!! note ""
+	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
+
 
 
 ## Network

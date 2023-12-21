@@ -25,13 +25,6 @@ The AX6000 Router provides one 2.5G high-speed wired network port, which can be 
 | Storage Temperature | -10~70℃ |
 | Unit Dimensions | 235mm  x235 mm x 40mm (L x W x H) |
 
-
-
-## First Time Setup
-All wavlink devices have a convenient and identical setup process. 
-!!! note ""
-	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
-
 It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 The package contains the following contents:
 
@@ -40,6 +33,13 @@ The package contains the following contents:
 - 1 x RJ-45 Networking Cable  
 - 1 x Power  Adapter 
 - 1 x Quick Installation
+
+
+## First Time Setup
+All wavlink devices have a convenient and identical setup process. 
+!!! note ""
+	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
+
 
 
 ## Network

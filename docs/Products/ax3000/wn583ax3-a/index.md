@@ -6,17 +6,20 @@
     <img class="boxshadow" src="/images/583ax3.png">
 </div>
  
-## First Time Setup
-All wavlink devices have a convenient and identical setup process. 
-!!! note ""
-	For details __[click here for the first setup.](/FAQ/indoor_repeater_first_time_setup/)__
-
-It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
+ It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 The package contains the following contents:
 
 - 1 x WiFi AP/Repeater
 - 1 x RJ-45 Networking Cable
 - 1 x  Quick Installation
+ 
+ 
+## First Time Setup
+All wavlink devices have a convenient and identical setup process. 
+!!! note ""
+	For details __[click here for the first setup.](/FAQ/indoor_repeater_first_time_setup/)__
+
+
 
 
 ## Network

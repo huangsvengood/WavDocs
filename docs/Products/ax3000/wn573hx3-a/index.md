@@ -7,10 +7,6 @@ The AP/Repeater simultaneously supports 2.4G and 5G wireless network connection,
     <img class="boxshadow" src="/images/573hp3.png">
 </div>
 
-## First Time Setup
-All wavlink devices have a convenient and identical setup process. 
-!!! note ""
-	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
 
 It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 The package contains the following contents:
@@ -24,6 +20,13 @@ The package contains the following contents:
 - 1 x Ethernet Cable
 - 1 x Quick Installation                                                  
 - Several screws
+
+## First Time Setup
+All wavlink devices have a convenient and identical setup process. 
+!!! note ""
+	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
+
+
 
 ## Network
 Network Settings You can select __different Internet access modes__. You can select different Internet access modes according to your requirements.
