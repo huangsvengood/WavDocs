@@ -3,7 +3,7 @@ hide:
   - navigation
   - toc
 ---
- <style>
+<style>
         .banner {
             padding: 40px 5% 40px;
             background-size: 100% auto;
@@ -104,96 +104,135 @@ hide:
 
 		
     </style>
+	
+
 <div id="mainContainer">
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>WAVLINK Info-Center</h1>
-				<p>Convenient access to all the device information you need</p>
+				<h1>Firmware Center</h1>
+				<p>Download firmware for your WAVLINK devices.Search in the upper right corner or swipe down to find by type and model.</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+<style>
+    .red-text {
+      color: red;
+    }
+    
+    .blue-text {
+      color: #1D428A;
+	  #font-weight: bold;
+	  font-size: 25px;
+	  text-align: center;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+	  border: none;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+      
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    th {
+      background-color: #1D428A;
+      color: white;
+    }
+  </style>
 <div class="main">
 	<div>
 		<div class="productMenu en">
 			<h3>
-			Explore by Products
+			<p class="blue-text">Router</p>
 			<em class="underline"></em>
 			</h3>
 		</div>
 	</div>
 </div>
 
-
-<div class="grid cards" markdown>
- 
- - __[Router](/Products/)__
- - __[Indoor Repeater](/Products/#indoor-repeater)__
- - __[Outdoor AP](/Products/#outdoor-ap)__
- - __[Cellular Router](/Products/#cellular-router)__
- - __[Other](/Products/#other)__
- 
-</div>
+|              |	     |			 |			|		   |    |    |   |    |
+| ------------ | ------- | --------- | ---------| ------- | ---- | ---- | --- | ---- |
+|  __^^[WS-WN531AX3-A]()^^__  |  __^^[WS-WN536AX6-A]()^^__    | __^^[WS-WN586X3-B]()^^__  |  __^^[WS-WN591AX3-A]()^^__  |   __^^[WS-WN592AX6-A]()^^__ |
 
 <div class="main">
 	<div>
 		<div class="productMenu en">
 			<h3>
-			Documents
+			<p class="blue-text">Indoor Repeater</p>
 			<em class="underline"></em>
 			</h3>
 		</div>
 	</div>
 </div>
 
-<div class="grid cards" markdown>
-- __[Firmware](/Firmware/)__
-- __[Feature](/feature_guide/)__ 
-- __[Tutorials](/tutorials/)__
-- __[FAQ](/FAQ/)__
-- __[Video Library](/video_library/)__
-- __[Community](/community/)__
+|              |	     |	  |   |   |   |   |   |   |
+| ------------ | ------- | --- | --- | --- | --- | --- | --- | --- |
+| __^^[WS-WN583AX3-A]()^^__	    |     |  |     |  |     |  |     | |
 
-</div>
-
-
-
-<!--
-<div id="mainContainer">
-	<div class="bannerContainer">
-		
-			<div class="search_infoCenter">
-				<h1>Firmware</h1>
-			</div>
-		
+<div class="main">
+	<div>
+		<div class="productMenu en">
+			<h3>
+			<p class="blue-text">Outdoor AP</p>
+			<em class="underline"></em>
+			</h3>
+		</div>
 	</div>
 </div>
 
+|              |	     |				 |			|		   |    |    |   |    |
+| ------------ | ------- | --------- | ---------| ------- | ---- | ---- | --- | ---- |
+| __^^[WS-WN573HX3-A]()^^__		| __^^[WS-WN573HP3-A]()^^__ | |     |  |     |  |     | |
 
 
-
-<div style="text-align:center">
-<a href="/Firmware/" target="_blank" class="md-button">Start</a>
+<div class="main">
+	<div>
+		<div class="productMenu en">
+			<h3>
+			<p class="blue-text">Cellular Router</p>
+			<em class="underline"></em>
+			</h3>
+		</div>
+	</div>
 </div>
 
--->
-
-<!--
-<a href="/Products">
-<div class="grid cards" markdown>
- - __Router__
- - __Indoor Repeater__
- - __Outdoor AP__
- - __Cellular Router__
- - __Other__
-</div>
-</a>
+|              |	     |				 |			|		   |    |    |   |    |
+| ------------ | ------- | --------- | ---------| ------- | ---- | ---- | --- | ---- |
+| __^^[WS-WNF100X3NR-A]()^^__		|  |  |     |  |     |  |     | |
 
 
-<a href="/Products">
-<div class="grid cards" markdown>
- - __Router__
-</div>
-</a>
--->
+
+
+
+
+
+

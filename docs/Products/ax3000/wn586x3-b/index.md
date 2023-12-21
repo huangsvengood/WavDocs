@@ -24,7 +24,13 @@
 | Storage Temperature | -10~70℃ |
 
 
+It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
+The package contains the following contents:
 
+- 1 x Wi-Fi Router
+- 1 x RJ-45 Networking Cable
+- 1 x Quick Installation
+- 1 x Power Adapters
  
  
  
@@ -33,13 +39,7 @@ All wavlink devices have a convenient and identical setup process.
 !!! note ""
 	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
 
-It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
-The package contains the following contents:
 
-- 1 x Wi-Fi Router
-- 1 x RJ-45 Networking Cable
-- 1 x Quick Installation
-- 1 x Power Adapters
 
 ## Network
 Network Settings You can select __different Internet access modes__. You can select different Internet access modes according to your requirements.

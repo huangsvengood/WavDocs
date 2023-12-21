@@ -91,7 +91,7 @@ nav:
       - Timing Reboot: feature_guide/timing_reboot.md
       - Router Reboot/Logout: feature_guide/router_reboot.md
   - Video Library: video_library/index.md
-  - Encyclopedia: Encyclopedia/index.md
+  - Firmware: Firmware/index.md
   - Community: community/index.md
 
 theme: 
@@ -143,6 +143,20 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-plugins:
-  - search
 
+#plugins:
+#  - blog
+#  - search:
+#      separator: '[\s\u200b\-]'
+#      jieba_dict: dict.txt
+extra_javascript:
+  - js/extra.js
+
+#extra:
+ # alternate:
+  #  - name: English
+   #   link: /en/ 
+    #  lang: en
+    #- name: Deutsch
+     # link: /de/
+     # lang: de

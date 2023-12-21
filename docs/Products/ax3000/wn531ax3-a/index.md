@@ -25,14 +25,6 @@
 | Unit Dimensions | 200mm  x 200mm x 30mm (L x W x H) |
 
 
-
-
-
-## First Time Setup
-All wavlink devices have a convenient and identical setup process. 
-!!! note ""
-	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
-
 It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 The package contains the following contents:
 
@@ -41,6 +33,14 @@ The package contains the following contents:
 - 1 x RJ-45 Networking Cable
 - 1 x DC 12V/1.5A Power Adapter 
 - 1 x Quick Installation
+
+
+
+## First Time Setup
+All wavlink devices have a convenient and identical setup process. 
+!!! note ""
+	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
+
 
 
 ## Network
