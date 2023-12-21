@@ -1,4 +1,4 @@
-WINSTARS WS-WN592AX6 adopts Wi-Fi 6 (802.11ax) technology for faster speeds, greater capacity and reduced network congestion compared to the previous generation. It achieves a total networking speed of about 4804 Mbps on the 5GHz band and 1148 Mbps on the 2.4GHz band,which is super network speed that suffice almost any data-heavy activities including video conference calls, 8K movie watching, online gaming, etc.
+WS-WN592AX6 adopts Wi-Fi 6 (802.11ax) technology for faster speeds, greater capacity and reduced network congestion compared to the previous generation. It achieves a total networking speed of about 4804 Mbps on the 5GHz band and 1148 Mbps on the 2.4GHz band,which is super network speed that suffice almost any data-heavy activities including video conference calls, 8K movie watching, online gaming, etc.
 
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/592AX3.png">
