@@ -28,6 +28,7 @@ nav:
     - Overview: FAQ/index.md
     - Router-First Time Setup: FAQ/first_time_setup.md
     - Indoor Repeater-First Time Setup: FAQ/indoor_repeater_first_time_setup.md
+    - Outdoor AP-First Time Setup: FAQ/outdoor_ap_first_time_setup.md
  #   - How to Connect to WiFi?: FAQ/How_to_Connect_to_WiFi.md
  #   - What is the use of offline terminal management?: FAQ/What_is_the_use_of_offline_terminal_management.md
     - How to upgrade router firmware?: FAQ/How_to_upgrade_router_firmware.md
@@ -82,6 +83,7 @@ nav:
       - Custom DNS Server: feature_guide/cutm_dns-server.md
       - SQM QoS: feature_guide/sqm.md
       - ADGuard: feature_guide/adguard.md
+      - Singal Adjustment: feature_guide/signal_adjustment.md
     - More: 
       - Time Zone: feature_guide/time.md
       - Led Control: feature_guide/led_ctrl.md

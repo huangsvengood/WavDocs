@@ -6,6 +6,23 @@
     <img class="boxshadow" src="/images/583ax3.png">
 </div>
  
+| SPECIFICATION |											   | 
+| ------------ | -------------------------------------------- |  
+| Ports         | 1 x10/100/1000Mbps WAN\LAN PORT  | 
+| Button	    | 1 x Power On/Off, 1 x smart night light , 1 x Pair Button&wps,1 x Reset     | 
+| LED	        | 2 x LAN, 1 x Status,1 x smart night light   | 
+| Chipset		| MT7981B+MT7976C			   |
+| Flash			| 128MB |
+| SDRAM			| 2Gb |
+| Standard		| IEEE 802.11b/g/n/a/ac/ax  |
+| Speed | 802.11ax: 5GHz 2401Mbps and 2.4GHz 574Mbps &nbsp;&nbsp;Compatible with 802.11a/b/g/n/ac Wi-Fi standards |
+| Antennas | 4x5dBi Omni Directional Antennas |
+| Power Supply | DC5V 2.5A |
+| Rated Voltage/ requency | input:100-240 Va.c. 50/60Hz |
+| Operating Temperature | 0ºC~40ºC |
+| Storage Temperature | -10~70℃ |
+| Unit Dimensions | 159mm  x 73.6mm x 43mm (L x W x H) |
+ 
  It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
 The package contains the following contents:
 
@@ -47,26 +64,6 @@ Terminal devices refer to end-user devices connected to the router, such as __co
 
 !!! note ""
 	Click here to learn __[how to manage terminal devices](/feature_guide/terminal/)__.
-
-
-## Parental control
-The parental control feature can help parents establish a reasonable __home network management mechanism__, protect their children's safety on the Internet, cultivate __healthy Internet habits__, and promote their healthy growth.
-
-- [Wi-Fi Scheduling](/feature_guide/parental_wifi)
-- [Web Block](/feature_guide/parental_ctrl)
-!!! note ""	
-	Click to learn __[how to better use parental control](/feature_guide/parental_wifi/)__.
-
-## VPN
-VPN can enhance the security and privacy of home or business networks, providing __remote access__, __data encryption__, __Wi-Fi security__ and other functions, allowing users to use the Internet more freely and safely.
-	
-- __[How to use OpenVPN Client?](/feature_guide/openVPN/)__
-- __[How to use OpenVPN Server?](/feature_guide/openVPN_server/)__
-- __[How to use WireGuard Client?](/feature_guide/wireguard/)__
-- __[How to use WireGuard Server?](/feature_guide/wireguard_server/)__
-- __[How to set up VPN Client?](/feature_guide/vpnclient/)__
-- __[How to use ZeroTier?](/feature_guide/zerotier/)__
-
 
 
 ## More
