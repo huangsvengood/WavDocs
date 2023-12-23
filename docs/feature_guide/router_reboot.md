@@ -1,9 +1,22 @@
 
 ---
-More Settings  > System > Router Reboot/Logout
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/rebootadd.png">
-</div>
+Different products have different entry methods, please check according to your product type.
+!!! note ""
+	=== "Router"
+		More Settings  > System > Router Reboot/Logout
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/rebootadd.png">
+		</div>
+	=== "Indoor Repeater"
+		Advanced > Router Reboot/Logout
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/reboot001.png">
+		</div>		
+	=== "Outedoor AP"
+		Advanced > Router Reboot/Logout
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/reboot001.png">
+		</div>
 ## __Router Reboot__
 <p class="text">
 When your router has a network failure, you can try to use the restart function to solve the problem. Sometimes, the router may have software errors or memory overflow problems, causing network instability. At this time, restarting the router can clear these problems and return the network to normal.

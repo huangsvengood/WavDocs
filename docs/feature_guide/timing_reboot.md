@@ -1,10 +1,28 @@
 
 ---
-More Settings  > System > Timing reboot
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/timingadd.png">
-</div>
-
+Different products have different entry methods, please check according to your product type.
+!!! note ""
+	=== "Router"
+		More Settings  > System > Timing reboot
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/timingadd.png">
+		</div>
+	=== "Indoor Repeater"
+		Advanced > Timing Reboot
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/timing.png">
+		</div>		
+	=== "Outedoor AP"
+		Advanced > Timing Reboot
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/timing.png">
+		</div>	
 <p class="text">
 Automatic rebooting will help you clear unnecessary data in the router and automatically select the best wireless channel. 
 </p>

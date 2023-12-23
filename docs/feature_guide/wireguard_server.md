@@ -1,3 +1,5 @@
+!!! note ""
+	__This feature is currently only available to routers.__
 ## __what is wireguard?__
 WireGuard is an open source virtual private network (VPN) protocol designed to provide high performance, low latency, and easy-to-use secure connections. It is designed to be a modern and fast VPN solution with a small code base that is easy to audit and deploy.
 

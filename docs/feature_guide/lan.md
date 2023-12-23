@@ -5,10 +5,29 @@
 </style>
 -->
 ---
- More Settings > Network > LAN Settings
-	<div style="text-align: center;">
-    <img class="boxshadow" src="/images/lan01.png">
-	</div>
+Different products have different entry methods, please check according to your product type.
+!!! note ""
+	=== "Router"
+		More Settings > Network > LAN Settings
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/lan01.png">
+		</div>
+	=== "Indoor Repeater"
+		Advanced > LAN Settings
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/lan001.png">
+		</div>
+	=== "Outdoor AP"
+		Advanced > LAN Settings
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/lan001.png">
+		</div>
 ## __IP Address__
 <p class="text">
 The IP address of the router to the LAN. This can be used to log in to the router's web management page. You can change this address.

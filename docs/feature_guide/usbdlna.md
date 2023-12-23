@@ -1,3 +1,5 @@
+!!! note ""
+	__This feature is currently only available to routers.__
 __DLNA__ (Digital Living Network Alliance) is a technical standard for sharing media content between digital home devices, including audio, video, photos and other types of files. Router DLNA refers to a router that supports DLNA technology.
 
 Using a DLNA-enabled router, users can store media files on a network storage device (such as a hard drive or network storage device), and then stream these files to DLNA-enabled devices, such as TVs, speakers, etc., through wireless or wired networks. Cell phones etc. These devices can communicate with each other through the DLNA protocol, allowing the sharing and playback of media files.

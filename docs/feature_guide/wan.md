@@ -7,7 +7,7 @@
 # WAN Settings
 
 ---
- More Settings  > Network > Wan Setting
+ More Settings  > Network > WAN Setting
 	<div style="text-align: center;">
     <img class="boxshadow" src="/images/wan08.png">
 	</div>

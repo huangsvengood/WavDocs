@@ -5,6 +5,8 @@
 </style>
 -->
 # Guest WiFi
+!!! note ""
+	__This feature is currently only available to routers.__
 ---
 
 More Settings > Wireless Managemen > Guest WiFi
@@ -39,7 +41,7 @@ If you selected WPA/WAP2 you will need to set the RADIUS Server IP, RADIUS Port,
 <div style="text-align: center;">
     <img alt="guest wifi" class="boxshadow" src="/images/guest_02.png">
 </div>
-## __[RADIUS](/Encyclopedia/radius/) (Remote Authentication Dial-in User Service)__
+## __RADIUS(Remote Authentication Dial-in User Service)__
 <p class="text">
 RADIUS is a protocol for network access control and authentication, commonly used in enterprise-level networks.
 </p>
@@ -58,11 +60,11 @@ Device Isolation is a network security feature that can isolate different device
 The main functions of this feature include the following :
 </p>
 !!! info ""
-	- __*Isolate communication between devices: *__ Device isolation can prevent devices within the LAN from communicating directly with each other, ensuring that data traffic between devices is effectively isolated and restricted. This helps prevent malware or attackers in your network from spreading from one infected device to others.
+	- __Isolate communication between devices:__ Device isolation can prevent devices within the LAN from communicating directly with each other, ensuring that data traffic between devices is effectively isolated and restricted. This helps prevent malware or attackers in your network from spreading from one infected device to others.
 
-	- __*Enhanced online privacy: *__ With device isolation, users can better protect the privacy of their devices and data. For example, in a public wireless network environment, device isolation can prevent nearby users from directly accessing each other's devices, thereby reducing the risk of information leakage and snooping.
+	- __Enhanced online privacy:__ With device isolation, users can better protect the privacy of their devices and data. For example, in a public wireless network environment, device isolation can prevent nearby users from directly accessing each other's devices, thereby reducing the risk of information leakage and snooping.
 
-	- __*Prevent unauthorized access: *__ Device isolation limits access between devices and prevents unauthorized devices from accessing or interfering with other devices on the network. This helps improve the overall security of the network and reduces the risk of potential intrusions.
+	- __Prevent unauthorized access:__ Device isolation limits access between devices and prevents unauthorized devices from accessing or interfering with other devices on the network. This helps improve the overall security of the network and reduces the risk of potential intrusions.
 
 <p class="text">
 Overall, device isolation is an important network security feature that can effectively reduce security risks in the network and provide additional privacy protection. When building a safe and reliable LAN environment, it is highly recommended to consider enabling device isolation.

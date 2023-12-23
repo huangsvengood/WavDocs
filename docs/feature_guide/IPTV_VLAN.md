@@ -1,5 +1,5 @@
-
----
+!!! note ""
+	__This feature is currently only available to routers.__
 
 More Settings > Advanced Settings > IPTV/VLAN
 <div style="text-align: center;">

@@ -1,5 +1,5 @@
-
----
+!!! note ""
+	__This feature is currently only available to routers.__
 ZeroTier provides a simple, secure, and efficient way for users to create virtual networks between devices in different geographical locations. 
 
 It connects dispersed devices together through the use of encryption and tunneling technology, making them communicate as if they were in the same local area network.

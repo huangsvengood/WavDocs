@@ -395,6 +395,20 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor015.png">
 		</div>
+	=== "Mesh Extender Mode"
+		__Mesh Extender Mode__  :  This mode sets the device to the Mesh networking state to be paired, in which case the device will be scanned and paired by the surrounding primary device, waiting for the pairing to succeed.
+		!!! danger ""
+			The master router in this case is wavlink routers, and its settings follow the router's mesh pairing method.
+		
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/indoortopo1.png">
+		</div>	
+		!!! danger ""
+			When the main route has been connected to the Internet and the main route has been initialized and configured, the sub-router only needs to __be in the reset state__ without any other settings.
+
+		1 . Press and hold __the pairing button of the main router__ for __2 seconds__ (the indicator light flashes __blue slowly__ after pressing). Within two minutes, press and hold the __Reset/Pari__ button of the Extender for __2 seconds__ (the indicator light flashes __blue slowly__ after pressing).
+
+		2 . The device will automatically pair successfully after waiting __40-120 seconds__. After successful pairing, the indicator lights of the main router and sub-router will be __solid blue__.
 
 
 

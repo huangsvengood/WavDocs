@@ -1,9 +1,28 @@
 
 ---
-More Settings  > System > Backup and Restore
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/backadd.png">
-</div>
+Different products have different entry methods, please check according to your product type.
+!!! note ""
+	=== "Router"
+		More Settings  > System > Backup and Restore
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/backadd.png">
+		</div>
+	=== "Indoor Repeater"
+		Advanced > Backup and Restore
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/backup001.png">
+		</div>
+	=== "Outedoor AP"
+		Advanced > Backup and Restore
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/backup001.png">
+		</div>
 <p class="text">
 Regularly backing up router configuration files can help you quickly restore the original configuration in the event of a system failure or upgrade failure, avoiding the inconvenience and loss caused by resetting.
 </p>

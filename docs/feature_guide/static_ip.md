@@ -5,11 +5,29 @@
 </style>
 -->
 ---
- More Settings > Network > Static IP Binding
-	<div style="text-align: center;">
-    <img class="boxshadow" src="/images/static00.png">
-	</div>
-
+Different products have different entry methods, please check according to your product type.
+!!! note ""
+	=== "Router"
+		More Settings > Network > Static IP Binding
+			<div style="text-align: center;">
+			<img class="boxshadow" src="/images/static00.png">
+			</div>
+	=== "Indoor Repaeter"
+		Advanced > Static IP
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/static.png">
+		</div>		
+	=== "Outdoor AP"
+		Advanced > Static IP
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/static.png">
+		</div>	
 ## __Static IP Binding__
 <p class="text">
 Allow you to associate a specific IP address with the MAC address of a client device. By using static IP binding, you can assign a fixed IP address to a specific device so that it automatically obtains the same IP address every time the device connects to the network.

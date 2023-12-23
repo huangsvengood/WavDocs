@@ -1,3 +1,6 @@
+!!! note ""
+	__This feature is currently only available to routers.__
+
 AdGuard Home acts as a global DNS blocker to filter unwanted content from the web such as ads, malware, trackers, and more. 
 
 AdGuard Home also provides advanced features such as parental controls, statistics, custom rules, etc., allowing you to better manage network traffic and protect privacy. By running AdGuard Home on your router, you can achieve one-stop ad blocking and privacy protection for your entire web without having to install separate software or browser plug-ins on each device.
