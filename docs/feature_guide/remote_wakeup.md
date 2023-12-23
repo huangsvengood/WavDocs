@@ -1,6 +1,8 @@
-
----
 !!! note ""
+	__This feature is currently only available to routers.__
+	
+---
+!!! danger ""
 	__[How to check whether the computer supports remote wake-up?](/FAQ/How_to_check_whether_the_computer_supports_remote_wake-up/)__
 
 More Settings > Advanced Settings > Remote Wakeup

@@ -1,8 +1,11 @@
-
----
+!!! note ""
+	__This feature is currently only available to routers.__
 More Settings > Advanced Settings  > DMZ Management
 <div style="text-align: center;">
-    <img class="boxshadow" src="/images/dmz00.png">
+    <img class="boxshadow" src="/images/more.png">
+</div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/dmz001.png">
 </div>
 <p class="text">
 Enable DMZ (Demilitarized Zone) management, and enter an IP address to connect to the device. You can specify that the connected device can be accessed through an external network. 

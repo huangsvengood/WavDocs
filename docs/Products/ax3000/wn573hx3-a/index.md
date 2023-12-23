@@ -47,10 +47,9 @@ All wavlink devices have a convenient and identical setup process.
 ## Network
 Network Settings You can select __different  modes__. You can select different  modes according to your requirements.
 
-- [Mode Selection](/feature_guide/pattern_selection/)
+- [Mode Selection](/FAQ/outdoor_ap_first_time_setup/#section4)
 - [LAN](/feature_guide/lan/)
-!!! note ""
-	__[Click here to learn more about the network configuration.](/feature_guide/pattern_selection/)__
+
 
 
 ## Wireless
@@ -62,7 +61,7 @@ The wireless management function helps users optimize and manage wireless networ
 ## Mesh Settings
 Mesh is a network topology that creates a wireless network with wider coverage by connecting multiple routers together.mesh can provide __greater coverage__, improve __network performance__, achieve __seamless roaming__ and enhance __network stability__, bringing users a better network experience.
 
-- __[How to establish a mesh network? ](/feature_guide/mesh_network/)__
+- __[How to establish a mesh network? ](/FAQ/outdoor_ap_first_time_setup/#section4)__
 - __[How to view the network topology diagram?](/feature_guide/mesh_topo/)__
 
 ## Signal Adjustment

@@ -4,6 +4,8 @@
     }
 </style>
 -->
+!!! note ""
+	__This feature is currently only available to routers.__
 ---
  More Settings > Network > IPV6 Settings
 	<div style="text-align: center;">

@@ -1,4 +1,6 @@
----
+!!! note ""
+	__This feature is currently only available to routers.__
+
 ## __Configure wireguard Client__
 
 1 . Connect the computer to the router network through wired or wireless connections, __open the browser__ and enter the router __LAN IP__ or router URL __http://wavlogin.link__ to enter the router login page.

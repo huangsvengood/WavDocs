@@ -4,7 +4,8 @@
     }
 </style>
 -->
----
+!!! note ""
+	__This feature is currently only available to routers.__
 
 More Settings > VPN  > VPN Client
 	<div style="text-align: center;">

@@ -223,7 +223,7 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/outdoorre.png">
 		</div>
 		
-		1 . If you choose to switch to Repeater Mode, then you need to wait __19s or 31s__ and the device will automatically detect other WiFi signals.Select __a WiFi signal you want to extend the signal__, and click __Next__ after selecting it.
+		1 . If you choose to switch to Repeater Mode, then you need to wait __19s or 31s (The time is different for different models.)__ and the device will automatically detect other WiFi signals.Select __a WiFi signal you want to extend the signal__, and click __Next__ after selecting it.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/outdoor017.png">
 		</div>
@@ -307,9 +307,9 @@ Every product requires initialization settings before use. Before initialization
 				
 				1 . __Power on other Mesh routers__, and other routers must be in __reset state__ (press the reset button for more than six seconds to reset).
 				
-				2 . Press and hold the __"WPS"__ button of the main router for __2s__. After pressing, the indicator light of the Mesh route __flashes blue slowly__.
+				2 . When not connected to the Internet and not paired, the indicator light flashes blue quickly.Press and hold the __"Reset/Pair"__ button of the main router for __2s__. After pressing, the indicator light of the Mesh route __flashes blue slowly__.
 				
-				3 . Within 2 minutes, press and hold the __"WPS"__ button of the sub-router for __two seconds__, and after waiting __40-120 seconds__, they will complete pairing independently. (When the device indicator light is __solid blue__, it means pairing is successful.)
+				3 . Within 2 minutes, press and hold the __"Reset/Pair"__ button of the sub-router for __two seconds__, and after waiting __40-120 seconds__, they will complete pairing independently. (When the device indicator light is __solid blue__, it means pairing is successful.)
 				
 				<div style="text-align: center;">
 				<img class="boxshadow" src="/images/outdoortopo.png">
@@ -318,7 +318,7 @@ Every product requires initialization settings before use. Before initialization
 			=== "Add WEB interface to realize pairing"
 				1 . Enter __" Advanced > Mesh Network "__.							
 				<div style="text-align: center;">
-					<img class="boxshadow" src="/images/indoor027.png">
+					<img class="boxshadow" src="/images/outdoor027.png">
 				</div>
 			
 				2 . Click on “__Add__” and then follow the prompts on the screen.
@@ -334,7 +334,7 @@ Every product requires initialization settings before use. Before initialization
 					<img class="boxshadow" src="/images/indoor029.png">
 				</div>
 
-				4 . Make sure that the Mesh node has been powered on. After powering on, __press and hold the WPS button of the mesh device for 2 seconds__.
+				4 . Make sure that the Mesh node has been powered on. After powering on, __press and hold the Pair/Reset button of the mesh device for 2 seconds__.
 
 				<div style="text-align: center;">
 					<img class="boxshadow" src="/images/indoor030.png">
@@ -392,9 +392,21 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor015.png">
 		</div>
+	=== "Mesh Extender Mode"
+		__Mesh Extender Mode__  :  This mode sets the device to the Mesh networking state to be paired, in which case the device will be scanned and paired by the surrounding primary device, waiting for the pairing to succeed.
+		!!! danger ""
+			The master router in this case is wavlink routers, and its settings follow the router's mesh pairing method.
 
+		
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/outdoortopo1.png">
+		</div>	
+		!!! danger ""
+			When the main route has been connected to the Internet and the main route has been initialized and configured, the sub-router only needs to __be in the reset state__ without any other settings.
 
+		1 . Press and hold __the pairing button of the main router__ for __2 seconds__ (the indicator light flashes __blue slowly__ after pressing). Within two minutes, press and hold the __Reset/Pari__ button of the Extender for __2 seconds__ (the indicator light flashes __blue slowly__ after pressing).
 
+		2 . The device will automatically pair successfully after waiting __40-120 seconds__. After successful pairing, the indicator lights of the main router and sub-router will be __solid blue__.
 
 
 

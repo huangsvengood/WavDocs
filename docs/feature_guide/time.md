@@ -1,9 +1,30 @@
 
 ---
-More Settings  > System > Timing Reboot
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/time_zoneadd.png">
-</div>
+Different products have different entry methods, please check according to your product type.
+!!! note ""
+	=== "Router"
+		More Settings  > System > Timing Reboot
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/time_zoneadd.png">
+		</div>
+	=== "Indoor Repeater"
+		Advanced > Time Zone
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>			
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/timezone.png">
+		</div>		
+	=== "Outedoor AP"
+		Advanced > Time Zone
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>			
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/timezone.png">
+		</div>	
+
+	
 <p class="text">
 Setting the correct time zone in your router is very important as it affects router logging, network access control, scheduled tasks, and other time-related functions. If the router's time zone is set incorrectly, it can cause timestamp errors, affecting network management and security.
 </p>

@@ -1,30 +1,55 @@
 ---
+Different products have different entry methods, please check according to your product type.
 !!! note ""
-	=== "Method 1"
+	=== "Router"
 		More Settings  > Wireless Management > Wireless
 			<div style="text-align: center;">
 				<img class="boxshadow" src="/images/wireless01.png">
 			</div>
-	=== "Method 2"	
-		More Settings >  Wireless Settings
+	=== "Indoor Repeater"	
+		Advance >  Wireless Settings
 		
 		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/wireless02.png">
+			<img class="boxshadow" src="/images/wireless001.png">
 		</div>
-
+	=== "Outdoor AP"
+		Advance >  Wireless Settings
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless001.png">
+		</div>
 ## **Wireless network settings**
-
-!!! question "View WiFi information"
-	=== "The first"	
+Different product interfaces are different, please check according to your product type.
+!!! question ""
+	=== "Router"
+		After logging in, enter __"More Settings > Device Status"__ to view relevant information.
 		<div style="text-align: center;">
-			<img alt="wifi" class="boxshadow" src="/images/wireless03.png">
+			<img alt="wifi" class="boxshadow" src="/images/more.png">
 		</div>
-	
-	=== "The second"	
 		<div style="text-align: center;">
-			<img alt="wifi" class="boxshadow" src="/images/wireless04.png">
+			<img alt="wifi" class="boxshadow" src="/images/wireless010.png">
 		</div>
-
+	=== "Indoor Repeater"	
+		After logging in, enter __"Advanced > Device Status"__ to view relevant information.
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless007.png">
+		</div>		
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless008.png">
+		</div>		
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless003.png">
+		</div>		
+	=== "Outdoor Repeater"
+		After logging in, enter __"Advanced > Device Status"__ to view relevant information.
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless007.png">
+		</div>		
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless008.png">
+		</div>		
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless003.png">
+		</div>	
 <p class="text">
 Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to provide a better network experience, while turning off the dual-band integration allows you to set up the 2.4G and 5G networks separately.
 </p>
@@ -46,12 +71,6 @@ Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to
 
 
 !!! info "Wi-Fi encryption methods"	
-	__WPA2-PSK (recommended)__ : This is one of the most commonly used WiFi encryption methods currently. PSK stands for Pre-Shared Key and is a password shared between the device and router, meaning the network uses a pre-set password to encrypt communications. All devices connected to the network must use the same password to access the network.
-
-	__WPA1-PSK/WPA2-MIX__ : This is a more compatible encryption method. WPA1-PSK/WPA2-MIX uses two different Wi-Fi encryption protocols and supports the use of WPA and WPA2 at the same time. Among them, WPA1-PSK uses the TKIP encryption algorithm, and WPA2-PSK uses the more secure AES encryption algorithm. This hybrid approach is compatible with some older devices while also providing greater security.
-
-	__WPA3-PSK/WPA2-MIX__: WPA3 is the latest version of the WiFi security protocol, providing more advanced security. WPA3-PSK uses stronger encryption algorithms to protect communications and provides enhanced password guessing protection. WPA2-MIX allows support of both WPA3-PSK and WPA2-PSK ciphers.
-
 	__WPA/WPA2-Enterprise__: This is a more secure method of WiFi encryption suitable for enterprise environments. It uses an authentication protocol called 802.1X that requires users to provide personal identification credentials (such as username and password) in order to facilitate the connection. This encryption method also supports the use of remote authentication servers for user authentication. This type of encryption is commonly used on corporate networks to ensure that only authorized users can access the network.
 
 

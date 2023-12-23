@@ -1,3 +1,5 @@
+!!! note ""
+	__This feature is currently only available to routers.__
 ---
 
 ## __What is OpenVPN?__

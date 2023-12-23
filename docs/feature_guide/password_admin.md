@@ -1,9 +1,28 @@
 
 ---
- More Settings > System > Change admin password
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/passwordadd.png">
-</div>
+Different products have different entry methods, please check according to your product type.
+!!! note ""
+	=== "Router"
+		 More Settings > System > Change admin password
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/passwordadd.png">
+		</div>
+	=== "Indoor Repeater"
+		Advanced > Admin Password
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/password.png">
+		</div>		
+	=== "Outedoor AP"
+		Advanced > Admin Password
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+			<img class="boxshadow" src="/images/password.png">
+		</div>
 <p class="text">
 The router administrator password is an important security credential used to protect the router management interface. Regularly changing the administrator password can effectively prevent unauthorized access and improve network security to avoid hacker intrusions or malicious operations.
 </p>

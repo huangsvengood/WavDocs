@@ -1,3 +1,5 @@
+!!! note ""
+	__This feature is currently only available to routers.__
 The USB Print Service allows you to connect to a USB printer. Under the router's network, multiple devices can access and use the printer at the same time.
 
 USB Print Service can help printers that do not have their own wireless connection function connect to the router through the USB interface and print through the router's wireless network.
