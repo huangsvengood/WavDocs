@@ -1,10 +1,12 @@
-
 ---
-More Settings > Advanced Settings  > Security Settings
-<div style="text-align: center;">
-<img class="boxshadow" src="/images/security001.png">
-</div>
-
+Advanced > Security
+!!! note ""
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/wireless007.png">
+	</div>
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/seacurity001.png">
+	</div>		
 ## Block ping
 <p class="text">
 This feature can effectively prevent ping attacks and scans, reducing the risk of network attacks on this device.
@@ -21,4 +23,5 @@ This feature protects the server ports in your device from attacks.
 Enabling this feature allows the router to avoid massive resource consumption due to DDoS attacks and ensure uninterrupted normal service.
 </p>
 ---
+
 

@@ -125,8 +125,6 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
 			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
-			!!! info "Please click on the link below to learn more"
-				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 		10 . After selecting the Internet connection method, enter the basic configuration (__time zone, country, WiFi name, etc.__) interface, select the time zone and region that suits your location, and __customize your WiFi name and password__ (it is recommended that you use a strong password : The password contains __uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * "__, etc.). 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app117.png">

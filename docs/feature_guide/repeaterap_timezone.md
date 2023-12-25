@@ -1,10 +1,14 @@
-
 ---
-More Settings  > System > Time Zone
-<div style="text-align: center;">
-	<img class="boxshadow" src="/images/time_zoneadd.png">
-</div>
-	
+Advanced > Time Zone
+!!! note ""
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+	</div>			
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/timezone.png">
+	</div>		
+
+
 <p class="text">
 Setting the correct time zone in your router is very important as it affects router logging, network access control, scheduled tasks, and other time-related functions. If the router's time zone is set incorrectly, it can cause timestamp errors, affecting network management and security.
 </p>
@@ -32,4 +36,3 @@ Verify that the settings are taking effect by looking at the time and date infor
 	- If you travel frequently or move to a different time zone, it is recommended to set it according to the time zone of your current location to keep the time accurate.
 	- Regularly check and update your router's time zone settings, especially if there are local daylight saving time adjustments.
 
----

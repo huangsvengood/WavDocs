@@ -285,7 +285,8 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor017.png">
 		</div>
-
+		!!! info ""
+			__[Click to learn about WAN Type.](/feature_guide/repeaterap_wan/)__
 		2 . After saving, wait for the settings to be applied. After waiting for about __1 minute__, click __Refresh__.
 
 		<div style="text-align: center;">

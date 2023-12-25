@@ -1,9 +1,12 @@
+Advanced > Backup and Restore
+!!! note ""
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+	</div>
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/backup001.png">
+	</div>
 
----
-More Settings  > System > Backup and Restore
-<div style="text-align: center;">
-	<img class="boxshadow" src="/images/backadd.png">
-</div>
 
 <p class="text">
 Regularly backing up router configuration files can help you quickly restore the original configuration in the event of a system failure or upgrade failure, avoiding the inconvenience and loss caused by resetting.
@@ -39,3 +42,8 @@ Note that this operation will overwrite all existing configuration options and r
 
 
 ---
+
+
+
+
+

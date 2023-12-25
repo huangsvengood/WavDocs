@@ -94,7 +94,17 @@ VPN can enhance the security and privacy of home or business networks, providing
 - __[How to use ZeroTier?](/feature_guide/zerotier/)__
 
 ## USB Management
-- __[How to use USB management function?](/feature_guide/usb/)__
+- __[USB DLNA](/feature_guide/usbdlna/)__
+- __[USB Print](/feature_guide/usbprint/)__
+
+## Adnvanced
+- __[AD Guard](/feature_guide/adguard/)__
+- __[Port Forwarding](/feature_guide/port_forwarding/)__
+- __[Remote Wakeup](/feature_guide/remote_wakeup/)__
+- __[SQM QoS](/feature_guide/sqm/)__
+- __[DMZ Management](/feature_guide/DMZ_Management/)__
+
+
 
 ## More
 - [Security Settings](/feature_guide/secure/)

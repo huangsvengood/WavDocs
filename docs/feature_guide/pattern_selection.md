@@ -5,6 +5,8 @@
 </style>
 -->
 # Mode selection
+!!! note ""
+	Here is the Mode selection of the __wavlink router__, click to jump to __[Indoor Repeater](/FAQ/indoor_repeater_first_time_setup/#section4)__ and __[Outdoor Repeater](/FAQ/outdoor_ap_first_time_setup/#section4)__.
 --- 
  More Settings  > Network > Mode selection
 	<div style="text-align: center;">

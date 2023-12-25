@@ -1,30 +1,30 @@
 ---
-
-More Settings  > Wireless Management > Wireless
+Advance >  Wireless Settings
 <div style="text-align: center;">
-	<img class="boxshadow" src="/images/wireless01.png">
+	<img class="boxshadow" src="/images/wireless001.png">
 </div>
-
 ## **Wireless network settings**
 
-!!! question ""
-	=== "Router"
-		After logging in, enter __"More Settings > Device Status"__ to view relevant information.
+!!! info ""
+	=== "Indoor Repeater/Outdoor AP"	
+		After logging in, enter __"Advanced > Device Status"__ to view relevant information.
 		<div style="text-align: center;">
-			<img alt="wifi" class="boxshadow" src="/images/more.png">
-		</div>
+			<img alt="wifi" class="boxshadow" src="/images/wireless007.png">
+		</div>		
 		<div style="text-align: center;">
-			<img alt="wifi" class="boxshadow" src="/images/wireless010.png">
-		</div>
-
+			<img alt="wifi" class="boxshadow" src="/images/wireless008.png">
+		</div>		
+		<div style="text-align: center;">
+			<img alt="wifi" class="boxshadow" src="/images/wireless003.png">
+		</div>		
 
 Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to provide a better network experience, while turning off the dual-band integration allows you to set up the 2.4G and 5G networks separately.
 
 <div style="text-align: center;">
-    <img alt="wifi" class="boxshadow" src="/images/wifi.png">
+    <img class="boxshadow" src="/images/repeaterwireless002.png">
 </div>
 <div style="text-align: center;">
-    <img alt="wifi" class="boxshadow" src="/images/wireless000.png">
+    <img class="boxshadow" src="/images/repeaterwireless001.png">
 </div>
 ### __Encryption Method__
 <p class="text">
@@ -48,7 +48,7 @@ Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to
 </p>
 
 <div style="text-align: center;">
-    <img alt="wifi_" class="boxshadow" src="/images/wifi_01.png">
+    <img alt="wifi_" class="boxshadow" src="/images/repeaterwireless003.png">
 </div>
 
 ### __Bandwidth__
@@ -63,12 +63,15 @@ When enabled, the wireless signal of the corresponding network will be hidden.
 <p class="text">
 Dynamic Frequency Selection (DFS) , it is recommended to turn on this switch so that the device will automatically avoid channel values that are not allowed in your area.
 </p>
-### __TWT__
-<p class="text">
-When enabled, the router will automatically optimize resource scheduling between devices, negotiate wake-up times, reduce disorderly competition, increase device sleep time, and improve router lifespan.
-</p>
-### __MU-OFDMA__
-<p class="text">
-After activation, the router will multiplex multiple users to improve transmission efficiency and reduce network latency in a multi-user Internet environment.
-</p>
+
+
 ___
+
+
+
+
+
+
+
+
+

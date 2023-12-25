@@ -64,7 +64,6 @@ Mesh is a network topology that creates a wireless network with wider coverage b
 - __[How to establish a mesh network? ](/feature_guide/mesh_network/)__
 - __[How to view the network topology diagram?](/feature_guide/mesh_topo/)__
 
-	
 ## Terminal Management
 Terminal devices refer to end-user devices connected to the router, such as __computers__, __mobile phones__, __smart homes__, etc.
 
@@ -80,6 +79,7 @@ The parental control feature can help parents establish a reasonable __home netw
 !!! note ""	
 	Click to learn __[how to better use parental control](/feature_guide/parental_wifi/)__.
 
+
 ## VPN
 VPN can enhance the security and privacy of home or business networks, providing __remote access__, __data encryption__, __Wi-Fi security__ and other functions, allowing users to use the Internet more freely and safely.
 	
@@ -90,8 +90,19 @@ VPN can enhance the security and privacy of home or business networks, providing
 - __[How to set up VPN Client?](/feature_guide/vpnclient/)__
 - __[How to use ZeroTier?](/feature_guide/zerotier/)__
 
+
 ## USB Management
-- __[How to use USB management function?](/feature_guide/usb/)__
+- __[USB DLNA](/feature_guide/usbdlna/)__
+- __[USB Print](/feature_guide/usbprint/)__
+
+## Adnvanced
+- __[AD Guard](/feature_guide/adguard/)__
+- __[Port Forwarding](/feature_guide/port_forwarding/)__
+- __[Remote Wakeup](/feature_guide/remote_wakeup/)__
+- __[SQM QoS](/feature_guide/sqm/)__
+- __[DMZ Management](/feature_guide/DMZ_Management/)__
+
+
 
 ## More
 - [Security Settings](/feature_guide/secure/)

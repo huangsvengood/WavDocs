@@ -1,8 +1,6 @@
-
----
-More Settings  > System > Router Reboot/Logout
+Advanced > Router Reboot/Logout
 <div style="text-align: center;">
-	<img class="boxshadow" src="/images/rebootadd.png">
+<img class="boxshadow" src="/images/reboot001.png">
 </div>
 
 ## __Router Reboot__
@@ -14,14 +12,14 @@ After you modify some settings of the router, sometimes you need to restart the 
 </p>
 
 <div style="text-align: center;">
-    <img class="boxshadow" src="/images/reboot01.png">
+    <img class="boxshadow" src="/images/repeaterreboot.png">
 </div>
 <p class="text">
 In the management page, you only need to click "<b>Router Reboot</b>" to restart the router.After clicking, a window will pop up asking you if you are sure to restart the router. If you clicked accidentally, select Cancel. Otherwise, select OK.
 </p>
 
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/reboot.png">
+    <img class="boxshadow" src="/images/repeaterreboot001.png">
 </div>
 
 ## __Logout__
@@ -29,6 +27,11 @@ In the management page, you only need to click "<b>Router Reboot</b>" to restart
 If you need to log out, on the management page, you only need to click "<b>Logout</b>" to log out.
 </p>
 <div style="text-align: center;">
-    <img alt="guest wifi" class="boxshadow" src="/images/logout.png">
+    <img wifi" class="boxshadow" src="/images/repeaterreboot.png">
 </div>
 ---
+
+
+
+
+

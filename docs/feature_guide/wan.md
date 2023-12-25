@@ -66,9 +66,7 @@ L2TP dual access is a network access method that uses two L2TP VPN connections. 
 
 ## __Advanced__
 
-### __Internet access method__
-<p class="text">Please select the Internet connection provided by your network service provider. DHCP is an automatic network type configured by your internet service provider. For Static IP, please provide accurate IP address, subnet mask, gateway, and DNS1 & DNS2 manually. The other types require input of a username and password provided by your Internet Service Provider.
-</p>
+
 ### __Custom MTU__
 <p class="text">
 Ethernet MTU (Maximum Transmission Unit), if your network provider requires you to adjust the MTU size, turn this option on, otherwise it is recommended that you turn it off for the best network experience.

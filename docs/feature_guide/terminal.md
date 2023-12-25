@@ -5,31 +5,10 @@
 </style>
 -->
 ---
-Different products have different entry methods, please check according to your product type.
-!!! note ""
-	=== "Router"
-		Home > Terminal 
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/terminal00.png">
-		</div>
-	=== "Indoor Repeater"
-		Home > Terminal
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/terminal.png">
-		</div>
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/terminal013.png">
-		</div>			
-	=== "Outdoor AP"
-		Home > Terminal
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/terminal.png">
-		</div>
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/terminal013.png">
-		</div>	
-!!! warning 
-	Indoor Repeater and Outdoor AP only support viewing terminals but do not support terminal management.
+Home > Terminal 
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/terminal00.png">
+</div>
 
 ## __View terminal list__ 
 On the terminal page, you can view the terminal connection list, manage your terminal devices, set __speed limits__, __block Internet__ and __monitor real-time traffic__.

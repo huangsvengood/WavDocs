@@ -48,20 +48,10 @@ __Scenario introduction :__ Access the company's internal file server or interna
 </div>
 
 6 . Open the browser and enter __http://wavlogin.link__ to enter the management interface of the remote router.
-!!! note ""
-	=== "Router"
-		Enter "More Settings > Advanced Settings > Port Forwarding".
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/port000.png">
-		</div>
-	=== "Other"
-		Enter "Advanced > Port Forwarding".
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/wireless007.png">
-		</div>		
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/port012.png">
-		</div>	
+Enter __"More Settings > Advanced Settings > Port Forwarding".__
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/port000.png">
+</div>
 
 7 . Set the port forwarding rules, fill in the IP address of the ftp server __"192.168.20.142"__, set the internal and external ports to 21 (the default port number of the ftp service is 21), and select the TCP protocol (the ftp service works on TCP).
 

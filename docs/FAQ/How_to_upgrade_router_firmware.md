@@ -8,14 +8,13 @@ There are several steps for local upgrade :
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/update03.png">
 </div>
-<p class="text">
-2 . Check for available firmware updates : Visit the official WAVLINK website (<b><a href="https://www.wavlink.com/en_us/index.html">https://wavlink.com</a></b>) to find available new firmware versions.
-</p>
+
+2 . Check for available firmware updates : Click here to jump to the __[Firmware Center](/Firmware/)__.
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/upgrade01.png">
 </div>
 <p class="text">
-3 . Download new firmware : Visit the WAVLINK official website (<b><a href="https://www.wavlink.com/en_us/index.html">https://wavlink.com</a></b>) to download the latest firmware file. Please select a firmware file that is compatible with your router model and hardware version. If you have any questions, please contact wavlink.
+3 . Download new firmware : Please select a firmware file that is compatible with your router model and hardware version. If you have any questions, please contact wavlink.
 </p>
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/upgrade02.png">
