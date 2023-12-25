@@ -1,10 +1,12 @@
-
 ---
-More Settings > Advanced Settings  > Network Diagnostics
-<div style="text-align: center;">
-	<img class="boxshadow" src="/images/network_diaadd.png">
-</div>
-
+Advanced > Network Diagnostics
+!!! note ""
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+	</div>
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/network.png">
+	</div>
 <p class="text">
 Network testing will check the status of the upstream network, router network, and device system, but the test result will be influenced by the environment of the router and the upstream network, so the result is for reference only.
 </p>
@@ -44,7 +46,7 @@ Network testing will check the status of the upstream network, router network, a
 <p class="text">
 8 . Repair completed : After one-click repair is completed, click Refresh to complete the entire process of network diagnosis and repair.
 </p>
----
-
-
-
+---		
+		
+		
+		

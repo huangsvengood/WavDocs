@@ -1,14 +1,14 @@
-<!--<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
--->
 ---
-More Settings > Network > LAN Settings
-<div style="text-align: center;">
-<img class="boxshadow" src="/images/lan01.png">
-</div>
+Advanced > LAN Settings
+!!! note ""
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+	</div>
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/lan001.png">
+	</div>
+
+
 ## __IP Address__
 <p class="text">
 The IP address of the router to the LAN. This can be used to log in to the router's web management page. You can change this address.
@@ -29,4 +29,3 @@ The start and end range of IP addresses that can be obtained by the device conne
 The lease time of the IP address obtained by the device accessing the router.
 </p>
 
----

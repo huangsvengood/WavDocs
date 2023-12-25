@@ -1,9 +1,12 @@
+Advanced > Timing Reboot
+!!! note ""
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+	</div>
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/timing.png">
+	</div>
 
----
-More Settings  > System > Timing reboot
-<div style="text-align: center;">
-	<img class="boxshadow" src="/images/timingadd.png">
-</div>
 
 <p class="text">
 Automatic rebooting will help you clear unnecessary data in the router and automatically select the best wireless channel. 
@@ -16,3 +19,6 @@ Before enabling the reboot plan, please ensure that the system time is correct. 
 </p>
 
 ---
+
+
+

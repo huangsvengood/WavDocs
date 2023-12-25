@@ -1,10 +1,11 @@
-
----
-More Settings > System > Firmware Update
-<div style="text-align: center;">
-	<img class="boxshadow" src="/images/firm.png">
-</div>
-
+Advanced > Firmware Update
+!!! note ""
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+	</div>
+	<div style="text-align: center;">
+		<img class="boxshadow" src="/images/firmware.png">
+	</div>
 <p class="text">
 Regular router firmware upgrades can help you obtain the latest features and security patches, improve the performance and stability of the router, and fix possible vulnerabilities and security risks.
 </p>
@@ -40,4 +41,6 @@ You can directly click the check upgrade button to check the upgradeable version
 	
 	- If problems occur during the firmware upgrade, you can try using the router's recovery function or contact the manufacturer's technical support for help.
 	
-	---
+
+
+

@@ -1,14 +1,12 @@
-<!--<style>
-    .text {
-        font-size: 21px; 
-    }
-</style>
--->
 ---
-More Settings > Network > Static IP Binding
-<div style="text-align: center;">
-	<img class="boxshadow" src="/images/static00.png">
-</div>
+Advanced > Static IP
+!!! note ""
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/wireless007.png">
+	</div>
+	<div style="text-align: center;">
+	<img class="boxshadow" src="/images/static.png">
+	</div>		
 ## __Static IP Binding__
 <p class="text">
 Allow you to associate a specific IP address with the MAC address of a client device. By using static IP binding, you can assign a fixed IP address to a specific device so that it automatically obtains the same IP address every time the device connects to the network.
@@ -53,4 +51,13 @@ Here are some things to note when using a static IP address:
 	Generally speaking, static IP addresses are suitable for scenarios that require stability, remote access, and service hosting, but in some cases, dynamic IPs may be more convenient and economical. Choose the IP address type that suits you based on your specific needs.
 	​</p>
 
+
 ---
+
+
+
+
+
+
+
+

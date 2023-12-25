@@ -197,3 +197,46 @@ hide:
 </div>
 </a>
 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .box {
+      width: 430px;
+      height: 63px;
+    #  box-shadow: 5px 5px 5px #888888;
+      margin: 10px;
+	  text-align: center;
+	  vertical-align: middle;
+	  padding: 15px;
+	  font-size: 22px;
+	  color: #1D428A;
+	  font-weight: bold;
+	  border: 3px solid #1D428A;
+    }
+	.box:hover {
+      box-shadow: 10px 10px 10px #888888;
+	  background-color: #6b5ff9; 
+	  border: none;
+	  color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">Router</div>
+  <div class="box">Indoor Repeater</div>
+  <div class="box">Outdoor AP</div>
+</div>
+
+</body>
+</html>
+
+
+

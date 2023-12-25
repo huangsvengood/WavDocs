@@ -7,34 +7,10 @@
 !!! info ""
 	__This introduction only applies to Router.__
 ---
-Different products have different entry methods, please check according to your product type.
-!!! note ""
-	=== "Router"
-		More Settings > Mesh Network > Mesh Table
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/mesh001.png">
-		</div>
-	=== "Indoor Repeater"
-		Advanced > Mesh Network
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/wireless007.png">
-		</div>		
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/mesh.png">
-		</div>
-		!!! danger ""
-			__[Please click here to view the mesh pairing of the Indoor repeater.](/FAQ/indoor_repeater_first_time_setup/#section4)__
-	
-	=== "Outdoor AP" 
-		Advanced > Mesh Network
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/wireless007.png">
-		</div>		
-		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/mesh.png">
-		</div>
-		!!! danger ""
-			__[Please click here to view the mesh pairing of the Outdoor AP.](/FAQ/outdoor_ap_first_time_setup/#section4)__
+More Settings > Mesh Network > Mesh Table
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/mesh001.png">
+</div>
 Mesh networks are widely used in many application scenarios, such as smart homes, Internet of Things, urban coverage, industrial automation, etc. It provides a __resilient__, __reliable__ and __flexible__ network solution suitable for environments that require a high degree of interconnectivity and self-organization.
 
 
