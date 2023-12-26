@@ -1,28 +1,10 @@
 
 ---
-Different products have different entry methods, please check according to your product type.
-!!! note ""
-	=== "Router"
-		More Settings  > System > Led Control
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/ledadd.png">
-		</div>
-	=== "Indoor Repeater"
-		Advanced > LED Control
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/wireless007.png">
-		</div>
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/led.png">
-		</div>		
-	=== "Outedoor AP"
-		Advanced > LED Control
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/wireless007.png">
-		</div>
-		<div style="text-align: center;">
-			<img class="boxshadow" src="/images/led.png">
-		</div>	
+More Settings  > System > Led Control
+<div style="text-align: center;">
+	<img class="boxshadow" src="/images/ledadd.png">
+</div>
+
 <p class="text">
 The router's light is an important indicator light used to indicate the status or operation of the device. By setting the router's lights, you can have a clearer understanding of the working status of the device, discover and troubleshoot problems in a timely manner.
 </p>
