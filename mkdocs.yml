@@ -41,22 +41,28 @@ nav:
   - Feature Guide: 
     - Overview: feature_guide/index.md
     - Wireless: 
-      - Wireless  - Router: feature_guide/wireless.md
-      - Wireless  - Repeater/AP: feature_guide/repeaterap_wireless.md
-      - Guest WiFi: feature_guide/guest_network.md
+      - Router: 
+        - Wireless: feature_guide/wireless.md
+        - Guest WiFi: feature_guide/guest_network.md
+      - Repeater/AP:
+        - Wireless: feature_guide/repeaterap_wireless.md
     - Network:
-      - Mode selection: feature_guide/pattern_selection.md
-      - WAN - Router: feature_guide/wan.md
-      - WAN - Repeater/AP : feature_guide/repeaterap_wan.md
-      - LAN - Router: feature_guide/lan.md
-      - LAN - Repeater/AP: feature_guide/repeaterap_lan.md
-      - IPv6: feature_guide/ipv6.md
-      - Static IP - Router: feature_guide/static_ip.md
-      - Static IP - Repeater/AP: feature_guide/repeaterap_staticip.md
-    - Mesh Network: 
-      - How to establish a Mesh network: feature_guide/mesh_network.md
-      - Mesh Topology:  feature_guide/mesh_topo.md
-      - Mesh Topology - Repeater/AP:  feature_guide/repeaterap_mesh.md
+      - Router:
+        - Mode selection: feature_guide/pattern_selection.md
+        - WAN: feature_guide/wan.md
+        - LAN: feature_guide/lan.md
+        - IPv6: feature_guide/ipv6.md
+        - Static IP: feature_guide/static_ip.md
+      - Repeater/AP:
+        - WAN: feature_guide/repeaterap_wan.md
+        - LAN: feature_guide/repeaterap_lan.md
+        - Static IP: feature_guide/repeaterap_staticip.md
+    - Mesh Network:
+      - Router: 
+        - How to establish a Mesh network: feature_guide/mesh_network.md
+        - Mesh Topology:  feature_guide/mesh_topo.md
+      - Repeater/AP:
+        - Mesh Topology:  feature_guide/repeaterap_mesh.md
     - Terminal:
       - Terminal - Router: feature_guide/terminal.md
       - Terminal - Repeater/AP: feature_guide/repeaterap_terminal.md
@@ -74,41 +80,45 @@ nav:
       - USB DLNA: feature_guide/usbdlna.md
       - USB Print Service: feature_guide/usbprint.md
     - Advanced Settings:
-      - Security - Router: feature_guide/secure.md
-      - Security - Repeater/AP: feature_guide/repeaterap_security.md
-      - Remote Control - Router: feature_guide/remote_ctrl.md
-      - Remote Control - Repeater/AP: feature_guide/repeaterap_remotecontrol.md
-      - Dynamic DNS: feature_guide/dynamic_dns.md
-      - Cloud App Settings: feature_guide/cloud_app.md
-      - UPnP: feature_guide/upnp.md
-      - Port Forwarding - Router: feature_guide/port_forwarding.md
-      - DMZ Management: feature_guide/DMZ_Management.md
-      - IPTV/VLAN: feature_guide/IPTV_VLAN.md
-      - Hardware NAT Settings: feature_guide/Hardware.md
-      - Network Diagnostics - Router: feature_guide/network_diango.md
-      - Network Diagnostics - Repeater/AP: feature_guide/repeaterap_networkdiagnostics.md
-      - Remote Wakeup: feature_guide/remote_wakeup.md
-      - ALG: feature_guide/alg.md
-      - Custom DNS Server: feature_guide/cutm_dns-server.md
-      - SQM QoS: feature_guide/sqm.md
-      - ADGuard: feature_guide/adguard.md
-      - Singal Adjustment: feature_guide/signal_adjustment.md
-    - Router More: 
-      - Time Zone: feature_guide/time.md
-      - Led Control: feature_guide/led_ctrl.md
-      - Change admin password: feature_guide/password_admin.md
-      - Backup and Restore: feature_guide/backup.md
-      - Firmware Upgrade: feature_guide/firmware.md
-      - Timing Reboot: feature_guide/timing_reboot.md
-      - Router Reboot/Logout: feature_guide/router_reboot.md
-    - Repeater/AP More: 
-      - Time Zone: feature_guide/repeaterap_timezone.md
-      - Led Control: feature_guide/repeaterap_led.md
-      - Admin Password: feature_guide/repeaterap_admin.md
-      - Firmware Upgrade: feature_guide/repeaterap_firmware.md
-      - Backup and Restore: feature_guide/repeaterap_backup.md  
-      - Timing Reboot: feature_guide/repeaterap_timing.md  
-      - Router Reboot/Logout: feature_guide/repeaterap_reboot_logout.md
+      - Router:
+        - Security: feature_guide/secure.md     
+        - Remote Control: feature_guide/remote_ctrl.md
+        - Dynamic DNS: feature_guide/dynamic_dns.md
+        - Cloud App Settings: feature_guide/cloud_app.md
+        - UPnP: feature_guide/upnp.md
+        - Port Forwarding: feature_guide/port_forwarding.md
+        - DMZ Management: feature_guide/DMZ_Management.md
+        - IPTV/VLAN: feature_guide/IPTV_VLAN.md
+        - Hardware NAT Settings: feature_guide/Hardware.md
+        - Network Diagnostics: feature_guide/network_diango.md
+        - Remote Wakeup: feature_guide/remote_wakeup.md
+        - ALG: feature_guide/alg.md
+        - Custom DNS Server: feature_guide/cutm_dns-server.md
+        - SQM QoS: feature_guide/sqm.md
+        - ADGuard: feature_guide/adguard.md
+        - Singal Adjustment: feature_guide/signal_adjustment.md
+      - Repeater/AP:
+        - Security: feature_guide/repeaterap_security.md
+        - Remote Control: feature_guide/repeaterap_remotecontrol.md
+        - Port Forwarding: feature_guide/repeaterap_portforwarding.md
+        - Network Diagnostics: feature_guide/repeaterap_networkdiagnostics.md
+    - More:
+      - Router:
+        - Time Zone: feature_guide/time.md
+        - Led Control: feature_guide/led_ctrl.md
+        - Change admin password: feature_guide/password_admin.md
+        - Backup and Restore: feature_guide/backup.md
+        - Firmware Upgrade: feature_guide/firmware.md
+        - Timing Reboot: feature_guide/timing_reboot.md
+        - Router Reboot/Logout: feature_guide/router_reboot.md
+      - Repeater/AP:
+        - Time Zone: feature_guide/repeaterap_timezone.md
+        - Led Control: feature_guide/repeaterap_led.md
+        - Admin Password: feature_guide/repeaterap_admin.md
+        - Firmware Upgrade: feature_guide/repeaterap_firmware.md
+        - Backup and Restore: feature_guide/repeaterap_backup.md
+        - Timing Reboot: feature_guide/repeaterap_timing.md
+        - Router Reboot/Logout: feature_guide/repeaterap_reboot_logout.md
  # - Video Library: video_library/index.md
   - Firmware: Firmware/index.md
  # - Community: community/index.md

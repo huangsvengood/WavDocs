@@ -125,16 +125,26 @@ hide:
 	</div>
 </div>
 
-
-<div class="grid cards" markdown>
- 
- - __[Router](/Products/)__
- - __[Indoor Repeater](/Products/#indoor-repeater)__
- - __[Outdoor AP](/Products/#outdoor-ap)__
- - __[Cellular Router](/Products/#cellular-router)__
- - __[Other](/Products/#other)__
- 
+<div class="grid-container">
+  <a href="/Products/">
+  <div class="box">Router</div>
+  </a>
+  <a href="/Products/#indoor-repeater">
+  <div class="box">Indoor Repeater</div>
+  </a>
+  <a href="/Products/#outdoor-ap">
+  <div class="box">Outdoor AP</div>
+  </a>
 </div>
+<div class="grid-container">
+  <a href="/Products/#cellular-router">
+  <div class="box">Cellular Router</div>
+  </a>
+  <a href="/Products/#other">
+  <div class="box">Other</div>
+  </a>
+</div>
+
 
 <div class="main">
 	<div>
@@ -147,96 +157,50 @@ hide:
 	</div>
 </div>
 
-<div class="grid cards" markdown>
-- __[Firmware](/Firmware/)__
-- __[Feature](/feature_guide/)__ 
-- __[Tutorials](/tutorials/)__
-- __[FAQ](/FAQ/)__
-- __[Video Library](/video_library/)__
-- __[Community](/community/)__
-
+<div class="grid-container">
+  <a href="/Firmware/">
+  <div class="box">Firmware</div>
+  </a>
+  <a href="/feature_guide/">
+  <div class="box">Feature</div>
+  </a>
+  <a href="/FAQ/">
+  <div class="box">FAQ</div>
+  </a>
 </div>
 
-
-
-<!--
-<div id="mainContainer">
-	<div class="bannerContainer">
-		
-			<div class="search_infoCenter">
-				<h1>Firmware</h1>
-			</div>
-		
-	</div>
-</div>
-
-
-
-
-<div style="text-align:center">
-<a href="/Firmware/" target="_blank" class="md-button">Start</a>
-</div>
-
--->
-
-<!--
-<a href="/Products">
-<div class="grid cards" markdown>
- - __Router__
- - __Indoor Repeater__
- - __Outdoor AP__
- - __Cellular Router__
- - __Other__
-</div>
-</a>
-
-
-<a href="/Products">
-<div class="grid cards" markdown>
- - __Router__
-</div>
-</a>
--->
-
-
-<!DOCTYPE html>
-<html>
-<head>
   <style>
-    .container {
-      display: flex;
-    }
+    .grid-container {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+	  grid-gap: 20px;
+	}
     .box {
-      width: 430px;
+      width: 100%;
       height: 63px;
     #  box-shadow: 5px 5px 5px #888888;
       margin: 10px;
 	  text-align: center;
-	  vertical-align: middle;
-	  padding: 15px;
+	  padding: 14px;
 	  font-size: 22px;
 	  color: #1D428A;
 	  font-weight: bold;
 	  border: 3px solid #1D428A;
+
+
     }
 	.box:hover {
-      box-shadow: 10px 10px 10px #888888;
-	  background-color: #6b5ff9; 
+      box-shadow: 5px 5px 5px #888888;
+	  background-color: #1D428A; 
 	  border: none;
 	  color: #ffffff;
     }
   </style>
-</head>
-<body>
 
-<div class="container">
-  <div class="box">Router</div>
-  <div class="box">Indoor Repeater</div>
-  <div class="box">Outdoor AP</div>
-</div>
 
-</body>
-</html>
+
+
+
 
 
 

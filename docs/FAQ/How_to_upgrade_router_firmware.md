@@ -17,17 +17,9 @@ There are several steps for local upgrade :
 3 . Download new firmware : Please select a firmware file that is compatible with your router model and hardware version. If you have any questions, please contact wavlink.
 </p>
 <div style="text-align: center;">
-    <img class="boxshadow" src="/images/upgrade02.png">
+    <img class="boxshadow" src="/images/upgrade001.png">
 </div>
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/firmware001.png">
-</div>
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/firmware002.png">
-</div>
-<div style="text-align: center;">
-    <img class="boxshadow" src="/images/firmware003.png">
-</div>
+
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/firmware004.png">
 </div>
