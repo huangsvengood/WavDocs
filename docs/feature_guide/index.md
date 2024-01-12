@@ -189,7 +189,8 @@ hide:
 	<div class="card">
 		<div class="text">
 		<h2><b>Repeater/AP</b></h2>
-			<p><a href="/FAQ/outdoor_ap_first_time_setup/#section4"><b>Mode selection</b></a></p>
+			<p><a href="/FAQ/outdoor_ap_first_time_setup/#section4"><b>Mode selection(Outdoor AP)</b></a></p>
+			<p><a href="/FAQ/indoor_ap_first_time_setup/#section4"><b>Mode selection(Indoor Repeater)</b></a></p>
 			<p><a href="/feature_guide/repeaterap_wan/"><b>WAN</b></a></p>
 			<p><a href="/feature_guide/repeaterap_staticip/"><b>LAN</b></a></p>
 			<p><a href="/feature_guide/repeaterap_staticip/"><b>Static IP</b></a></p>
