@@ -186,6 +186,9 @@ hide:
   <a href="fm-531ax3">
   <div class="box">WS-WN536AX6-A</div>
   </a>
+  <a href="fm-586x3">
+  <div class="box">WS-WN586X3-A</div>
+  </a> 
   <a href="fm-531ax3">
   <div class="box">WS-WN586X3-B</div>
   </a>
