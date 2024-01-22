@@ -110,7 +110,7 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Model : WS-WN572HP3-A</h1>
+				<h1>Model : WS-WN573HP3T</h1>
 			</div>
 		</div>
 	</div>
@@ -152,9 +152,9 @@ hide:
 	  display: block; 
 	}
 </style>
+<div class="blue-text">
 
-
-
+</div>
 <style>
 .shadow-box-wavlink {
   width: fit-content;
@@ -166,18 +166,16 @@ hide:
   margin-bottom: 20px;
 }
 </style>
-
-<div class="shadow-box-wavlink">  
+<div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>Software version : M72HP3_V231101</b></h2>
+	<h2><b>Software version : M73HP3T_V240117</b></h2>
   </div>
   <h3> Release Note :</h3>
   <p>1. Fix bugs.</p>
-  <p>2. Redefine the semaphore and status light display.</p>
-  <h4>MD5 : 4936b7d4e04306bac7d3ac115212056b</h4>
+  <p>2. Fixed hardware acceleration enabled, unable to connect to the network after lower level wds.</p>
+  <h4>MD5：1f59653b9b0d1dc9a389c889f7933f33 </h4> 
   <div style="text-align:center">
-<a href="https://dl.wavlink.com/firmware/RD/WINSTAR_WN572HP3-A-R2-M72HP3_V231101-WO.bin" target="_blank" class="md-button">Download</a>
+<a href="https://dl.wavlink.com/firmware/RD/WAVLINK-WN573HP3T-A-M73HP3T_V240117-WO-xinple-GD-BY-FM.bin" target="_blank" class="md-button">Download</a>
 </div>
 </div>
-
 
