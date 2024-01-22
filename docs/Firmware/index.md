@@ -138,8 +138,21 @@ hide:
     }
   </style>
 
+<style>  
+    .kind-text {
+      color: #1D428A;
+	  #font-weight: bold;
+	  font-size: 25px;
+	  text-align: left;
+    }
+  </style>
 
-
+<style>
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #1D428A;
+}
 
 
 
@@ -179,11 +192,14 @@ hide:
 	</div>
 </div>
 
+<p class="kind-text">Router</p>
+<div class="line"></div>
+
 <div class="grid-container">
   <a href="fm-531ax3">
   <div class="box">WS-WN531AX3-A</div>
   </a>
-  <a href="fm-531ax3">
+  <a href="fm-536ax6">
   <div class="box">WS-WN536AX6-A</div>
   </a>
   <a href="fm-586x3">
@@ -212,7 +228,7 @@ hide:
 </div>
 
 <div class="grid-container">
-  <a href="">
+  <a href="fm-583ax3">
   <div class="box">WS-WN583AX3-A</div>
   </a>
 </div>
@@ -234,13 +250,13 @@ hide:
   <div class="box">WS-WN572HP3-A</div>
   </a>
   <a href="fm-573hx1">
-  <div class="box">WS-WN573HX1-A</div>
+  <div class="box">WS-WN573HX1-B</div>
   </a>  
-  <a href="">
+  <a href="fm-573hx3">
   <div class="box">WS-WN573HX3-A</div>
   </a>
-  <a href="">
-  <div class="box">WS-WN573HP3-A</div>
+  <a href="fm-573hp3t">
+  <div class="box">WS-WN573HP3T</div>
   </a>
 </div>
 
@@ -272,7 +288,7 @@ hide:
     .box {
       width: 100%;
       height: 55px;
-      box-shadow: 5px 5px 5px #888888;
+      box-shadow: 4px 4px 4px #9B9B9B;
       margin: 10px;
 	  text-align: center;
 	  padding: 14px;
@@ -284,7 +300,7 @@ hide:
 
     }
 	.box:hover {
-      box-shadow: 5px 5px 5px #888888;
+      box-shadow: 5px 5px 5px #9B9B9B;
 	  background-color: #1D428A; 
 	  border: none;
 	  color: #ffffff;
