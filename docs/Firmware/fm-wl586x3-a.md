@@ -110,7 +110,7 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Model : WS-WN573HX3-A</h1>
+				<h1>Model : MIGHTY EX1/WL-WN586X3-A</h1>
 				<p>If you encounter any issues, please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you ! </p>
 			</div>
 		</div>
@@ -158,7 +158,7 @@ hide:
 </div>
 <style>
 .shadow-box-wavlink {
-  width: 755px;
+  width: fit-content;
   height: fit-content;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -169,13 +169,14 @@ hide:
 </style>
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>Software version : M73HX3_V240105</b></h2>
+	<h2><b>Version: 20231110</b></h2>
   </div>
-  <h3> Release Note :</h3>
-  <p>1. M73HX3_V240105 WO version new software release.</p>
-  <h4>MD5：750867154fce79635e35afc1f600e019 </h4> 
+  <h3>Note :</h3>
+  <p>1. Support 64 characters in pppoe user name.</p>
+  <p>2. Recommend to do factory reset.</p>
+  <h4>Post Date : 10/11/2023 </h4> 
   <div style="text-align:center">
-<a href="https://dl.wavlink.com/firmware/RD/WAVLINK-WN573HX3(WN573HP3)-A-20240105-WO-GDBYFM.bin" target="_blank" class="md-button">Download</a>
+<a href="https://dl.wavlink.com/firmware/test/WN551X3_WAVLINK/WAVLINK_WN586X3-A_M86X3A_V240113_WO-GDBYFM.bin" target="_blank" class="md-button">Download</a>
 </div>
 </div>
 

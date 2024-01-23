@@ -148,13 +148,24 @@ hide:
   </style>
 
 <style>
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: #1D428A;
+.container {
+  position: relative;
 }
 
+.text {
+  font-size: 25px;
+}
 
+.line {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  height: 2px;
+  background-color: #1D428A;
+  width: 101%;
+}
+
+</style>
 
 
 
@@ -192,9 +203,10 @@ hide:
 	</div>
 </div>
 
+<!--
 <p class="kind-text">Router</p>
 <div class="line"></div>
-
+-->
 <div class="grid-container">
   <a href="fm-531ax3">
   <div class="box">WS-WN531AX3-A</div>
@@ -205,14 +217,62 @@ hide:
   <a href="fm-586x3">
   <div class="box">WS-WN586X3-A</div>
   </a> 
-  <a href="fm-531ax3">
-  <div class="box">WS-WN586X3-B</div>
+  <a href="fm-530n2">
+  <div class="box">WL-WN530N2</div>
+  </a> 
+  <a href="fm-532n2">
+  <div class="box">WL-WN532N2</div>
   </a>
-  <a href="fm-531ax3">
-  <div class="box">WS-WN591AX3-A</div>
+  <a href="fm-529r2p">
+  <div class="box">WL-WN529R2P</div>
   </a>
-  <a href="fm-531ax3">
-  <div class="box">WS-WN592AX6-A</div>
+  <a href="fm-538a8">
+  <div class="box">Quantum DAX/WL-WN538A8</div>
+  </a>
+  <a href="fm-531a6-A">
+  <div class="box">QUANTUM D6/WL-WN531A6-A</div>
+  </a>
+  <a href="fm-531a6-C">
+  <div class="box">QUANTUM D6/WL-WN531A6-C</div>
+  </a>
+  <a href="fm-531AX2">
+  <div class="box">WL-WN531AX2</div>
+  </a>
+  <a href="fm-530h4">
+  <div class="box">WL-WN530H4</div>
+  </a>
+  <a href="fm-530hg4">
+  <div class="box">WL-WN530HG4</div>
+  </a>
+  <a href="fm-533a8-c">
+  <div class="box">WL-WN533A8-C</div>
+  </a>
+  <a href="fm-531a3-b">
+  <div class="box">WL-WN531A3-B</div>
+  </a>
+  <a href="fm-531g3">
+  <div class="box">WL-WN531G3</div>
+  </a>
+  <a href="fm-535k1">
+  <div class="box">WL-WN535K1</div>
+  </a>
+  <a href="fm-529e4d">
+  <div class="box">WL-WN529E4D</div>
+  </a>
+  <a href="fm-530g3a">
+  <div class="box">WL-WN530G3A</div>
+  </a>
+  <a href="fm-535r1">
+  <div class="box">WL-WN535R1</div>
+  </a>
+  <a href="fm-579x3c">
+  <div class="box">WL-WN579X3C</div>
+  </a>
+  <a href="fm-583ax1">
+  <div class="box">WL-WN583AX1</div>
+  </a>
+  <a href="fm-531p3">
+  <div class="box">WL-WN531P3</div>
   </a>
 </div>
 
@@ -250,7 +310,7 @@ hide:
   <div class="box">WS-WN572HP3-A</div>
   </a>
   <a href="fm-573hx1">
-  <div class="box">WS-WN573HX1-B</div>
+  <div class="box">WS-WN573HX1-A</div>
   </a>  
   <a href="fm-573hx3">
   <div class="box">WS-WN573HX3-A</div>
