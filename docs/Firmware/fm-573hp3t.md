@@ -111,6 +111,7 @@ hide:
 		<div class="banner">
 			<div class="search_infoCenter">
 				<h1>Model : WS-WN573HP3T</h1>
+				<p>If you encounter any issues, please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you ! </p>
 			</div>
 		</div>
 	</div>
@@ -157,7 +158,7 @@ hide:
 </div>
 <style>
 .shadow-box-wavlink {
-  width: fit-content;
+  width: 755px;
   height: fit-content;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -171,8 +172,7 @@ hide:
 	<h2><b>Software version : M73HP3T_V240117</b></h2>
   </div>
   <h3> Release Note :</h3>
-  <p>1. Fix bugs.</p>
-  <p>2. Fixed hardware acceleration enabled, unable to connect to the network after lower level wds.</p>
+  <p>1. M73HP3T_V240117 WO New software release.</p>
   <h4>MD5：1f59653b9b0d1dc9a389c889f7933f33 </h4> 
   <div style="text-align:center">
 <a href="https://dl.wavlink.com/firmware/RD/WAVLINK-WN573HP3T-A-M73HP3T_V240117-WO-xinple-GD-BY-FM.bin" target="_blank" class="md-button">Download</a>
