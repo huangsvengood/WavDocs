@@ -130,7 +130,7 @@ hide:
       color: #1D428A;
 	  #font-weight: bold;
 	  font-size: 25px;
-	  text-align: center;
+	  text-align: left;
 	  line-height: 0;
 	  margin-top: 50px;
 	  font-style: italic;
@@ -213,17 +213,17 @@ hide:
 
 <style>
     .box_a {
-      width: 100%;
+      width: 102%;
       height: 0px;
       box-shadow: 0px 0px 0px #9B9B9B;
-      margin: 20px;
+      margin: 20px auto;
 	  text-align: center;
 	  padding: 0px;
 	  font-size: 25px;
-	  color: #1D428A;
+	  color: #9B9B9B;
 	  font-weight: bold;
 	  border: none;
-	  border-bottom: 3px solid #1D428A;
+	  border-bottom: 3px solid #CCD9E2;
     }
 </style>
 
@@ -397,16 +397,14 @@ hide:
     .box {
       width: 100%;
       height: 55px;
-      box-shadow: 4px 4px 4px #9B9B9B;
       margin: 10px;
 	  text-align: center;
 	  padding: 14px;
 	  font-size: 16px;
 	  color: #1D428A;
 	  font-weight: bold;
-	  border: none;
-
-
+	  border: 3px solid #1D428A;
+	  border-radius: 20px;
     }
 	.box:hover {
       box-shadow: 5px 5px 5px #9B9B9B;
