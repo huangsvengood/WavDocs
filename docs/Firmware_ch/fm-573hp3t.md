@@ -110,8 +110,8 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Model : WL-WN531AX2</h1>
-				<p>If you encounter any issues, please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you ! </p>
+				<h1>型号 : WS-WN573HP3T</h1>
+				<p>如果您遇到任何问题，请随时发送邮件至contact@wavlink.com反馈或联系在线客服，谢谢 !</p>
 			</div>
 		</div>
 	</div>
@@ -186,14 +186,13 @@ h2 {
 </style>
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>Version : 2023526</b></h2>
+	<h2><b>软件版本 : M73HP3T_V240117</b></h2>
   </div>
-  <h3> Release Note :</h3>
-  <p>1. Optimize and update. </p>
-  <p>2. Fix bugs.</p>
-  <h4>Post Date : 26/05/2023 </h4> 
+  <h3> 更新日志 :</h3>
+  <p>1. 新软件发行。</p>
+  <h4>MD5：1f59653b9b0d1dc9a389c889f7933f33 </h4> 
   <div style="text-align:center">
-<a href="https://files.wavlink.com/fw/2023/WINSTAR_WN531AX2-WO-2023-05-19-f92df25-mt7621-rfb-ax-nor-squashfs-sysupgrade.bin" target="_blank" class="md-button">Download</a>
+<a href="https://dl.wavlink.com/firmware/RD/WAVLINK-WN573HP3T-A-M73HP3T_V240117-WO-xinple-GD-BY-FM.bin" target="_blank" class="md-button">下载</a>
 </div>
 </div>
 

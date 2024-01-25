@@ -189,7 +189,7 @@ h2 {
 	<h2><b>Software version : M73HP3T_V240117</b></h2>
   </div>
   <h3> Release Note :</h3>
-  <p>1. M73HP3T_V240117 WO New software release.</p>
+  <p>1. New software release.</p>
   <h4>MD5：1f59653b9b0d1dc9a389c889f7933f33 </h4> 
   <div style="text-align:center">
 <a href="https://dl.wavlink.com/firmware/RD/WAVLINK-WN573HP3T-A-M73HP3T_V240117-WO-xinple-GD-BY-FM.bin" target="_blank" class="md-button">Download</a>
