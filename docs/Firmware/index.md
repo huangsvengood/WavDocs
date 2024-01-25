@@ -316,6 +316,8 @@ hide:
   <a href="fm-530n2">
   <div class="box">WL-WN530N2</div>
   </a> 
+</div>
+<div class="grid-container">
   <a href="fm-532n2">
   <div class="box">WL-WN532N2</div>
   </a>
@@ -364,6 +366,8 @@ hide:
   <a href="fm-573hx3">
   <div class="box">WS-WN573HX3-A</div>
   </a>
+</div>
+<div class="grid-container">
   <a href="fm-573hp3t">
   <div class="box">WS-WN573HP3T</div>
   </a>
@@ -391,7 +395,7 @@ hide:
   <style>
     .grid-container {
 	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+	  grid-template-columns: repeat(auto-fill, minmax(min(100%, 422px), 1fr));
 	  grid-gap: 20px;
 	}
     .box {
