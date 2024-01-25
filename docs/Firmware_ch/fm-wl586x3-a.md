@@ -110,8 +110,8 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Model : WL-WN531AX2</h1>
-				<p>If you encounter any issues, please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you ! </p>
+				<h1>型号 : MIGHTY EX1/WL-WN586X3-A</h1>
+				<p>如果您遇到任何问题，请随时发送邮件至contact@wavlink.com反馈或联系在线客服，谢谢！</p>
 			</div>
 		</div>
 	</div>
@@ -153,29 +153,12 @@ hide:
 	  display: block; 
 	}
 </style>
-<style>
-p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-h3 {
-  padding-top: 5px;
-  padding-bottom: 1px;
-}
-h4 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+<div class="blue-text">
 
-</style>
+</div>
 <style>
 .shadow-box-wavlink {
-  width: 755px;
+  width: fit-content;
   height: fit-content;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -186,14 +169,14 @@ h2 {
 </style>
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>Version : 2023526</b></h2>
+	<h2><b>固件版本: 20231110</b></h2>
   </div>
-  <h3> Release Note :</h3>
-  <p>1. Optimize and update. </p>
-  <p>2. Fix bugs.</p>
-  <h4>Post Date : 26/05/2023 </h4> 
+  <h3>注意 :</h3>
+  <p>1. Support 64 characters in pppoe user name.</p>
+  <p>2. Recommend to do factory reset.</p>
+  <h4>Post Date : 10/11/2023 </h4> 
   <div style="text-align:center">
-<a href="https://files.wavlink.com/fw/2023/WINSTAR_WN531AX2-WO-2023-05-19-f92df25-mt7621-rfb-ax-nor-squashfs-sysupgrade.bin" target="_blank" class="md-button">Download</a>
+<a href="https://dl.wavlink.com/firmware/test/WN551X3_WAVLINK/WAVLINK_WN586X3-A_M86X3A_V240113_WO-GDBYFM.bin" target="_blank" class="md-button">Download</a>
 </div>
 </div>
 

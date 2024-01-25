@@ -110,8 +110,8 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Model : WL-WN531AX2</h1>
-				<p>If you encounter any issues, please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you ! </p>
+				<h1>型号 : WL-WN583AX3-A</h1>
+				<p>如果您遇到任何问题，请随时发送邮件至contact@wavlink.com反馈或联系在线客服，谢谢 !</p>
 			</div>
 		</div>
 	</div>
@@ -176,7 +176,7 @@ h2 {
 <style>
 .shadow-box-wavlink {
   width: 755px;
-  height: fit-content;
+  height: 355x;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
@@ -186,14 +186,31 @@ h2 {
 </style>
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>Version : 2023526</b></h2>
+	<h2><b>软件版本 ：  M83AX3_V230531</b></h2>
   </div>
-  <h3> Release Note :</h3>
-  <p>1. Optimize and update. </p>
-  <p>2. Fix bugs.</p>
-  <h4>Post Date : 26/05/2023 </h4> 
+  <h3> 更新日志 :</h3>
+  <p>1. 修复问题。</p>
+  <p>2. 安全补丁升级。</p>
+  <p>3. 优化更新。</p>
   <div style="text-align:center">
-<a href="https://files.wavlink.com/fw/2023/WINSTAR_WN531AX2-WO-2023-05-19-f92df25-mt7621-rfb-ax-nor-squashfs-sysupgrade.bin" target="_blank" class="md-button">Download</a>
+<a href="https://dl.wavlink.com/drivers/fw/WAVLINK_WN583AX3-A_M83AX3_V231026.bin" target="_blank" class="md-button">下载</a>
 </div>
 </div>
+
+<div class="shadow-box-wavlink">
+  <div style="text-align:center;">	
+	<h2><b>软件版本 : 2023811</b></h2>
+  </div>
+  <h3>更新日志 ： </h3>
+  <p>1. 修复问题。</p>
+  <div style="text-align:center">
+<a href="https://files2.wavlink.com/drivers/fw/WAVLINK_WN583AX3-A_M83AX3_V230728_0515149.bin" target="_blank" class="md-button">下载</a>
+</div>
+</div>
+
+
+
+
+
+
 

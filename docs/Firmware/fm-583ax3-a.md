@@ -110,7 +110,8 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Model : WS-WN536AX6-A</h1>
+				<h1>Model : WL-WN583AX3-A</h1>
+				<p>If you encounter any issues, please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you ! </p>
 			</div>
 		</div>
 	</div>
@@ -152,12 +153,29 @@ hide:
 	  display: block; 
 	}
 </style>
-<div class="blue-text">
+<style>
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+h3 {
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+h4 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-</div>
+</style>
 <style>
 .shadow-box-wavlink {
-  width: fit-content;
+  width: 755px;
   height: fit-content;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -168,25 +186,23 @@ hide:
 </style>
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>Software version : M36AX6_V231222</b></h2>
+	<h2><b>Software version : M83AX3_V230531</b></h2>
   </div>
   <h3> Release Note :</h3>
   <p>1. Fix bugs.</p>
-  <p>2. Fixed hardware acceleration enabled, unable to connect to the network after lower level wds.</p>
-  <h4>MD5：99222739bc6c6a2eb0261b140673da17 </h4> 
+  <p>2. Upgrade the security patch.</p>
+  <p>3. Optimize and update.</p>
   <div style="text-align:center">
-<a href="https://dl.wavlink.com/firmware/RD/WAVLINK_WN536AX6-A_M36AX6_V231222-WO-0204709f40.bin" target="_blank" class="md-button">Download</a>
+<a href="https://dl.wavlink.com/drivers/fw/WAVLINK_WN583AX3-A_M83AX3_V231026.bin" target="_blank" class="md-button">Download</a>
 </div>
 </div>
 
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>Software version : M36AX6_V231222</b></h2>
+	<h2><b>Software version :  2023811</b></h2>
   </div>
   <h3> Release Note :</h3>
   <p>1. Fix bugs.</p>
-  <p>2. Fixed hardware acceleration enabled, unable to connect to the network after lower level wds.</p>
-  <h4>MD5：99222739bc6c6a2eb0261b140673da17 </h4> 
   <div style="text-align:center">
 <a href="https://files2.wavlink.com/drivers/fw/WAVLINK_WN583AX3-A_M83AX3_V230728_0515149.bin" target="_blank" class="md-button">Download</a>
 </div>
