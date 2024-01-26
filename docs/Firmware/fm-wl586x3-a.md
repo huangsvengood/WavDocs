@@ -153,9 +153,26 @@ hide:
 	  display: block; 
 	}
 </style>
-<div class="blue-text">
+<style>
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+h3 {
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+h4 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-</div>
+</style>
 <style>
 .shadow-box-wavlink {
   width: fit-content;
