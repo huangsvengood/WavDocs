@@ -308,7 +308,7 @@ hide:
 </div>
 <div class="grid-container">
   <a href="fm-529e4d">
-  <div class="box">WL-WN529E4D</div>
+  <div class="box">WS-WN529E4D</div>
   </a>
   <a href="fm-529r2p">
   <div class="box">WL-WN529R2P</div>

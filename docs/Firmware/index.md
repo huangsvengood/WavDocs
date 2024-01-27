@@ -308,7 +308,7 @@ hide:
 </div>
 <div class="grid-container">
   <a href="fm-529e4d">
-  <div class="box">WL-WN529E4D</div>
+  <div class="box">WS-WN529E4D</div>
   </a>
   <a href="fm-529r2p">
   <div class="box">WL-WN529R2P</div>
@@ -407,7 +407,7 @@ hide:
 	  font-size: 16px;
 	  color: #1D428A;
 	  font-weight: bold;
-	  border: 3px solid #1D428A;
+	  border: 2px solid #1D428A;
 	  border-radius: 20px;
     }
 	.box:hover {
