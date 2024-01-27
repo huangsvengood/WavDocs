@@ -185,7 +185,7 @@ hide:
 	  font-size: 22px;
 	  color: #1D428A;
 	  font-weight: bold;
-	  border: 3px solid #1D428A;
+	  border: 2px solid #1D428A;
 
 
     }

@@ -1,5 +1,4 @@
-!!! note ""
-	__This function is currently only available to Outdoor AP.__
+---
 Advance >  Signal Adjustment
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/signal.png">

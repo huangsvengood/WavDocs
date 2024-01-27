@@ -199,7 +199,7 @@ h2 {
 
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
-	<h2><b>软件版本 : 2023811</b></h2>
+	<h2><b>软件版本 : 2023811</b></h2>
   </div>
   <h3>更新日志 ： </h3>
   <p>1. 修复问题。</p>

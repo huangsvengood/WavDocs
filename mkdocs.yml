@@ -96,12 +96,11 @@ nav:
         - Custom DNS Server: feature_guide/cutm_dns-server.md
         - SQM QoS: feature_guide/sqm.md
         - ADGuard: feature_guide/adguard.md
-        - Singal Adjustment: feature_guide/signal_adjustment.md
       - Repeater/AP:
         - Security: feature_guide/repeaterap_security.md
         - Remote Control: feature_guide/repeaterap_remotecontrol.md
-        - Port Forwarding: feature_guide/repeaterap_portforwarding.md
         - Network Diagnostics: feature_guide/repeaterap_networkdiagnostics.md
+        - Singal Adjustment: feature_guide/signal_adjustment.md
     - More:
       - Router:
         - Time Zone: feature_guide/time.md

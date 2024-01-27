@@ -178,8 +178,9 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 			<img class="boxshadow" src="/images/indoor024.png">
 		</div>
-		
-<a name="section4"> </a>
+	
+	
+<a name="section3"></a>
 !!! note ""
 	=== "Repeater Mode"
 		__Repeater Mode__  :  Any Wi Fi signal network can be expanded through wireless.
