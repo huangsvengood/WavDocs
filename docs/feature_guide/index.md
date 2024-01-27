@@ -108,7 +108,7 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Featrue Guide</h1>
+				<h1>Feature Guide</h1>
 				<p class="no-hover">Here is the Feature Guide of wavlink, where you can view all the features of the wavlink device.</p>
 				<p class="no-hover">Their functional interfaces are not completely consistent, so we provide classified viewing.</p>
 			</div>
