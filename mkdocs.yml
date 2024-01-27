@@ -4,127 +4,129 @@ site_author: WAVLINK
 copyright: Copyright 2023 WAVLINK Technology Co., Ltd.
 
 nav: 
-  - Welcom: index.md
-  - Products: 
-    - Overview: Products/index.md
-    - AX6000: 
-      - AX6000: Products/ax6000/index.md
-      - WS-WN536AX6-A: Products/ax6000/wn536ax6-a/index.md
-      - WS-WN592AX6-A: Products/ax6000/wn592ax6-a/index.md
-    - AX3000:
-      - AX3000: Products/ax3000/index.md
-      - WS-WN591AX3-A: Products/ax3000/wn591ax3-a/index.md
-      - WS-WN573HX3-A: Products/ax3000/wn573hx3-a/index.md
-      - WS-WN583AX3-A: Products/ax3000/wn583ax3-a/index.md
-      - WS-WN586X3-B: Products/ax3000/wn586x3-b/index.md
-      - WS-WN573HP3-A: Products/ax3000/wn573hp3-a/index.md
-      - WS-WN531AX3-A: Products/ax3000/wn531ax3-a/index.md
-      - WS-WNF100X3NR-A: Products/ax3000/wnf100x3nr-a/index.md
-    - AC1200:
-      - AC1200: Products/ac1200/index.md
-    - N3000:
-      - N3000: Products/n3000/index.md
-  - FAQ: 
-    - Overview: FAQ/index.md
-    - Router-First Time Setup: FAQ/first_time_setup.md
-    - Indoor Repeater-First Time Setup: FAQ/indoor_repeater_first_time_setup.md
-    - Outdoor AP-First Time Setup: FAQ/outdoor_ap_first_time_setup.md
+  - Firmware: Firmware/index.md
+#  - Welcom: index.md
+#  - Products: 
+#    - Overview: Products/index.md
+#    - AX6000: 
+#      - AX6000: Products/ax6000/index.md
+#      - WS-WN536AX6-A: Products/ax6000/wn536ax6-a/index.md
+#      - WS-WN592AX6-A: Products/ax6000/wn592ax6-a/index.md
+#    - AX3000:
+#      - AX3000: Products/ax3000/index.md
+#      - WS-WN591AX3-A: Products/ax3000/wn591ax3-a/index.md
+#      - WS-WN573HX3-A: Products/ax3000/wn573hx3-a/index.md
+#      - WS-WN583AX3-A: Products/ax3000/wn583ax3-a/index.md
+#      - WS-WN586X3-B: Products/ax3000/wn586x3-b/index.md
+#      - WS-WN573HP3-A: Products/ax3000/wn573hp3-a/index.md
+#      - WS-WN531AX3-A: Products/ax3000/wn531ax3-a/index.md
+#      - WS-WNF100X3NR-A: Products/ax3000/wnf100x3nr-a/index.md
+#    - AC1200:
+#      - AC1200: Products/ac1200/index.md
+#    - N3000:
+#      - N3000: Products/n3000/index.md
+#  - FAQ: 
+#    - Overview: FAQ/index.md
+#    - Router-First Time Setup: FAQ/first_time_setup.md
+#    - Indoor Repeater-First Time Setup: FAQ/indoor_repeater_first_time_setup.md
+#    - Outdoor AP-First Time Setup: FAQ/outdoor_ap_first_time_setup.md
  #   - How to Connect to WiFi?: FAQ/How_to_Connect_to_WiFi.md
  #   - What is the use of offline terminal management?: FAQ/What_is_the_use_of_offline_terminal_management.md
-    - How to upgrade router firmware?: FAQ/How_to_upgrade_router_firmware.md
+ #   - How to upgrade router firmware?: FAQ/How_to_upgrade_router_firmware.md
 #    - How to setup OpenVPN Server?: FAQ/how_to_steup_OpenVPN_Server.md
  #   - How to setup OpenVPN Client?: FAQ/how_to_steup_OpenVPN_Client.md
   #  - How to configure WireGuard Server?: FAQ/how_to_configure_the_wireguaid_server.md
    # - How to configure WireGuard Client?: FAQ/how_to_configure_the_wireguaid_client.md
-    - How to check whether the computer supports remote wake-up?: FAQ/How_to_check_whether_the_computer_supports_remote_wake-up.md
+#    - How to check whether the computer supports remote wake-up?: FAQ/How_to_check_whether_the_computer_supports_remote_wake-up.md
  # - Tutorials: tutorials/index.md
-  - Feature Guide: 
-    - Overview: feature_guide/index.md
-    - Wireless: 
-      - Router: 
-        - Wireless: feature_guide/wireless.md
-        - Guest WiFi: feature_guide/guest_network.md
-      - Repeater/AP:
-        - Wireless: feature_guide/repeaterap_wireless.md
-    - Network:
-      - Router:
-        - Mode selection: feature_guide/pattern_selection.md
-        - WAN: feature_guide/wan.md
-        - LAN: feature_guide/lan.md
-        - IPv6: feature_guide/ipv6.md
-        - Static IP: feature_guide/static_ip.md
-      - Repeater/AP:
-        - WAN: feature_guide/repeaterap_wan.md
-        - LAN: feature_guide/repeaterap_lan.md
-        - Static IP: feature_guide/repeaterap_staticip.md
-    - Mesh Network:
-      - Router: 
-        - How to establish a Mesh network: feature_guide/mesh_network.md
-        - Mesh Topology:  feature_guide/mesh_topo.md
-      - Repeater/AP:
-        - Mesh Topology:  feature_guide/repeaterap_mesh.md
-    - Terminal:
-      - Terminal - Router: feature_guide/terminal.md
-      - Terminal - Repeater/AP: feature_guide/repeaterap_terminal.md
-    - Parental control: 
-      - WiFi Scheduling: feature_guide/parental_wifi.md
-      - Web Block: feature_guide/parental_ctrl.md
-    - VPN: 
-      - OpenVPN Client: feature_guide/openVPN.md
-      - OpenVPN Server: feature_guide/openVPN_server.md
-      - WireGuard Client: feature_guide/wireguard.md
-      - WireGuard Server: feature_guide/wireguard_server.md
-      - VPN Client: feature_guide/vpnclient.md
-      - ZeroTier: feature_guide/zerotier.md
-    - USB:
-      - USB DLNA: feature_guide/usbdlna.md
-      - USB Print Service: feature_guide/usbprint.md
-    - Advanced Settings:
-      - Router:
-        - Security: feature_guide/secure.md     
-        - Remote Control: feature_guide/remote_ctrl.md
-        - Dynamic DNS: feature_guide/dynamic_dns.md
-        - Cloud App Settings: feature_guide/cloud_app.md
-        - UPnP: feature_guide/upnp.md
-        - Port Forwarding: feature_guide/port_forwarding.md
-        - DMZ Management: feature_guide/DMZ_Management.md
-        - IPTV/VLAN: feature_guide/IPTV_VLAN.md
-        - Hardware NAT Settings: feature_guide/Hardware.md
-        - Network Diagnostics: feature_guide/network_diango.md
-        - Remote Wakeup: feature_guide/remote_wakeup.md
-        - ALG: feature_guide/alg.md
-        - Custom DNS Server: feature_guide/cutm_dns-server.md
-        - SQM QoS: feature_guide/sqm.md
-        - ADGuard: feature_guide/adguard.md
-      - Repeater/AP:
-        - Security: feature_guide/repeaterap_security.md
-        - Remote Control: feature_guide/repeaterap_remotecontrol.md
-        - Network Diagnostics: feature_guide/repeaterap_networkdiagnostics.md
-        - Singal Adjustment: feature_guide/signal_adjustment.md
-    - More:
-      - Router:
-        - Time Zone: feature_guide/time.md
-        - Led Control: feature_guide/led_ctrl.md
-        - Change admin password: feature_guide/password_admin.md
-        - Backup and Restore: feature_guide/backup.md
-        - Firmware Upgrade: feature_guide/firmware.md
-        - Timing Reboot: feature_guide/timing_reboot.md
-        - Router Reboot/Logout: feature_guide/router_reboot.md
-      - Repeater/AP:
-        - Time Zone: feature_guide/repeaterap_timezone.md
-        - Led Control: feature_guide/repeaterap_led.md
-        - Admin Password: feature_guide/repeaterap_admin.md
-        - Firmware Upgrade: feature_guide/repeaterap_firmware.md
-        - Backup and Restore: feature_guide/repeaterap_backup.md
-        - Timing Reboot: feature_guide/repeaterap_timing.md
-        - Router Reboot/Logout: feature_guide/repeaterap_reboot_logout.md
+#  - Feature Guide: 
+#    - Overview: feature_guide/index.md
+#    - Wireless: 
+#      - Router: 
+#        - Wireless: feature_guide/wireless.md
+#        - Guest WiFi: feature_guide/guest_network.md
+#      - Repeater/AP:
+#        - Wireless: feature_guide/repeaterap_wireless.md
+#    - Network:
+#      - Router:
+#        - Mode selection: feature_guide/pattern_selection.md
+#        - WAN: feature_guide/wan.md
+#        - LAN: feature_guide/lan.md
+#        - IPv6: feature_guide/ipv6.md
+#        - Static IP: feature_guide/static_ip.md
+#      - Repeater/AP:
+#        - WAN: feature_guide/repeaterap_wan.md
+#        - LAN: feature_guide/repeaterap_lan.md
+#        - Static IP: feature_guide/repeaterap_staticip.md
+#    - Mesh Network:
+#      - Router: 
+#        - How to establish a Mesh network: feature_guide/mesh_network.md
+#        - Mesh Topology:  feature_guide/mesh_topo.md
+#      - Repeater/AP:
+#        - Mesh Topology:  feature_guide/repeaterap_mesh.md
+#    - Terminal:
+#      - Terminal - Router: feature_guide/terminal.md
+#      - Terminal - Repeater/AP: feature_guide/repeaterap_terminal.md
+#    - Parental control: 
+#      - WiFi Scheduling: feature_guide/parental_wifi.md
+#      - Web Block: feature_guide/parental_ctrl.md
+#    - VPN: 
+#      - OpenVPN Client: feature_guide/openVPN.md
+#      - OpenVPN Server: feature_guide/openVPN_server.md
+#      - WireGuard Client: feature_guide/wireguard.md
+#      - WireGuard Server: feature_guide/wireguard_server.md
+#       - VPN Client: feature_guide/vpnclient.md
+ #      - ZeroTier: feature_guide/zerotier.md
+  #   - USB:
+ #      - USB DLNA: feature_guide/usbdlna.md
+ #      - USB Print Service: feature_guide/usbprint.md
+ #    - Advanced Settings:
+ #      - Router:
+#       - Security: feature_guide/secure.md     
+#      - Remote Control: feature_guide/remote_ctrl.md
+ #      - Dynamic DNS: feature_guide/dynamic_dns.md
+ #     - Cloud App Settings: feature_guide/cloud_app.md
+ #    - UPnP: feature_guide/upnp.md
+ #      - Port Forwarding: feature_guide/port_forwarding.md
+ #      - DMZ Management: feature_guide/DMZ_Management.md
+ #      - IPTV/VLAN: feature_guide/IPTV_VLAN.md
+ #      - Hardware NAT Settings: feature_guide/Hardware.md
+ #      - Network Diagnostics: feature_guide/network_diango.md
+ #      - Remote Wakeup: feature_guide/remote_wakeup.md
+ #      - ALG: feature_guide/alg.md
+ #      - Custom DNS Server: feature_guide/cutm_dns-server.md
+ #      - SQM QoS: feature_guide/sqm.md
+ #      - ADGuard: feature_guide/adguard.md
+ #    - Repeater/AP:
+ #      - Security: feature_guide/repeaterap_security.md
+ #      - Remote Control: feature_guide/repeaterap_remotecontrol.md
+ #      - Network Diagnostics: feature_guide/repeaterap_networkdiagnostics.md
+ #      - Singal Adjustment: feature_guide/signal_adjustment.md
+ #   - More:
+ #     - Router:
+ #       - Time Zone: feature_guide/time.md
+ #       - Led Control: feature_guide/led_ctrl.md
+ #       - Change admin password: feature_guide/password_admin.md
+ #       - Backup and Restore: feature_guide/backup.md
+ #       - Firmware Upgrade: feature_guide/firmware.md
+ #      - Timing Reboot: feature_guide/timing_reboot.md
+ #      - Router Reboot/Logout: feature_guide/router_reboot.md
+ #     - Repeater/AP:
+ #       - Time Zone: feature_guide/repeaterap_timezone.md
+ #       - Led Control: feature_guide/repeaterap_led.md
+ #       - Admin Password: feature_guide/repeaterap_admin.md
+ #       - Firmware Upgrade: feature_guide/repeaterap_firmware.md
+ #       - Backup and Restore: feature_guide/repeaterap_backup.md
+ #       - Timing Reboot: feature_guide/repeaterap_timing.md
+ #       - Router Reboot/Logout: feature_guide/repeaterap_reboot_logout.md
  # - Video Library: video_library/index.md
-  - Firmware: Firmware/index.md
+
  # - Community: community/index.md
 
 theme: 
   name: material
   logo: images/logo1.png
+  search: false
   features:
     - navigation.indexes
     - navigation.tabs
@@ -172,7 +174,10 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-#plugins:
+plugins:
+  - search:
+      enabled: false
+
 #  - blog
 #  - search:
 #      separator: '[\s\u200b\-]'

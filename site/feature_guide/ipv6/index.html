@@ -1,0 +1,555 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for WAVLINK Router Productions">
+      
+      
+        <meta name="author" content="WAVLINK">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../images/logo-icon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Ipv6 - WAVLINK Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 13v-2h8l-3.5-3.5 1.42-1.42L17.84 12l-5.92 5.92-1.42-1.42L14 13H6m16-1a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ipv6-wan-settings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WAVLINK Docs" class="md-header__button md-logo" aria-label="WAVLINK Docs" data-md-component="logo">
+      
+  <img src="../../images/logo1.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WAVLINK Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ipv6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Firmware/" class="md-tabs__link">
+        
+  
+    
+  
+  Firmware
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WAVLINK Docs" class="md-nav__button md-logo" aria-label="WAVLINK Docs" data-md-component="logo">
+      
+  <img src="../../images/logo1.png" alt="logo">
+
+    </a>
+    WAVLINK Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ipv6-wan-settings" class="md-nav__link">
+    IPv6 WAN Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-ipv6-you-should-check-these" class="md-nav__link">
+    Configure ipv6 you should check these :
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure ipv6 you should check these :">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-detection" class="md-nav__link">
+    Automatic Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv4ipv6-pppoe" class="md-nav__link">
+    IPv4+IPv6 PPPOE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-ipv6-address" class="md-nav__link">
+    Static IPv6 Address
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipv6-lan-settings" class="md-nav__link">
+    IPv6 LAN Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="IPv6 LAN Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-allocation" class="md-nav__link">
+    Automatic Allocation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slaac" class="md-nav__link">
+    SLAAC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Ipv6</h1>
+
+<!--<style>
+    .text {
+        font-size: 21px; 
+    }
+</style>
+-->
+<div class="admonition note">
+<p><strong>This feature is currently only available to routers.</strong></p>
+</div>
+<hr />
+<p>More Settings &gt; Network &gt; IPV6 Settings
+    <div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv600.png">
+    </div></p>
+<p class="text">
+IPv6 is a next-generation internet protocol with larger address space, improved functionality, and enhanced security. It's introduction is aimed at addressing the growing number of interconnected devices and providing better network performance and security
+</p>
+<h2 id="ipv6-wan-settings"><strong>IPv6 WAN Settings</strong></h2>
+<p class="text">
+The method of obtaining IPv6 can vary depending on the network environment and provider support. Here is a brief description and differences between the different acquisition methods.
+</p>
+
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6_01.png">
+</div>
+
+<h2 id="configure-ipv6-you-should-check-these"><strong>Configure ipv6 you should check these :</strong></h2>
+<p><strong>Check network support</strong> : First, make sure your network environment supports IPv6. You can contact your ISP or administrator to confirm whether they offer IPv6 connectivity.</p>
+<p><strong>Router configuration</strong> : Enter the router's management interface and find the IPv6 configuration option. You can choose to enable IPv6 and select the appropriate IPv6 connection type. Save and apply settings.</p>
+<p><strong>Device configuration</strong> : Once your router is configured, you need to configure IPv6 on the device.In your device's network settings, you can find the IPv6 option and enable it. The device will automatically obtain an IPv6 address, or you can manually configure an IPv6 address.</p>
+<p>If you have enabled the ipv6 service, we provide <strong>two examples to help you check your ipv6 address</strong>.</p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Mobile</label><label for="__tabbed_1_2">Compute</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>If you use a mobile phone to connect to the router WiFi, you will see the ipv6 address assigned by the router to the mobile phone in mobile phone <strong>Settings &gt; WiFi settings</strong>.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6002.png">
+</div></p>
+<p>You can check whether the ipv6 network is successfully enabled by visiting the ipv6 website <strong>(http://www.test-ipv6.com)</strong>.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6007.png">
+</div></p>
+</div>
+<div class="tabbed-block">
+<p>If you are using a computer, you can type "<strong>win <img class="boxshadow" src="/images/ipv6003.png">  + R</strong>"  on the keyboard at the same time, enter "<strong>cmd</strong>" in the pop-up search box and click "Enter".
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6004.png">
+</div>
+Enter "<strong>ipconfig</strong>" in the terminal box and hit "<strong>Enter</strong>". You can view your ipv6 address.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6005.png">
+</div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6006.png">
+</div></p>
+<p>You can check whether the ipv6 network is successfully enabled by visiting the ipv6 website <strong>(http://www.test-ipv6.com)</strong>.
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6008.png">
+</div></p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="automatic-detection"><strong>Automatic Detection</strong></h3>
+<p class="text">
+This method is the most common and simple way to obtain an IPv6 address by automatically detecting the network environment. When you connect to an IPv6-enabled network, your device automatically obtains an IPv6 address. This method generally works on home or public networks and requires no special configuration.
+</p>
+
+<h3 id="ipv4ipv6-pppoe"><strong><a href="">IPv4+IPv6 PPPOE</a></strong></h3>
+<p class="text">
+PPPOE (Point-to-Point Protocol Over Ethernet) is a protocol used to establish network connections. IPv4+IPv6 PPPOE is a method of obtaining both IPv4 and IPv6 addresses through a PPPOE connection. It can be used in networks that support PPPOE, such as network connections provided by some broadband access service providers (ISPs). This method may require you to configure the PPPOE username and password in the network settings.
+</p>
+<div style="text-align: center;">
+    <img alt="guest wifi" class="boxshadow" src="/images/ipv6_03.png">
+</div>
+
+<h3 id="static-ipv6-address"><strong>Static IPv6 Address</strong></h3>
+<p class="text">
+A static IPv6 address is a fixed IPv6 address that you configure manually. When using this method, you need to manually enter network configuration information such as IPv6 address, subnet prefix length, default gateway, and DNS server. This method is usually suitable for specific purposes that require a fixed public IPv6 address, such as servers or network devices.
+</p>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6-04.png">
+</div>
+
+<p>Example : </p>
+<p>After setting up, click <strong>Save</strong> and wait for the configuration application. After refreshing, you can access the ipv6 website.</p>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6010.png">
+</div>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6011.png">
+</div>
+
+<p>Open the browser and enter <strong>http://ipv6-test.com</strong> in the address bar to visit the ipv6 test website.</p>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6009.png">
+</div>
+<div class="admonition note">
+<p><p class="text">
+The difference between these methods is how the IPv6 address is obtained and the complexity of the configuration. Automatic detection is the simplest way and works in most cases. IPv4+IPv6 PPPOE requires the PPPOE username and password in the network settings. Static IPv6 addresses require manual configuration of detailed network information.
+</p>
+<p class="text">
+Which method to use depends on your network environment and your service provider's support. If you are unsure, it is recommended to contact your network service provider or administrator for accurate configuration information and recommendations.
+</p></p>
+</div>
+<h2 id="ipv6-lan-settings"><strong>IPv6 LAN Settings</strong></h2>
+<p class="text">
+IPv6 LAN addresses can be obtained through Automatic Allocation and SLAAC (Stateless Address Autoconfiguration). The uses and differences between these two methods are as follows :
+</p>
+<h3 id="automatic-allocation"><strong>Automatic Allocation</strong></h3>
+<p class="text">
+In automatic allocation mode, IPv6 LAN addresses are automatically allocated by network devices or routers to devices connected to the network. This method usually uses the DHCPv6 (Dynamic Host Configuration Protocol for IPv6) protocol for address allocation. After the device is connected to the network, it will automatically send a DHCPv6 request to the router, and the router will assign an available IPv6 address to the device.
+</p>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6_02.png">
+</div>
+
+<p class="text">
+To use automatic allocation, you need to ensure that there is a router or device in the network that supports DHCPv6 and that the DHCPv6 server has been configured correctly. The device automatically obtains an IPv6 address when connected to the network, no manual configuration is required.
+</p>
+
+<h3 id="slaac"><strong><a href="">SLAAC</a></strong></h3>
+<p class="text">
+SLAAC(Stateless Address Autoconfiguration) is a stateless address automatic configuration method that automatically assigns IPv6 addresses to devices by taking advantage of IPv6 features. In SLAAC, the device receives a network prefix (Prefix) from the router in the network, and then automatically constructs its own IPv6 address based on the prefix.
+</p>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/ipv6_05.png">
+</div>
+<p class="text">
+To use SLAAC, you need to ensure that the routers in the network have been configured with IPv6 prefixes and broadcast the prefixes to devices connected to the network. The device automatically generates an IPv6 address based on the prefix, without using DHCPv6 or other configuration.
+</p>
+<div class="admonition note">
+<p>The difference :</p>
+<ul>
+<li>
+<p>Automatic Allocation relies on the DHCPv6 protocol and the configured DHCPv6 server for address allocation, while SLAAC implements automatic address configuration through router broadcast network prefixes.</p>
+</li>
+<li>
+<p>Automatic Allocation requires DHCPv6 configuration and management, while SLAAC does not require additional configuration.</p>
+</li>
+<li>
+<p>Automatic Allocation can provide more flexibility, such as other network information such as DNS server and gateway addresses can be allocated through a DHCPv6 server. SLAAC only provides address configuration, and other network information may need to be obtained through other methods.</p>
+</li>
+</ul>
+</div>
+<p class="text">
+Which method to use depends on your network environment and needs. If unsure, it is recommended to contact your network administrator or service provider for accurate configuration information and recommendations.
+</p>
+
+<hr />
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2023 WAVLINK Technology Co., Ltd.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.top", "navigation.path", "navigation.instant", "navigation.expand", "content.code.select", "toc.follow", "content.tooltips"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>

@@ -7,7 +7,7 @@ hide:
 Learn how to use wavlink's devices and how to solve some common problems.
 
 ## Getting Started Guide
-- __[Router-First Time Setup]()__
+- __[Router-First Time Setup](/FAQ/first_time_setup/)__
 - __[Indoor Repeater-First Time Setup]()__
 - __[Outdoor AP-First Time Setup]()__
 
