@@ -1,0 +1,694 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for WAVLINK Router Productions">
+      
+      
+        <meta name="author" content="WAVLINK">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../images/logo-icon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Indoor repeater first time setup - WAVLINK Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 13v-2h8l-3.5-3.5 1.42-1.42L17.84 12l-5.92 5.92-1.42-1.42L14 13H6m16-1a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WAVLINK Docs" class="md-header__button md-logo" aria-label="WAVLINK Docs" data-md-component="logo">
+      
+  <img src="../../images/logo1.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WAVLINK Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Indoor repeater first time setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Firmware/" class="md-tabs__link">
+        
+  
+    
+  
+  Firmware
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WAVLINK Docs" class="md-nav__button md-logo" aria-label="WAVLINK Docs" data-md-component="logo">
+      
+  <img src="../../images/logo1.png" alt="logo">
+
+    </a>
+    WAVLINK Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Firmware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Indoor repeater first time setup</h1>
+
+<p>Here is the first-time wizard for Indoor Repeater. You can refer to this wizard to complete the initial settings of your Indoor Repeater.</p>
+<p>Every product requires initialization settings before use. Before initialization settings, we need to <strong>power on the device</strong>. After powering on, you need to connect the device. The different connection methods are listed below. You can choose any one of them and follow the steps to complete the connection.</p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Phone/Tab</label><label for="__tabbed_1_2">Wireless Connection(PC)</label><label for="__tabbed_1_3">Wired Connection(PC)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoorphone.png">
+</div></p>
+<p>1 .  Click Connect and it will automatically jump to the WiFi connection interface. You only need to <strong>correctly select your device WiFi</strong> and <strong>connect</strong>. Like the example below.<strong>(The WiFi name can be found in the user manual or the product bottom label.)</strong>
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor001.png">
+</div>  </p>
+<div class="admonition question">
+<p class="admonition-title">Default WiFi name</p>
+<p>The default WiFi name can be found in the user manual or the product bottom label.</p>
+<p>2.4G SSID: WAVLINK-AX_XXXX</p>
+<p>5G SSID: WAVLINK-AX_5G_XXXX</p>
+<p>"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.</p>
+</div>
+<p>2 . After connection, it will <strong>automatically jump</strong> to the initialization configuration interface.
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor002.png">
+</div>  </p>
+<p>3 . Click <strong>"Begin configuration"</strong> to start the initial configuration of the router.Select the <strong>country and time zone</strong>.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor003.png">
+</div>  </p>
+<p>4 . Select a mode for the device. <strong>The default is Repeater Mode</strong>. If you want to choose other modes, please wait <strong>31s</strong>. The following is a list of setting methods for different modes. You can choose any mode you want.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor004.png">
+</div>  </p>
+<p>5 . There are three modes for you to choose from. The Mesh Extender Mode requires no configuration. The device is equivalent to the Mesh Extender Mode in the reset state.
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor024.png">
+</div>  </p>
+</div>
+<div class="tabbed-block">
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoorwireless.png">
+</div></p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Windows</label><label for="__tabbed_2_2">MacOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>① Turn on the computer, click this icon  <img class="boxshadow" src="/images/win01.png">  (this status of the icon indicates that the computer is not connected to the network), and a wireless connection pop-up window will appear,enable the WiFi function ,find your default WiFi name and click to connect to WiFi.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/win03.png">
+</div>  </p>
+</div>
+<div class="tabbed-block">
+<p>①  Turn on the computer,click &nbsp; <img class="boxshadow" src="/images/mac11.png"> &nbsp;  ➡ &nbsp;  <img class="boxshadow" src="/images/mac33.png">&nbsp;, enter the WiFi settings page to enable the WiFi function.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/mac02.png">
+</div></p>
+<p>Or click the icon &nbsp; <img class="boxshadow" src="/images/mac00.png"> &nbsp;on the system bar to enable the WiFi function.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/mac01.png">
+</div>
+②  Find your default WiFi name and click to connect to WiFi.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Default WiFi name</p>
+<p>The default WiFi name can be found in the user manual or the product bottom label.</p>
+<p>2.4G SSID: WAVLINK-AX_XXXX</p>
+<p>5G SSID: WAVLINK-AX_5G_XXXX</p>
+<p>"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.</p>
+</div>
+<p>1 . <strong>New devices or reset devices need to log in to the administrator interface for initialization settings.</strong></p>
+<p>2 . <strong>There are two ways to log in to the wavlink router management interface :</strong></p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Log in using the domain name</label><label for="__tabbed_3_2">Log in using your IP address </label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Log in using the domain name <strong>http://waplogin.link</strong>. (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address.)</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor018.png">
+</div>  </p>
+</div>
+<div class="tabbed-block">
+<p>Log in using your IP address <strong>http://192.168.10.1</strong>.(If you want to log in using your IP address, please refer to the steps below.)
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor019.png">
+</div></p>
+<div class="admonition question">
+<p class="admonition-title">About IP address(192.168.10.1)</p>
+<p>Different devices have different IP addresses. For specific IP addresses, please refer to the specific <strong>device manual</strong> or <strong>label on the bottom of the device</strong>.For the actual method of obtaining an IP address, refer to the following steps.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>3 . After logging in to the device management interface, click <strong>"Begin configuration"</strong> to start configuration.      <br />
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor020.png">
+</div></p>
+<p>4 . Select <strong>country and time zone</strong>.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor022.png">
+</div></p>
+<p>5 . Select a mode for the device. <strong>The default is Repeater Mode</strong>. If you want to choose another mode, please wait <strong>31s</strong>. The following is a list of setting methods for different modes. You can choose any mode you want.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor023.png">
+</div></p>
+<p>6 . There are three modes for you to choose from. The Mesh Extender Mode requires no configuration. The device is equivalent to the Mesh Extender Mode in the reset state.
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor024.png">
+</div></p>
+</div>
+<div class="tabbed-block">
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoorwired.png">
+</div></p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Windows</label><label for="__tabbed_4_2">MacOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>①  To use wired access to the Internet, connect an Ethernet cable between the router's wan port and the Ethernet port on your computer. If your computer doesn't have an Ethernet port, try using a USB to Ethernet adapter.</p>
+<p>②  Connect one end of the first network cable to the network port of the computer, the other end to the LAN port of the router.</p>
+<p>③  After successful connection, this icon " <img class="boxshadow" src="/images/compute01.png"> " will be displayed on the computer taskbar.</p>
+</div>
+<div class="tabbed-block">
+<p>① To use wired access to the Internet, connect an Ethernet cable between the router's wan port and the Ethernet port on your Mac. If your computer doesn't have an Ethernet port, try using a USB to Ethernet adapter.</p>
+<p>② After the connection is successful, the device will automatically identify the network. </p>
+</div>
+</div>
+</div>
+</div>
+<p>1 . <strong>New devices or reset devices need to log in to the administrator interface for initialization settings.</strong></p>
+<p>2 . <strong>There are two ways to log in to the wavlink router management interface :</strong></p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Log in using the domain name</label><label for="__tabbed_5_2">Log in using your IP address </label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Log in using the domain name <strong>http://waplogin.link</strong>. (It is recommended that you use a domain name to log in. If you fail to log in using a domain name, please try to log in using an IP address.)</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor018.png">
+</div>  </p>
+</div>
+<div class="tabbed-block">
+<p>Log in using your IP address <strong>http://192.168.10.1</strong>.(If you want to log in using your IP address, please refer to the steps below.)
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor019.png">
+</div></p>
+<div class="admonition question">
+<p class="admonition-title">About IP address(192.168.10.1)</p>
+<p>Different devices have different IP addresses. For specific IP addresses, please refer to the specific <strong>device manual</strong> or <strong>label on the bottom of the device</strong>.For the actual method of obtaining an IP address, refer to the following steps.       </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>3 . After logging in to the device management interface, click <strong>"Begin configuration"</strong> to start configuration.      <br />
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor020.png">
+</div></p>
+<p>4 . Select <strong>country and time zone</strong>.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor022.png">
+</div></p>
+<p>5 . Select a mode for the device. <strong>The default is Repeater Mode</strong>. If you want to choose another mode, please wait <strong>31s</strong>. The following is a list of setting methods for different modes. You can choose any mode you want.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor023.png">
+</div></p>
+<p>6 . There are three modes for you to choose from. The Mesh Extender Mode requires no configuration. The device is equivalent to the Mesh Extender Mode in the reset state.
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor024.png">
+</div></p>
+</div>
+</div>
+</div>
+</div>
+<p><a name="section3"></a></p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="6:4"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><input id="__tabbed_6_4" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Repeater Mode</label><label for="__tabbed_6_2">AP Mode</label><label for="__tabbed_6_3">Mesh Mode</label><label for="__tabbed_6_4">Mesh Extender Mode</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Repeater Mode</strong>  :  Any Wi Fi signal network can be expanded through wireless.
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoorrepeater.png">
+</div></p>
+<p>1 . Select <strong>a WiFi signal you want to extend the signal</strong>, and click <strong>Next</strong> after selecting it.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor008.png">
+</div></p>
+<p>2 . Enter <strong>the password of the WiFi that requires signal expansion</strong>.      </p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor009.png">
+</div></p>
+<p>3 . You can <strong>choose to set a new SSID and password for the WiFi of this device</strong>, <strong>or you can keep the password consistent with the previous WiFi (Superior Network)</strong>. (It is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " <strong>@, ?, * </strong>", etc. )   </p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor010.png">
+</div></p>
+<p>4 . After saving, wait for the settings to be applied. Wait about <strong>1 minute</strong> and click <strong>Refresh</strong>.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor011.png">
+</div></p>
+<p>5 . After the initial configuration is refreshed, you need to log in to the management interface again and enter the password you just set to log in.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor012.png">
+</div></p>
+<p>6 . After successful login, you can see the following interface.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor013.png">
+</div></p>
+<p>7 . If you want to change the device mode, you can go to <strong>Advanced &gt; Mode Selection</strong> and select the mode you want to change.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor014.png">
+</div>
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor015.png">
+</div></p>
+</div>
+<div class="tabbed-block">
+<p><strong>AP Mode</strong>  :  Expand the existing network wired, <strong>make sure that the device WAN port is connected to the network through the network cable</strong>.
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoorap.png">
+</div>      </p>
+<p>1 . After switching to AP Mode, the system automatically turns on the DHCP service and sets the SSID and password of your WiFi. Click <strong>Save</strong>.(It is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " <strong>@, ?, *</strong> ", etc.    )   </p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor016.png">
+</div></p>
+<p>2 . After saving, wait for the settings to be applied. After waiting for about <strong>1 minute</strong>, click <strong>Refresh</strong>.
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor025.png">
+</div></p>
+<p>3 . After the initial configuration is refreshed, you need to log in to the management interface again and enter the password you just set to log in.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor012.png">
+</div></p>
+<p>4 . After successful login, you can see the following interface.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor013.png">
+</div></p>
+<p>5 . If you want to change the device mode, you can go to <strong>Advanced &gt; Mode Selection</strong> and select the mode you want to change.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor026.png">
+</div>
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor015.png">
+</div></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Mesh Mode</strong>  :  Converts a network from a network provider's wired network to a Wi-Fi signal for wireless and wired networking. This mode also supports Mesh networking, which can be set up to pair subroutes to form a networking.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoormesh.png">
+</div></p>
+<div class="admonition danger">
+<p><strong>The following are the steps to configure the main route. The sub-route only needs to be in reset state.</strong></p>
+</div>
+<p>1 . After switching to Mesh Router Mode, the <strong>Wan Type</strong> defaults to <strong>DHCP</strong> (if you need to use PPPOE and Static IP, you need to set it manually), and set the SSID and password of your WiFi. Click <strong>Save</strong>.(It is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " <strong>@, ?, *</strong> ", etc.)     </p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor017.png">
+</div></p>
+<div class="admonition info">
+<p><strong><a href="/feature_guide/repeaterap_wan/">Click to learn about WAN Type.</a></strong></p>
+</div>
+<p>2 . After saving, wait for the settings to be applied. After waiting for about <strong>1 minute</strong>, click <strong>Refresh</strong>.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor025.png">
+</div></p>
+<p>3 . After the initial configuration is refreshed, you need to log in to the management interface again and enter the password you just set to log in.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor012.png">
+</div></p>
+<p>4 . After successful login, you can see the following interface.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor013.png">
+</div></p>
+<p>5 . Mesh pairing. There are two ways to perform mesh pairing. It is recommended that you use the first method for pairing.</p>
+<div class="admonition note">
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Mesh button for pairing (highly recommended)</label><label for="__tabbed_7_2">Add WEB interface to realize pairing</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>1 . <strong>Power on other Mesh routers</strong>, and other routers must be in <strong>reset state</strong> (press the reset button for more than six seconds to reset).</p>
+<p>2 . Press and hold the <strong>"WPS"</strong> button of the main router for <strong>2s</strong>. After pressing, the indicator light of the Mesh route <strong>flashes blue slowly</strong>.</p>
+<p>3 . Within 2 minutes, press and hold the <strong>"WPS"</strong> button of the sub-router for <strong>two seconds</strong>, and after waiting <strong>40-120 seconds</strong>, they will complete pairing independently. (When the device indicator light is <strong>solid blue</strong>, it means pairing is successful.)</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoormeshtopo.png">
+</div></p>
+</div>
+<div class="tabbed-block">
+<p>1 . Enter <strong>" Advanced &gt; Mesh Network "</strong>.                        <br />
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor027.png">
+</div></p>
+<p>2 . Click on “<strong>Add</strong>” and then follow the prompts on the screen.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor028.png">
+</div></p>
+<p>3 . After ensuring that other Mesh nodes are placed correctly and the <strong>master node network is connected</strong>, click "<strong>Next</strong>" on this page. If the Mesh node is already in use, please <strong>reset</strong> it.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor029.png">
+</div></p>
+<p>4 . Make sure that the Mesh node has been powered on. After powering on, <strong>press and hold the WPS button of the mesh device for 2 seconds</strong>.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor030.png">
+</div></p>
+<p>5 . Click "<strong>Start scanning</strong>" and wait for the scanning results.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor031.png">
+</div></p>
+<p><p class="text">
+6 . If the scan is successful, device information will appear. Select the scanned device to add it.
+</p>
+<div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor033.png">
+</div></p>
+<details class="warning">
+<summary>Scan node failed</summary>
+<p>If no available node routes are scanned, check the following points:</p>
+<ul>
+<li>
+<p>Check whether the Mesh node <strong>presses the pairing button</strong>. After pressing the pairing button, the indicator light of the Mesh node will flash blue slowly.</p>
+</li>
+<li>
+<p>Check whether the Mesh node has been used. If it has been used, please <strong>reset</strong> it.</p>
+</li>
+<li>
+<p>If none of the above problems appear, please click <strong>Rescan</strong>.</p>
+</li>
+<li>After checking, add the device again.</li>
+</ul>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor032.png">
+</div></p>
+</details>
+<p>7 . Click Refresh after prompting that the addition is successful and wait for about <strong>two minutes</strong>.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor034.png">
+</div></p>
+<p>8 . After refreshing, you can view the information of the new device on the add page.If you need to view <strong>the Mesh Topology</strong>, you can click <strong>"Mesh Topology"</strong> in the upper right corner. If you want to <strong>delete the Extender</strong>, you can also click the <strong>delete option</strong>. As shown below.</p>
+<p><div style="text-align: center;">
+    <img class="boxshadow" src="/images/indoor035.png">
+</div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A Mesh router device supports up to <strong>7 (including existing device mesh devices)</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>6 . If you want to change the device mode, you can go to <strong>Advanced &gt; Mode Selection</strong> and select the mode you want to change.</p>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor026.png">
+</div>
+<div style="text-align: center;">
+<img class="boxshadow" src="/images/indoor015.png">
+</div></p>
+</div>
+<div class="tabbed-block">
+<p><strong>Mesh Extender Mode</strong>  :  This mode sets the device to the Mesh networking state to be paired, in which case the device will be scanned and paired by the surrounding primary device, waiting for the pairing to succeed.</p>
+<div class="admonition danger">
+<p>The master router in this case is wavlink routers, and its settings follow the router's mesh pairing method.</p>
+</div>
+<p><div style="text-align: center;">
+<img class="boxshadow" src="/images/indoortopo1.png">
+</div>  </p>
+<div class="admonition danger">
+<p>When the main route has been connected to the Internet and the main route has been initialized and configured, the sub-router only needs to <strong>be in the reset state</strong> without any other settings.</p>
+</div>
+<p>1 . Press and hold <strong>the pairing button of the main router</strong> for <strong>2 seconds</strong> (the indicator light flashes <strong>blue slowly</strong> after pressing). Within two minutes, press and hold the <strong>Reset/Pari</strong> button of the Extender for <strong>2 seconds</strong> (the indicator light flashes <strong>blue slowly</strong> after pressing).</p>
+<p>2 . The device will automatically pair successfully after waiting <strong>40-120 seconds</strong>. After successful pairing, the indicator lights of the main router and sub-router will be <strong>solid blue</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2023 WAVLINK Technology Co., Ltd.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.top", "navigation.path", "navigation.instant", "navigation.expand", "content.code.select", "toc.follow", "content.tooltips"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>
