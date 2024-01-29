@@ -358,10 +358,8 @@ hide:
   <a href="fm-573hp3t">
   <div class="box">WS-WN573HP3T</div>
   </a>
-</div>
-<div class="grid-container">
-  <a href="fm-573hp3t">
-  <div class="box">WS-WN573HP3T</div>
+  <a href="fm-573hx3">
+  <div class="box">WS-WN573HX3-A</div>
   </a>
 </div>
 
