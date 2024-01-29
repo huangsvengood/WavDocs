@@ -312,9 +312,6 @@ hide:
   <a href="fm-583ax3">
   <div class="box">AERIAL D6X/WS-WN583AX3-A</div>
   </a>
-  <a href="fm-579x3c">
-  <div class="box">WL-WN579X3-C</div>
-  </a>
 </div>
 
 
@@ -324,6 +321,9 @@ hide:
 <div class="grid-container">
   <a href="fm-579A3">
   <div class="box">AERIAL K/WL-WN579A3</div>
+  </a>
+  <a href="fm-579x3c">
+  <div class="box">WL-WN579X3-C</div>
   </a>
 </div>
 
@@ -352,9 +352,6 @@ hide:
 <div class = "box_a">
 </div>
 <div class="grid-container">
-  <a href="fm-572hp3">
-  <div class="box">AERIAL HD4/WS-WN572HP3-A</div>
-  </a>
   <a href="fm-573hx1">
   <div class="box">AERIAL HD6/WS-WN573HX1-A</div>
   </a>  
@@ -372,8 +369,14 @@ hide:
 <div class = "box_a">
 </div>
 <div class="grid-container">
+  <a href="fm-572hp3">
+  <div class="box">AERIAL HD4/WS-WN572HP3-A</div>
+  </a>
   <a href="fm-570ha1">
   <div class="box">WL-WN570HA1</div>
+  </a>
+  <a href="fm-570hn2">
+  <div class="box">WL-WN570HN2</div>
   </a>
 </div>
 
