@@ -186,6 +186,7 @@ h2 {
 </style>
 <div class="shadow-box-wavlink">
   <div style="text-align:center;">	
+  <img src="/images/Vector.png" class="my-img">
 	<h2><b>Software version : M73HP3T_V240117</b></h2>
   </div>
   <h3> Release Note :</h3>
@@ -196,3 +197,11 @@ h2 {
 </div>
 </div>
 
+<style>
+.my-img {
+    float: left;
+	margin-top: -64px;
+	margin-left: -20px;
+    margin-right: 15px; 
+}
+</style>
