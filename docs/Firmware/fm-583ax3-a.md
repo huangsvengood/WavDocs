@@ -212,5 +212,12 @@ h2 {
 
 
 
-
+<style>
+img {
+    float: left;
+	margin-top: -64px;
+	margin-left: -20px;
+    margin-right: 15px; 
+}
+</style>
 

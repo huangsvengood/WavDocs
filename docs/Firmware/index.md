@@ -112,13 +112,18 @@ hide:
 			<div class="search_infoCenter">
 				<h1>Firmware Center</h1>
 				<p>Download firmware for your WAVLINK devices.Search in the upper right corner or swipe down to find by type and model.</p>
+			    <p class="underline"><a href="https://www.wavlink.com/en_us/faq/details/how_to_view_wavlink_product_model.html">Where do I find the product model of WAVLINK?Click here to view.</a></p>
 			</div>
 		</div>
 	</div>
 </div>
 
 
-
+<style>
+.underline {
+    text-decoration: underline;
+}
+</style>
 
 
 
@@ -232,76 +237,51 @@ hide:
 </div>
 <div class="grid-container">
   <a href="fm-531AX2">
-  <div class="box">WL-WN531AX2</div>
+  <div class="box">LUX DX4/WL-WN531AX2</div>
+  </a>
+  <a href="fm-586x3">
+  <div class="box">MIGHTY EX1/WS-WN586X3-A</div>
+  </a> 
+  <a href="fm-587x3">
+  <div class="box">MIGHTY EX2/WL-WN587X3</div>
+  </a> 
+</div>
+<div class="grid-container">
+  <a href="fm-531mx3">
+  <div class="box">QUANTUM D4X/WL-WN531MX3</div>
   </a>
   <a href="fm-531ax3">
   <div class="box">WS-WN531AX3-A</div>
-  </a>
+  </a>  
   <a href="fm-536ax6">
   <div class="box">WS-WN536AX6-A</div>
   </a>
-</div>
-<div class="grid-container">
-  <a href="fm-583ax1">
-  <div class="box">WL-WN583AX1</div>
-  </a>
-  <a href="fm-586x3">
-  <div class="box">WS-WN586X3-A</div>
-  </a> 
 </div>
 
 <p class="re-text">WiFi5</p>
 <div class = "box_a">
 </div>
 <div class="grid-container">
-  <a href="fm-530g3a">
-  <div class="box">WL-WN530G3A</div>
-  </a>
-  <a href="fm-530h4">
-  <div class="box">WL-WN530H4</div>
-  </a>
-  <a href="fm-530hg4">
-  <div class="box">WL-WN530HG4</div>
-  </a>
-</div>
-<div class="grid-container">
-  <a href="fm-531a3-b">
-  <div class="box">WL-WN531A3-B</div>
+  <a href="fm-530hg3">
+  <div class="box">QUANTUM D3G/WL-WN530HG3</div>
   </a>
   <a href="fm-531a6-A">
   <div class="box">QUANTUM D6/WL-WN531A6-A</div>
   </a>
-  <a href="fm-531a6-C">
-  <div class="box">QUANTUM D6/WL-WN531A6-C</div>
+  <a href="fm-530g3a">
+  <div class="box">WL-WN530G3A</div>
   </a>
 </div>
 <div class="grid-container">
-  <a href="fm-531g3">
-  <div class="box">WL-WN531G3</div>
-  </a>
   <a href="fm-531p3">
   <div class="box">WL-WN531P3</div>
   </a>
-  <a href="fm-533a8-c">
-  <div class="box">WL-WN533A8-C</div>
-  </a>
-</div>
-<div class="grid-container">
-  <a href="fm-535k1">
-  <div class="box">WL-WN535K1</div>
-  </a>
   <a href="fm-535r1">
-  <div class="box">WL-WN535R1</div>
+  <div class="box">WL-WN535M1</div>
   </a>
-  <a href="fm-538a8">
-  <div class="box">Quantum DAX/WL-WN538A8</div>
-  </a>
+
 </div>
-<div class="grid-container">
-  <a href="fm-579x3c">
-  <div class="box">WL-WN579X3C</div>
-  </a>
-</div>
+
 
 <p class="re-text">WiFi4</p>
 <div class = "box_a">
@@ -309,17 +289,6 @@ hide:
 <div class="grid-container">
   <a href="fm-529e4d">
   <div class="box">WS-WN529E4D</div>
-  </a>
-  <a href="fm-529r2p">
-  <div class="box">WL-WN529R2P</div>
-  </a>
-  <a href="fm-530n2">
-  <div class="box">WL-WN530N2</div>
-  </a> 
-</div>
-<div class="grid-container">
-  <a href="fm-532n2">
-  <div class="box">WL-WN532N2</div>
   </a>
 </div>
 
@@ -337,8 +306,34 @@ hide:
 <div class = "box_a">
 </div>
 <div class="grid-container">
+  <a href="fm-583ax1">
+  <div class="box">AERIAL D4X/WL-WN583AX1</div>
+  </a>
   <a href="fm-583ax3">
-  <div class="box">WS-WN583AX3-A</div>
+  <div class="box">AERIAL D6X/WS-WN583AX3-A</div>
+  </a>
+  <a href="fm-579x3c">
+  <div class="box">WL-WN579X3-C</div>
+  </a>
+</div>
+
+
+<p class="re-text">WiFi5</p>
+<div class = "box_a">
+</div>
+<div class="grid-container">
+  <a href="fm-579A3">
+  <div class="box">AERIAL K/WL-WN579A3</div>
+  </a>
+</div>
+
+
+<p class="re-text">WiFi4</p>
+<div class = "box_a">
+</div>
+<div class="grid-container">
+  <a href="fm-578w2">
+  <div class="box">WL-WN578W2</div>
   </a>
 </div>
 
@@ -358,18 +353,27 @@ hide:
 </div>
 <div class="grid-container">
   <a href="fm-572hp3">
-  <div class="box">WS-WN572HP3-A</div>
+  <div class="box">AERIAL HD4/WS-WN572HP3-A</div>
   </a>
   <a href="fm-573hx1">
-  <div class="box">WS-WN573HX1-A</div>
+  <div class="box">AERIAL HD6/WS-WN573HX1-A</div>
   </a>  
-  <a href="fm-573hx3">
-  <div class="box">WS-WN573HX3-A</div>
+  <a href="fm-573hp3t">
+  <div class="box">WS-WN573HP3T</div>
   </a>
 </div>
 <div class="grid-container">
   <a href="fm-573hp3t">
   <div class="box">WS-WN573HP3T</div>
+  </a>
+</div>
+
+<p class="re-text">WiFi5</p>
+<div class = "box_a">
+</div>
+<div class="grid-container">
+  <a href="fm-570ha1">
+  <div class="box">WL-WN570HA1</div>
   </a>
 </div>
 
