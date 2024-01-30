@@ -391,8 +391,6 @@ hide:
 		</div>
 	</div>
 </div>
-
-
 <div class="grid-container">
   <a href="">
   <div class="box">WL-WNF100X3NR-A</div>
