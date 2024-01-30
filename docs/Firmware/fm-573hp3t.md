@@ -110,7 +110,7 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>Model : WS-WN573HP3T</h1>
+				<h1>Model : WL-WN573HP3T</h1>
 				<p>If you encounter any issues, please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you ! </p>
 			</div>
 		</div>
