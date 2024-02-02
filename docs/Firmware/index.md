@@ -257,6 +257,11 @@ hide:
   <div class="box">WL-WN536AX6-A</div>
   </a>
 </div>
+<div class="grid-container">
+  <a href="fm-586x3b">
+  <div class="box">WL-WN583AX3-B</div>
+  </a>
+</div>
 
 <p class="re-text">WiFi5</p>
 <div class = "box_a">

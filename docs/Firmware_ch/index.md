@@ -3,6 +3,7 @@ hide:
   - navigation
   - toc
 ---
+
 <style>
         .banner {
             padding: 40px 5% 40px;
@@ -105,7 +106,6 @@ hide:
 		
     </style>
 	
-
 <div id="mainContainer">
 	<div class="bannerContainer">
 		<div class="banner">
@@ -255,6 +255,11 @@ hide:
   </a>  
   <a href="fm-536ax6">
   <div class="box">WL-WN536AX6-A</div>
+  </a>
+</div>
+<div class="grid-container">
+  <a href="fm-586x3b">
+  <div class="box">WL-WN583AX3-B</div>
   </a>
 </div>
 
