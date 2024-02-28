@@ -242,24 +242,24 @@ hide:
   <a href="fm-586x3">
   <div class="box">MIGHTY EX1/WL-WN586X3-A</div>
   </a> 
+  <a href="fm-586x3b">
+  <div class="box">WL-WN586X3-B</div>
+  </a>
+</div>
+<div class="grid-container">
   <a href="fm-587x3">
   <div class="box">MIGHTY EX2/WL-WN587X3</div>
   </a> 
-</div>
-<div class="grid-container">
   <a href="fm-531mx3">
   <div class="box">QUANTUM D4X/WL-WN531MX3</div>
   </a>
   <a href="fm-531ax3">
   <div class="box">WL-WN531AX3-A</div>
   </a>  
-  <a href="fm-536ax6">
-  <div class="box">WL-WN536AX6-A</div>
-  </a>
 </div>
 <div class="grid-container">
-  <a href="fm-586x3b">
-  <div class="box">WL-WN583AX3-B</div>
+  <a href="fm-536ax6">
+  <div class="box">WL-WN536AX6-A</div>
   </a>
 </div>
 
