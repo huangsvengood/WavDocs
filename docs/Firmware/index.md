@@ -376,10 +376,10 @@ hide:
   <div class="box">AERIAL HD4/WL-WN572HP3-A</div>
   </a>
   <a href="fm-570ha1">
-  <div class="box">WL-WN570HA1</div>
+  <div class="box">WL-WN570HA2</div>
   </a>
   <a href="fm-570hn2">
-  <div class="box">WL-WN570HN2</div>
+  <div class="box">WL-WN570HN2B</div>
   </a>
 </div>
 
