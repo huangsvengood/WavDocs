@@ -1,7 +1,7 @@
 site_name: WAVLINK Docs
 site_description: Documentation for WAVLINK Router Productions
 site_author: WAVLINK
-copyright: Copyright 2023 WAVLINK Technology Co., Ltd.
+copyright: Copyright 2024 WAVLINK Technology Co., Ltd.
 
 nav: 
   - Firmware: Firmware/index.md
