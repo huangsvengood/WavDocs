@@ -219,10 +219,16 @@ img.boxshadow {
 
 
 /* 隐藏搜索框 */
-.md-header-nav__search {
+.md-search__input {
     display: none;
 }
-
+.md-search__inner {
+	display: none;
+}
+/* 取消 Logo 链接 */
+.md-header__button {
+    pointer-events: none;
+}
 
 
 
