@@ -183,15 +183,16 @@ plugins:
 #      separator: '[\s\u200b\-]'
 #      jieba_dict: dict.txt
 extra_javascript:
-  - js/extra.js
-  - |
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G5M8T6HKY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-5G5M8T6HKY');
-    </script>
+  - js/umami_count.js
+    #  - js/ga_count.js
+    # - |
+          # <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G5M8T6HKY"></script>
+    # <script>
+    # window.dataLayer = window.dataLayer || [];
+     # function gtag(){dataLayer.push(arguments);}
+     # gtag('js', new Date());
+     #  gtag('config', 'G-5G5M8T6HKY');
+     #    </script>
 
 #extra:
  # alternate:

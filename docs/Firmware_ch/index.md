@@ -259,7 +259,7 @@ hide:
 </div>
 <div class="grid-container">
   <a href="fm-586x3b">
-  <div class="box">WL-WN583AX3-B</div>
+  <div class="box">WL-WN586AX3-B</div>
   </a>
 </div>
 

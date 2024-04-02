@@ -376,21 +376,19 @@ h2 {
 <div class="grid-container">
   <div class="box">
   <h4>Wireless</h4>
-  <p><a href="/feature_guide/repeaterap_wireless/">Wireless</a></p>
+  <p><a href="/feature_guide/repeaterap_wireless/">Wireless Settings</a></p>
   </div>
   <div class="box">
   <h4>Network</h4>
   <div class="container">
+  <p class="paragraph"><a href="/FAQ/outdoor_ap_first_time_setup/#section3">Mode Selection</a></p>
   <p class="paragraph"><a href="/feature_guide/time/">WAN</a></p>
+  </div>
+  <div class="container">
   <p class="paragraph"><a href="/feature_guide/led_ctrl/">LAN</a></p>
-  </div>
-  <div class="container">
   <p class="paragraph"><a href="/feature_guide/password_admin/">Static IP</a></p>
-  <p class="paragraph"><a href="/feature_guide/backup/">Backup and Restore</a></p>
   </div>
   <div class="container">
-  <p class="paragraph"><a href="/feature_guide/firmware/">Firmware Update</a></p>
-  <p class="paragraph"><a href="/feature_guide/router_reboot/">Timing Reboot</a></p>
   </div>
   </div>
 </div>
