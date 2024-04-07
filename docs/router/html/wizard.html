@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WAVLINK</title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta name="viewport" content="width=device-width, height=device-height">
+		<link rel="icon" href="data:;base64,=">
+		<link rel="stylesheet" href="../public/static/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/theme.css">
+	</head>
+	<body>
+		<div class="container height-auto">
+			<div class="header theme-bg-color">
+				<div class="header-box">
+					<img src="../img/logo2.png" >
+				</div>
+			</div>
+			<div class="main row" id="wizard">
+				<div class="col-xs-12">
+					<input type="hidden" id="WizStep" value="0">
+					<div id="step0">
+						<h5 class="wizTitle" data-i18n="lblNetworkSetway"></h5>
+						<div class="form-group row">
+							<label class="col-xs-5 control-label" data-i18n="lblWanMode"></label>
+							<div class="col-xs-7">
+								<select class="form-control" id="wan_mode">
+									<option data-i18n="lblDHCP" value="1"></option>
+									<option data-i18n="lblPPPOE" value="2"></option>
+									<option data-i18n="lblStaticIp" value="3"></option>
+								</select>
+							</div>
+							<div class="col-xs-offset-5 col-xs-7" id="dhcpTips" data-i18n="msgUplinkDeviceDhcp"></div>
+						</div>
+						<div id="accountInfo" class="off">
+							<div class="form-group row" id="userName">
+								<label class="col-xs-5 control-label" data-i18n="lblUserName"></label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="pppoeUser">
+								</div>
+							</div>
+							<div class="form-group row" id="passWord">
+								<label class="col-xs-5 control-label" data-i18n="lblPassWord"></label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="pppoePwd">
+								</div>
+							</div>
+							<div class="form-group row" id="serverName">
+								<label class="col-xs-5 control-label" data-i18n="lblServerURL"></label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="pppoeServer">
+								</div>
+							</div>
+							<div class="row off" id="OtNPPPOE_id">
+								<div class="col-xs-offset-5 col-xs-7">
+									<a data-toggle="modal" data-target="#OtNPPPOE" data-rel="dialog" data-i18n="lblOtNPPPoeText1"></a>
+								</div>
+							</div>
+						</div>
+						<div id="staticInfo" class="off">
+							<div class="form-group row" id="ipAddr">
+								<label class="col-xs-5 control-label" data-i18n="lblAddr"></label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="wanIP">
+								</div>
+							</div>
+							<div class="form-group row" id="netMask">
+								<label class="col-xs-5 control-label" data-i18n="lblnetmask"></label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="wanMask">
+								</div>
+							</div>
+							<div class="form-group row" id="defGw">
+								<label class="col-xs-5 control-label" data-i18n="lblGw" ></label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="wanGw">
+								</div>
+							</div>
+							<div class="form-group row" id="firstDns">
+								<label class="col-xs-5 control-label">DNS1</label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="wanDNS1">
+								</div>
+							</div>
+							<div class="form-group row" id="secDNS">
+								<label class="col-xs-5 control-label">DNS2</label>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" id="wanDNS2">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-xs-7 control-label" data-i18n="lblInternetVLANID"></label>
+							<div class="col-xs-5 text-right">
+								<div class="switch">
+									<input class="switch-checkbox hidden" id="enableVlan" type="checkbox">
+									<label class="switch-label" for="enableVlan">
+										<span class="switch-inner"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row off" id="vlanIdInfo">
+							<label class="col-xs-5 control-label" data-i18n="lblIDNumber"></label>
+							<div class="col-xs-7">
+								<input type="number" class="form-control" id="vlanID">
+							</div>
+						</div>
+						<div id="meshAdaptInfo">
+							<div class="row">
+								<label class="col-xs-7 control-label" data-i18n="lblMeshAutoAdaption"></label>
+								<div class="col-xs-5 text-right">
+									<div class="switch">
+										<input class="switch-checkbox hidden" id="enableMeshAutoAdapt" type="checkbox">
+										<label class="switch-label" for="enableMeshAutoAdapt">
+											<span class="switch-inner"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div id="wizMeshTips">
+								<span data-i18n="lblMeshAutoAdaption"></span>
+								&nbsp;:&nbsp;
+								<span data-i18n="msgAutoMeshSwitch"></span>
+							</div>
+						</div>
+					</div>
+					<div id="ScanFailure" class="off">
+						<div>
+							<img src="../img/img_ginde.png">
+							<span class="imgText" data-i18n="msgPowerSupply"></span>
+							<span class="imgText" data-i18n="msgRouterWAN"></span>
+							<span class="imgText" data-i18n="msgOpticalModemLAN"></span>
+						</div>
+						<div id="imgTips">
+							<img src="../img/ico_hint.png">
+							<span data-i18n="msgNoNetworkCable"></span>
+						</div>
+						<div class="row">
+							<div class="col-xs-offset-1 col-xs-5">
+								<button type="button" class="btn btn-default theme-border-color" id="menuConfig" data-i18n="btnMenuConfig"></button>
+							</div>
+							<div class="col-xs-5">
+								<button type="button" class="btn btn-primary theme-bg-color" id="restartScan" data-i18n="btnRestartScan"></button>
+							</div>
+						</div>
+					</div>
+					<div id="step1" class="off">
+						<div id="countryTimezoneInfo" class="off">
+							<h5 class="wizTitle" data-i18n="lblCountryCodeTimezone"></h5>
+							<div id="timezoneInfo">
+								<div class="form-group row" id="wizRegionDetails">
+									<label class="col-xs-5 control-label" data-i18n="lblRegionCountry"></label>
+									<div class="col-xs-7">
+										<select class="form-control" id="wifiCountry">
+											<option value="0" data-i18n="lblRegionCountry"></option>
+											<option value="WO" data-i18n="lblRegionWO"></option>
+											<option value="US" data-i18n="lblRegionUS"></option>
+											<option value="EU" data-i18n="lblRegionEU"></option>
+											<option value="JP" data-i18n="lblRegionJP"></option>
+											<option value="CN" data-i18n="lblRegionCN"></option>
+											<option value="TW" data-i18n="lblRegionTW"></option>
+											<option value="AU" data-i18n="lblRegionAU"></option>
+											<option value="CA" data-i18n="lblRegionCA"></option>
+											<option value="RU" data-i18n="lblRegionRU"></option>
+											<option value="IN" data-i18n="lblRegionIN"></option>
+											<option value="SG" data-i18n="lblRegionSG"></option>
+											<option value="ZA" data-i18n="lblRegionZA"></option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row" id="wizTimeZoneDetails">
+									<label class="col-xs-5 control-label" data-i18n="tTime"></label>
+									<div class="col-xs-7">
+										<select class="form-control" id="timeZone">
+											<option value="UTC+12:00" data-i18n="lblTime1"></option>
+											<option value="UTC+11:00" data-i18n="lblTime2"></option>
+											<option value="UTC+10:00" data-i18n="lblTime3"></option>
+											<option value="UTC+09:00" data-i18n="lblTime4"></option>
+											<option value="UTC+08:00" data-i18n="lblTime5"></option>
+											<option value="UTC+07:00" data-i18n="lblTime6"></option>
+											<option value="UTC+06:00" data-i18n="lblTime7"></option>
+											<option value="UTC+05:00" data-i18n="lblTime8"></option>
+											<option value="UTC+04:00" data-i18n="lblTime10"></option>
+											<option value="UTC+03:00" data-i18n="lblTime12"></option>
+											<option value="UTC+02:00" data-i18n="lblTime13"></option>
+											<option value="UTC+01:00" data-i18n="lblTime14"></option>
+											<option value="UTC+00:00" data-i18n="lblTime15"></option>
+											<option value="UTC-01:00" data-i18n="lblTime16"></option>
+											<option value="UTC-02:00" data-i18n="lblTime17"></option>
+											<option value="UTC-03:00" data-i18n="lblTime18"></option>
+											<option value="UTC-04:00" data-i18n="lblTime20"></option>
+											<option value="UTC-05:00" data-i18n="lblTime22"></option>
+											<option value="UTC-06:00" data-i18n="lblTime25"></option>
+											<option value="UTC-07:00" data-i18n="lblTime27"></option>
+											<option value="UTC-08:00" data-i18n="lblTime28"></option>
+											<option value="UTC-09:00" data-i18n="lblTime29"></option>
+											<option value="UTC-10:00" data-i18n="lblTime31"></option>
+											<option value="UTC-11:00" data-i18n="lblTime32"></option>
+											<option value="UTC-12:00" data-i18n="lblTime33"></option>
+											<option value="UTC-13:00" data-i18n="lblTime34"></option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="wifiInfo">
+							<h5 class="wizTitle">
+								<span data-i18n="lblWirelessSetup"></span>
+								<div id="setDual" class="pull-right">
+									<span data-i18n="lblDualFrequencyUnit"></span>
+									<div class="switch">
+										<input class="switch-checkbox hidden" id="enableDual" type="checkbox">
+										<label class="switch-label" for="enableDual">
+											<span class="switch-inner"></span>
+										</label>
+									</div>
+								</div>
+							</h5>
+							<div id="wifi25">
+								<div class="form-group row">
+									<label class="col-xs-5 control-label" data-i18n="lblWIFIName"></label>
+									<div class="col-xs-7">
+										<input type="text" class="form-control" id="ssidDual">
+									</div>
+									<div class="col-xs-offset-5 col-xs-7" id="ssidTips" data-i18n="msgSsidExplain"></div>
+								</div>
+								<div class="form-group row off">
+									<label class="col-xs-5 control-label" data-i18n="lblAuthModeName"></label>
+									<div class="col-xs-7">
+										<select class="form-control" id="authmodeDual">
+											<option value="1" data-i18n="wir_WPA2_PSK"></option>
+											<option value="3">WPA1-PSK/WPA2-MIX</option>
+											<option value="2">WPA3-SAE/WPA2-PSK</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row include-pwd">
+									<label class="col-xs-5 control-label" data-i18n="lblWIFIPassWord"></label>
+									<div class="col-xs-7">
+										<input type="password" class="form-control" id="passwordDual" maxlength="30" data-i18n="[placeholder]lblWifiPasswordSameLogin" >
+										<img src="../img/ico_Invisible.png" class="wzeyes">
+									</div>
+									<div class="col-xs-5 col-xs-offset-7 pwd-strength">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div id="wifi2" class="off">
+								<div class="form-group row">
+									<label class="col-xs-5 control-label" data-i18n="lbl2GWIFIName"></label>
+									<div class="col-xs-7">
+										<input type="text" class="form-control" id="ssid2g" data-i18n="[placeholder]lblInput2GSSID">
+									</div>
+								</div>
+								<div class="form-group row off">
+									<label class="col-xs-5 control-label" data-i18n="lblAuthModeName"></label>
+									<div class="col-xs-7">
+										<select class="form-control" id="authmode2g">
+											<option value="1" data-i18n="wir_WPA2_PSK"></option>
+											<option value="3">WPA1-PSK/WPA2-MIX</option>
+											<option value="2">WPA3-SAE/WPA2-PSK</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row include-pwd">
+									<label class="col-xs-5 control-label" data-i18n="lbl2GWIFIPassWord"></label>
+									<div class="col-xs-7">
+										<input type="password" class="form-control" id="password2g" maxlength="63" data-i18n="[placeholder]lblInput2GPwd" >
+										<img src="../img/ico_Invisible.png" class="wzeyes">
+									</div>
+									<div class="col-xs-5 col-xs-offset-7 pwd-strength">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div id="wifi5" class="off">
+								<div class="form-group row">
+									<label class="col-xs-5 control-label" data-i18n="lbl5GWIFIName"></label>
+									<div class="col-xs-7">
+										<input type="text" class="form-control" id="ssid5g" data-i18n="[placeholder]lblInput5GSSID">
+									</div>
+								</div>
+								<div class="form-group row off">
+									<label class="col-xs-5 control-label" data-i18n="lblAuthModeName"></label>
+									<div class="col-xs-7">
+										<select class="form-control" id="authmode5g">
+											<option value="1" data-i18n="wir_WPA2_PSK"></option>
+											<option value="3">WPA1-PSK/WPA2-MIX</option>
+											<option value="2">WPA3-SAE/WPA2-PSK</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row include-pwd">
+									<label class="col-xs-5 control-label" data-i18n="lbl5GWIFIPassWord"></label>
+									<div class="col-xs-7">
+										<input type="password" class="form-control" id="password5g" maxlength="63" data-i18n="[placeholder]lblInput5GPwd" >
+										<img src="../img/ico_Invisible.png" class="wzeyes">
+									</div>
+									<div class="col-xs-5 col-xs-offset-7 pwd-strength">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="sysPwdInfo" class="off">
+							<h5 class="wizTitle">
+								<span data-i18n="lblSetSysPwd"></span>
+								<div id="setSysPwd" class="pull-right">
+									<span data-i18n="lblSameWifiPwd"></span>
+									<div class="switch">
+										<input class="switch-checkbox hidden" id="enableSetSysPwd" type="checkbox">
+										<label class="switch-label" for="enableSetSysPwd">
+											<span class="switch-inner"></span>
+										</label>
+									</div>
+								</div>
+							</h5>
+							<div id="sysPwdBox" class="off">
+								<div class="form-group row include-pwd">
+									<label class="col-xs-5 control-label" data-i18n="lblSetSysPwd"></label>
+									<div class="col-xs-7">
+										<input type="password" class="form-control" id="systemPassword" data-i18n="[placeholder]lblSystemPwd">
+										<img src="../img/ico_Invisible.png" class="wzeyes">
+									</div>
+									<div class="col-xs-5 col-xs-offset-7 pwd-strength">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="wizApdhcp" class="off">
+							<div class="form-group row">
+								<label class="col-xs-5 control-label" data-i18n="lblAPSmartDHCP"></label>
+								<div class="col-xs-7 text-right">
+									<div class="switch">
+										<input class="switch-checkbox hidden" id="enableApDHCP" type="checkbox">
+										<label class="switch-label" for="enableApDHCP">
+											<span class="switch-inner"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="wizWanState" class="off">
+							<div class="form-group row">
+								<label class="col-xs-5 control-label" data-i18n="wiz_WanState"></label>
+								<div class="col-xs-7" id="wanStatus"></div>
+							</div>
+						</div>
+						<div id="wizMode" class="off">
+							<div class="form-group row">
+								<label class="col-xs-5 control-label" data-i18n="lblModeSeclection"></label>
+								<div class="col-xs-7">
+									<select class="form-control" id="deviceMode">
+										<!--option data-i18n="lblModeSeclectionText" value="-1"></option>-->
+										<option value="0" data-i18n="lblRouterMode"></option>
+										<option value="1" data-i18n="lblRouterMode"></option>
+										<option value="2" data-i18n="lblEasyMeshAPMode"></option>
+										<option value="3" data-i18n="lblAgentMode"></option>
+										<option value="4" data-i18n="lblAPMode"></option>
+										<option value="5" data-i18n="lblRep"></option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="setLoading" class="off">
+						<div class="form-group row">
+							<h5 class="wizTitle" data-i18n="msgWzSetSuccess"></h5>
+						</div>
+						<div class="form-group row">
+							<div class="col-xs-5 text-left">
+								<span class="off" id="wifiname25" data-i18n="lblWIFIName"></span>
+								<span class="off" id="wifiname2" data-i18n="lblwifiname2g"></span>
+								&nbsp;:
+							</div>
+							<span class="col-xs-7 text-right" id="showSSID"></span>
+						</div>
+						<div class="form-group row">
+							<div class="col-xs-5 text-left">
+								<span data-i18n="lblWIFIPassWord"></span>&nbsp;:
+							</div>
+							<div class="col-xs-7 text-right">
+								<span>********</span>
+								<img src="../img/ico_Invisible.png" id="eyes2g">
+								<!-- <img src="../img/ico_visible.png" style="display:none"> -->
+							</div>
+						</div>
+						<div class="off" id="5Ginformation">
+							<div class="form-group row">
+								<div class="col-xs-5 text-left">
+									<span data-i18n="lblwifiname5g"></span>
+									&nbsp;:
+								</div>
+								<span class="col-xs-7 text-right" id="showSSID5g"></span>
+							</div>
+							<div class="form-group row">
+								<div class="col-xs-5 text-left">
+									<span data-i18n="lblWIFIPassWord"></span>
+									&nbsp;:
+								</div>
+								<div class="col-xs-7 text-right">
+									<span>********</span>
+									<img src="../img/ico_Invisible.png" id="eyes5g">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row text-center off" id="appqrcode">
+							<img src="../img/app_down.png" id="app">
+							<div id="appTips" data-i18n="msgscanQR"></div>
+						</div>
+						<div id="loadingBarModal">
+							<div class="progress">
+								<div class="progress-bar theme-bg-color" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+							</div>
+							<div class="progress-text"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 off" id="prevBox">
+							<button type="button" class="btn btn-default theme-border-color" id="prevButton" data-i18n="btnPreviousName"></button>
+						</div>
+						<div class="col-xs-4">
+							<button type="button" class="btn btn-primary theme-bg-color" id="nextButton" data-i18n="btnNextName"></button>
+							<button type="button" class="btn btn-primary theme-bg-color off" id="closeBarBtn" data-i18n="msgReload"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<a href="https://www.wavlink.com/zh_cn/index.html" target="_blank" id="w_wav" data-i18n="lblWAV"></a><span data-i18n="lblStatement"></span>
+			</div>
+		</div>
+		<div class="modal wizModal" id="loadingModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img src="../img/wzloading.gif">
+						<div class="text-center" data-i18n="msgScanNetworkMode"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="OtNPPPOE">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header theme-border-color" id="otnpppoe_close">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group row" id="item1">
+							<div class="text-center">
+								<img src="../img/OtNPPPOE_img1.png" width="100%">
+								<span class="col-xs-6" data-i18n="lblOldSta"></span>
+								<span class="col-xs-6" data-i18n="lblNewSta"></span>
+							</div>
+							<div class="OtNPPPOETips" data-i18n="lblOtNPPPoeText2"></div>
+							<div class="col-xs-offset-4 col-xs-4">
+								<button type="button" class="btn btn-primary theme-bg-color" id="item1Button" data-i18n="btnNextName"></button>
+							</div>
+						</div>
+						<div class="form-group row off" id="item2">
+							<div class="text-center">
+								<img src="../img/loading.gif" width="110px">
+							</div>
+							<div class="OtNPPPOETips" data-i18n="lblOtNPPPoeText3"></div>
+						</div>
+						<div class="form-group row off" id="item3">
+							<div class="text-center">
+								<img src="../img/OtNPPPOE_img2.png" width="100%">
+								<span class="col-xs-6" data-i18n="lblOldSta"></span>
+								<span class="col-xs-6" data-i18n="lblNewSta"></span>
+							</div>
+							<div class="OtNPPPOETips" data-i18n="lblOtNPPPoeText4"></div>
+							<div class="col-xs-offset-2 col-xs-4">
+								<button type="button" class="btn btn-primary theme-bg-color" id="item3Button1" data-i18n="lblReacquire"></button>
+							</div>
+							<div class="col-xs-4">
+								<button type="button" class="btn btn-primary theme-bg-color" id="item3Button2" data-i18n="lblManualInput"></button>
+							</div>
+						</div>
+						<div class="form-group row off" id="item4">
+							<div class="text-center">
+								<img src="../img/OtNPPPOE_img2.png" width="100%">
+								<span class="col-xs-6" data-i18n="lblOldSta"></span>
+								<span class="col-xs-6" data-i18n="lblNewSta"></span>
+							</div>
+							<div class="OtNPPPOETips" data-i18n="lblOtNPPPoeText5"></div>
+							<div class="col-xs-offset-4 col-xs-4">
+								<button type="button" class="btn btn-primary theme-bg-color" id="item4Button" data-i18n="msgComplete"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../public/static/jquery.min.js"></script>
+		<script src="../public/static/jquery.cookie.js"></script>
+		<script src="../public/i18n/i18next.min.js"></script>
+		<script src="../public/static/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../public/static/layer/layer.js"></script>
+		<script src="../js/wifi.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/wizard.js"></script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-7 control-label" data-i18n="tCurrentTime"></label>
+            <div class="col-xs-5 text-right" id="currentTime"></div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-7 control-label" data-i18n="tTime"></label>
+            <div class="col-xs-5">
+                <select class="form-control" id="timeZone">
+                    <option value="UTC+12:00" data-i18n="lblTime1"></option>
+                    <option value="UTC+11:00" data-i18n="lblTime2"></option>
+                    <option value="UTC+10:00" data-i18n="lblTime3"></option>
+                    <option value="UTC+09:00" data-i18n="lblTime4"></option>
+                    <option value="UTC+08:00" data-i18n="lblTime5"></option>
+                    <option value="UTC+07:00" data-i18n="lblTime6"></option>
+                    <option value="UTC+06:00" data-i18n="lblTime7"></option>
+                    <option value="UTC+05:00" data-i18n="lblTime8"></option>
+                    <option value="UTC+04:00" data-i18n="lblTime10"></option>
+                    <option value="UTC+03:00" data-i18n="lblTime12"></option>
+                    <option value="UTC+02:00" data-i18n="lblTime13"></option>
+                    <option value="UTC+01:00" data-i18n="lblTime14"></option>
+                    <option value="UTC+00:00" data-i18n="lblTime15"></option>
+                    <option value="UTC-01:00" data-i18n="lblTime16"></option>
+                    <option value="UTC-02:00" data-i18n="lblTime17"></option>
+                    <option value="UTC-03:00" data-i18n="lblTime18"></option>
+                    <option value="UTC-04:00" data-i18n="lblTime20"></option>
+                    <option value="UTC-05:00" data-i18n="lblTime22"></option>
+                    <option value="UTC-06:00" data-i18n="lblTime25"></option>
+                    <option value="UTC-07:00" data-i18n="lblTime27"></option>
+                    <option value="UTC-08:00" data-i18n="lblTime28"></option>
+                    <option value="UTC-09:00" data-i18n="lblTime29"></option>
+                    <option value="UTC-10:00" data-i18n="lblTime31"></option>
+                    <option value="UTC-11:00" data-i18n="lblTime32"></option>
+                    <option value="UTC-12:00" data-i18n="lblTime33"></option>
+                    <option value="UTC-13:00" data-i18n="lblTime34"></option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label" data-i18n="lblSummerTime"></label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableDST" type="checkbox">
+                    <label class="switch-label" for="enableDST">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setTime" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help"></div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/time_zone.html");
+        window.location.replace("./index.html");
+    }
+    $(document).ready(function(){
+        getTimeZone();
+
+        $("#setTime").on("click", function(){
+            var timezone = $("#timeZone").val();
+            var dstEnable = $("#enableDST").val();
+            if (dstEnable == 1) {
+                timezone = UTC2DST(timezone, 1);
+            }
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        function getTimeZone() {
+            ajax({
+                url: "system.json",
+                success: function(data) {
+                    if(data.error == 0) {
+                        var timeInfo = data.time;
+                        var timezone = timeInfo.tz;
+                        $("#currentTime").text(timeInfo.date);
+                        $("#enableDST").prop("checked", timeInfo.enable == 1).val(timeInfo.enable);
+                        $("#timeZone").val(timeInfo.enable == 1 ? UTC2DST(timezone, 0) : timezone);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

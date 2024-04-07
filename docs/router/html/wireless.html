@@ -1,0 +1,680 @@
+<div class="main wireless">
+    <div class="row">
+        <label class="col-xs-8 control-label text" data-i18n="lblDualFrequencyIntro"></label>
+        <div class="col-xs-1 text-right">
+            <div class="switch">
+                <input class="switch-checkbox hidden" id="enableDualFrequency" type="checkbox">
+                <label class="switch-label" for="enableDualFrequency">
+                    <span class="switch-inner"></span>
+                </label>
+            </div>
+        </div>
+        <div class="pull-right" data-toggle="modal" data-target="#helpModal">
+            <img src="../img/help.png" width="22px">&nbsp;<span data-i18n="lblHelp"></span>
+        </div>
+    </div>
+    <div id="wifi2Info" class="row off">
+        <div class="form-group row">
+            <div class="col-xs-3 title" data-i18n="lblWifi2G"></div>
+            <label class="col-xs-3 control-label" data-i18n="lblSsidname"></label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" id="ssid2g">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblAuthModeName"></label>
+            <div class="col-xs-3">
+                <select id="authmode2g" class="form-control">
+                    <option value="0">OPEN</option>
+                    <option value="1" data-i18n="wir_WPA2_PSK"></option>
+                    <option value="3">WPA1-PSK/WPA2-MIX</option>
+                    <option value="2">WPA3-SAE/WPA2-PSK</option>
+                    <option value="4">WPA/WPA2-Enterprise</option>
+                </select>
+            </div>
+        </div>
+        <div class="row include-pwd" id="pwdInfo2">
+            <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblPassWord"></label>
+            <div class="col-xs-3">
+                <input type="password" class="form-control" id="password2g">
+                <img src="../img/eyes_off.png" class="eyes">
+            </div>
+            <div class="col-xs-3 col-xs-offset-6 pwd-strength">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="off" id="enterprise2g">
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Server IP</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="radiusip2g">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Port</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="radiusport2g">
+                </div>
+            </div>
+            <div class="row include-pwd">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Password</label>
+                <div class="col-xs-3">
+                    <input type="password" class="form-control" id="radiuspwd2g">
+                    <img src="../img/eyes_off.png" class="eyes">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wifi5Info" class="row off">
+        <div class="form-group row">
+            <div class="col-xs-3 title" data-i18n="lblWifi5G"></div>
+            <label class="col-xs-3 control-label" data-i18n="lblSsidname"></label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" id="ssid5g">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblAuthModeName"></label>
+            <div class="col-xs-3">
+                <select id="authmode5g" class="form-control">
+                    <option value="0">OPEN</option>
+                    <option value="1" data-i18n="wir_WPA2_PSK"></option>
+                    <option value="3">WPA1-PSK/WPA2-MIX</option>
+                    <option value="2">WPA3-SAE/WPA2-PSK</option>
+                    <option value="4">WPA/WPA2-Enterprise</option>
+                </select>
+            </div>
+        </div>
+        <div class="row include-pwd" id="pwdInfo5">
+            <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblPassWord"></label>
+            <div class="col-xs-3">
+                <input type="password" class="form-control" id="password5g">
+                <img src="../img/eyes_off.png" class="eyes">
+            </div>
+            <div class="col-xs-3 col-xs-offset-6 pwd-strength">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="off" id="enterprise5g">
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Server IP</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="radiusip5g">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Port</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="radiusport5g">
+                </div>
+            </div>
+            <div class="row include-pwd">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Password</label>
+                <div class="col-xs-3">
+                    <input type="password" class="form-control" id="radiuspwd5g">
+                    <img src="../img/eyes_off.png" class="eyes">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wifiInfo" class="row off">
+        <div class="form-group row">
+            <div class="col-xs-3 title" data-i18n="tWirelessNetwork"></div>
+            <label class="col-xs-3 control-label" data-i18n="lblSsidname"></label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" id="ssid">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblAuthModeName"></label>
+            <div class="col-xs-3">
+                <select id="authmode" class="form-control">
+                    <option value="0">OPEN</option>
+                    <option value="1" data-i18n="wir_WPA2_PSK"></option>
+                    <option value="3">WPA1-PSK/WPA2-MIX</option>
+                    <option value="2">WPA3-SAE/WPA2-PSK</option>
+                    <option value="4">WPA/WPA2-Enterprise</option>
+                </select>
+            </div>
+        </div>
+        <div class="row include-pwd" id="pwdInfo">
+            <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblPassWord"></label>
+            <div class="col-xs-3">
+                <input type="password" class="form-control" id="password">
+                <img src="../img/eyes_off.png" class="eyes">
+            </div>
+            <div class="col-xs-3 col-xs-offset-6 pwd-strength">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="off" id="enterprise">
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Server IP</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="radiusip">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Port</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="radiusport">
+                </div>
+            </div>
+            <div class="row include-pwd">
+                <label class="col-xs-offset-3 col-xs-3 control-label">RADIUS Password</label>
+                <div class="col-xs-3">
+                    <input type="password" class="form-control" id="radiuspwd">
+                    <img src="../img/eyes_off.png" class="eyes">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h5 class="collapsed depart-line theme-color"
+            data-toggle="collapse" href="#advanceSetting"
+            aria-expanded="false" aria-controls="advanceSetting">
+            <span data-i18n="tAdSetting"></span>
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+        </h5>
+        <div class="collapse" id="advanceSetting">
+            <div class="form-group row">
+                <div class="col-xs-3 title" data-i18n="lblWifi2GSetting"></div>
+                <label class="col-xs-3 control-label" data-i18n="lbChannelName"></label>
+                <div class="col-xs-3">
+                    <select id="channel2g" class="form-control"></select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblBandWidthName"></label>
+                <div class="col-xs-3">
+                    <select id="bandwidth2g" class="form-control">
+                        <option value="0">20MHz</option>
+                        <option value="2">40MHz</option>
+                        <option value="1">20/40MHz</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row" id="hideSSID2">
+                <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblHiddenSSID"></label>
+                <div class="col-xs-3 text-right">
+                    <div class="switch">
+                        <input class="switch-checkbox hidden" id="hidden2g" type="checkbox">
+                        <label class="switch-label" for="hidden2g">
+                            <span class="switch-inner"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row" id="TWT2">
+                <label class="col-xs-offset-3 col-xs-3 control-label">TWT</label>
+                <div class="col-xs-3 text-right">
+                    <div class="switch">
+                        <input class="switch-checkbox hidden" id="enableTWT2g" type="checkbox">
+                        <label class="switch-label" for="enableTWT2g">
+                            <span class="switch-inner"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row" id="OFDMA2">
+                <label class="col-xs-offset-3 col-xs-3 control-label">MU-OFDMA</label>
+                <div class="col-xs-3 text-right">
+                    <div class="switch">
+                        <input class="switch-checkbox hidden" id="enableOFDMA2g" type="checkbox">
+                        <label class="switch-label" for="enableOFDMA2g">
+                            <span class="switch-inner"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr class="depart-line">
+            <div class="form-group row">
+                <div class="col-xs-3 title" data-i18n="lblWifi5GSetting"></div>
+                <label class="col-xs-3 control-label" data-i18n="lbChannelName"></label>
+                <div class="col-xs-3">
+                    <select id="channel5g" class="form-control"></select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblBandWidthName"></label>
+                <div class="col-xs-3">
+                    <select id="bandwidth5g" class="form-control">
+                        <option value="0">80MHz</option>
+                        <option value="1" id="highBandwidth_5g">20/80/160MHz</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row" id="hideSSID5">
+                <label class="col-xs-offset-3 col-xs-3 control-label" data-i18n="lblHiddenSSID"></label>
+                <div class="col-xs-3 text-right">
+                    <div class="switch">
+                        <input class="switch-checkbox hidden" id="hidden5g" type="checkbox">
+                        <label class="switch-label" for="hidden5g">
+                            <span class="switch-inner"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row" id="dfs">
+                <label class="col-xs-offset-3 col-xs-3 control-label">DFS</label>
+                <div class="col-xs-3 text-right">
+                    <div class="switch">
+                        <input class="switch-checkbox hidden" id="enableDFS" type="checkbox">
+                        <label class="switch-label" for="enableDFS">
+                            <span class="switch-inner"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row" id="TWT5">
+                <label class="col-xs-offset-3 col-xs-3 control-label">TWT</label>
+                <div class="col-xs-3 text-right">
+                    <div class="switch">
+                        <input class="switch-checkbox hidden" id="enableTWT5g" type="checkbox">
+                        <label class="switch-label" for="enableTWT5g">
+                            <span class="switch-inner"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="OFDMA5">
+                <label class="col-xs-offset-3 col-xs-3 control-label">MU-OFDMA</label>
+                <div class="col-xs-3 text-right">
+                    <div class="switch">
+                        <input class="switch-checkbox hidden" id="enableOFDMA5g" type="checkbox">
+                        <label class="switch-label" for="enableOFDMA5g">
+                            <span class="switch-inner"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <button class="btn btn-primary theme-bg-color" id="setWifi" data-i18n="btnSaveName"></button>
+    </div>
+</div>
+
+<div class="modal fade help-modal" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModal" data-dismiss="modal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header theme-border-color">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="helpModalLabel" data-i18n="lblHelp"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="item">
+                    <div class="title" data-i18n="wir_help_msg_title1"></div>
+                    <hr class="depart-line">
+                    <div class="text" data-i18n="wir_help_msg_text1"></div>
+                    <hr class="depart-line">
+                    <div class="title" data-i18n="tAdSetting"></div>
+                    <hr class="depart-line">
+                    <div class="text">
+                        <span data-i18n="lbChannelName"></span>
+                        &nbsp;:&nbsp;
+                        <span data-i18n="wir_help_msg_text2"></span>
+                    </div>
+                    <hr class="depart-line">
+                    <div class="text">
+                        <span data-i18n="lblBandWidthName"></span>
+                        &nbsp;:&nbsp;
+                        <span data-i18n="wir_help_msg_text3"></span>
+                    </div>
+                    <hr class="depart-line">
+                    <div class="text">
+                        <span data-i18n="lblHiddenSSID"></span>
+                        &nbsp;:&nbsp;
+                        <span data-i18n="wir_help_msg_text4"></span>
+                    </div>
+                    <hr class="depart-line">
+                    <div class="text">
+                        <span>DFS</span>
+                        &nbsp;:&nbsp;
+                        <span data-i18n="wir_help_msg_text5"></span>
+                    </div>
+                    <hr class="depart-line">
+                    <div class="text">
+                        <span>TWT</span>
+                        &nbsp;:&nbsp;
+                        <span data-i18n="wir_help_msg_text6"></span>
+                    </div>
+                    <hr class="depart-line">
+                    <div class="text">
+                        <span>MU-OFDMA</span>
+                        &nbsp;:&nbsp;
+                        <span data-i18n="wir_help_msg_text7"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "wireless.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var wifiCountry = 0, advSetInfo_5G = [], advSetInfo_2G = [];
+
+        if (opMode == 2 || opMode == 3) {
+            $("#channel2g, #channel5g").parent().hide().parent().find(".col-xs-3.control-label").hide();
+        }
+
+        getWifi();
+
+        $("#enableDualFrequency").on("change", function(){
+            var mode = $(this).is(":checked");
+            if (mode) {
+                $("#wifi2Info, #wifi5Info").hide();
+                $("#wifiInfo").show();
+            } else {
+                $("#wifiInfo").hide();
+                $("#wifi2Info, #wifi5Info").show();
+            }
+        });
+        $("[id^=authmode]").on("change", function(){
+            var pwdInfo = $(this).parents(".form-group").next();
+            var enterprise = $(this).parents(".form-group").next().next();
+            $(this).val() == 0 ? (pwdInfo.hide(), enterprise.hide()) :
+                ($(this).val() == 4 ? (enterprise.show(), pwdInfo.hide()): (pwdInfo.show(), enterprise.hide()));
+        });
+        $("[id^=password]").on("keyup", function(){
+            checkPasswdStrength($(this).val(), $(this).parent().siblings(".pwd-strength"), 8);
+        });
+        $(".depart-line[data-toggle='collapse']").on("click", function(){
+            var target = $(this);
+            $(this).find(".glyphicon").attr("class", function(i, v){
+                return target.hasClass("collapsed") ? v.replace("right", "down") : v.replace("down", "right");
+            });
+        });
+        $("#bandwidth5g").on("change", function(){
+            showChannel5G("#channel5g", wifiCountry, $("#channel5g").val(), $("#enableDFS").val(), $("#bandwidth5g").val());
+        });
+        $("#enableDFS").on("change", function(){
+            var checked = $(this).is(":checked");
+            var channel5 = $("#channel5g").val();
+            checked ? $("#highBandwidth_5g").show() : $("#highBandwidth_5g").hide();
+            $("#bandwidth5g").val(checked ? 1 : 0);
+            showChannel5G("#channel5g", wifiCountry, channel5, checked ? 1 : 0, $("#bandwidth5g").val());
+        });
+        $("#setWifi").on("click", function(){
+            var ssid2, auth2, pwd2, channel2, bw2, hide2, twt2, ofdma2, radiusip2, radiusport2, radiuspwd2;
+            var ssid5, auth5, pwd5, channel5, bw5, hide5, dfs, twt5, ofdma5, radiusip5, radiusport5, radiuspwd5;
+            if ($("#enableDualFrequency").val() == 1) {
+                ssid2 = $("#ssid").val();
+
+                if (!SsidLenCheck(ssid2, 31)) {
+                    getMsg($.t("msgWifiSsidText2"), 1, "#ssid");
+                    return false;
+                } else if (!checkStr(ssid2)) {
+                    getMsg($.t("msgWifiSsidText1"), 1, "#ssid");
+                    return false;
+                }
+
+                auth2 = $("#authmode").val();
+                pwd2 = $("#password").val();
+                radiusip2 = $("#radiusip").val();
+                radiusport2 = $("#radiusport").val();
+                radiuspwd2 = $("#radiuspwd").val();
+
+                if (auth2 != 0) {
+                    if (auth2 != 4) {
+                        if (!pwd2.length) {
+                            getMsg($.t("msgLoginPasswordText4"), 1, "#password");
+                            return false;
+                        } else if (pwd2.length > 63 || pwd2.length < 8) {
+                            getMsg($.t("msgWifiPasswordText2"), 1, "#password");
+                            return false;
+                        } else if (!checkSpecialCharacter(pwd2)) {
+                            getMsg($.t("msgLoginPasswordText8"), 1, "#password");
+                            return false;
+                        }
+                    } else {
+                        if (!checkIP($("#radiusip"), 1)) {
+                            return false;
+                        }
+                        if (!checkPort($("#radiusport"))) {
+                            return false;
+                        }
+                        if (!radiuspwd2.length) {
+                            getMsg($.t("msgLoginPasswordText4"), 1, "#radiuspwd");
+                            return false;
+                        } else if (radiuspwd2.length > 64 || radiuspwd2.length < 0) {
+                            getMsg($.t("msgWifiPasswordText3"), 1, "#radiuspwd");
+                            return false;
+                        } else if (!checkSpecialCharacter(radiuspwd2)) {
+                            getMsg($.t("msgLoginPasswordText8"), 1, "#radiuspwd");
+                            return false;
+                        }
+                    }
+                } else {
+                    pwd2 = "Admin12345";
+                }
+                ssid5 = ssid2;
+                pwd5 = pwd2;
+                auth5 = auth2;
+                radiusip5 = radiusip2;
+                radiusport5 = radiusport2;
+                radiuspwd5 = radiuspwd2;
+            } else {
+                ssid2 = $("#ssid2g").val();
+                auth2 = $("#authmode2g").val();
+                pwd2 = $("#password2g").val();
+                radiusip2 = $("#radiusip2g").val();
+                radiusport2 = $("#radiusport2g").val();
+                radiuspwd2 = $("#radiuspwd2g").val();
+                ssid5 = $("#ssid5g").val();
+                auth5 = $("#authmode5g").val();
+                pwd5 = $("#password5g").val();
+                radiusip5 = $("#radiusip5g").val();
+                radiusport5 = $("#radiusport5g").val();
+                radiuspwd5 = $("#radiuspwd5g").val();
+                // check 2G SSID
+                if (!SsidLenCheck(ssid2, 31)) {
+                    getMsg($.t("msgWifiSsidText2"), 1, "#ssid2g");
+                    return false;
+                } else if (!checkStr(ssid2)) {
+                    getMsg($.t("msgWifiSsidText1"), 1, "#ssid2g");
+                    return false;
+                }
+                // check 5G SSID
+                if (!SsidLenCheck(ssid5, 31)) {
+                    getMsg($.t("msgWifiSsidText2"), 1, "#ssid5g");
+                    return false;
+                } else if (!checkStr(ssid5)) {
+                    getMsg($.t("msgWifiSsidText1"), 1, "#ssid5g");
+                    return false;
+                }
+
+                if (auth2 != 0) {
+                    // check 2G password
+                    if (auth2 != 4) {
+                        if (!pwd2.length) {
+                            getMsg($.t("msgLoginPasswordText4"), 1, "#password2g");
+                            return false;
+                        } else if (pwd2.length > 63 || pwd2.length < 8) {
+                            getMsg($.t("msgWifiPasswordText2"), 1, "#password2g");
+                            return false;
+                        } else if (!checkSpecialCharacter(pwd2)) {
+                            getMsg($.t("msgLoginPasswordText8"), 1, "#password2g");
+                            return false;
+                        }
+                    } else {
+                        if (!checkIP($("#radiusip2g"), 1)) {
+                            return false;
+                        }
+                        if (!checkPort($("#radiusport2g"))) {
+                            return false;
+                        }
+                        if (!radiuspwd2.length) {
+                            getMsg($.t("msgLoginPasswordText4"), 1, "#radiuspwd2g");
+                            return false;
+                        } else if (radiuspwd2.length > 64 || radiuspwd2.length < 0) {
+                            getMsg($.t("msgWifiPasswordText3"), 1, "#radiuspwd2g");
+                            return false;
+                        } else if (!checkSpecialCharacter(radiuspwd2)) {
+                            getMsg($.t("msgLoginPasswordText8"), 1, "#radiuspwd2g");
+                            return false;
+                        }
+                    }
+                } else {
+                    pwd2 = "Admin12345";
+                }
+
+                if (auth5 != 0) {
+                    // check 5G password
+                    if (auth5 != 4) {
+                        if (!pwd5.length) {
+                            getMsg($.t("msgLoginPasswordText4"), 1, "#password5g");
+                            return false;
+                        } else if (pwd5.length > 63 || pwd5.length < 8) {
+                            getMsg($.t("msgWifiPasswordText2"), 1, "#password5g");
+                            return false;
+                        } else if (!checkSpecialCharacter(pwd5)) {
+                            getMsg($.t("msgLoginPasswordText8"), 1, "#password5g");
+                            return false;
+                        }
+                    } else {
+                        if (!checkIP($("#radiusip5g"), 1)) {
+                            return false;
+                        }
+                        if (!checkPort($("#radiusport5g"))) {
+                            return false;
+                        }
+                        if (!radiuspwd5.length) {
+                            getMsg($.t("msgLoginPasswordText4"), 1, "#radiuspwd5g");
+                            return false;
+                        } else if (radiuspwd5.length > 64 || radiuspwd5.length < 0) {
+                            getMsg($.t("msgWifiPasswordText3"), 1, "#radiuspwd5g");
+                            return false;
+                        } else if (!checkSpecialCharacter(radiuspwd5)) {
+                            getMsg($.t("msgLoginPasswordText8"), 1, "#radiuspwd5g");
+                            return false;
+                        }
+                    }
+                } else {
+                    pwd5 = "Admin12345";
+                }
+            }
+            channel2 = $("#channel2g").val();
+            channel5 = $("#channel5g").val();
+
+            bw2 = $("#bandwidth2g").val();
+            bw5 = $("#bandwidth5g").val();
+
+            dfs = $("#enableDFS").val();
+            hide2 = $("#hidden2g").val();
+            hide5 = $("#hidden5g").val();
+
+            twt2 = $("#enableTWT2g").val();
+            twt5 = $("#enableTWT5g").val();
+
+            ofdma2 = $("#enableOFDMA2g").val();
+            ofdma5 = $("#enableOFDMA5g").val();
+
+            var skiplist;
+            if (bw5 == 1) {
+                var region_cur = BandWidthList[wifiCountry];
+                var HighBandWidthList = HighBandWidth5[region_cur].replace(/ /g, ",");
+                skiplist = Region5.split(HighBandWidthList).join("");
+                if (skiplist[0] == ",") {
+                    skiplist = skiplist.substr(1);
+                }
+                skiplist = skiplist.replace(/,/g, ";")+";";
+            } else if (bw5 == 0) {
+                var region_cur = CountryRegionList[wifiCountry].split(",");
+                if (dfs == "0") {
+                    skiplist = SkipList5[0][region_cur[1]];
+                } else {
+                    skiplist = SkipList5[1][region_cur[1]];
+                }
+            }
+
+            if (bw2 != advSetInfo_2G[0] || twt2 != advSetInfo_2G[1] || ofdma2 != advSetInfo_2G[2]
+                || bw5 != advSetInfo_5G[0] || dfs != advSetInfo_5G[1] || skiplist != advSetInfo_5G[2]
+                || twt5 != advSetInfo_5G[3] || ofdma5 != advSetInfo_5G[4]) {
+                setProgressBar(500, $.t("msgWaiting"), $.t("msgRefresh"));
+            } else {
+                startLoading(6000, $.t("btnSaveName"));
+            }
+        });
+
+        function getWifi() {
+            ajax({
+                url: "wifi.json",
+                success: function(data){
+                    if (data.error == 0) {
+                        wifiCountry = data.country;
+                        var wifi2 = data.wifi2, wifi5 = data.wifi5;
+                        // 2G
+                        $("#ssid, #ssid2g").val(wifi2.ssid);
+                        $("#authmode, #authmode2g").val(wifi2.security).change();
+                        $("#password, #password2g").val(wifi2.security == "0" ? "" : wifi2.passwd).keyup();
+                        $("#radiusip, #radiusip2g").val(wifi2.radiusip);
+                        $("#radiusport, #radiusport2g").val(wifi2.radiusport);
+                        $("#radiuspwd, #radiuspwd2g").val(wifi2.radiuspwd);
+
+                        showChannel2G("#channel2g", wifi2.channel);
+                        $("#channel2g").val(wifi2.channel);
+
+                        $("#bandwidth2g").val(wifi2.bandwidth);
+
+                        $("#hidden2g").prop("checked", (wifi2.hidden == 1)).change();
+                        $("#enableTWT2g").prop("checked", (wifi2.twt == 1)).change();
+                        $("#enableOFDMA2g").prop("checked", (wifi2.ofdma == 1)).change();
+
+                        // 5G
+                        $("#ssid5g").val(wifi5.ssid);
+                        $("#authmode5g").val(wifi5.security).change();
+                        $("#password5g").val(wifi5.security == "0" ? "" : wifi5.passwd).keyup();
+                        $("#radiusip5g").val(wifi5.radiusip);
+                        $("#radiusport5g").val(wifi5.radiusport);
+                        $("#radiuspwd5g").val(wifi5.radiuspwd);
+
+                        showChannel5G("#channel5g", wifiCountry, wifi5.channel, wifi5.dfs, wifi5.bandwidth);
+                        $("#channel5g").val(wifi5.channel);
+
+                        $("#bandwidth5g").val(wifi5.bandwidth);
+
+                        $("#enableDFS").prop("checked", (wifi5.dfs == 1)).val(wifi5.dfs);
+                        $("#hidden5g").prop("checked", wifi5.hidden == 1).change();
+                        $("#enableTWT5g").prop("checked", wifi5.twt == 1).change();
+                        $("#enableOFDMA5g").prop("checked", wifi5.ofdma == 1).change();
+
+                        // 判断是否打开双频合一
+                        $("#enableDualFrequency").prop("checked", wifi2.ssid == wifi5.ssid && wifi2.security == wifi5.security
+                                                                  && wifi2.passwd == wifi5.passwd && wifi2.radiusip == wifi5.radiusip
+                                                                  && wifi2.radiusport == wifi5.radiusport && wifi2.radiuspwd == wifi5.radiuspwd).change();
+
+                        $("#enableDualFrequency").val() == 1 ? $("#ssid5g").val(wifi5.ssid+"_5G"): "";
+
+                        advSetInfo_2G[0] = wifi2.bandwidth;
+                        advSetInfo_2G[1] = wifi2.twt;
+                        advSetInfo_2G[2] = wifi2.ofdma;
+
+                        advSetInfo_5G[0] = wifi5.bandwidth;
+                        advSetInfo_5G[1] = wifi5.dfs;
+                        advSetInfo_5G[2] = wifi5.skip_channel_list;
+                        advSetInfo_5G[3] = wifi5.twt;
+                        advSetInfo_5G[4] = wifi5.ofdma;
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

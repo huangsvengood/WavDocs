@@ -126,7 +126,7 @@ hide:
 </div>
 
 <div class="grid-container">
-  <a href="/Products/">
+  <a href="/router/login.html">
   <div class="box">Router</div>
   </a>
   <a href="/Products/#indoor-repeater">

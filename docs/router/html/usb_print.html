@@ -1,0 +1,145 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label" data-i18n="lblUsbPrintServer"></label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableUsbPrintServer" type="checkbox">
+                    <label class="switch-label" for="enableUsbPrintServer">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table id="usbPrintList" class="table">
+                <thead>
+                    <tr>
+                        <th data-i18n="lblAddr"></th>
+                        <th data-i18n="lblUsbPrintServerName"></th>
+                        <th data-i18n="lblUsbPrintServerModel"></th>
+                        <th data-i18n="lblPort"></th>
+                        <th data-i18n="lblStatus"></th>
+                        <th data-i18n="lblOperate"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="6"><img src="../public/static/layer/skin/default/loading-2.gif" width="20px"></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setUsbPrint" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+        <h5 data-i18n="lblUsbPrintServer"></h5>
+        <p data-i18n="msgUsbPrintServerHelp"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/usb_print.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var print_enable, usb_print_list = [];
+        var PortToSelect = $("<select class='form-control port'>\
+                                <option value='0'>9100</option>\
+                                <option value='1'>9101</option>\
+                                <option value='2'>9102</option>\
+                                <option value='3'>9103</option>\
+                                <option value='4'>9104</option>\
+                                <option value='5'>9105</option>\
+                                <option value='6'>9106</option>\
+                                <option value='7'>9107</option>\
+                                <option value='8'>9108</option>\
+                                <option value='9'>9109</option></select>");
+
+        getUsbPrint();
+
+        $("#usbPrintList > tbody").on("click", ".editThis:not(.disabled)", function() {
+            var thisTr = $(this).parents("tr");
+            $("#enableUsbPrintServer, #setUsbPrint").prop("disabled", true);
+            thisTr.siblings().find("span").addClass("disabled");
+
+            if ($(this).text() == $.t("lblEdit")) {
+                var port = thisTr.find("td:eq(3)").text();
+                PortToSelect.val(port-9100);
+                thisTr.find("td:eq(3)").html(PortToSelect[0]);
+                $(this).text($.t("btnSaveName")).next().text($.t("btnCancel")).show();
+            } else {
+                var port = thisTr.find(".port").val() * 1 + 9100;
+                var mac = thisTr.attr("pair_key");
+
+                $("#enableUsbPrintServer, #setUsbPrint").prop("disabled", false);
+                thisTr.find("td:eq(3)").html(port);
+                $(this).text($.t("lblEdit")).next().hide();
+                $("#usbPrintList tbody span.disabled").removeClass("disabled");
+                startLoading(2000, $.t("btnSaveName"));
+            }
+        });
+
+        $("#usbPrintList > tbody").on("click", ".deleteThis:not(.disabled)", function() {
+            var thisTr = $(this).parents("tr");
+            var index = thisTr.prevAll().length;
+            var port;
+            $("#enableUsbPrintServer, #setUsbPrint").prop("disabled", false);
+
+            usb_print_list.forEach(function(v, i){
+                if (index == i) {
+                    port = v.port + 9100;
+                    return true;
+                }
+            });
+
+            thisTr.find("td:eq(3)").html(port);
+            $(this).hide().prev().text($.t("lblEdit"));
+            $("#usbPrintList tbody span.disabled").removeClass("disabled");
+        });
+
+        $("#setUsbPrint").on("click", function(){
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        function getUsbPrint() {
+            ajax({
+                url: "usb.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        var print = data.print;
+                        print_enable = print.enable;
+                        usb_print_list = print.server;
+                        $("#enableUsbPrintServer").prop("checked", print.enable == 1).change();
+                        var dom = document.createDocumentFragment();
+                        usb_print_list.forEach(function(v, i){
+                            if (v.ip_addr) {
+                                dom.appendChild($('<tr pair_key='+ v.pair_key+'>\
+                                            <td>'+v.ip_addr+'</td>\
+                                            <td>'+v.manufacturer+'</td>\
+                                            <td>'+v.product+'</td>\
+                                            <td>'+(v.port + 9100)+'</td>\
+                                            <td><img src="../img/usb_'+(print_enable? "on" : "off")+'line.png" width="20px" /></td>\
+                                            <td><span class="editThis">'+$.t("lblEdit")+'</span> \
+                                            <span class="deleteThis" style="display:none">'+$.t("btnCancel")+'</span></td> \
+                                            </tr>')[0]);
+                            }
+                        });
+                        dom.children.length == 0 ? $("#usbPrintList > tbody").html("<tr><td colspan='6'>"+$.t("lblNoData")+"</td></tr>")
+                        : $("#usbPrintList > tbody").html(dom);
+                        $("#enableUsbPrintServer, #setUsbPrint").prop("disabled", false);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

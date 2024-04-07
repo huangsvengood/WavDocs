@@ -1,0 +1,64 @@
+{
+    "error": 0,
+    "sys": {
+        "init_status": 0,
+        "connected": true,
+        "country": "CN",
+        "model": "WN586X3A",
+        "brand": "WAVLINK",
+        "MeshMode": 1,
+        "opMode": 0,
+        "ota_info": 1,
+        "prefer_mode": 1,
+        "UserInit": "10",
+        "sdkVersion": "M86X3A_V240311",
+        "MeshBridgeMode": 0,
+        "Switch_PPPOE": 1,
+        "WizRouter": 1,
+        "WizAp": 0,
+        "Wizrep": 0,
+        "WizMeshBridge": 1,
+        "WizEasymeshAgent": 0
+    },
+    "agent_ota": {
+        "version": "",
+        "version_info": ""
+    },
+    "rep_ota": {
+        "version": "",
+        "version_info": "",
+        "md5": ""
+    },
+    "speed": {
+        "up_speed": 0,
+        "cur_speed": 0
+    },
+    "time": {
+        "enable": 0,
+        "tz": "UTC-08:00",
+        "ontime": 411785,
+        "uptime": 1710549220,
+        "date": "2024/03/16 11:00:09"
+    },
+    "function": {
+        "VpnShowEnable": 1,
+        "QosShowEnable": 1,
+        "Tr069Show": 0,
+        "VlanShow": 1,
+        "wcloudenable": 1,
+        "UsbEnSupport": 0,
+        "TimingRebootShow": 1,
+        "AGHShow": 0,
+        "DLNAShow": 0,
+        "UsbPrintShow": 0,
+        "ALGShow": 0
+    },
+    "log": "Tue Mar 26 03:36:58 2024 [WAN] [DHCPV4] ip: 192.168.188.100, gw: 192.168.188.1, dns: 192.168.188.1.\nTue Mar 26 08:27:27 2024 [LAN] [DHCPV4] 80:3f:5d:0f:98:7b, 192.168.10.204, WIN-U6N3NP6VDPT.\nTue Mar 26 09:09:46 2024 [USER] login successful, ::ffff:192.168.10.204.",
+    "led": 1,
+    "timing_reboot": {
+        "enable": 0,
+        "hour": 0,
+        "min": 0,
+        "week": "0,0,0,0,0,0,0"
+    }
+}

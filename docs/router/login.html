@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <title>WAVLINK</title>
+        <link rel="icon" href="data:;base64,=">
+        <link rel="stylesheet" href="./public/static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/theme.css">
+        <script>
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            var href = isMobile ? './phone_ui' : '.';
+            document.write("<link rel='stylesheet' type='text/css' href='" + href +"/css/login.css'>");
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="theme-bg-color"></div>
+            <img id="logo" src="./img/logo2.png">
+            <div class="select dropdown">
+                <div class="dropdown-toggle text-center" id="language" data-toggle="dropdown" data-i18n="lblChooseLanguage"></div>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="language">
+                    <li data-value="zh_CN">简体中文</li>
+                    <li data-value="en_US">English</li>
+                    <li data-value="de_DE">Deutsch</li>
+                    <li data-value="fr_FR">Français</li>
+                    <li data-value="es_ES">Español</li>
+                    <li data-value="it_IT">Italiano</li>
+                    <li data-value="zh_TW">繁體中文</li>
+                    <li data-value="ja_JP">日本語</li>
+                </ul>
+            </div>
+            <div id="login-box">
+                <img id="p-logo" class="off" src="./img/p_logo1.png" />
+                <div id="welcome" data-i18n="lblWelcome"></div>
+                <div id="box1">
+                    <div class="form-group">
+                        <input type="password" id="password" class="form-control" autofocus="autofocus" data-i18n="[placeholder]lblPassWord" />
+                    </div>
+                    <button id="loginBtn" class="btn btn-primary theme-bg-color" data-i18n="lblLogin" disabled></button>
+                    <span id="forget" data-toggle="modal" data-target="#resetModal" data-i18n="lblForgetPwd"></span>
+                </div>
+                <div id="box2">
+                    <button id="testBtn" class="btn btn-primary theme-bg-color" data-i18n="btnLoginDirectly"></button>
+                </div>
+                <div id="download-app">
+                    <img id="img2" src="./img/simg.png">
+                    <a data-toggle="popover"
+                       tabindex="0"
+                       role="button"
+                       data-trigger="focus"
+                       data-placement="bottom"
+                       data-html="true"
+                       data-content="<img src='.\img\app_down.png' width='140px'>"
+                       data-i18n="msgDownloadApp"></a>
+                    <a href='http://apps.wavlink.com/app/wavlink.html' target='_blank' data-i18n="msgDownloadApp" class="off"></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="resetModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content theme-border-color">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="resetModalLabel" data-i18n="lblTips"></h5>
+                    </div>
+                    <div class="modal-body" data-i18n="msgReset"></div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-4">
+                                <button type="button" class="btn btn-primary theme-bg-color" data-dismiss="modal" data-i18n="lblConfirmName"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <script src="./public/static/jquery.min.js"></script>
+        <script src="./public/static/jquery.cookie.js"></script>
+        <script src="./public/i18n/i18next.min.js"></script>
+        <script src="./public/static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./public/static/layer/layer.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/login.js"></script>
+    </body>
+</html>

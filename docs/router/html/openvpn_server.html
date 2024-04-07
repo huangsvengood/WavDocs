@@ -1,0 +1,422 @@
+<div class="page-content row">
+	<div class="col-xs-9 content">
+		<div class="form-group row">
+			<label class="col-xs-8 control-label" data-i18n="lblOpenVPN_Server"></label>
+			<div class="col-xs-4 text-right">
+				<div class="switch">
+					<input class="switch-checkbox hidden" id="EnableVpnSer" type="checkbox">
+					<label class="switch-label" for="EnableVpnSer">
+						<span class="switch-inner"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div id="vpn_server" class="off">
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblDeviceIP"></label>
+				<div class="col-xs-5 text-right" id="WanIP"></div>
+			</div>
+			<div class="form-group text-right off" id="wanTips" style="color: red;">
+				<span data-i18n="msgPrivateWanIp"></span>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblOpenVPN_In">...</label>
+				<div class="col-xs-5">
+					<select class="form-control" id="openvpn_interface">
+						<option value="tun">tun</option>
+						<option value="tap">tap</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblOpenVPN_proto">...</label>
+				<div class="col-xs-5">
+					<select class="form-control" id="openvpn_proto">
+						<option value="tcp">tcp</option>
+						<option value="udp">udp</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblAddr"></label>
+				<div class="col-xs-5">
+						<input type="text" class="form-control" id="openvpn_ip">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblnetmask"></label>
+				<div class="col-xs-5">
+						<input type="text" class="form-control" id="openvpn_mask">
+				</div>
+			</div>
+			<div class="form-group row off" id="ip_start">
+				<label class="col-xs-7 control-label" data-i18n="lblStartIP"></label>
+				<div class="col-xs-5">
+						<input type="text" class="form-control" id="openvpn_ip_start">
+				</div>
+			</div>
+			<div class="form-group row off" id="ip_end">
+				<label class="col-xs-7 control-label" data-i18n="lblEndIP"></label>
+				<div class="col-xs-5">
+						<input type="text" class="form-control" id="openvpn_ip_end">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblOpenVPN_port"></label>
+				<div class="col-xs-5">
+					<input type="text" class="form-control" id="openvpn_port" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblEncryption">...</label>
+				<div class="col-xs-5">
+					<select class="form-control" id="openvpn_encryption_select">
+						<option value="AES-256-GCM">AES-256-GCM</option>
+						<option value="AES-128-GCM">AES-128-GCM</option>
+						<option value="AES-128-CBC">AES-128-CBC</option>
+						<option value="CHACHA20-POLY1305">CHACHA20-POLY1305</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-7 control-label" data-i18n="lblAuthentication">...</label>
+				<div class="col-xs-5">
+					<select class="form-control" id="OpenvpnAuthentication">
+						<option value="SHA256">SHA256</option>
+						<option value="SHA512">SHA512</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-xs-8 control-label" data-i18n="lblOpenVPN_Pwd_En"></label>
+				<div class="col-xs-4 text-right">
+					<div class="switch">
+						<input class="switch-checkbox hidden" id="ovpn_pwd_en" type="checkbox">
+						<label class="switch-label" for="ovpn_pwd_en">
+							<span class="switch-inner"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div id="openvpn_pwd" class="off">
+				<div class="form-group row">
+					<label class="col-xs-7 control-label" data-i18n="lblUserName"></label>
+					<div class="col-xs-5">
+						<input type="text" class="form-control" id="ser_usr_name">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-xs-7 control-label" data-i18n="lblPassWord"></label>
+					<div class="col-xs-5">
+						<input type="password" class="form-control" id="ser_usr_passwd">
+						<img src="../img/eyes_off.png" class="eyes">
+					</div>
+				</div>
+			</div>
+			<div class="form-group row off" id="access_lan">
+				<label class="col-xs-8 control-label" data-i18n="lblAccessLan"></label>
+				<div class="col-xs-4 text-right">
+					<div class="switch">
+						<input class="switch-checkbox hidden" id="access_lan_en" type="checkbox">
+						<label class="switch-label" for="access_lan_en">
+							<span class="switch-inner"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<h5 class="depart-line collapsed theme-border-color theme-color off"
+				data-toggle="collapse" href="#vpnserverinfo"
+				aria-expanded="false" aria-controls="vpnserverinfo">
+				<span data-i18n="upnp_list_show"></span>
+				<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+			</h5>
+			<div class="collapse" id="vpnserverinfo">
+				<table id="vpnserverList" class="table">
+					<thead>
+						<tr>
+							<th data-i18n="lblVirtualAddress"></th>
+							<th data-i18n="lblRealAddress"></th>
+							<th data-i18n="lblReceiveByte"></th>
+							<th data-i18n="lblSentByte"></th>
+							<th data-i18n="lblConnectTime"></th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="row col-xs-4 col-xs-offset-4">
+				<button class="btn btn-primary theme-bg-color" id="openvpn_ser_save" data-i18n="lblSave"></button>
+			</div>
+		</div>
+		<div class="form-group row text-right off" style="font-size: 16px;">
+			<!-- <form name="downloadConf" method="POST" action="/cgi-bin/export_file.cgi?opt=1"></form> -->
+			<a id="openvpn_download" data-i18n="lblBackupOvpnConfig" download="ovpn_backup" href="../data/ovpn"></a>
+		</div>
+		<div class="row text-right off" style="font-size: 16px;">
+			<!-- <form name="downloadLog" method="POST" action="/cgi-bin/export_file.cgi?opt=3"></form> -->
+			<a id="openvpn_downloadlog" data-i18n="lblBackupOvpnLog" download="ovpn_log" href="../data/ovpn"></a>
+		</div>
+	</div>
+	<div class="col-xs-3 help">
+		<h4 data-i18n="lblHelp"></h4>
+		<p data-i18n="lblVpnHelpText"></p>
+	</div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/openvpn_server.html");
+        window.location.replace("./index.html");
+    }
+
+	$(document).ready(function(){
+		var enable_server = 0, enable_client = 0, ip_s, mask_s;
+
+		getOpenVpnSer();
+
+		$("#EnableVpnSer").on("change", function(){
+			if(enable_client == 0){
+				$("#openvpn_download, #openvpn_downloadlog").parent().hide();
+				$(".theme-color").hide();
+				if($(this).is(":checked")){
+					$("#vpn_server").show();
+					if(enable_server == 1) {
+						$("#openvpn_download, #openvpn_downloadlog").parent().show();
+						$(".theme-color").show();
+					}
+					if($("#openvpn_interface").val()=="tap"){
+						$("#ip_start, #ip_end").show();
+						$("#access_lan").hide();
+					}else{
+						$("#ip_start, #ip_end").hide();
+						$("#access_lan").show();
+					}
+				}else{
+					$("#vpn_server").hide();
+				}
+			}else{
+				getMsg($.t("msgVpnEnableError"));
+				return false;
+			}
+		});
+
+		$(".depart-line[data-toggle='collapse']").on("click", function(){
+			var target = $(this);
+			$(this).find(".glyphicon").attr("class", function(i, v){
+				return target.hasClass("collapsed") ? v.replace("right", "down") : v.replace("down", "right");
+			});
+		});
+		$("#openvpn_ip, #openvpn_mask").on("blur", function(){
+			changeBeginEndIP();
+		});
+		$("#openvpn_ip, #openvpn_mask").on("focus", function(){
+			ip_s = $("#openvpn_ip").val();
+			mask_s = $("#openvpn_mask").val();
+		});
+		$("#ovpn_pwd_en").on("change", function(){
+			$(this).is(":checked") ? $("#openvpn_pwd").show() : $("#openvpn_pwd").hide();
+		});
+		$("#openvpn_interface").on("change", function(){
+			var mode = $(this).val();
+			if (mode == "tun") {
+				$("#ip_start, #ip_end").hide();
+				$("#access_lan").show();
+			} else if (mode == "tap") {
+				$("#ip_start, #ip_end").show();
+				$("#access_lan").hide();
+			}
+		});
+		// $("#openvpn_download, #openvpn_downloadlog").on("click", function(e){
+		// 	e.preventDefault();
+		// 	var f = $(this).siblings("form");
+		// 	ajax({
+		// 		data: "fname=net&opt=check_login&function=get",
+		// 		success: function(data) {
+		// 			if (data.error == 0) {
+		// 				f.submit();
+		// 			} else {
+		// 				locationUrl(data.error);
+		// 			}
+		// 		}
+		// 	});
+		// });
+		$("#openvpn_ser_save").on("click",function(){
+			var enable = $("#EnableVpnSer").val();
+			var openvpn_ip= $("#openvpn_ip").val();
+			var OpenVPN_Interface = $("#openvpn_interface").val();
+			var OpenVPN_mask = $("#openvpn_mask").val();
+			var OpenVPN_ip_start = $("#openvpn_ip_start").val();
+			var OpenVPN_ip_end = $("#openvpn_ip_end").val();
+			var OpenVPN_port = $("#openvpn_port").val();
+			var OpenVPN_enc = $("#openvpn_encryption_select").val();
+			var OpenVPN_auth = $("#OpenvpnAuthentication").val();
+			var OVPN_Pwd_En = $("#ovpn_pwd_en").val();
+			var access_lan_en = $("#access_lan_en").val();
+			var ser_usr_name = $("#ser_usr_name").val();
+			var ser_usr_passwd = $("#ser_usr_passwd").val();
+			var OpenVPN_proto = $("#openvpn_proto").val();
+			if (enable == 0) {
+				startLoading(3000, $.t("btnSaveName"));
+				enable_server = 0;
+				return ;
+			}
+			if (!checkIP($("#openvpn_ip"), 1) || !checkIP($("#openvpn_mask"), 0)){
+				return false;
+			}
+			if (OpenVPN_Interface == "tap") {
+				if (!(1<=openvpn_ip.split(".")[0]*1 && openvpn_ip.split(".")[0]*1<=223)) {
+					getMsg($.t("msgIpError4"), 2, "#openvpn_ip");
+					return false;
+				} else if (openvpn_ip.split(".")[3]*1 == 0 || openvpn_ip.split(".")[3]*1 == 255) {
+					getMsg($.t("msgIpError5"), 1, "#openvpn_ip");
+					return false;
+				}
+				if (openvpn_ip == OpenVPN_ip_start) {
+					getMsg($.t("msgStartIpError3"), 1, $("#openvpn_ip"));
+					return false;
+				}
+				if (openvpn_ip == OpenVPN_ip_end) {
+					getMsg($.t("msgEndIpError3"), 1, $("#openvpn_ip"));
+					return false;
+				}
+				if(checkIP2($("#openvpn_ip_start"), 2) || checkIP2($("#openvpn_ip_end"), 3)){
+					if(checkIPInRange(openvpn_ip, OpenVPN_mask, OpenVPN_ip_start, $("#openvpn_ip_start")) && checkIPInRange(openvpn_ip, OpenVPN_mask, OpenVPN_ip_end, $("#openvpn_ip_end"))){
+						if (OpenVPN_ip_start.split(".")[3]*1 > OpenVPN_ip_end.split(".")[3]*1) {
+							getMsg($.t("msgStartIpError1"));
+							return false;
+						}
+					}else{
+						return false;
+					}
+				}
+			}
+			if (OpenVPN_port == "") {
+				getMsg($.t("msgIpNone"), 1, "#openvpn_port");
+				return false;
+			}
+			if (OVPN_Pwd_En == 1) {
+				if (ser_usr_name == "") {
+					getMsg($.t("msgIpNone"), 1, "#ser_usr_name");
+					return false;
+				} else if (ser_usr_name.indexOf(" ") !== -1) {
+					getMsg($.t("msgIPv6SpaceError"), 1, "#ser_usr_name");
+					return false;
+				} else if (!checkSpecialCharacter(ser_usr_name)) {
+					getMsg($.t("msgLoginPasswordText8"), 1, "#ser_usr_name");
+					return false;
+				} else if (!SsidLenCheck(ser_usr_name, 64)) {
+					getMsg($.t("msgInputLengthError"), 1, "#ser_usr_name");
+					return false;
+				}else if(/\s/.test(ser_usr_name)){
+					getMsg($.t("msgIPv6SpaceError"), 1, "#ser_usr_name");
+					return false;
+				}
+				if (ser_usr_passwd == "") {
+					getMsg($.t("msgIpNone"), 1, "#ser_usr_passwd");
+					return false;
+				} else if (ser_usr_passwd.indexOf(" ") !== -1) {
+					getMsg($.t("msgIPv6SpaceError"), 1, "#ser_usr_passwd");
+					return false;
+				} else if (!checkSpecialCharacter(ser_usr_passwd)) {
+					getMsg($.t("msgLoginPasswordText8"), 1, "#ser_usr_passwd");
+					return false;
+				} else if (!SsidLenCheck(ser_usr_passwd, 64)) {
+					getMsg($.t("msgInputLengthError"), 1, "#ser_usr_passwd");
+					return false;
+				}else if(/\s/.test(ser_usr_passwd)){
+					getMsg($.t("msgIPv6SpaceError"), 1, "#ser_usr_passwd");
+					return false;
+				}
+			}
+			startLoading(3000, $.t("btnSaveName"));
+			if (enable == 1) {
+				enable_server = 1;
+				$("#openvpn_download, #openvpn_downloadlog").parent().show();
+				$(".theme-color").show();
+			} else {
+				enable_server = 0;
+			}
+		});
+
+		//openvpn_ser get
+		function getOpenVpnSer(){
+			ajax({
+				url: "vpn.json",
+				success: function(data){
+					if(data.error == 0){
+						var server = data.ovpn_server;
+						enable_server = server.enable_server;
+						enable_client = server.enable_client;
+						$("#WanIP").text(server.ip_wan);
+						if(/^(192\.168|10|172\.16)\.\d{1,3}\.\d{1,3}$/.test($("#WanIP").text())){
+							$("#wanTips").show();
+						}
+						$("#openvpn_ip").val(server.ip);
+						$("#openvpn_interface").val(server.interface);
+						$("#openvpn_port").val(server.port);
+						$("#openvpn_proto").val(server.proto);
+						$("#openvpn_ip_start").val(server.ip_start);
+						$("#openvpn_ip_end").val(server.ip_end);
+						$("#openvpn_mask").val(server.mask);
+						$("#openvpn_encryption_select").val(server.encryption);
+						$("#OpenvpnAuthentication").val(server.Authentication);
+						$("#access_lan_en").prop("checked",server.access_lan_en == 1).change();
+						$("#EnableVpnSer").prop("checked",server.ovpn_enable == 1).change();
+						if(server.ovpn_enable == 1){
+							$("#vpn_server").show();
+							$("#openvpn_download, #openvpn_downloadlog").parent().show();
+							if(server.interface=="tap"){
+								$("#ip_start, #ip_end").show();
+								$("#access_lan, .theme-color").hide();
+							}else{
+								$("#ip_start, #ip_end").hide();
+								$(".theme-color, #access_lan").show();
+
+								var dom = document.createDocumentFragment();
+								server.client_data_list.forEach(function(v){
+									var sent_bytes = v.sent_bytes > 1024 ? (v.sent_bytes / 1024).toFixed(2) + "MB/S" : v.sent_bytes + "KB/S";
+									var received_bytes = v.received_bytes > 1024 ? (v.received_bytes / 1024).toFixed(2) + "MB/S" : v.received_bytes + "KB/S";
+									dom.appendChild($("<tr><td>"+v.virtual_ip+"</td>\
+													<td>"+v.reality_ip+"</td>\
+													<td>"+sent_bytes+"</td>\
+													<td>"+received_bytes+"</td>\
+													<td>"+v.date+"/"+v.time+"</td></tr>")[0]);
+								});
+								$("#vpnserverList > tbody").html(dom);
+							}
+							$("#ovpn_pwd_en").prop("checked",server.pwd_enable==1).change();
+							if (server.pwd_enable==1) {
+								$("#ser_usr_name").val(server.username);
+								$("#ser_usr_passwd").val(server.password);
+							}
+						}else{
+							$("#vpn_server").hide();
+						}
+					}else{
+						locationUrl(data.error);
+					}
+				}
+			});
+		}
+		function changeBeginEndIP() {
+			var ip = $("#openvpn_ip").val();
+			var mask = $("#openvpn_mask").val();
+			if (ip_s == ip && mask_s == mask) {
+				return;
+			}
+			var netAddr = getNetAddr(ip, mask);
+			var hostNum = getHostNum(mask);
+			netAddr = ipToNumber(netAddr);
+			var minIP = netAddr + 2;
+			var maxIP = netAddr + hostNum - 2;
+			minIP = numberToIP(minIP);
+			maxIP = numberToIP(maxIP);
+			$("#openvpn_ip_start").val(minIP);
+			$("#openvpn_ip_end").val(maxIP);
+		}
+	});
+</script>

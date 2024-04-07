@@ -1,0 +1,138 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-7 control-label" data-i18n="lblUserName"></label>
+            <div class="col-xs-5">
+                <input type="text" class="form-control" disabled="disabled" id="usbUser">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-7 control-label" data-i18n="lblPassWord"></label>
+            <div class="col-xs-5">
+                <input type="password" class="form-control" maxlength="30" id="usbPwd">
+                <img src="../img/eyes_off.png" class="eyes">
+            </div>
+        </div>
+        <div class="form-group row off">
+            <label class="col-xs-8 control-label" data-i18n="lblMediaSever"></label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableMediaServer" type="checkbox">
+                    <label class="switch-label" for="enableMediaServer">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table id="usbMeshList" class="table">
+                <thead>
+                    <tr>
+                        <th data-i18n="lblAddr"></th>
+                        <th data-i18n="lblMACAddressName"></th>
+                        <th data-i18n="lblUsb_status"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3"><img src="../public/static/layer/skin/default/loading-2.gif" width="20px"></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setUsb" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+        <p>
+            <span data-i18n="msgAccessDescription"></span>
+            <span data-i18n="msgAccessMethod1"></span><br>
+            <span data-i18n="msgAccessMethod2"></span>
+        </p>
+        <p data-i18n="msgUsbSupport"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/usb_storage.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        getUsbStorage();
+        getShowMediaServer();
+
+        $("#setUsb").on("click", function(){
+            var enable = $("#enableMediaServer").val();
+            var usbUser = $("#usbUser").val();
+            var usbPwd = $("#usbPwd").val();
+            if (usbUser == "") {
+                getMsg($.t("msgIpNone"), 2, "#usbUser");
+                return false;
+            }
+            if (usbPwd == "") {
+                getMsg($.t("msgIpNone"), 2, "#usbPwd");
+                return false;
+            } else if (usbPwd.length > 30 || usbPwd.length < 6) {
+                getMsg($.t("msgLoginPasswordText7"), 2, "#usbPwd");
+                return false;
+            } else if (!checkSpecialCharacter(usbPwd)) {
+                getMsg($.t("msgLoginPasswordText8"), 2, "#usbPwd");
+                return false;
+            }
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        function getUsbStorage() {
+            ajax({
+                url: "usb.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        var storage = data.storage;
+                        $("#usbUser").val(storage.USBUser);
+                        $("#usbPwd").val(storage.USBPwd);
+                        $("#enableMediaServer").prop("checked", storage.onOffMediaServer == "on").change();
+
+                        var dom = document.createDocumentFragment();
+                        var main_list = storage.main_list;
+                        if (main_list.name && main_list.ip_addr) {
+                            dom.appendChild($("<tr><td>"+main_list.ip_addr+"</td>\
+                                                <td>"+main_list.mac_apcli_5g.charAt(0)+"*:**:**:**:"+ main_list.mac_apcli_5g.slice(-5)+"</td>\
+                                                <td><img src='../img/usb_"+(main_list.usb_status? "on" : "off")+"line.png' width='20px' /></td></tr>")[0]);
+                        }
+                        storage.agent_list.forEach(function(v){
+                            if (v.name && v.ip_addr) {
+                                dom.appendChild($("<tr><td>"+v.ip_addr+"</td>\
+                                                    <td>"+v.mac_apcli_5g.charAt(0)+"*:**:**:**:"+ v.mac_apcli_5g.slice(-5)+"</td>\
+                                                    <td><img src='../img/usb_"+(v.usb_status? "on" : "off")+"line.png' width='20px' /></td></tr>")[0]);
+                            }
+                        });
+                        $("#usbMeshList > tbody").html(dom);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+
+        function getShowMediaServer(){
+            ajax({
+                url: "system.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        if (data.function.DLNAShow == 1) {
+                            $("#enableMediaServer").parent().parent().show();
+                        }
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

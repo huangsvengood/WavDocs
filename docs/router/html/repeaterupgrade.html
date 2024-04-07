@@ -1,0 +1,125 @@
+<div class="page-content row">
+    <div class="col-xs-9 content" id="repeaterupgrade">
+        <div class="form-group row">
+            <label class="col-xs-4 control-label" data-i18n="lblCurrentVersion"></label>
+            <div class="col-xs-4">
+                <input type="hidden" name="Model" id="ModelNameVal" value="0">
+                <input type="text" class="form-control" id="fwVersion" unselectable="on" readonly />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-4 control-label" data-i18n="lblUpdateFile"></label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control selectFile" id="chooseFile" data-i18n="[placeholder]btnChooseFile" unselectable="on" readonly />
+                <input type="file" class="form-control hidden" id="selectedFirmware" />
+                <img src="../img/folder.png" class="selectFile"/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="uploadBtn" data-i18n="btnUploadUpgrade"></button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-4 control-label" data-i18n="lblLastestVersion"></label>
+            <div class="col-xs-4">
+                <input type="text" disabled="disabled" class="form-control" id="fwNewVersion" data-i18n="[placeholder]lblNoLastestVersion" unselectable="on" readonly />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="checkOTABtn" data-i18n="btnCheckNewVersion"></button>
+            </div>
+        </div>
+        <div class="off" id="foundNewVersion">
+            <div class="form-group row">
+                <strong class="col-xs-4 col-xs-offset-4" data-i18n="lblUpdateContent"></strong>
+            </div>
+            <div class="form-group row">
+                <textarea class="col-xs-offset-4" rows="5" cols="100" id="NewVersionInfo" disabled="disabled"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help"></div>
+</div>
+
+<div class="modal fade" id="upgradeModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content theme-border-color">
+            <input type="hidden" id="routerList" value="0" data-mac="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="upgradeModalLabel" data-i18n="lblTips"></h5>
+            </div>
+            <div class="modal-body" id="upgradeMsg" data-i18n="msgUpgradeText2"></div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-2">
+                        <button type="button" class="btn btn-default" id="upgradeCancel" data-i18n="btnCancel"></button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-primary theme-bg-color" id="upgradeConfirm" data-i18n="lblConfirmName"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/repeaterupgrade.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var ota;
+        FwUpgradeInit();
+
+        $("#uploadBtn").on("click", function(){
+            var firmware = $("#selectedFirmware")[0].files;
+            if (!firmware.length) {
+                getMsg($.t("msgUpgradeFirmwareText2"));
+                return false;
+            } else if (firmware[0].name.indexOf($("#ModelNameVal").val()) == -1 || !firmware[0].name.endsWith(".bin")) {
+                getMsg($.t("msgUpgradeFirmwareText1"));
+                return false;
+            }
+
+            $("#routerList").val(-1);
+            $("#upgradeModal").modal("show");
+        });
+
+        $("#checkOTABtn").on("click", function(){
+            if ($(this).text() == $.t("btnCheckNewVersion")) {
+                startLoading(3000, $.t("btnCheckingNewVersion"));
+                if (ota.version) {
+                    $("#fwNewVersion").val(ota.version);
+                    $("#checkOTABtn").text($.t("btnOneClickUpgrade"));
+                    $("#NewVersionInfo").html(ota.version_info);
+                    $("#foundNewVersion").show();
+                }
+            } else {
+                $("#loadingBarModal .modal-title").text($.t("lblUpdating"));
+                setProgressBar(100, $.t("msgWaiting"), $.t("msgRefresh"));
+            }
+        });
+
+        function FwUpgradeInit() {
+            ajax({
+                data: "fname=sys&opt=baseinfo&function=get",
+                success: function(data){
+                    if (data.error == 0) {
+                        $("#fwVersion").val(data.sys.sdkVersion);
+                        $("#ModelNameVal").val(data.sys.model);
+                        ota = data.rep_ota;
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

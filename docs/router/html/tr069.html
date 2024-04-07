@@ -1,0 +1,211 @@
+<div class="page-content row">
+    <div class="col-xs-12 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label" data-i18n="tr069_OnOff"></label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableTr069" type="checkbox">
+                    <label class="switch-label" for="enableTr069">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="tr069Info" class="off">
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="tr069_ACS_URL"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="acsURL">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="tr069_ACS_UserName"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="acsUser">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="tr069_ACS_PassWord"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="acsPwd">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="tr069_CPE_PeriodicInformEnable"></label>
+                <div class="col-xs-5">
+                    <select id="cpeInformEnable" class="form-control">
+                        <option value="1" data-i18n="tr069_Enable"></option>
+                        <option value="0" data-i18n="tr069_Disable"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row off" id="intervalInfo">
+                <label class="col-xs-7 control-label" data-i18n="tr069_CPE_PeriodicInformInterval"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="cpeInterval">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="tr069_CPE_Http_Port"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="cpeHttpPort">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="tr069_CPE_VerifyEnable"></label>
+                <div class="col-xs-5">
+                    <select id="cpeVerify" class="form-control">
+                        <option value="1" data-i18n="tr069_Enable"></option>
+                        <option value="0" data-i18n="tr069_Disable"></option>
+                    </select>
+                </div>
+            </div>
+            <div id="verifyInfo" class="off">
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="tr069_CPE_UserName"></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="cpeUser">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="tr069_CPE_PassWord"></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="cpePwd">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setTr069" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/tr069.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        getTr069Info();
+
+        $("#enableTr069").on("change", function(){
+            $(this).is(":checked") ? $("#tr069Info").show() : $("#tr069Info").hide();
+        });
+        $("#cpeInformEnable").on("change", function(){
+            $(this).val() == 1 ? $("#intervalInfo").show() : $("#intervalInfo").hide();
+        });
+        $("#cpeVerify").on("change", function(){
+            $(this).val() == 1 ? $("#verifyInfo").show() : $("#verifyInfo").hide();
+        });
+        $("#setTr069").on("click", function(){
+            var enable = $("#enableTr069").val()*1;
+            var acs_url = "", acs_user = "", acs_pwd = "";
+            var cpe_port = "", cpe_verify = "", cpe_user = "", cpe_pwd = "";
+            var cpe_period_enable = "", cpe_interval = "";
+
+            //Validate the data entered by the user
+            if (enable == 1) {
+                acs_url = $("#acsURL").val();
+                acs_user = $("#acsUser").val();
+                acs_pwd = $("#acsPwd").val();
+                cpe_period_enable = $("#cpeInformEnable").val();
+                cpe_port = $("#cpeHttpPort").val();
+                cpe_verify = $("#cpeVerify").val();
+                //Server URL verification
+                if (!checkNetworkServer(acs_url)) {
+                    return false;
+                }
+                //ace Account check
+                if (!SsidLenCheck(acs_user, 31)) {
+                    getMsg($.t("tr069_ACS_UserName_Error"), 2, "#acsUser");
+                    return false;
+                } else if (!checkStr(acs_user)) {
+                    getMsg($.t("msgWifiSsidText1"), 2, "#acsUser");
+                    return false;
+                }
+                //ace Password check
+                if (acs_pwd == "") {
+                    getMsg($.t("tr069_ACS_PassWord_Error"), 2, "#acsPwd");
+                    return false;
+                } else if (acs_pwd.length > 63 || acs_pwd.length < 6) {
+                    getMsg($.t("tr069_ACS_PassWord_length_Error"), 2, "#acsPwd");
+                    return false;
+                } else if (!checkSpecialCharacter(acs_pwd)) {
+                    getMsg($.t("msgLoginPasswordText8"), 2, "#acsPwd");
+                    return false;
+                }
+                //Client port detection
+                if (!checkStrnum(cpe_port) || cpe_port == ""
+                    || cpe_port*1 > 65535 || cpe_port*1 < 0) {
+                    getMsg($.t("tr069_CPE_Http_Port_Error"), 2, "#cpeHttpPort");
+                    return false;
+                }
+                //Regularly report Inform set
+                if (cpe_period_enable == 1) {
+                    cpe_interval = $("#cpeInterval").val();
+                    if (!checkStrnum(cpe_interval) || cpe_interval == ""
+                        || cpe_interval*1 > 86400 || cpe_interval*1 < 1) {
+                        getMsg($.t("tr069_CPE_PeriodicInformInterval_Error"), 2, "#cpeInterval");
+                        return false;
+                    }
+                }
+
+                //client authentication
+                if (cpe_verify == 1) {
+                    cpe_user = $("#cpeUser").val();
+                    cpe_pwd = $("#cpePwd").val();
+                    //CPE Account check
+                    if (!SsidLenCheck(cpe_user, 31)) {
+                        getMsg($.t("tr069_CPE_UserName_Error"), 2, "#cpeUser");
+                        return false;
+                    } else if (!checkStr(cpe_user)) {
+                        getMsg($.t("msgWifiSsidText1"), 2, "#cpeUser");
+                        return false;
+                    }
+                    //CPE Password check
+                    if (cpe_pwd == "") {
+                        getMsg($.t("tr069_CPE_PassWord_Error"), 2, "#cpePwd");
+                        return false;
+                    } else if (cpe_pwd.length > 63 || cpe_pwd.length < 6) {
+                        getMsg($.t("tr069_CPE_PassWord_length_Error"), 2, "#cpePwd");
+                        return false;
+                    } else if (!checkSpecialCharacter(cpe_pwd)) {
+                        getMsg($.t("msgLoginPasswordText8"), 2, "#cpePwd");
+                        return false;
+                    }
+                }
+            }
+
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        function getTr069Info() {
+            ajax({
+                url: "network.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        var tr069 = data.tr069;
+                        $("#enableTr069").prop("checked", tr069.local_enable == 1).change();
+                        $("#acsURL").val(tr069.acs_url);
+                        $("#acsUser").val(tr069.acs_username);
+                        $("#acsPwd").val(tr069.acs_password);
+                        $("#cpeHttpPort").val(tr069.local_port);
+                        $("#cpeVerify").val(tr069.verify_enable).change();
+                        $("#cpeUserName").val(tr069.local_username);
+                        $("#cpePassWord").val(tr069.local_password);
+                        $("#cpeInformEnable").val(tr069.acs_periodic_enable).change();
+                        $("#cpeInterval").val(tr069.acs_periodic_interval);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

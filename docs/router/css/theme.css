@@ -1,0 +1,13 @@
+.theme-bg-color,
+.nav-tabs.active-bg .active,
+.switch-checkbox:checked + .switch-label {
+	background-color: #1D428A !important;
+}
+
+.theme-color, .nav-tabs.active-font .active {
+	color: #1D428A !important;
+}
+
+.theme-border-color {
+	border-color: #1D428A !important;
+}

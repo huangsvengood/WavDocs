@@ -1,0 +1,103 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">SQM QoS</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableSqmqos" type="checkbox">
+                    <label class="switch-label" for="enableSqmqos">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="sqmInfo" class="off">
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lblsqmqosupspeed"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="sqmqosupspeed">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lblsqmqosdownspeed"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="sqmqosdownspeed">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lbspeedtesturl"></label>
+                <div class="col-xs-5 text-right">
+                    <a id="speedtesturl" target="_blank" href="https://www.speedtest.net/"></a>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-12 control-label" data-i18n="msgWebsiteTip"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setqmqos" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+        <h5>SQM QoS</h5>
+        <p data-i18n="lblsqmqosHelpText"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/sqm_qos.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function () {
+        getSqmqosRule();
+
+        $("#enableSqmqos").on("change", function () {
+            $(this).is(":checked") ? $("#sqmInfo").show() : $("#sqmInfo").hide();
+        });
+        $("#setqmqos").on("click", function () {
+            var enable = $("#enableSqmqos").val() * 1;
+            var sqmqosupspeed = $("#sqmqosupspeed").val();
+            var sqmqosdownspeed = $("#sqmqosdownspeed").val();
+            if (enable == 1) {
+                if (!sqmqosupspeed.length) {
+                    getMsg($.t("msgIpNone"), 2, $("#sqmqosupspeed"));
+                    return false;
+                }
+                if (!checkStrPositivenum(sqmqosupspeed)) {
+                    getMsg($.t("msgsqmqosspeedError"), 2, $("#sqmqosupspeed"));
+                    return false;
+                }
+                if (!sqmqosdownspeed.length) {
+                    getMsg($.t("msgIpNone"), 2, $("#sqmqosdownspeed"));
+                    return false;
+                }
+                if (!checkStrPositivenum(sqmqosdownspeed)) {
+                    getMsg($.t("msgsqmqosspeedError"), 2, $("#sqmqosdownspeed"));
+                    return false;
+                }
+            }
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        function getSqmqosRule() {
+            $.when(ajax({url: "wifi.json"}), ajax({url: "network.json"})).done(function(r0, r1){
+                var url = r0[0].fixRegion == 0 ? "https://www.speedtest.net" : "https://www.speedtest.cn";
+                $("#speedtesturl").attr("href", url).text(url);
+
+                var sqmqos = r1[0].sqmqos;
+                $("#enableSqmqos").prop("checked", sqmqos.enable == 1).change();
+                if (sqmqos.enable == 1) {
+                    $("#sqmqosupspeed").val(sqmqos.up);
+                    $("#sqmqosdownspeed").val(sqmqos.down);
+                }
+            });
+        }
+    });
+</script>

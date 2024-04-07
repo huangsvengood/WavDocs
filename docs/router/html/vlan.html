@@ -1,0 +1,87 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">IPTV</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableIptv" type="checkbox">
+                    <label class="switch-label" for="enableIptv">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="off">
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lblIptvMode"></label>
+                <div class="col-xs-5">
+                    <select id="iptvMode" class="form-control">
+                        <option value="0" data-i18n="lblRouterMode"></option>
+                        <option value="1" data-i18n="lblVlanBridgeMode"></option>
+                    </select>
+                </div>
+            </div>
+            <div id="igmpInfo" class="off">
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblIGMP"></label>
+                    <div class="col-xs-5">
+                        <select id="igmpProxy" class="form-control">
+                            <option value="1" data-i18n="lblTurnON"></option>
+                            <option value="0" data-i18n="lblTurnOFF"></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="vlanInfo" class="off">
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblVLAN1Id"></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="VLANID1">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblVLAN1Port"></label>
+                    <div class="col-xs-5">
+                        <select class="form-control" id="VLAN1PORT"></select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblVLAN2Id"></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="VLANID2">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblVLAN2Port"></label>
+                    <div class="col-xs-5">
+                        <select class="form-control" id="VLAN2PORT"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setVlan" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+
+        <h5>IPTV</h5>
+        <p data-i18n="lblIptvHelpText"></p>
+
+        <h5 data-i18n="lblIGMP"></h5>
+        <p data-i18n="msgIGMP"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/vlan.html");
+        window.location.replace("./index.html");
+    }
+</script>
+<script src="../js/vlan.js"></script>

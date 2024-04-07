@@ -1,0 +1,207 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="row">
+            <table id="deviceList" class="table">
+                <thead>
+                    <tr>
+                        <th data-i18n="lblDeviceName"></th>
+                        <th data-i18n="lblMACAddressName"></th>
+                        <th data-i18n="tWebBlock"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3"><img src="../public/static/layer/skin/default/loading-2.gif" width="20px"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-xs-3 help"></div>
+</div>
+
+<div class="modal fade" id="siteBlockModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header theme-border-color">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" data-i18n="lblUrlset"></h5>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="urls">
+                <div class="form-group row">
+                    <label class="col-xs-12 control-label" data-i18n="lblCustomUrl"></label>
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <input type="text" class="form-control" id="inputUrl" data-i18n="[placeholder]msgWebBlockText5" placeholder="">
+                    </div>
+                    <div class="col-xs-10">
+                        <span data-i18n="lblExample"></span>
+                        baidu, google, youtube
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-4 col-xs-offset-2">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-i18n="btnCancel"></button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-primary theme-bg-color" id="addUrl" data-i18n="lblSave"></button>
+                    </div>
+                </div>
+                <hr class="depart-line">
+                <div class="form-group row">
+                    <label class="col-xs-10 control-label" data-i18n="lblRestUrl"></label>
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <select class="form-control" id="url_black" size="3"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <button type="button" class="btn btn-primary theme-bg-color" id="delUrl" data-i18n="btnDelete"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/block_site.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var allBlockList = [];
+        webBlockingInit();
+
+        $("#deviceList > tbody").on("click", ".blockThis", function(){
+            var thisTr = $(this).parents("tr");
+            var index = thisTr.prevAll().length;
+            var mac = thisTr.find("td:eq(1)").text();
+            var urls = allBlockList[index].url.split(";;");
+
+            $("#urls").val(urls).attr("data-mac", mac);
+            $("#siteBlockModal").modal("show");
+        });
+
+        $("#siteBlockModal").on("show.bs.modal", function(){
+            var urls = $("#urls").val();
+            urls = urls.length ? urls.split(",") : [];
+            var urlListDom = document.createDocumentFragment();
+
+            urls.forEach(function(v){
+                if (v.length) {
+                    urlListDom.appendChild($("<option value='"+v+"'>"+v+"</option>")[0]);
+                }
+            });
+
+            $("#inputUrl").val("");
+            $("#url_black").html(urlListDom);
+        });
+        $("#addUrl").on("click", function(){
+            var mac = $("#urls").attr("data-mac");
+            var url_list = $("#urls").val();
+            url_list = url_list.length ? url_list.split(",") : [];
+            var url = $("#inputUrl").val();
+            if (url_list.length >= 21) {
+                getMsg($.t("msgWebBlockText7"));
+                return false;
+            }
+            if (url == "" || url.indexOf(";") != -1
+                || escape(url).indexOf("%20") != -1 || escape(url).indexOf("%u") != -1) {
+                getMsg($.t("msgWebBlockText1"), 2, "#inputUrl");
+                return false;
+            }
+            var hasSame = url.split(",").some(function(u) {
+                if (u.length) {
+                    var key = getKeyFromUrl(u.toLowerCase());
+                    if (url_list.indexOf(key) !== -1) {
+                        getMsg($.t("msgWebBlockText6"), 2, "#inputUrl");
+                        return true;
+                    }
+                }
+            });
+            if (!hasSame) {
+                allBlockList.some(function(v){
+                    if (v.mac.toLowerCase() == mac.toLowerCase()) {
+                        v.url += ";;"+url.toLowerCase();
+                        return true;
+                    }
+                });
+                $("#siteBlockModal").modal("hide");
+                getMsg($.t("msgWebBlockText3"));
+            }
+        });
+        $("#delUrl").on("click", function(){
+            var mac = $("#urls").attr("data-mac");
+            var url = $("#url_black").val();
+            if (!url) {
+                getMsg($.t("msgWebBlockText2"), 2, "#url_black");
+                return false;
+            }
+
+            allBlockList.some(function(v){
+                if (v.mac.toLowerCase() == mac.toLowerCase()) {
+                    var urls = v.url.split(";;");
+                    urls.splice(v.url.indexOf(url), 1);
+                    v.url = urls.join(";;");
+                    return true;
+                }
+            });
+            $("#siteBlockModal").modal("hide");
+            getMsg($.t("msgWebBlockText4"));
+        });
+
+        function getKeyFromUrl(url) {
+            var i = 0, index = -1, key;
+            var topdomian = [".cn",".jp",".com",".net",".org",".xyz",".top",".red",".men",".io",".fun",".work",".cc",".me",".info",".vip"];
+
+            if ((url.slice(0, 4) == "www.") && (url.slice(4).indexOf(".") != -1)) {
+                url = url.replace(/www./,"");
+            }
+
+            while (i < topdomian.length) {
+                index = url.lastIndexOf(topdomian[i]);
+                if (index != -1) {
+                    var url_tmp = url.slice(0, index);
+                    url = url_tmp;
+                    i = -1;
+                }
+                i++;
+            }
+            key = url;
+
+            return key;
+        }
+
+        function webBlockingInit() {
+            ajax({
+                url: "terminal.json",
+                success: function(data){
+                    if (data.error == 0) {
+                        allBlockList = [];
+                        var deviceListDom = document.createDocumentFragment();
+                        data.terminals.forEach(function(t){
+                            if (t.name == "" || t.name == "*") {
+                                t.name = "Other";
+                            }
+                            var flag = t.flag.charAt(1);
+                            if (flag == "T" || (t.url_black != null && flag == "F")) {
+                                allBlockList.push({
+                                    mac: t.mac,
+                                    name: t.name,
+                                    status: flag == "T" ? 1 : 0,
+                                    url: t.url_black ? t.url_black.slice(2) : ""
+                                });
+                                deviceListDom.appendChild($("<tr><td>"+t.name+"</td><td>"+t.mac+"</td>\
+                                                        <td><span class='blockThis'>+</span></td></tr>")[0]);
+                            }
+                        });
+                        $("#deviceList > tbody").html(deviceListDom);
+                    }
+                }
+            });
+        }
+    });
+</script>
