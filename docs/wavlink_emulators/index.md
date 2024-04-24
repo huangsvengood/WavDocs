@@ -3,7 +3,7 @@ hide:
   - navigation
   - toc
 ---
- <style>
+<style>
         .banner {
             padding: 40px 5% 40px;
             background-size: 100% auto;
@@ -104,106 +104,153 @@ hide:
 
 		
     </style>
+	
+
 <div id="mainContainer">
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>WAVLINK Info-Center</h1>
-				<p>Convenient access to all the device information you need</p>
+				<h1>Wavlink Emulators</h1>
+				<p>The simulator is a virtual web GUI where you can experience the wavlink product management panel.</p>
+				<p class="underline"><a href="/Products/">Features shown are for reference only, for more information, please see the product page.</a></p>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="main">
-	<div>
-		<div class="productMenu en">
-			<h3>
-			Explore by Products
-			<em class="underline"></em>
-			</h3>
-		</div>
-	</div>
-</div>
-
-<div class="grid-container">
-  <a href="/Products/">
-  <div class="box">Router</div>
-  </a>
-  <a href="/Products/#indoor-repeater">
-  <div class="box">Indoor Repeater</div>
-  </a>
-  <a href="/Products/#outdoor-ap">
-  <div class="box">Outdoor AP</div>
-  </a>
-</div>
-<div class="grid-container">
-  <a href="/Products/#cellular-router">
-  <div class="box">Cellular Router</div>
-  </a>
-  <a href="/Products/#other">
-  <div class="box">Other</div>
-  </a>
-</div>
 
 
-<div class="main">
-	<div>
-		<div class="productMenu en">
-			<h3>
-			Documents
-			<em class="underline"></em>
-			</h3>
-		</div>
-	</div>
-</div>
+<style>
+.underline {
+    text-decoration: underline;
+}
+</style>
 
-<div class="grid-container">
-  <a href="/Firmware/">
-  <div class="box">Firmware</div>
-  </a>
-  <a href="/feature_guide/">
-  <div class="box">Feature</div>
-  </a>
-  <a href="/FAQ/">
-  <div class="box">FAQ</div>
-  </a>
-  <a href="/wavlink_emulators/">
-  <div class="box">Emulator Center</div>
-  </a>
-</div>
 
-  <style>
-    .grid-container {
-	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-	  grid-gap: 20px;
-	}
-    .box {
-      width: 100%;
-      height: 63px;
-    #  box-shadow: 5px 5px 5px #888888;
-      margin: 10px;
-	  text-align: center;
-	  padding: 14px;
-	  font-size: 22px;
-	  color: #1D428A;
+
+
+
+
+<style>
+    .re-text {
+      color: #1D428A;
+	  #font-weight: bold;
+	  font-size: 25px;
+	  text-align: left;
+	  line-height: 0;
+	  margin-top: 50px;
+	  font-style: italic;
 	  font-weight: bold;
-	  border: 2px solid #1D428A;
-
-
     }
-	.box:hover {
-      box-shadow: 5px 5px 5px #888888;
-	  background-color: #1D428A; 
-	  border: none;
-	  color: #ffffff;
+    
+    .blue-text {
+      color: #1D428A;
+	  #font-weight: bold;
+	  font-size: 29px;
+	  text-align: center;
+	  font-weight: bold;
     }
   </style>
 
+<style>  
+    .kind-text {
+      color: #1D428A;
+	  #font-weight: bold;
+	  font-size: 25px;
+	  text-align: left;
+    }
+  </style>
+
+<style>
+.container {
+  position: relative;
+}
+
+.text {
+  font-size: 25px;
+}
+
+.line {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  height: 2px;
+  background-color: #1D428A;
+  width: 101%;
+}
+
+</style>
 
 
 
 
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+	  border: none;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+      
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    th {
+      background-color: #1D428A;
+      color: white;
+    }
+  </style>
+<div class="main">
+	<div>
+		<div class="productMenu en">
+			<h3>
+			<p class="blue-text"><b>Router</b></p>
+			<em class="underline"></em>
+			</h3>
+		</div>
+	</div>
+</div>
 
+<style>
+    .box_a {
+      width: 102%;
+      height: 0px;
+      box-shadow: 0px 0px 0px #9B9B9B;
+      margin: 20px auto;
+	  text-align: center;
+	  padding: 0px;
+	  font-size: 25px;
+	  color: #9B9B9B;
+	  font-weight: bold;
+	  border: none;
+	  border-bottom: 3px solid #CCD9E2;
+    }
+</style>
+
+<p class="re-text">WiFi6</p>
+<div class = "box_a">
+</div>
+<div class="product-row">
+  <div class="product-row-box">
+   <div class="product-card">
+      <a href="http://8.210.159.51/wavlink_emulators/wn551x3/login.html" target="_blank">
+        <img src="/Products/img/551X3.png" >
+        <div class="product-model">WS-WN551X3</div>
+      </a>
+    </div>
+ 
+   <div class="product-card">
+      <a href="http://8.210.159.51/wavlink_emulators/wn586x3-b/login.html" target="_blank">
+        <img src="/Products/img/WN586X3.png" >
+        <div class="product-model">WS-WN586X3-B</div>  
+      </a>
+    </div>
+  </div>
+</div>
 
 

@@ -120,6 +120,8 @@ nav:
         - Backup and Restore: feature_guide/repeaterap_backup.md
         - Timing Reboot: feature_guide/repeaterap_timing.md
         - Router Reboot/Logout: feature_guide/repeaterap_reboot_logout.md
+  - Emulators:
+    - Emulators: wavlink_emulators/index.md
           #  - Video Library: video_library/index.md
 
           #  - Community: community/index.md

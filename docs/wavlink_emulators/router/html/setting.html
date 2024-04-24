@@ -310,13 +310,11 @@
                             if(func.QosShowEnable == 1) {
 
                             }
+                            // ai
                             if (data.sys.model.includes("AI")) {
                                 $("#aiNet, [href='aiqoe.html'], [href='parent_control.html'], [href='adblock.html'], [href='malwebblock.html'],\
                                    [href='ark_db.html'], [href='ark_status.html']").parent().show();
                             }
-                            // ai
-                            $("#guardian").parent().show();
-                            $("#guardian li").show();
                             $("[href='select_mode.html'], [href='wan.html'], [href='lan.html'], [href='ipv6.html'],\
                                [href='static_ip.html'], [href='wifi_setting.html'], [href='guest_wifi.html'], [href='mesh_list.html'],\
                                [href='mesh_topo.html'], [href='wifi_schedule.html'], [href='block_site.html'], [href='security.html'],\
@@ -393,6 +391,7 @@
             target.parent().addClass("active");
             icon.find("img:eq(0)").attr("src", function(i,v){return v.replace("_off", "_on");});
 
+            console.log(page);
             $.loadPage("#page", page);
             window.sessionStorage.setItem("page", "/setting/"+page);
         }
