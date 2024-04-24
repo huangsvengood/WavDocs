@@ -399,7 +399,7 @@ Every product requires initialization settings before use. Before initialization
 			The master router in this case is wavlink routers, and its settings follow the wavlink router's mesh pairing method.
 		
 		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/indoortopo1.png">
+		<img class="boxshadow" src="/images/outdoortopo1.png">
 		</div>	
 		!!! danger ""
 			When the main route has been connected to the Internet and the main route has been initialized and configured, the sub-router only needs to __be in the reset state(default factory settings)__ ,requiring no additional configuration..
