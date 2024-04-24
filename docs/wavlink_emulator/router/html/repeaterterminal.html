@@ -1,0 +1,79 @@
+<div class="main terminal">
+    <div class="form-grouptabHeader">
+        <ul class="nav nav-tabs theme-border-color active-bg" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#onlineList" aria-controls="onlineList" role="tab"
+                   data-toggle="tab" data-i18n="lblTerminalOnline"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="onlineList">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th data-i18n="lblDeviceName"></th>
+                        <th data-i18n="lblAddr" class="off" id="clientip"></th>
+                        <th data-i18n="lblMACAddressName"></th>
+                    </tr>
+                </thead>
+                <tbody id="online_devices">
+                    <tr><td colspan="5"><img src="../public/static/layer/skin/default/loading-2.gif" width="20px"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "repeaterterminal.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        getTerminalList();
+
+        function getTerminalList() {
+            $("#online_devices").html("<tr><td colspan='5'><img src='../public/static/layer/skin/default/loading-2.gif' width='20px'></td></tr>");
+            ajax({
+                url: "terminal.json",
+                success: function(data){
+                    if (data.error == 0) {
+                        var onlineDeviceHtml = "";
+                        data.terminals.forEach(function(t) {
+                            if (t.flag.charCodeAt(1) == 84 && t.flag.charCodeAt(9) == 84) {
+                                var device_name = t.name;
+                                if (device_name == "" || device_name == "*") {
+                                    device_name = "WIFI Client";
+                                }
+                                if (opMode == 3) {
+                                    $("#clientip").show();
+                                    if (t.ip) {
+                                        onlineDeviceHtml += "<tr> \
+                                                                <td>"+htmlEscape(device_name)+"</td> \
+                                                                <td>"+t.ip+"</td> \
+                                                                <td>"+t.mac.toUpperCase()+"</td> \
+                                                            </tr>";
+                                    }
+                                } else {
+                                    onlineDeviceHtml += "<tr> \
+                                                            <td>"+htmlEscape(device_name)+"</td> \
+                                                            <td>"+t.mac.toUpperCase()+"</td> \
+                                                        </tr>";
+                                }
+                            }
+                        });
+
+                        $("#online_devices").html(onlineDeviceHtml);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

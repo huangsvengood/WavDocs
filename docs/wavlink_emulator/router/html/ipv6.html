@@ -1,0 +1,104 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label" data-i18n="tIPv6Setting"></label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableIPv6" type="checkbox">
+                    <label class="switch-label" for="enableIPv6">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="ipv6Info" class="off">
+            <h5 class="depart-line theme-border-color theme-color" data-i18n="lblIPv6Wan"></h5>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lblMethodObtain"></label>
+                <div class="col-xs-5">
+                    <select class="form-control" id="wanObtainMethod">
+                        <option value="0" data-i18n="">DHCPv6</option>
+                        <option value="1" data-i18n="lblIpv6ppp"></option>
+                        <option value="2" data-i18n="lblIPv6Static"></option>
+                    </select>
+                </div>
+            </div>
+            <div id="staticInfo" class="off">
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblIPv6Addr"></label>
+                    <div class="col-xs-5 input-group">
+                        <input type="text" class="form-control" id="ipv6IP">
+                        <span class="input-group-addon">/</span>
+                        <input type="text" class="form-control" id="prefixLength">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblIPv6Gw"></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="ipv6Gateway">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblIPv6DNS1"></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="DNS1">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-7 control-label" data-i18n="lblIPv6DNS2"></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" id="DNS2">
+                    </div>
+                </div>
+            </div>
+            <h5 class="depart-line theme-border-color theme-color" data-i18n="lblIPv6Lan"></h5>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lblAllocation"></label>
+                <div class="col-xs-5">
+                    <select class="form-control" id="lanObtainMethod">
+                        <option value="0" data-i18n="lblLanAuto"></option>
+                        <option value="1">SLAAC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lblIPv6AddrPrefix"></label>
+                <div class="col-xs-5 input-group">
+                    <input type="text" class="form-control" id="lanIPv6AddrPrefix">
+                    <span id="lanPrefixLength" class="input-group-addon">/48</span>
+                </div>
+                <img src="../img/reload.png" data-i18n="[title]lblIPv6AddrPreRestore" id="ipv6AddrPreResBtn">
+            </div>
+            <div class="form-group row">
+                <label class="col-xs-7 control-label" data-i18n="lblIPv6Addr"></label>
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" id="lanIPv6Addr" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setIPv6" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+
+        <h5>IPv6</h5>
+        <p data-i18n="msgIpv6"></p>
+
+        <h5>SLAAC</h5>
+        <p data-i18n="msgSLAAC"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/ipv6.html");
+        window.location.replace("./index.html");
+    }
+</script>
+<script src="../js/ipv6.js"></script>

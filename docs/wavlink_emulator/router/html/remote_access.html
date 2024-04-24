@@ -1,0 +1,73 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label" data-i18n="lblRemoteAccess"></label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableRemote" type="checkbox">
+                    <label class="switch-label" for="enableRemote">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-7 control-label" data-i18n="lblExternalPort"></label>
+            <div class="col-xs-5">
+                <input type="text" class="form-control" id="remotePort">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setRemoteAccess" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+        <p data-i18n="lblRemoteHelpText"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/remote_access.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        getRemoteAccess();
+
+        $("#enableRemote").on("change", function(){
+            $(this).is(":checked") ? $(this).parents(".form-group").next().show()
+            : $(this).parents(".form-group").next().hide();
+        });
+        $("#setRemoteAccess").on("click", function(){
+            var enable = $("#enableRemote").val()*1;
+            var port = enable ? $("#remotePort").val() : 80;
+            if (enable == 1 && (port == "" || !checkStrnum(port) || port*1 < 80 || port*1 > 65535)) {
+                getMsg($.t("msgPortError3"), 1, "#remotePort");
+                return false;
+            }
+            startLoading(2000, $.t("btnSaveName"));
+            $("#remotePort").val(port);
+        });
+
+        function getRemoteAccess() {
+            ajax({
+                url: "network.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        var remote = data.remote;
+                        $("#enableRemote").prop("checked", remote.enable == 1).change();
+                        $("#remotePort").val(!remote.enable ? 80 : remote.port);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

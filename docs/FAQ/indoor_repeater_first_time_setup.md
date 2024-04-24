@@ -35,7 +35,7 @@ Every product requires initialization settings before use. Before initialization
 		</div>	
 		
 		4 . Select a mode for the device. __The default is Repeater Mode__. If you want to choose other modes, please wait __31s__. The following is a list of setting methods for different modes. You can choose any mode you want.
-
+        <a name="modeselection_repeater"></a>
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor004.png">
 		</div>	
@@ -180,7 +180,7 @@ Every product requires initialization settings before use. Before initialization
 		</div>
 	
 	
-<a name="section3"></a>
+
 !!! note ""
 	=== "Repeater Mode"
 		__Repeater Mode__  :  Any Wi Fi signal network can be expanded through wireless.
@@ -271,7 +271,7 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoor015.png">
 		</div>
-	=== "Mesh Mode"
+	=== "Mesh Router Mode"
 		__Mesh Mode__  :  Converts a network from a network provider's wired network to a Wi-Fi signal for wireless and wired networking. This mode also supports Mesh networking, which can be set up to pair subroutes to form a networking.
 
 	
@@ -398,19 +398,21 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/indoor015.png">
 		</div>
 	=== "Mesh Extender Mode"
-		__Mesh Extender Mode__  :  This mode sets the device to the Mesh networking state to be paired, in which case the device will be scanned and paired by the surrounding primary device, waiting for the pairing to succeed.
+		__Mesh Extender Mode__  :  This mode sets the device to the Mesh networking state to be paired, in which case the device will be scanned and paired by the surrounding primary device, waiting for the pairing to succeed.In this state, the device will wait for successful matching with specific wavlink mesh device to form a mesh network. 
 		!!! danger ""
-			The master router in this case is wavlink routers, and its settings follow the router's mesh pairing method.
+			The master router in this case is wavlink routers, and its settings follow the wavlink router's mesh pairing method.
 		
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/indoortopo1.png">
 		</div>	
 		!!! danger ""
-			When the main route has been connected to the Internet and the main route has been initialized and configured, the sub-router only needs to __be in the reset state__ without any other settings.
+			When the main route has been connected to the Internet and the main route has been initialized and configured, the sub-router only needs to __be in the reset state(default factory settings)__ ,requiring no additional configuration..
+		
+		Please follow the provided steps below to create a mesh network :
+		
+		1 . To initiate pairing, kindly press and hold __the Pair button of the master router__ for __2 seconds__ (the indicator light will flash blue slowly upon pressing). Within the next __two minutes__, press and hold __the Pair/WPS button of the mesh extender device__ for __2 seconds__ (the indicator light will also flash blue slowly upon pressing).
 
-		1 . Press and hold __the pairing button of the main router__ for __2 seconds__ (the indicator light flashes __blue slowly__ after pressing). Within two minutes, press and hold the __Reset/Pari__ button of the Extender for __2 seconds__ (the indicator light flashes __blue slowly__ after pressing).
-
-		2 . The device will automatically pair successfully after waiting __40-120 seconds__. After successful pairing, the indicator lights of the main router and sub-router will be __solid blue__.
+		2 . The mesh extender device will automatically pair successfully within __40-120 seconds__. Upon successful pairing, both the indicator lights of the mesh router and mesh extender device will display a __solid blue light__.
 
 
 

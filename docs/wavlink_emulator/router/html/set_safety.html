@@ -1,0 +1,88 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-7 control-label" data-i18n="lblOldPassword"></label>
+            <div class="col-xs-5">
+                <input type="password" class="form-control" id="oldpwd">
+                <img src="../img/eyes_off.png" class="eyes">
+            </div>
+        </div>
+        <div class="form-group row include-pwd">
+            <label class="col-xs-7 control-label" data-i18n="lblNewPassword"></label>
+            <div class="col-xs-5">
+                <input type="password" class="form-control" id="userpwd" data-i18n="[placeholder]msgLoginPasswordText1">
+                <img src="../img/eyes_off.png" class="eyes">
+            </div>
+            <div class="col-xs-5 col-xs-offset-7 pwd-strength">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-7 control-label" data-i18n="lblNewPassword2"></label>
+            <div class="col-xs-5">
+                <input type="password" class="form-control" id="userpwd2" data-i18n="[placeholder]msgLoginPasswordText1">
+                <img src="../img/eyes_off.png" class="eyes">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setUser" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help"></div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/set_safety.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        $("#userpwd").on("keyup", function(){
+            checkPasswdStrength($(this).val(), $(this).parent().siblings(".pwd-strength"), 6);
+        });
+        $("#setUser").on("click", function () {
+            var oldpwd = $("#oldpwd").val();
+            if (oldpwd == "") {
+                getMsg($.t("msgLoginPasswordText2"), 1, "#oldpwd");
+                return false;
+            }
+            if (oldpwd != window.sessionStorage.getItem("token")) {
+                getMsg($.t("msgLoginPasswordText3"), 1, "#oldpwd");
+                return false;
+            }
+            var pwd = $("#userpwd").val();
+            if (pwd == "") {
+                getMsg($.t("msgLoginPasswordText4"), 1, "#userpwd");
+                return false;
+            } else if (pwd.length > 30 || pwd.length < 6) {
+                getMsg($.t("msgLoginPasswordText7"));
+                return false;
+            } else if (!checkSpecialCharacter(pwd)) {
+                getMsg($.t("msgLoginPasswordText8"), 1, "#userpwd");
+                return false;
+            } else if ($("#userpwd2").val() != pwd) {
+                getMsg($.t("msgLoginPasswordText5"), 1, "#userpwd2");
+                return false;
+            } else if (oldpwd == pwd) {
+                getMsg($.t("msgLoginPasswordText6"), 1, "#userpwd");
+                return false;
+            }
+            window.sessionStorage.setItem("token", pwd)
+            startLoading(4000, $.t("lblSave"));
+            setTimeout(function () {
+                $("#loadingModal").modal("hide");
+                getMsg($.t("msgLoginPasswordText12"));
+            }, 2000);
+            setTimeout(function(){
+                toPage("login");
+            }, 4000);
+        });
+    });
+</script>

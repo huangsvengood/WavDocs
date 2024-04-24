@@ -42,7 +42,7 @@ All wavlink devices have a convenient and identical setup process.
 ## Network
 Network Settings You can select __different modes__. You can select different modes according to your requirements.
 
-- [Mode Selection](/FAQ/indoor_repeater_first_time_setup/#section4)
+- [Mode Selection](/FAQ/indoor_repeater_first_time_setup/#modeselection_repeater/)
 - [WAN](/feature_guide/repeaterap_wan/)
 - [LAN](/feature_guide/repeaterap_lan/)
 - [Static IP](/feature_guide/repeaterap_staticip/)

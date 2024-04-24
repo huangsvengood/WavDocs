@@ -9,7 +9,7 @@ The AP/Repeater simultaneously supports 2.4G and 5G wireless network connection,
 
 
 | SPECIFICATION |											   | 
-| ------------ | -------------------------------------------- |  
+| ------------------ | -------------------------------------------- |  
 | Ports         | 1 x 10/100/1000Mbps WAN PORT (POE)  | 
 | Button	    | 1xReset     | 
 | LED	        | 1XSYS   | 
@@ -19,8 +19,7 @@ The AP/Repeater simultaneously supports 2.4G and 5G wireless network connection,
 | Standard		| IEEE 802.11b/g/n/a/ac/ax |
 | Speed | 802.11ax: 5GHz 2401Mbps and 2.4GHz 574Mbps |
 | Antennas | 4x8dBi Omni Directional Antennas |
-| Power Supply | DC12V 1.5A |
-| Rated Voltage/ requency | 'input:100-240 Va.c. 50/60Hz&nbsp;&nbsp;DC 54V/0.3A Power over Ethernet（Passive）&nbsp;&nbsp;DC 48V Power over Ethernet（Active) |
+| Rated Voltage/ requency | input:100-240 Va.c. 50/60Hz&nbsp;&nbsp;<br>DC 54V/0.3A Power over Ethernet（Passive）&nbsp;&nbsp;<br>DC 48V Power over Ethernet（Active) |
 | Operating Temperature | -20~50℃ |
 | Storage Temperature | -30~70℃ |
 
@@ -47,7 +46,7 @@ All wavlink devices have a convenient and identical setup process.
 ## Network
 Network Settings You can select __different  modes__. You can select different  modes according to your requirements.
 
-- [Mode Selection](/FAQ/outdoor_ap_first_time_setup/#section4)
+- [Mode Selection](/FAQ/outdoor_ap_first_time_setup/#modeselection_ap/)
 - [WAN](/feature_guide/repeaterap_wan/)
 - [LAN](/feature_guide/repeaterap_lan/)
 - [Static IP](/feature_guide/repeaterap_staticip/)

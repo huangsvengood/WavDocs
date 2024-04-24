@@ -1,0 +1,140 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">PPTP Passthrough</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enablepptp" type="checkbox">
+                    <label class="switch-label" for="enablepptp">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">L2TP Passthrough</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enablel2tp" type="checkbox">
+                    <label class="switch-label" for="enablel2tp">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">IPSec Passthrough</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableipsec" type="checkbox">
+                    <label class="switch-label" for="enableipsec">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">FTP ALG</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableftp" type="checkbox">
+                    <label class="switch-label" for="enableftp">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">TFTP ALG</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enabletftp" type="checkbox">
+                    <label class="switch-label" for="enabletftp">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">RTSP ALG</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enablertsp" type="checkbox">
+                    <label class="switch-label" for="enablertsp">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">H323 ALG</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableh323" type="checkbox">
+                    <label class="switch-label" for="enableh323">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-8 control-label">SIP ALG</label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enablesip" type="checkbox">
+                    <label class="switch-label" for="enablesip">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setalg" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+        <h5>ALG</h5>
+        <p data-i18n="msgALGHelp"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/alg.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        getALG();
+
+        $("#setalg").on("click", function(){
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        function getALG() {
+            ajax({
+                url: "network.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        var alg = data.alg;
+                        $("#enablepptp").prop("checked", alg.pptp_enable == 1).change();
+                        $("#enablel2tp").prop("checked", alg.l2tp_enable == 1).change();
+                        $("#enableipsec").prop("checked", alg.ipsec_enable == 1).change();
+                        $("#enableftp").prop("checked", alg.ftp_enable == 1).change();
+                        $("#enabletftp").prop("checked", alg.tftp_enable == 1).change();
+                        $("#enablertsp").prop("checked", alg.rtsp_enable == 1).change();
+                        $("#enableh323").prop("checked", alg.h323_enable == 1).change();
+                        $("#enablesip").prop("checked", alg.sip_enable == 1).change();
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

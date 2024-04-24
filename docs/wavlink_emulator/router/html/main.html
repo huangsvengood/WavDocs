@@ -1,0 +1,382 @@
+<div class="main device_status">
+    <div class="row text-center">
+        <h5>
+            <img src="../img/device_status.png">
+            <span data-i18n="lblDeviceNetStatus"></span>
+        </h5>
+        <div class="col-xs-2">
+            <img src="../img/internet_off.png">
+            <span data-i18n="lblInternet"></span>
+        </div>
+        <div class="col-xs-3">
+            <div class="off">
+                <img src="../img/upload.png">
+                <span id="upSpeed"></span>
+            </div>
+            <hr class="line">
+            <div class="off">
+                <img src="../img/download.png">
+                <span id="downSpeed"></span>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <img src="../img/router.png">
+            <span data-i18n="lblRouter"></span>
+        </div>
+        <div class="col-xs-3">
+            <img src="../img/wifi1.png">
+            <span class="ssid2"></span>
+            <hr class="line">
+            <img src="../img/wifi1.png">
+            <span class="ssid5"></span>
+        </div>
+        <div class="col-xs-2">
+            <img src="../img/device.png">
+            <span data-i18n="lblDevice"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <h5>
+                <img src="../img/device_info.png">
+                <span data-i18n="lblDeviceInfo"></span>
+                <img src="../img/next.png" id="device_info">
+            </h5>
+            <div class="row">
+                <div data-i18n="lblDeviceMode"></div>
+                <div id="deviceMode"></div>
+            </div>
+            <div class="off">
+                <div class="row">
+                    <div data-i18n="lblRepConnectWifiSsid"></div>
+                    <div id="repconnectssid"></div>
+                </div>
+                <div class="row">
+                    <div data-i18n="lblDdnsStatus"></div>
+                    <div id="repconnectstatus"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div data-i18n="lblfwVersion"></div>
+                <div id="version"></div>
+            </div>
+            <div class="row">
+                <div data-i18n="lblupTime"></div>
+                <div id="upTime"></div>
+            </div>
+            <div class="row">
+                <div data-i18n="lblSystemTime"></div>
+                <div id="systemTime"></div>
+            </div>
+            <div class="row">
+                <div data-i18n="lblMACAddressName"></div>
+                <div id="wanMac"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <h5>
+                <img src="../img/wifi_info.png">
+                <span data-i18n="lblWirelessInfo"></span>
+                <img src="../img/next.png" id="wireless_info">
+            </h5>
+            <div class="row">
+                <div data-i18n="lblSSID2G"></div>
+                <div class="ssid2"></div>
+            </div>
+            <div class="row">
+                <div data-i18n="lbChannel2G"></div>
+                <div id="channel2"></div>
+            </div>
+            <div class="row">
+                <div data-i18n="lblSSID5G"></div>
+                <div class="ssid5"></div>
+            </div>
+            <div class="row">
+                <div data-i18n="lbChannel5G"></div>
+                <div id="channel5"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <h5>
+                <img src="../img/network_info.png">
+                <span data-i18n="lblNetworkInfo"></span>
+                <img src="../img/next.png" id="network_info">
+            </h5>
+            <ul class="nav nav-tabs active-font" role="tablist">
+                <li role="presentation" class="active" id="IPv4">
+                    <a href="#networkInfo" aria-controls="networkInfo" role="tab" data-toggle="tab">IPv4</a>
+                </li>
+                <li role="presentation">
+                    <a href="#ipv6Info" aria-controls="ipv6Info" role="tab" data-toggle="tab">IPv6</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="networkInfo">
+                    <div class="row">
+                        <div data-i18n="lblDeviceIP"></div>
+                        <div id="wanIP"></div>
+                    </div>
+                    <div class="row">
+                        <div data-i18n="lblGw"></div>
+                        <div id="wanGateway"></div>
+                    </div>
+                    <div class="row">
+                        <div>DNS1</div>
+                        <div id="wanDNS1"></div>
+                    </div>
+                    <div class="row">
+                        <div>DNS2</div>
+                        <div id="wanDNS2"></div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="ipv6Info">
+                    <div class="scroll-box">
+                        <div class="content">
+                            <div class="row">
+                                <div data-i18n="lblSta6"></div>
+                                <div id="ipv6WanStatus"></div>
+                            </div>
+                            <div id="ipv6ConInfo" class="off">
+                                <div class="row">
+                                    <div data-i18n="lblType"></div>
+                                    <div id="ipv6Type"></div>
+                                </div>
+                                <div class="row">
+                                    <div data-i18n="lblIPv6Addr"></div>
+                                    <div id="ipv6Addr"></div>
+                                </div>
+                                <div class="row">
+                                    <div data-i18n="lblIPv6Gw"></div>
+                                    <div id="ipv6Gateway"></div>
+                                </div>
+                                <div class="row">
+                                    <div>DNS1</div>
+                                    <div id="ipv6DNS1"></div>
+                                </div>
+                                <div class="row">
+                                    <div>DNS2</div>
+                                    <div id="ipv6DNS2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="otaInfoModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content theme-border-color">
+            <div class="modal-header">
+                <h5 class="modal-title" data-i18n="lblTips"></h5>
+            </div>
+            <div class="modal-body text-center">
+                <div class="form-group" data-i18n="msgUpgradeFirmwareTips"></div>
+                <div class="row">
+                    <input type="checkbox" id="closeOtaInfo">
+                    <label class="control-label" for="closeOtaInfo" data-i18n="msgUpgradeTipsOff"></label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-2">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-i18n="btnCancel"></button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-primary theme-bg-color" id="OtaUpdateBtn" data-i18n="tUpdate"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "main.html");
+        window.location.replace("./index.html");
+    }
+    $(document).ready(function(){
+        getSystemInfo();
+        getWifiInfo();
+        getNetInfo();
+
+        $("#closeOtaInfo").on("click", function() {
+            var date = new Date();
+            date.setDate(date.getDate()+14);
+            window.localStorage.setItem("closeOtaTips", JSON.stringify({value: $(this).is(":checked") ? 1 : 0, time: date.getTime()}));
+        });
+        $("#OtaUpdateBtn").on("click", function(){
+            $("#otaInfoModal").modal("hide");
+            window.sessionStorage.setItem("toPage", "/setting/upgrade.html");
+            setTimeout(function(){
+                $("[href='setting.html']")[0].click();
+            }, 500);
+        });
+        $("#device_info").on("click", function(){
+            window.sessionStorage.setItem("toPage", "/setting/device_status.html");
+            $("[href='setting.html']")[0].click();
+        });
+        $("#wireless_info").on("click", function(){
+            $("[href='wireless.html']")[0].click();
+        });
+        $("#network_info").on("click", function(){
+            if (opMode == 0) {
+                var hasactive = $("#IPv4").hasClass("active");
+                window.sessionStorage.setItem("toPage", hasactive ? "/setting/wan.html" : "/setting/ipv6.html");
+                $("[href='setting.html']")[0].click();
+            }
+        });
+
+        function getSystemInfo() {
+            ajax({
+                url: "system.json",
+                success: function(data){
+                    if (data.error == 0) {
+                        opMode = data.sys.opMode;
+                        $("#version").html(data.sys.sdkVersion);
+
+                        if (data.sys.ota_info == 1) {
+                            var tips = window.localStorage.getItem("closeOtaTips");
+                            if (tips) {
+                                tips = JSON.parse(tips);
+                            }
+                            if (!tips || tips.value != 1 || tips.time < (new Date()).getTime()) {
+                                $("#otaInfoModal").modal("show");
+                            }
+                        }
+
+                        switch (opMode)
+                        {
+                            case 0:
+                            default:
+                                // $(".header .nav > li.off, .panel.panel-default.off").show();
+                                $("#upSpeed, #downSpeed").parent().show();
+                                $("#deviceMode").text($.t("lblRouterMode"));
+                                break;
+                            case 1:
+                                $("#deviceMode").text($.t("lblAPMode"));
+                                break;
+                            case 2:
+                                $("#repconnectssid").parent().parent().show();
+                                $("#deviceMode").text($.t("lblRep") + "(" + $.t("lblBridgerMode") + ")");
+                                break;
+                            case 3:
+                                $("#repconnectssid").parent().parent().show();
+                                $("#deviceMode").text($.t("lblRep") + "(" + $.t("lblWISPMode") + ")");
+                                break;
+                        }
+                        if (data.sys.connected) {
+                            $("#netStatus").text($.t("lblOnline"));
+                            $("#netStatus_img").attr("src", "../img/online_01.png");
+                            $("img[src='../img/internet_off.png']").attr("src", "../img/internet.png");
+                            $("#upSpeed").text(netSpeedTrans(data.speed.up_speed));
+                            $("#downSpeed").text(netSpeedTrans(data.speed.cur_speed));
+                        } else {
+                            $("#netStatus").text($.t("lblOffline"));
+                            $("#netStatus_img").attr("src", "../img/online_02.png");
+                            $("#internet_img").attr("src", "../img/hlw_01.png");
+                            $("img[src='../img/internet.png']").attr("src", "../img/internet_off.png");
+                            $("#upSpeed, #downSpeed").text(netSpeedTrans(0));
+                        }
+                        $("#upTime").text(formatSeconds(data.time.ontime));
+                        $("#systemTime").text(data.time.date);
+                    } else {
+                        locationUrl(data.url);
+                    }
+                }
+            });
+        }
+
+        function getWifiInfo() {
+            ajax({
+                url: "wifi.json",
+                success: function(data){
+                    if (data.error == 0) {
+                        $(".ssid2").text(data.wifi2.ssid);
+                        $("#channel2").text(!data.wifi2.channel ? $.t("lblChannelAuto") + " (" + data.wifi2.auto_channel + ")"
+                                            : data.wifi2.channel);
+                        $(".ssid5").text(data.wifi5.ssid);
+                        $("#channel5").text(!data.wifi5.channel ? $.t("lblChannelAuto") + " (" + data.wifi5.auto_channel + ")"
+                                            : data.wifi5.channel);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+
+        function getNetInfo() {
+            ajax({
+                url: "network.json",
+                success: function(data){
+                    if (data.error == 0) {
+                        var wan = data.wan, ipv6 = data.ipv6;
+                        $("#wanMac").text(wan.mac.toUpperCase());
+                        $("#wanIP").text(wan.ip);
+                        $("#wanGateway").text(wan.gateway);
+                        $("#wanDNS1").text(wan.DNS0);
+                        $("#wanDNS2").text(wan.DNS1);
+                        if (opMode == 0) {
+                            if (ipv6.enable) {
+                                $("#ipv6WanStatus").text($.t("lblop"));
+                                var inet6_addr = ipv6.ip.split(","), html = "";
+                                for(var i = 0 ; i < inet6_addr.length - 1 ; i++ ){
+                                    html += "<div id='Addr"+i+"'>"+inet6_addr[i]+"</div>";
+                                }
+                                $("#ipv6Addr").html(html);
+                                $("#ipv6Gateway").text(ipv6.gateway);
+                                $("#ipv6DNS1").text(ipv6.DNS0);
+                                $("#ipv6DNS2").text(ipv6.DNS1);
+                                $("#ipv6Type").text(ipv6.wanObtainMethod == 0 ? "DHCPv6"
+                                                    : $.t(ipv6.wanObtainMethod == 1 ? "lblIpv6ppp" : "lblIPv6Static"));
+                                $("#ipv6ConInfo").show();
+                            } else {
+                                $("#ipv6WanStatus").text($.t("lbldo"));
+                                $("#ipv6ConInfo").hide();
+                            }
+                        } else {
+                            if (opMode == 2 || opMode == 3) {
+                                $("#ipv6WanStatus").text($.t("lblRepOffIpv6"));
+                                $("#repconnectssid").text(data.rep.ssid);
+                                $("#repconnectstatus").text(data.rep.connect == 1 ? $.t("lblOnline") + "(" + data.signal + ")" : $.t("lblOffline"));
+                            } else if (opMode == 1) {
+                                $("#ipv6WanStatus").text($.t("lblapdo"));
+                            }
+                            $("#ipv6ConInfo").hide();
+                        }
+
+                        switch (wan.mode)
+                        {
+                            case 1:
+                            default:
+                                $("#wanType").text($.t("lblDHCP"));
+                                break;
+                            case 2:
+                                $("#wanType").text($.t("lblPPPOE"));
+                                break;
+                            case 3:
+                                $("#wanType").text($.t("lblStaticIp"));
+                                break;
+                            case 4:
+                                $("#wanType").text("PPPOE Dual Access");
+                                break;
+                            case 5:
+                                $("#wanType").text("PPTP Dual Access");
+                                break;
+                            case 6:
+                                $("#wanType").text("L2TP Dual Access");
+                                break;
+                        }
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

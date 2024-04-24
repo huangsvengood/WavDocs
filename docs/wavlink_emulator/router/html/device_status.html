@@ -1,0 +1,126 @@
+<div class="page-content device_status">
+    <div class="row">
+        <div class="col-xs-2">
+            <img src="../img/device_info.png">
+            <span data-i18n="lblSystemStatusName"></span>
+        </div>
+        <div class="col-xs-8">
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblDeviceMode"></div>
+                <div class="col-xs-7" id="deviceMode"></div>
+            </div>
+            <div class="off" id="repconnectinfo">
+                <div class="row">
+                    <div class="col-xs-5" data-i18n="lblRepConnectWifiSsid"></div>
+                    <div class="col-xs-7" id="repconnectssid"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5" data-i18n="lblDdnsStatus"></div>
+                    <div class="col-xs-7" id="repconnectstatus"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblupTime"></div>
+                <div class="col-xs-7" id="upTime"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblfwVersion"></div>
+                <div class="col-xs-7" id="version"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2">
+            <img src="../img/network_info.png">
+            <span data-i18n="lblnetworkStatusName"></span>
+        </div>
+        <div class="col-xs-5">
+            <h5 id="wanInfo" data-i18n="lblWanSta4"></h5>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblType"></div>
+                <div class="col-xs-7" id="wanType"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblStatus"></div>
+                <div class="col-xs-7" id="wanStatus"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblAddr"></div>
+                <div class="col-xs-7" id="wanIP"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblGw"></div>
+                <div class="col-xs-7" id="wanGateway"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblMACAddressName"></div>
+                <div class="col-xs-7" id="wanMac"></div>
+            </div>
+        </div>
+        <div class="col-xs-5" id="lanInfo">
+            <h5 data-i18n="lblLanSta4"></h5>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblAddr"></div>
+                <div class="col-xs-7" id="lanIP"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblMACAddressName"></div>
+                <div class="col-xs-7" id="lanMac"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2">
+            <img src="../img/wifi_info.png">
+            <span data-i18n="lblwifiStatusName"></span>
+        </div>
+        <div class="col-xs-5">
+            <h5 data-i18n="lblWifi2GStatus"></h5>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblSsidname"></div>
+                <div class="col-xs-7" id="ssid2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lbWirelessModeName"></div>
+                <div class="col-xs-7" id="mode2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lbChannelName"></div>
+                <div class="col-xs-7" id="channel2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblMACAddressName"></div>
+                <div class="col-xs-7" id="mac2"></div>
+            </div>
+        </div>
+        <div class="col-xs-5">
+            <h5 data-i18n="lblWifi5GStatus"></h5>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblSsidname"></div>
+                <div class="col-xs-7" id="ssid5"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lbWirelessModeName"></div>
+                <div class="col-xs-7" id="mode5"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lbChannelName"></div>
+                <div class="col-xs-7" id="channel5"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5" data-i18n="lblMACAddressName"></div>
+                <div class="col-xs-7" id="mac5"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/device_status.html");
+        window.location.replace("./index.html");
+    }
+</script>
+<script src="../js/device_status.js"></script>

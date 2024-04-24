@@ -1,0 +1,197 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row includeAddRule">
+            <button type="button" class="btn btn-default" id="addRule">
+                <img src="../img/add.png">
+                <span data-i18n="lblAddNewRule"></span>
+            </button>
+        </div>
+        <div class="row">
+            <table id="portList" class="table">
+                <thead>
+                    <tr>
+                        <th data-i18n="lblserverIP"></th>
+                        <th data-i18n="lblExternalPort"></th>
+                        <th data-i18n="lblInternalPort"></th>
+                        <th data-i18n="lblProtocol"></th>
+                        <th data-i18n="lblOperate"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3"><img src="../public/static/layer/skin/default/loading-2.gif" width="20px"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+
+        <h5 data-i18n="lblPortForward"></h5>
+        <p data-i18n="lblPortForwHelpText1"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/port_forward.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var redirectList = [], lanInfo;
+        var protoSelect = $("<select class='form-control proto'>\
+                            <option value='tcp'>TCP</option>\
+                            <option value='udp'>UDP</option>\
+                            <option value='tcp udp'>TCP&UDP</option></select>");
+
+        getRedirectRules();
+
+        // 点击绑定或编辑按钮
+        $("#portList > tbody").on("click", ".editThis:not(.disabled)", function(){
+            var thisTr = $(this).parents("tr");
+            // 同一时间最多编辑一条规则，其它规则不允许编辑
+            thisTr.siblings().find("span").addClass("disabled");
+            if ($(this).text() == $.t("lblEdit")) {
+                // 编辑已存在的规则，按钮文字改变
+                var ip = thisTr.find("td:first").text();
+                var out_port = thisTr.find("td:eq(1)").text();
+                var in_port = thisTr.find("td:eq(2)").text();
+                var proto = thisTr.find("td:eq(3)").text();
+                thisTr.find("td:first").html("<input type='text' class='form-control ip' value="+ip+" />");
+                thisTr.find("td:eq(1)").html("<input type='text' class='form-control out_port' value="+out_port+" />");
+                thisTr.find("td:eq(2)").html("<input type='text' class='form-control in_port' value="+in_port+" />");
+                protoSelect.val(proto.toLowerCase());
+                thisTr.find("td:eq(3)").html(protoSelect[0]);
+                $(this).text($.t("lblBind")).next().text($.t("btnCancel"));
+            } else {
+                // 要绑定一条新规则
+                var index = thisTr.prevAll().length;
+                var ip = thisTr.find(".ip").val();
+                var out_port = thisTr.find(".out_port").val();
+                var in_port = thisTr.find(".in_port").val();
+                var proto = thisTr.find(".proto").val();
+                // 检查是否有重复的外部端口
+                var hasSame = redirectList.some(function(v, i){
+                    if (index != i && out_port == v.out_port) {
+                        getMsg($.t("msgPortError2"), 2, thisTr.find(".out_port"));
+                        return true;
+                    }
+                });
+                if (!hasSame && checkIP(thisTr.find(".ip"), 1) && checkIPInRange2(ip, thisTr.find(".ip"), lanInfo)
+                    && checkPort(thisTr.find(".out_port")) && checkPort(thisTr.find(".in_port"))) {
+                    startLoading(2000, $.t("btnSaveName"));
+
+                    thisTr.find("td:first").html(ip);
+                    thisTr.find("td:eq(1)").html(out_port);
+                    thisTr.find("td:eq(2)").html(in_port);
+                    thisTr.find("td:eq(3)").html(proto.toUpperCase());
+                    $(this).text($.t("lblEdit")).next().text($.t("btnDelete"));
+                    $("#portList tbody span.disabled").removeClass("disabled");
+                    if (index >= redirectList.length) {
+                        redirectList.push({"ip": ip, "out_port": out_port, "in_port": in_port, "proto": proto, "name": "forward_"+index})
+                    } else {
+                        redirectList[index].ip = ip;
+                        redirectList[index].out_port = out_port;
+                        redirectList[index].in_port = in_port;
+                        redirectList[index].proto = proto;
+                    }
+                }
+            }
+        });
+        // 点击删除或取消按钮
+        $("#portList > tbody").on("click", ".deleteThis:not(.disabled)", function(){
+            var thisTr = $(this).parents("tr");
+            var index = thisTr.prevAll().length;
+            var ip, out_port, in_port, proto;
+
+            if ($(this).text() == $.t("btnCancel")) {
+                // 取消编辑或绑定规则
+                var isSaved = redirectList.some(function(v, i){
+                    if (index == i) {
+                        ip = v.ip;
+                        out_port = v.out_port;
+                        in_port = v.in_port;
+                        proto = v.proto.toUpperCase();
+                        return true;
+                    }
+                });
+                if (isSaved) {
+                    // 取消编辑规则
+                    thisTr.find("td:first").html(ip);
+                    thisTr.find("td:eq(1)").html(out_port);
+                    thisTr.find("td:eq(2)").html(in_port);
+                    thisTr.find("td:eq(3)").html(proto);
+                    $(this).text($.t("btnDelete")).prev().text($.t("lblEdit"));
+                } else {
+                    // 取消绑定规则
+                    thisTr.remove();
+                }
+                $("#portList tbody span.disabled").removeClass("disabled");
+            } else {
+                // 删除规则
+                startLoading(2000, $.t("btnDelete"));
+                thisTr.remove();
+                redirectList.splice(index, 1);
+                // 删除的不是最后一条规则，需要调整其后规则的index值
+                if (index < redirectList.length) {
+                    redirectList.forEach(function(v,i){if (i >= index) v.name = "forward_"+i});
+                }
+            }
+            if (redirectList.length == 0) {
+                $("#portList tbody").html("<tr><td colspan='5'>"+$.t("lblNoData")+"</td></tr>");
+            }
+        });
+
+        $("#addRule").on("click", function(){
+            if (redirectList.length >= 20) {
+                getMsg($.t("msgAlert4"));
+                return false;
+            }
+            // 当所有规则都已保存，才能添加新的规则
+            if ($("#portList tbody input").length <= 0) {
+                // 默认选择第一项
+                protoSelect.val("tcp");
+                $("#portList tbody span").addClass("disabled");
+                var newTr = $("<tr><td><input type='text' class='form-control ip' /></td>\
+                            <td><input type='text' class='form-control out_port' /></td>\
+                            <td><input type='text' class='form-control in_port' /></td><td></td>\
+                            <td><span class='editThis'>"+$.t("lblBind")+"</span>\
+                            <span class='deleteThis'>"+$.t("btnCancel")+"</span></td></tr>");
+                newTr.find("td:eq(3)").html(protoSelect[0]);
+                redirectList.length == 0 ? $("#portList tbody").html(newTr) : $("#portList tbody").append(newTr);
+            } else {
+                getMsg($.t("msgAlert3"));
+            }
+        });
+
+        function getRedirectRules() {
+            ajax({
+                url: "network.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        lanInfo = data.lan;
+                        redirectList = data.port_rules;
+                        var dom = document.createDocumentFragment();
+                        if (redirectList && redirectList.length) {
+                            redirectList.forEach(function(v){
+                                dom.appendChild($("<tr><td>"+v.ip+"</td><td>"+v.out_port+"</td>\
+                                                <td>"+v.in_port+"</td><td>"+v.proto.toUpperCase()+"</td>\
+                                                <td><span class='editThis'>"+$.t("lblEdit")+"</span>\
+                                                <span class='deleteThis'>"+$.t("btnDelete")+"</span></td></tr>")[0]);
+                            });
+                        }
+                        protoSelect.val("tcp");
+                        if (dom.children.length == 0) {
+                            dom.appendChild($("<tr><td colspan='5'>"+$.t("lblNoData")+"</td></tr>")[0]);
+                        }
+                        $("#portList > tbody").html(dom);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

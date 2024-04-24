@@ -1,0 +1,128 @@
+<div class="page-content row">
+    <div class="col-xs-9 content" id="ark_db">
+        <div class="form-group row">
+            <label class="col-xs-2 control-label" data-i18n="">Bundle</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control selectFile" id="chooseFile1" placeholder=".tar, .tar.gz, .tgz" readonly />
+                <input type="file" class="hidden" id="selectedBundle" />
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="bundleUpload" data-i18n="lblupl"></button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="bundleReset" data-i18n="btnReset"></button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-2 control-label" data-i18n="">XDB(ARK)</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control selectFile" id="chooseFile2" placeholder="*ark.xdb" readonly />
+                <input type="file" class="hidden" id="selectedXDB1" />
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="arkXdbUpload" data-i18n="lblupl"></button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="arkXdbReset" data-i18n="btnReset"></button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-2 control-label" data-i18n="">XDB(App)</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control selectFile" id="chooseFile3" placeholder="*app.xdb" readonly />
+                <input type="file" class="hidden" id="selectedXDB2" />
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="appXdbUpload" data-i18n="lblupl"></button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="appXdbReset" data-i18n="btnReset"></button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-2 control-label" data-i18n="">XR</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control selectFile" id="chooseFile4" placeholder="*ark.xr" readonly />
+                <input type="file" class="hidden" id="selectedXR" />
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="arkXrUpload" data-i18n="lblupl"></button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="arkXrReset" data-i18n="btnReset"></button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-2 control-label" data-i18n="">App List</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control selectFile" id="chooseFile5" placeholder="*app.id" readonly />
+                <input type="file" class="hidden" id="selectedApp" />
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="appListUpload" data-i18n="lblupl"></button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-primary theme-bg-color" id="appListReset" data-i18n="btnReset"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/ark_db.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var arkDB = {
+            bundle: {type: "bundle", file: "bundle", suffix: [".tar", ".tar.gz", ".tgz"]},
+            arkXdb: {type: "ark_xdb", file: "ark.xdb"},
+            appXdb: {type: "app_xdb", file: "app.xdb"},
+            arkXr: {type: "ark_xr", file: "ark.xr"},
+            appList: {type: "app_list", file: "app.id"}
+        }
+
+        function fileNameCheck(opt, fileName) {
+            if (opt == "bundle") {
+                arkDB[opt].file = arkDB[opt].suffix.filter(ext => fileName.endsWith(ext)).map(ext => "bundle" + ext);
+                return arkDB[opt].file.length > 0;
+            } else {
+                return fileName.endsWith(arkDB[opt].file);
+            }
+        }
+
+        $(".btn[data-i18n='lblupl']").on("click", function() {
+            var opt = $(this).attr("id").replace(/Upload$/, "");
+            var fileBox = $(this).parent().prev().find(".selectFile");
+            var file = $(this).parent().prev().find("[type=file]")[0].files;
+            if (!file.length) {
+                getMsg($.t("msgArkError1"), 3, fileBox);
+                return false;
+            } else if (file[0].size > 10737418) {
+                getMsg($.t("msgArkError3"), 3, fileBox);
+                return false;
+            } else if (!fileNameCheck(opt, file[0].name)) {
+                getMsg($.t("msgBrowseFileText3"), 3, fileBox);
+                return false;
+            }
+
+            startLoading(2000, $.t("msgUploading"));
+            setTimeout(function () {
+                getMsg($.t("msgterminalText5"));
+            }, 2000);
+        });
+
+        $(".btn[data-i18n='btnReset']").on("click", function() {
+            startLoading(2000, $.t("btnReset"));
+            setTimeout(function () {
+                getMsg($.t("msgterminalText5"));
+            }, 2000);
+        });
+    });
+</script>

@@ -1,0 +1,203 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row includeAddRule">
+            <button type="button" class="btn btn-default" id="addRule">
+                <img src="../img/add.png">
+                <span data-i18n="lblAddNewRule"></span>
+            </button>
+        </div>
+        <div class="row">
+            <table id="staticIPList" class="table">
+                <thead>
+                    <tr>
+                        <th data-i18n="lblAddr"></th>
+                        <th data-i18n="lblMACAddressName"></th>
+                        <th data-i18n="lblOperate"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3"><img src="../public/static/layer/skin/default/loading-2.gif" width="20px"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+
+        <h5 data-i18n="lblStaticIP"></h5>
+        <p data-i18n="msgStaticIP"></p>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/static_ip.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var staticIPList = [], lan;
+        var macSelect = $("<select class='form-control macList'></select>");
+
+        getStaticIPList();
+
+        // 点击绑定或编辑按钮
+        $("#staticIPList > tbody").on("click", ".editThis:not(.disabled)", function(){
+            var thisTr = $(this).parents("tr");
+            // 同一时间最多编辑一条规则，其它规则不允许编辑
+            thisTr.siblings().find("span").addClass("disabled");
+            if ($(this).text() == $.t("lblEdit")) {
+                // 编辑已存在的规则，按钮文字改变
+                var ip = thisTr.find("td:first").text();
+                thisTr.find("td:first").html("<input type='text' class='form-control ip' value="+ip+" />");
+                macSelect.val(ip);
+                thisTr.find("td:nth-child(2)").html(macSelect[0]);
+                $(this).text($.t("lblBind")).next().text($.t("btnCancel"));
+            } else {
+                // 要绑定一条新规则
+                var index = thisTr.prevAll().length;
+                var ip = thisTr.find(".ip").val();
+                var mac = thisTr.find(".macList option:selected").text() || thisTr.find(".mac").val();
+                // 检查是否有重复的ip或mac
+                var hasSame = staticIPList.some(function(v){
+                    if (index != v.index) {
+                        if (v.ip == ip) {
+                            getMsg($.t("msgIpError2"), 2, thisTr.find(".ip"));
+                            return true;
+                        }
+                        if (v.mac.toUpperCase() == mac) {
+                            getMsg($.t("msgMacError3"), 2, thisTr.find("[class*='mac']"));
+                            return true;
+                        }
+                    }
+                });
+                if (hasSame || !checkIP(thisTr.find(".ip"), 1) || !checkIPInRange2(ip, thisTr.find(".ip"), lan)
+                    || !checkMAC(thisTr.find("[class*='mac']"))) {
+                    return false;
+                }
+                startLoading(2000, $.t("btnSaveName"));
+                thisTr.find("td:first").html(ip);
+                thisTr.find("td:nth-child(2)").html(mac);
+                $(this).text($.t("lblEdit")).next().text($.t("lblEdit"));
+                $("#staticIPList tbody span.disabled").removeClass("disabled");
+                if (index >= staticIPList.length) {
+                    staticIPList.push({index: index, ip: ip, mac: mac});
+                } else {
+                    staticIPList[index].ip = ip;
+                    staticIPList[index].mac = mac;
+                }
+            }
+        });
+        // 点击删除或取消按钮
+        $("#staticIPList > tbody").on("click", ".deleteThis:not(.disabled)", function(){
+            var thisTr = $(this).parents("tr");
+            var index = thisTr.prevAll().length, ip, mac;
+
+            if ($(this).text() == $.t("btnCancel")) {
+                // 取消编辑或绑定规则
+                var isSaved = staticIPList.some(function(v){
+                    if (index == v.index) {
+                        ip = v.ip;
+                        mac = v.mac.toUpperCase();
+                        return true;
+                    }
+                });
+                if (isSaved) {
+                    // 取消编辑规则
+                    thisTr.find("td:first").html(ip);
+                    thisTr.find("td:nth-child(2)").html(mac);
+                    $(this).text($.t("btnDelete")).prev().text($.t("lblEdit"));
+                } else {
+                    // 取消绑定规则
+                    thisTr.remove();
+                }
+                $("#staticIPList tbody span.disabled").removeClass("disabled");
+            } else {
+                // 删除规则
+                ip = thisTr.find("td:first").text();
+                startLoading(2000, $.t("btnDelete"));
+                thisTr.remove();
+                staticIPList.splice(index, 1);
+                // 删除的不是最后一条规则，需要调整其后规则的index值
+                if (index < staticIPList.length) {
+                    staticIPList.forEach(function(v,i){if (i >= index) v.index = i});
+                }
+                macSelect.find("[value='"+ip+"']").remove();
+            }
+            if (staticIPList.length == 0) {
+                $("#staticIPList tbody").html("<tr><td colspan='3'>"+$.t("lblNoData")+"</td></tr>");
+            }
+        });
+
+        $("#staticIPList > tbody").on("change", ".macList", function(){
+            var value = $(this).val(), thisTd = $(this).parent();
+            if (value == 0) {
+                thisTd.html("<input type='text' class='form-control mac' />");
+                thisTd.find(".mac").focus();
+            } else {
+                thisTd.prev().find(".ip").val(value);
+            }
+        });
+
+        $("#addRule").on("click", function(){
+            if (staticIPList.length >= 10) {
+                getMsg($.t("msgAlert2"));
+                return false;
+            }
+            // 当所有规则都已保存，才能添加新的规则
+            if ($("#staticIPList tbody input").length <= 0) {
+                // 默认选择第一项
+                macSelect.val(macSelect.find("option:first").val());
+                $("#staticIPList tbody span").addClass("disabled");
+                var newTr = $("<tr><td><input type='text' class='form-control ip' /></td><td></td>\
+                            <td><span class='editThis'>"+$.t("lblBind")+"</span>\
+                            <span class='deleteThis'>"+$.t("btnCancel")+"</span></td></tr>");
+                newTr.find(".ip").val(macSelect.val());
+                newTr.find("td:nth-child(2)").html(macSelect[0]);
+                staticIPList.length == 0 ? $("#staticIPList tbody").html(newTr) : $("#staticIPList tbody").append(newTr);
+            } else {
+                getMsg($.t("msgAlert3"));
+            }
+        });
+
+        function getStaticIPList() {
+            ajax({
+                url: "network.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        staticIPList = data.hosts;
+                        lan = data.lan;
+                        var arpList = data.arp_list;
+                        if (arpList && arpList.length) {
+                            arpList.forEach(function(v){
+                                macSelect.append("<option value="+v.ip+">"+v.mac.toUpperCase()+"</option>");
+                            });
+                        }
+                        macSelect.append("<option value=0>"+$.t("btnSelfDefine")+"</option>");
+                        var dom = document.createDocumentFragment();
+                        if (staticIPList && staticIPList.length) {
+                            staticIPList.forEach(function(v){
+                                dom.appendChild($("<tr><td>"+v.ip+"</td><td>"+v.mac.toUpperCase()+"</td>\
+                                                <td><span class='editThis'>"+$.t("lblEdit")+"</span>\
+                                                <span class='deleteThis'>"+$.t("btnDelete")+"</span></td></tr>")[0]);
+                                if (!macSelect.find("[value='"+v.ip+"']").length) {
+                                    // 将arp中不存在的ip和mac加入到选择列表中
+                                    macSelect.prepend("<option value="+v.ip+">"+v.mac.toUpperCase()+"</option>");
+                                }
+                            });
+                        }
+                        macSelect.val(macSelect.find("option:first").val());
+                        if (dom.children.length == 0) {
+                            dom.appendChild($("<tr><td colspan='3'>"+$.t("lblNoData")+"</td></tr>")[0]);
+                        }
+                        $("#staticIPList").find("tbody").html(dom);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

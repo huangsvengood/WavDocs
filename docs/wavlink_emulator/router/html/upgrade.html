@@ -1,0 +1,274 @@
+<div class="page-content row">
+    <div class="col-xs-9 content" id="upgrade">
+        <h5 class="depart-line" data-i18n="lblLocalUpgrade"></h5>
+        <h5 class="text" data-i18n="msgUpgradeExplain1"></h5>
+        <div class="row">
+            <table id="localUpgradeList" class="table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" class="selectAll"></th>
+                        <th data-i18n="lblmeshExtenderName"></th>
+                        <th data-i18n="lblCurrentVersion"></th>
+                    </tr>
+                </thead>
+                <tbody id="SameModelMeshList"></tbody>
+            </table>
+        </div>
+        <div class="form-group row">
+            <label class="col-xs-4 control-label text-right" data-i18n="lblUpdateFile"></label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control selectFile" id="chooseFile" data-i18n="[placeholder]btnChooseFile" readonly />
+                <input type="file" class="hidden" id="selectedFirmware" />
+                <img src="../img/folder.png" class="selectFile" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="upgradeBtn" data-i18n="btnUploadUpgrade"></button>
+            </div>
+        </div>
+        <hr class="depart-line">
+        <h5 class="text" data-i18n="msgUpgradeExplain2"></h5>
+        <div class="row">
+            <table id="otherList" class="table">
+                <thead>
+                    <tr>
+                        <th data-i18n="lblmeshExtenderName"></th>
+                        <th data-i18n="lblCurrentVersion"></th>
+                        <th data-i18n="lblUpdateURL"></th>
+                    </tr>
+                </thead>
+                <tbody id="DiffModelMeshList"></tbody>
+            </table>
+        </div>
+        <h5 class="depart-line" data-i18n="lblOnlineUpgrade"></h5>
+        <h5 class="text" data-i18n="msgUpgradeExplain3"></h5>
+        <div class="row">
+            <table id="OtaList" class="table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" class="selectAll"></th>
+                        <th data-i18n="lblmeshExtenderName"></th>
+                        <th data-i18n="lblMACAddressName"></th>
+                        <th data-i18n="lblCurrentVersion"></th>
+                        <th data-i18n="lblLatestVersion"></th>
+                        <th data-i18n="lblStatus"></th>
+                    </tr>
+                </thead>
+                <tbody id="OtaMeshList"></tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 col-xs-offset-1">
+                <button class="btn btn-primary theme-bg-color" id="checkOTABtn" data-i18n="btnCheckNewVersion"></button>
+            </div>
+            <div class="col-xs-5">
+                <button class="btn btn-primary theme-bg-color" id="otaUpgradeBtn" data-i18n="btnOneClickUpgrade"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help"></div>
+</div>
+
+<div class="modal fade" id="upgradeModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content theme-border-color">
+            <input type="hidden" id="routerList" value="0" data-mac="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="upgradeModalLabel" data-i18n="lblTips"></h5>
+            </div>
+            <div class="modal-body" id="upgradeMsg" data-i18n="msgUpgradeText2"></div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-2">
+                        <button type="button" class="btn btn-default" id="upgradeCancel" data-i18n="btnCancel"></button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-primary theme-bg-color" id="upgradeConfirm" data-i18n="lblConfirmName"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/upgrade.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var sameModelList = [], diffModelList = [], otaList = [];
+
+        getUpgradeTable();
+
+        $(".table").on("click", ".selectAll", function(){
+            $(this).parents(".table").find(".selectThis").prop("checked", $(this).is(":checked"));
+        });
+
+        $("#upgradeBtn").on("click", function(){
+            var node_mac = new Array(), model = "";
+            var lowRssiNum = 0, router_check = 0;
+            var firmware = $("#selectedFirmware")[0].files;
+
+            $("#SameModelMeshList").find(".selectThis").each(function(i) {
+                if ($(this).is(":checked")) {
+                    if (!model) {
+                        model = sameModelList[i].version.slice(1, -8);
+                    }
+                    if (i == 0) {
+                        router_check = 1;
+                    } else {
+                        node_mac.push(sameModelList[i].pair_key);
+                        if (sameModelList[i].rssi < -65) {
+                            lowRssiNum++;
+                        }
+                    }
+                }
+            });
+
+            if (router_check == 0 && node_mac.length == 0) {
+                getMsg($.t("msgUpgradeError1"));
+                return false;
+            }
+            if (!firmware.length) {
+                getMsg($.t("msgUpgradeFirmwareText2"));
+                return false;
+            } else if (firmware[0].name.indexOf(model) == -1 || !firmware[0].name.endsWith(".bin")) {
+                getMsg($.t("msgUpgradeFirmwareText1"));
+                return false;
+            }
+            if (node_mac.length > 0 && lowRssiNum > 0) {
+                $("#upgradeMsg").text($.t("msgUpgradeText3"));
+                $("#upgradeConfirm").text($.t("btnNextName"));
+            }
+            $("#routerList").val(router_check).attr("data-mac", node_mac);
+            $("#upgradeModal").modal("show");
+        });
+
+        $("#checkOTABtn").on("click", function(){
+            var node_mac = new Array(), router_check = 0;
+
+            $("#OtaMeshList").find(".selectThis").each(function(i) {
+                if ($(this).is(":checked")) {
+                    i == 0 ? router_check = 1 : node_mac.push(otaList[i].pair_key);
+                }
+            });
+
+            if (router_check == 0 && node_mac.length == 0) {
+                getMsg($.t("msgUpgradeError1"));
+                return false;
+            }
+
+            startLoading(4000, $.t("btnCheckingNewVersion"));
+            setTimeout(getOtaFw, 4000);
+        });
+
+        $("#otaUpgradeBtn").on("click", function(){
+            var node_mac = new Array(), router_up = 0;
+
+            $("#OtaMeshList").find(".selectThis").each(function(i) {
+                if ($(this).is(":checked") && otaList[i].canUpdate) {
+                    i == 0 ? router_up = 1 : node_mac.push(otaList[i].pair_key);
+                }
+            });
+
+            if (router_up == 0 && node_mac.length == 0) {
+                getMsg($.t("msgUpgradeError2"));
+                return false;
+            }
+
+            $("#loadingBarModal .modal-title").text($.t("lblUpdating"));
+            setProgressBar(100, $.t("msgWaiting"), $.t("msgRefresh"));
+        });
+
+        $("#upgradeCancel").on("click", function(){
+            $("#upgradeModal").modal("hide");
+            $("#upgradeMsg").text($.t("msgUpgradeText2"));
+            $("#upgradeConfirm").text($.t("lblConfirmName"));
+        });
+
+        $("#upgradeConfirm").on("click", function(){
+            var btn_val = $(this).text();
+            if (btn_val == $.t("btnNextName")) {
+                $("#upgradeMsg").text($.t("msgUpgradeText2"));
+                $(this).text($.t("lblConfirmName"));
+            } else if (btn_val == $.t("lblConfirmName")) {
+                $("#upgradeModal").modal("hide");
+                $("#loadingBarModal .modal-title").text($.t("lblUpdating"));
+                setProgressBar(100, $.t("msgWaiting"), $.t("msgRefresh"));
+            }
+        });
+        function getUpgradeTable() {
+            ajax({
+                url: "network.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        var mesh_list = data.mesh.online_list;
+                        var router_version = mesh_list[0].version;
+                        var sameListDom = document.createDocumentFragment();
+                        var diffListDom = document.createDocumentFragment()
+                        var otaListDom = document.createDocumentFragment();
+
+                        mesh_list.forEach(function(v, i){
+                            if (router_version.slice(0, router_version.lastIndexOf("V")) == v.version.slice(0, v.version.lastIndexOf("V"))) {
+                                sameModelList.push(v);
+                                sameListDom.appendChild($("<tr><td><input type='checkbox' class='selectThis'></td>\
+                                                    <td>"+(i == 0 ? "Router" : v.name)+"</td><td>"+v.version+"</td></tr>")[0]);
+                            } else {
+                                diffModelList.push(v);
+                                diffListDom.appendChild($("<tr><td>"+v.name+"</td><td>"+v.version+"</td>\
+                                                    <td><div><a href='http://"+v.ip_addr+"' target='view_window'>"+v.ip_addr+"</div></td></tr>")[0]);
+                            }
+                            otaList.push(v);
+                            otaListDom.appendChild($("<tr><td><input type='checkbox' class='selectThis'></td>\
+                                                <td>"+(i == 0 ? "Router" : v.name)+"</td>\
+                                                <td>"+v.pair_key.charAt(0)+"*:**:**:**:"+v.pair_key.slice(-5)+"</td>\
+                                                <td>"+v.version+"</td>\
+                                                <td>"+$.t("lblNoLastestVersion")+"</td>\
+                                                <td title=''>"+$.t("lblNonUpgradable")+"</td>\
+                                                </tr>")[0]);
+                        });
+                        $("#SameModelMeshList").html(sameListDom);
+                        $("#DiffModelMeshList").html(diffListDom);
+                        $("#OtaMeshList").html(otaListDom);
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+
+        function getOtaFw() {
+            ajax({
+                url: "network.json",
+                success: function(data) {
+                    if (data.error == 0) {
+                        $("#OtaList input").prop("checked", false);
+                        $("#loadingModal").modal("hide");
+                        data.mesh.ota.forEach(function(v){
+                            if (v.new_version) {
+                                otaList.some(function(n, i) {
+                                    if (v.pair_key.toLowerCase() == n.pair_key.toLowerCase()) {
+                                        var targetTr = $("#OtaMeshList").find("tr:eq("+i+")");
+                                        targetTr.find("td:eq(4)").text(v.new_version);
+                                        targetTr.find("td:eq(5)").attr("title", $.t("lblUpdateContent") + "\n" + v.version_info)
+                                        .text($.t("lblCanUpgradable")).addClass("canUpgrade");
+                                        n.canUpdate = 1;
+                                        return true;
+                                    }
+                                });
+                            }
+                        });
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>

@@ -1,0 +1,89 @@
+<div class="page-content row">
+    <div class="col-xs-9 content">
+        <div class="form-group row">
+            <label class="col-xs-8 control-label" data-i18n="tHwnatSetup"></label>
+            <div class="col-xs-4 text-right">
+                <div class="switch">
+                    <input class="switch-checkbox hidden" id="enableHwnat" type="checkbox">
+                    <label class="switch-label" for="enableHwnat">
+                        <span class="switch-inner"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <button class="btn btn-primary theme-bg-color" id="setHwnat" data-i18n="btnSaveName"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 help">
+        <h4 data-i18n="lblHelp"></h4>
+        <p data-i18n="msgHwnat"></p>
+    </div>
+</div>
+
+<div class="modal fade" id="hwnatModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content theme-border-color">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" data-i18n="lblTips"></h5>
+            </div>
+            <div class="modal-body text-center" data-i18n="msgHwnatText2"></div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-2">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-i18n="btnCancel"></button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-primary theme-bg-color" id="setHwnatConfirmBtn" data-i18n="lblConfirmName"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    try{
+        $;
+    }catch(e){
+        window.sessionStorage.setItem("page", "/setting/hwnat.html");
+        window.location.replace("./index.html");
+    }
+
+    $(document).ready(function(){
+        var ipv6_enable = 0;
+
+        getHwnatStatus();
+
+        $("#setHwnat").on("click", function(){
+            var enable = $("#enableHwnat").val();
+            if (ipv6_enable == 1 && enable == 1) {
+                $("#hwnatModal").modal("show");
+                return false;
+            }
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        $("#setHwnatConfirmBtn").on("click", function(){
+            $("#hwnatModal").modal("hide");
+            startLoading(2000, $.t("btnSaveName"));
+        });
+
+        function getHwnatStatus() {
+            ajax({
+                url: "network.json",
+                success: function(data){
+                    if (data.error == 0) {
+                        ipv6_enable = data.ipv6.enable;
+                        $("#enableHwnat").prop("checked", data.hwnat.enable == 1).change();
+                    } else {
+                        locationUrl(data.error);
+                    }
+                }
+            });
+        }
+    });
+</script>
