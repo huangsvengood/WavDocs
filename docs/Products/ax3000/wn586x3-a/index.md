@@ -37,14 +37,14 @@ The package contains the following contents:
 ## First Time Setup
 All wavlink devices have a convenient and identical setup process. 
 !!! note ""
-	For details __[click here for the first setup.](/FAQ/first_time_setup/)__
+	For details __[click here for the first setup.](/FAQ/586X3-A-First_time_setup/)__
 
 
 
 ## Network
 Network Settings You can select __different Internet access modes__. You can select different Internet access modes according to your requirements.
 
-- [Mode Selection](/feature_guide/pattern_selection/)
+- [Mode Selection](/feature_guide/mode_selection/)
 - [WAN](/feature_guide/wan/)
 - [LAN](/feature_guide/lan/)
 - [IPv6](/feature_guide/ipv6/)
@@ -57,7 +57,7 @@ Network Settings You can select __different Internet access modes__. You can sel
 The wireless management function helps users optimize and manage wireless networks and improve the performance and stability of wireless networks by providing functions such as __channel selection__, __guest WiFi__, __dual-band integration__, and __Wi-Fi security__ settings.
 
 !!! note ""
-	__[Click here to learn more about the wireless configuration.](/feature_guide/wireless/)__
+	__[Click here to learn more about the wireless configuration.](/feature_guide/repeaterap_wireless/)__
 
 ## Mesh Settings
 Mesh is a network topology that creates a wireless network with wider coverage by connecting multiple routers together.mesh can provide __greater coverage__, improve __network performance__, achieve __seamless roaming__ and enhance __network stability__, bringing users a better network experience.

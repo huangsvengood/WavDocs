@@ -6,17 +6,16 @@ Advance >  Wireless Settings
 ## **Wireless network settings**
 
 !!! info ""
-	=== "Indoor Repeater/Outdoor AP"	
-		After logging in, enter __"Advanced > Device Status"__ to view relevant information.
-		<div style="text-align: center;">
-			<img alt="wifi" class="boxshadow" src="/images/wireless007.png">
-		</div>		
-		<div style="text-align: center;">
-			<img alt="wifi" class="boxshadow" src="/images/wireless008.png">
-		</div>		
-		<div style="text-align: center;">
-			<img alt="wifi" class="boxshadow" src="/images/wireless003.png">
-		</div>		
+	After logging in, enter __"Advanced > Device Status"__ to view relevant information.
+	<div style="text-align: center;">
+		<img alt="wifi" class="boxshadow" src="/images/wireless007.png">
+	</div>		
+	<div style="text-align: center;">
+		<img alt="wifi" class="boxshadow" src="/images/wireless008.png">
+	</div>		
+	<div style="text-align: center;">
+		<img alt="wifi" class="boxshadow" src="/images/wireless003.png">
+	</div>		
 
 Turning on the dual-band switch combines the 2.4G and 5G Wi-Fi bands into one to provide a better network experience, while turning off the dual-band integration allows you to set up the 2.4G and 5G networks separately.
 
