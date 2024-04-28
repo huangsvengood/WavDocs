@@ -1,7 +1,5 @@
 #WAVLINK Router-First time setup
 The first setup of most wavlink routers is very similar. We provide you with tutorials for different systems. You can choose the method that suits you according to the different devices.
-!!! tip 
-	Nouns in bold and bright colors are clickable links. Click to jump to the detailed explanation page of the noun.For example,"__[Internet VLAN ID](/Encyclopedia/vlan_id/)__".
 !!! example ""
 	=== "Android"
 		Tools needed : mobile phone, router.

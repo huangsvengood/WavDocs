@@ -1,7 +1,5 @@
 
 The first setup of most wavlink routers is very similar. We provide you with tutorials for different systems. You can choose the method that suits you according to the different devices.
-!!! tip 
-	Nouns in bold and bright colors are clickable links. Click to jump to the detailed explanation page of the noun.For example,"__[Internet VLAN ID](/Encyclopedia/vlan_id/)__".
 !!! example ""
 	=== "WavRouter APP"
 		<div style="text-align: center;">
@@ -87,7 +85,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/app011.png">
 		</div>	
 		
-		9 . After entering the initial configuration interface, the device system will __automatically detect the Internet connection method__ for you. The Internet connection method __defaults__ to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+		9 . After entering the initial configuration interface, the device system will __automatically detect the Internet connection method__ for you. The Internet connection method __defaults__ to __DHCP__. If you need to change the Internet connection method, please click the information box below.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app012.png">
 		</div>	
@@ -95,11 +93,11 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/app114.png">
 		</div>
 		
-		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+		- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+		- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 		??? info "Please click here to switch the Internet connection method"
-			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+			After entering the initial configuration page, you need to choose a internet connection method. __DHCP__ is selected by default. If you need to connect to the Internet through dial-up, please choose __PPPoE__. If you need to configure a static IP, please choose __Static IP__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
 		
 			__PPPOE__
 			
@@ -122,9 +120,9 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			</div>
 			
 			
-			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 		10 . After selecting the Internet connection method, enter the basic configuration (__time zone, country, WiFi name, etc.__) interface, select the time zone and region that suits your location, and __customize your WiFi name and password__ (it is recommended that you use a strong password : The password contains __uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * "__, etc.). 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/app117.png">
@@ -180,7 +178,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 				!!! question "Default WiFi name"
 					The default WiFi name can be found in the user manual or the product bottom label.
 						
-					__[SSID](/Encyclopedia/vlan_id/)__(Click to learn about SSID) : WAVLINK-XXXX_XXXX
+					__SSID__(Click to learn about SSID) : WAVLINK-XXXX_XXXX
 						
 					"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.
 		
@@ -271,7 +269,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/welcom_page.png">
 		</div>
 		
-		6 . After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+		6 . After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __DHCP__. If you need to change the Internet connection method, please click the information box below.
 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/step9.png">
@@ -280,11 +278,11 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/internet.png">
 		</div>
 		
-		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+		- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+		- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 		??? info "Please click here to switch the Internet connection method"
-			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+			After entering the initial configuration page, you need to choose a internet connection method. __DHCP__ is selected by default. If you need to connect to the Internet through dial-up, please choose __PPPoE__. If you need to configure a static IP, please choose __Static IP__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
 		
 			__PPPOE__
 			
@@ -307,9 +305,9 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			</div>
 			
 			
-			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 			!!! info "Please click on the link below to learn more"
 				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 		7 . After selecting the Internet access method, enter the basic configuration (time zone, country, WiFi name, etc.) interface, select your country and time zone, and customize your WiFi name, password, and device management password (it is recommended that you use a strong password : The password contains uppercase and lowercase letters, numbers, and special symbols such as " @, ?, * ", etc.). 
@@ -368,7 +366,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 				!!! question "Default WiFi name"
 					The default WiFi name can be found in the user manual or the product bottom label.
 						
-					__[SSID](/Encyclopedia/vlan_id/)__(Click to learn about SSID) : WAVLINK-XXXX_XXXX
+					__SSID__ : WAVLINK-XXXX_XXXX
 						
 					"XXXX" in SSID is for illustrative purposes only, please refer to the last 4 digits of the MAC address of the label on the bottomof the product.
 
@@ -433,7 +431,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/mac05.png">
 		</div>
 		
-		6 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+		6 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP__. If you need to change the Internet connection method, please click the information box below.
 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/step9.png">
@@ -442,11 +440,11 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/mac08.png">
 		</div>
 		
-		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+		- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+		- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 		??? info "Please click here to switch the Internet connection method"
-			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+			After entering the initial configuration page, you need to choose a internet connection method. __DHCP__ is selected by default. If you need to connect to the Internet through dial-up, please choose __PPPOE__. If you need to configure a static IP, please choose __Static IP__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
 		
 			__PPPOE__
 			
@@ -469,9 +467,9 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			</div>
 			
 			
-			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 			!!! info "Please click on the link below to learn more"
 				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 
@@ -560,7 +558,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/phone05.png">
 		</div>
 		
-		7 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+		7 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __DHCP__. If you need to change the Internet connection method, please click the information box below.
 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone003.png">
@@ -569,11 +567,11 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/phone06.png">
 		</div>
 		
-		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+		- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+		- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 		??? info "Please click here to switch the Internet connection method"
-			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+			After entering the initial configuration page, you need to choose a internet connection method. __DHCP__ is selected by default. If you need to connect to the Internet through dial-up, please choose __PPPOE__. If you need to configure a static IP, please choose __Static IP__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
 		
 			__PPPOE__
 			
@@ -596,9 +594,9 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			</div>
 			
 			
-			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 			!!! info "Please click on the link below to learn more"
 				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 		
@@ -693,7 +691,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/phone05.png">
 		</div>
 		
-		7 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP](/Encyclopedia/dhcp/)__. If you need to change the Internet connection method, please click the information box below.
+		7 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __DHCP__. If you need to change the Internet connection method, please click the information box below.
 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/phone003.png">
@@ -702,11 +700,11 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/phone06.png">
 		</div>
 		
-		- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+		- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-		- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+		- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 		??? info "Please click here to switch the Internet connection method"
-			After entering the initial configuration page, you need to choose a internet connection method. __[DHCP](/Encyclopedia/dhcp/)__ is selected by default. If you need to connect to the Internet through dial-up, please choose __[PPPOE](/Encyclopedia/pppoe/)__. If you need to configure a static IP, please choose __[Static IP](/Encyclopedia/static_ip/)__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
+			After entering the initial configuration page, you need to choose a internet connection method. __DHCP__ is selected by default. If you need to connect to the Internet through dial-up, please choose __PPPOE__. If you need to configure a static IP, please choose __Static IP__. We have three internet connection methods. A link description is attached below, you can click on the link for details.
 		
 			__PPPOE__
 			
@@ -729,9 +727,9 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 			</div>
 			
 			
-			- __[Internet VLAN ID](/Encyclopedia/vlan_id/)__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
+			- __Internet VLAN ID__ : Some ISPs require users to set a VLAN ID on the router before they can access the Internet. If you find that dialing fails or obtaining an IP from the ISP fails, please check whether you need to set a VLAN ID.
 			
-			- __[Auto Mesh](/Encyclopedia/mesh/)__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
+			- __Auto Mesh__ : If this function is turned on, the device will automatically switch to Mesh Router or Mesh node mode depending on your network topology. If it is turned off, the device will remain fixed in Mesh Router mode.
 			!!! info "Please click on the link below to learn more"
 				__[Differences in Internet access methods.Which Internet method should I choose?](/FAQ/wan_mode/)__
 		
