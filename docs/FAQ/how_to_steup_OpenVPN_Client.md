@@ -1,5 +1,5 @@
 ## __What is OpenVPN?__
-OpenVPN is a virtual private network (__[VPN]()__) system that implements technology to create secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities. It implements client and server applications.
+OpenVPN is a virtual private network (VPN) system that implements technology to create secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities. It implements client and server applications.
 
 __OpenVPN Client__ refers to a computer or device running OpenVPN client software. OpenVPN clients can connect to OpenVPN servers to establish secure communication links.
 
