@@ -45,12 +45,12 @@ All wavlink devices have a convenient and identical setup process.
 Network Settings You can select __different Internet access modes__. You can select different Internet access modes according to your requirements.
 
 - [Mode Selection](/feature_guide/mode_selection/)
-- [WAN](/feature_guide/wan/)
-- [LAN](/feature_guide/lan/)
+- [WAN](/feature_guide/repeaterap_wan/)
+- [LAN](/feature_guide/repeaterap_lan/)
 - [IPv6](/feature_guide/ipv6/)
-- [Static IP Binding](/feature_guide/static_ip/)
+- [Static IP Binding](/feature_guide/repeaterap_staticip/)
 !!! note ""
-	__[Click here to learn more about the network configuration.](/feature_guide/pattern_selection/)__
+	__[Click here to learn more about the network configuration.](/feature_guide/mode_selection/)__
 
 
 ## Wireless
@@ -62,15 +62,15 @@ The wireless management function helps users optimize and manage wireless networ
 ## Mesh Settings
 Mesh is a network topology that creates a wireless network with wider coverage by connecting multiple routers together.mesh can provide __greater coverage__, improve __network performance__, achieve __seamless roaming__ and enhance __network stability__, bringing users a better network experience.
 
-- __[How to establish a mesh network? ](/feature_guide/mesh_network/)__
-- __[How to view the network topology diagram?](/feature_guide/mesh_topo/)__
+- __[How to establish a mesh network? ](/feature_guide/routermesh/)__
+- __[How to view the network topology diagram?](/feature_guide/repeaterap_mesh/)__
 
 	
 ## Terminal Management
 Terminal devices refer to end-user devices connected to the router, such as __computers__, __mobile phones__, __smart homes__, etc.
 
 !!! note ""
-	Click here to learn __[how to manage terminal devices](/feature_guide/terminal/)__.
+	Click here to learn __[how to manage terminal devices](/feature_guide/repeaterap_terminal/)__.
 
 
 ## Parental control
@@ -83,12 +83,12 @@ The parental control feature can help parents establish a reasonable __home netw
 
 
 ## More
-- [Security Settings](/feature_guide/secure/)
-- [Remote Control](/feature_guide/remote_ctrl/)
-- [Network Diagnostics](/feature_guide/network_diango/)
-- [Backup and Restore](/feature_guide/backup/)
-- [Firmware Update](/feature_guide/firmware/)
-- [Timing Reboot](/feature_guide/timing_reboot/)
+- [Security Settings](/feature_guide/repeaterap_security/)
+- [Remote Control](/feature_guide/repeaterap_remotecontrol/)
+- [Network Diagnostics](/feature_guide/repeaterap_networkdiagnostics/)
+- [Backup and Restore](/feature_guide/repeaterap_backup/)
+- [Firmware Update](/feature_guide/repeaterap_firmware/)
+- [Timing Reboot](/feature_guide/repeaterap_timing/)
 !!! note ""
 	Some common functions are listed for you. If you want to know more functions, click on __[the feature guide](/feature_guide/)__. More functions are waiting for you to explore.
 

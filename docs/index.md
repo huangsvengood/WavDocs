@@ -108,7 +108,7 @@ hide:
 	<div class="bannerContainer">
 		<div class="banner">
 			<div class="search_infoCenter">
-				<h1>WAVLINK Info-Center</h1>
+				<h1>WAVLINK ROUTER-Center</h1>
 				<p>Convenient access to all the device information you need</p>
 			</div>
 		</div>

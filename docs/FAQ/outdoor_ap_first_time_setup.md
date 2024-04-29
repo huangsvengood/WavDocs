@@ -268,7 +268,7 @@ Every product requires initialization settings before use. Before initialization
 		<img class="boxshadow" src="/images/indoor015.png">
 		</div>
 	=== "Mesh Router Mode"
-		__Mesh Mode__  :  Converts a network from a network provider's wired network to a Wi-Fi signal for wireless and wired networking. This mode also supports Mesh networking, which can be set up to pair subroutes to form a networking.
+		__Mesh Router Mode__  :  Converts a network from a network provider's wired network to a Wi-Fi signal for wireless and wired networking. This mode also supports Mesh networking, which can be set up to pair subroutes to form a networking.
 
 	
 		<div style="text-align: center;">
@@ -301,6 +301,8 @@ Every product requires initialization settings before use. Before initialization
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/outdoor014.png">
 		</div>
+		
+		<a name="mesh"></a>
 
 		5 . Mesh pairing. There are two ways to perform mesh pairing. It is recommended that you use the first method for pairing.
 		!!! note ""
@@ -319,7 +321,9 @@ Every product requires initialization settings before use. Before initialization
 			=== "Add WEB interface to realize pairing"
 				1 . Enter __" Advanced > Mesh Network "__.							
 				<div style="text-align: center;">
+					<span id="meshr">
 					<img class="boxshadow" src="/images/outdoor027.png">
+					</span>
 				</div>
 			
 				2 . Click on “__Add__” and then follow the prompts on the screen.

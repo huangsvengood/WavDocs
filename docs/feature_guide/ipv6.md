@@ -7,10 +7,20 @@
 !!! note ""
 	__This feature is currently only available to routers.__
 ---
- More Settings > Network > IPV6 Settings
-	<div style="text-align: center;">
-    <img class="boxshadow" src="/images/ipv600.png">
-	</div>
+!!! note ""
+	=== "Path one"
+		More Settings > Network > IPV6 Settings
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/ipv600.png">
+		</div>
+	=== "Path two"
+		Advanced > IPv6 Settings
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/wireless007.png">
+		</div>
+		<div style="text-align: center;">
+		<img class="boxshadow" src="/images/routeripv6.png">
+		</div>
 <p class="text">
 IPv6 is a next-generation internet protocol with larger address space, improved functionality, and enhanced security. It's introduction is aimed at addressing the growing number of interconnected devices and providing better network performance and security
 </p>

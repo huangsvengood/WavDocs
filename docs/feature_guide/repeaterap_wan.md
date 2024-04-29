@@ -1,6 +1,5 @@
-!!! note ""
-	Here are the WAN Settings of wavlink __indoor repeater and outdoor AP.__
- ---
+
+---
 Advanced > Network Setting
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/wireless007.png">

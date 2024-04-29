@@ -1,4 +1,4 @@
-site_name: WAVLINK Docs
+site_name: WAVLINK ROUTER Docs
 site_description: Documentation for WAVLINK Router Productions
 site_author: WAVLINK
 copyright: Copyright 2024 WAVLINK Technology Co., Ltd.
@@ -24,6 +24,7 @@ nav:
       - WL-WNF100X3NR-A: Products/ax3000/wnf100x3nr-a/index.md
     - AC1200:
       - AC1200: Products/ac1200/index.md
+      - WL-WN572HE4-A: Products/ac1200/wn572he4.md
     - N3000:
       - N3000: Products/n3000/index.md
   - Firmware: Firmware/index.md
@@ -180,7 +181,7 @@ markdown_extensions:
 plugins:
   - search:
       enabled: false
-
+  - tags
 #  - blog
 #  - search:
 #      separator: '[\s\u200b\-]'
