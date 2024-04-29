@@ -315,7 +315,7 @@ Every product requires initialization settings before use. Before initialization
 				3 . Within 2 minutes, press and hold the __"Reset/Pair"__ button of the sub-router for __two seconds__, and after waiting __40-120 seconds__, they will complete pairing independently. (When the device indicator light is __solid blue__, it means pairing is successful.)
 				
 				<div style="text-align: center;">
-				<img class="boxshadow" src="/images/outdoortopo.png">
+				<img class="boxshadow" src="/images/outdoortopon.png">
 				</div>
 				
 			=== "Add WEB interface to realize pairing"
@@ -403,7 +403,7 @@ Every product requires initialization settings before use. Before initialization
 			The master router in this case is wavlink routers, and its settings follow the wavlink router's mesh pairing method.
 		
 		<div style="text-align: center;">
-		<img class="boxshadow" src="/images/outdoortopo1.png">
+		<img class="boxshadow" src="/images/outdoorextender.png">
 		</div>	
 		!!! danger ""
 			When the main route has been connected to the Internet and the main route has been initialized and configured, the sub-router only needs to __be in the reset state(default factory settings)__ ,requiring no additional configuration..
