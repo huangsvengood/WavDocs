@@ -58,12 +58,6 @@ The wireless management function helps users optimize and manage wireless networ
 !!! note ""
 	__[Click here to learn more about the wireless configuration.](/feature_guide/repeaterap_wireless/)__
 
-## Mesh Settings
-Mesh is a network topology that creates a wireless network with wider coverage by connecting multiple routers together.mesh can provide __greater coverage__, improve __network performance__, achieve __seamless roaming__ and enhance __network stability__, bringing users a better network experience.
-
-- __[How to establish a mesh network? ](/FAQ/outdoor_ap_first_time_setup/#section4)__
-- __[How to view the network topology diagram?](/feature_guide/repeaterap_mesh/)__
-
 ## Signal Adjustment
 - __[Learn about signal adjustment](/feature_guide/signal_adjustment/)__
 	
