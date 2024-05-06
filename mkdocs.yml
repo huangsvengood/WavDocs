@@ -30,9 +30,10 @@ nav:
   - Firmware: Firmware/index.md
   - FAQ: 
     - Overview: FAQ/index.md
-    - Router-First Time Setup: FAQ/first_time_setup.md
-    - Indoor Repeater-First Time Setup: FAQ/indoor_repeater_first_time_setup.md
-    - Outdoor AP-First Time Setup: FAQ/outdoor_ap_first_time_setup.md
+    - Router - First Time Setup: FAQ/first_time_setup.md
+    - Indoor Repeater - First Time Setup: FAQ/indoor_repeater_first_time_setup.md
+    - Outdoor AP - First Time Setup: FAQ/outdoor_ap_first_time_setup.md
+    - 4G/LTE - First Time Setup: FAQ/4GLTE-First_time_setup.md
     - What is the use of offline terminal management?: FAQ/What_is_the_use_of_offline_terminal_management.md
     - How to upgrade router firmware?: FAQ/How_to_upgrade_router_firmware.md
     - How to setup OpenVPN Server?: FAQ/how_to_steup_OpenVPN_Server.md
@@ -44,6 +45,7 @@ nav:
     - Instructions on WAN Mode Selection of 4G LTE: FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE.md
     - How to unlock SIM card?: FAQ/How_to_unlock_SIM_card.md
     - What is APN?: FAQ/What_is_APN.md
+    - How to solve the problem that the device cannot access the Internet?: FAQ/How_to_solve_the_problem_that_the_device_cannot_access_the_Internet.md
 # - Tutorials: tutorials/index.md
   - Feature Guide: 
     - Overview: feature_guide/index.md
@@ -193,14 +195,6 @@ plugins:
 #extra_javascript:
         #- js/umami_count.js
     #  - js/ga_count.js
-    # - |
-          # <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G5M8T6HKY"></script>
-    # <script>
-    # window.dataLayer = window.dataLayer || [];
-     # function gtag(){dataLayer.push(arguments);}
-     # gtag('js', new Date());
-     #  gtag('config', 'G-5G5M8T6HKY');
-     #    </script>
 
 #extra:
  # alternate:
