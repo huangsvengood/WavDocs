@@ -250,6 +250,13 @@ hide:
         <div class="product-model">WS-WN586X3-B</div>  
       </a>
     </div>
+   <div class="product-card">
+      <a href="http://8.210.159.51/wavlink_emulators/wn573hx3/login.html" target="_blank">
+        <img src="/Products/img/WN573HX1.png" >
+        <div class="product-model">WS-WN573HX3-A</div>
+      </a>
+    </div>
+
   </div>
 </div>
 
