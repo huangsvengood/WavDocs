@@ -64,12 +64,19 @@ The first setup of most wavlink 4G/LTE device is very similar. We provide you wi
 		</div>
 		
 		8 . After setting the WiFi configuration, click __"Next"__ and the device system will automatically detect the WAN mode type for you. After the detection is completed, you can select one of the three WAN mode types as your Internet access mode.
+		!!! note ""
+			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/#wan-mode-selection)__.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/4GLTE03.png">
 		</div>		
-	
-		!!! note ""
-			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__.
+		!!! danger "FAQ about 4G"
+			- __[How to solve the problem that the device cannot access the Internet?](/FAQ/How_to_solve_the_problem_that_the_device_cannot_access_the_Internet/)__
+			- __[What is APN?](/FAQ/What_is_APN/)__
+			- __[How to unlock SIM card?](/FAQ/How_to_unlock_SIM_card/)__
+			- __[Instructions on WAN Mode Selection of 4G LTE](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__
+			- __[4G status page introduction](/FAQ/about_4G_Status_page_introduction/)__
+			
+			
 			
 		9 . After setting, click __"Save"__ and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
 		
@@ -148,13 +155,18 @@ The first setup of most wavlink 4G/LTE device is very similar. We provide you wi
 		</div>
 		
 		8 . After setting the WiFi configuration, click __"Next"__ and the device system will automatically detect the WAN mode type for you. After the detection is completed, you can select one of the three WAN mode types as your Internet access mode.
+		!!! note ""
+			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/#wan-mode-selection)__.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/4GLTE03.png">
 		</div>		
 	
-		!!! note ""
-			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__.
-			
+		!!! danger "FAQ about 4G"
+			- __[How to solve the problem that the device cannot access the Internet?](/FAQ/How_to_solve_the_problem_that_the_device_cannot_access_the_Internet/)__
+			- __[What is APN?](/FAQ/What_is_APN/)__
+			- __[How to unlock SIM card?](/FAQ/How_to_unlock_SIM_card/)__
+			- __[Instructions on WAN Mode Selection of 4G LTE](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__
+			- __[4G status page introduction](/FAQ/about_4G_Status_page_introduction/)__	
 		9 . After setting, click __"Save"__ and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
 		
 		<div style="text-align: center;">
@@ -265,12 +277,18 @@ The first setup of most wavlink 4G/LTE device is very similar. We provide you wi
 		</div>
 		
 		13 . After setting the WiFi configuration, click __"Next"__ and the device system will automatically detect the WAN mode type for you. After the detection is completed, you can select one of the three WAN mode types as your Internet access mode.
+		!!! note ""
+			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/#wan-mode-selection)__.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/4GLTE03.png">
 		</div>		
 	
-		!!! note ""
-			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__.
+		!!! danger "FAQ about 4G"
+			- __[How to solve the problem that the device cannot access the Internet?](/FAQ/How_to_solve_the_problem_that_the_device_cannot_access_the_Internet/)__
+			- __[What is APN?](/FAQ/What_is_APN/)__
+			- __[How to unlock SIM card?](/FAQ/How_to_unlock_SIM_card/)__
+			- __[Instructions on WAN Mode Selection of 4G LTE](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__
+			- __[4G status page introduction](/FAQ/about_4G_Status_page_introduction/)__
 			
 		14 . After setting, click __"Save"__ and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
 		
@@ -421,12 +439,18 @@ The first setup of most wavlink 4G/LTE device is very similar. We provide you wi
 		</div>
 		
 		8 . After setting the WiFi configuration, click __"Next"__ and the device system will automatically detect the WAN mode type for you. After the detection is completed, you can select one of the three WAN mode types as your Internet access mode.
+		!!! note ""
+			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/#wan-mode-selection)__.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/4GLTE08.png">
 		</div>		
-	
-		!!! note ""
-			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__.
+		!!! danger "FAQ about 4G"
+			- __[How to solve the problem that the device cannot access the Internet?](/FAQ/How_to_solve_the_problem_that_the_device_cannot_access_the_Internet/)__
+			- __[What is APN?](/FAQ/What_is_APN/)__
+			- __[How to unlock SIM card?](/FAQ/How_to_unlock_SIM_card/)__
+			- __[Instructions on WAN Mode Selection of 4G LTE](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__
+			- __[4G status page introduction](/FAQ/about_4G_Status_page_introduction/)__
+
 			
 		9 . After setting, click __"Save"__ and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
 		
@@ -541,12 +565,18 @@ The first setup of most wavlink 4G/LTE device is very similar. We provide you wi
 		</div>
 		
 		8 . After setting the WiFi configuration, click __"Next"__ and the device system will automatically detect the WAN mode type for you. After the detection is completed, you can select one of the three WAN mode types as your Internet access mode.
+		!!! note ""
+			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/#wan-mode-selection)__.
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/4GLTE08.png">
 		</div>		
-	
-		!!! note ""
-			Click to view __[the mode introduction of 4G/LTE equipment](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__.
+		!!! danger "FAQ about 4G"
+			- __[How to solve the problem that the device cannot access the Internet?](/FAQ/How_to_solve_the_problem_that_the_device_cannot_access_the_Internet/)__
+			- __[What is APN?](/FAQ/What_is_APN/)__
+			- __[How to unlock SIM card?](/FAQ/How_to_unlock_SIM_card/)__
+			- __[Instructions on WAN Mode Selection of 4G LTE](/FAQ/Instructions_on_WAN_Mode_Selection_of_4G_LTE/)__
+			- __[4G status page introduction](/FAQ/about_4G_Status_page_introduction/)__
+		
 			
 		9 . After setting, click __"Save"__ and wait for the device configuration to be completed. After the Refresh button appears, click " __Refresh__ " to complete the initial setting of the device.
 		
