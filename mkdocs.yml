@@ -5,7 +5,7 @@ copyright: Copyright 2024 WAVLINK Technology Co., Ltd.
 
 nav: 
 #- Firmware: Firmware/index.md
-  - Welcom: index.md
+  - Welcome: index.md
   - Products: 
     - Products: Products/index.md
     - AX6000: 
