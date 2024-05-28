@@ -13,14 +13,12 @@ The AX6000 Router provides one 2.5G high-speed wired network port, which can be 
 | Ports         | 1 x 2.5Gbps WAN, 4 x 1000Mbps LAN, 1xUSB3.0  | 
 | Button	    | 1xPower On/Off, 1xReset, 1xPair, 1xTurbo     | 
 | LED	        | 4 xLAN, 1xWAN, 1xWiFi, 1xPower,  1xStatues   | 
-| Chipset		| MT7986A+MT7976A+MT7976N+MT7531AE			   |
 | Flash			| 128MB |
 | SDRAM			| 512MB |
 | Standard		| IEEE 802.11b/g/n/a/ac/ax |
 | Speed | 802.11ax：2.4G 1148Mbps+5G 4804Mbps |
 | Antennas | 8x5dBi  Omni Directiona Antennas |
 | Power Supply | DC12V 1.5A |
-| Rated Voltage/ requency | input:100-240 Va.c. 50/60Hz |
 | Operating Temperature | 0ºC~40ºC |
 | Storage Temperature | -10~70℃ |
 | Unit Dimensions | 235mm  x235 mm x 40mm (L x W x H) |

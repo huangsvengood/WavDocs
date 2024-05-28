@@ -10,18 +10,18 @@ nav:
     - Products: Products/index.md
     - AX6000: 
       - AX6000: Products/ax6000/index.md
-      - WL-WN536AX6-A: Products/ax6000/wn536ax6-a/index.md
       - WL-WN592AX6-A: Products/ax6000/wn592ax6-a/index.md
+      - WL-WN536AX6-A: Products/ax6000/wn536ax6-a/index.md
     - AX3000:
       - AX3000: Products/ax3000/index.md
       - WL-WN591AX3-A: Products/ax3000/wn591ax3-a/index.md
-      - WL-WN573HX3-A: Products/ax3000/wn573hx3-a/index.md
-      - WL-WN583AX3-A: Products/ax3000/wn583ax3-a/index.md
       - WL-WN586X3-A: Products/ax3000/wn586x3-a/index.md
       - WL-WN586X3-B: Products/ax3000/wn586x3-b/index.md
+      - WL-WN583AX3-A: Products/ax3000/wn583ax3-a/index.md
       - WL-WN573HP3-A: Products/ax3000/wn573hp3-a/index.md
+      - WL-WN573HX3-A: Products/ax3000/wn573hx3-a/index.md
       - WL-WN531AX3-A: Products/ax3000/wn531ax3-a/index.md
-      - WL-WNF100X3NR-A: Products/ax3000/wnf100x3nr-a/index.md
+     #- WL-WNF100X3NR-A: Products/ax3000/wnf100x3nr-a/index.md
     - AC1200:
       - AC1200: Products/ac1200/index.md
       - WL-WN572HE4-A: Products/ac1200/wn572he4.md

@@ -12,15 +12,13 @@
 | Ports         | 1 x1000M WAN, 4 x 1000M LAN, 1 x USB3.0  | 
 | Button	    | 1xPower On/Off, 1xReset, 1xPair, 1xTurbo, 1xTouchLink     | 
 | LED	        | 4 xLAN, 1xWAN, 1xWiFi, 1xPower, 1x logo| 
-| Chipset		| MT7981B+MT7976C+MT7531AE			   |
 | Flash			| 128MB |
 | DDR3 RAM		| 256MB |
 | Standard		| IEEE 802.11b/g/n/a/ac/ax |
 | Speed | 802.11ax: 5GHz 2401Mbps and 2.4GHz 574Mbps Compatible with 802.11a/b/g/n/ac Wi-Fi standards |
 | Antennas | 4x5dBi Omni Directional Antennas |
 | Power Supply | DC 12V/1.5A |
-| Rated Voltage/ requency  | input:100-240 Va.c. 50/60Hz |
-| Operating Temperature 	| 0ºC~40ºC |
+| Operating Temperature | 0ºC~40ºC |
 | Storage Temperature | -10~70℃ |
 | Unit Dimensions | 200mm  x 200mm x 30mm (L x W x H) |
 

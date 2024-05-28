@@ -7,13 +7,11 @@ The AP/Repeater simultaneously supports 2.4G and 5G wireless network connection,
 | Ports         | 1 x 10/100/1000Mbps WAN PORT (POE)  | 
 | Button	    | 1xReset&Pair     | 
 | LED	        | 1XSYS   | 
-| Chipset		| MT7981B+MT7976DAN			   |
 | Flash			| 128MB |
 | SDRAM			| 256MB |
 | Standard		| IEEE 802.11b/g/n/a/ac/ax |
 | Speed | 802.11ax: 5GHz 2401Mbps and 2.4GHz 574Mbps |
 | Antennas | 11dBi Built-in directional antenna |
-| Rated Voltage/ requency | input:100-240 Va.c. 50/60Hz<br>DC 54V/0.3A Power over Ethernet（Passive）<br>PoE 48V Power over Ethernet（Active) |
 | Operating Temperature | -20~50℃ |
 | Storage Temperature | -30~70℃ |
 

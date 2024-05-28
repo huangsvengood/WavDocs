@@ -9,14 +9,12 @@ WS-WN591AX3 adopts Wi-Fi 6 (802.11ax) technology for faster speeds, greater capa
 |  USB |  1 x USB3.0 |
 | Button	    | 1 x Pair Button,1 x Reset Button     | 
 | LED	        | 1 x SYS | 
-| Chipset		| MT7981B+ MT7976DA+ MT7531AE |
 | Flash			| 128MB (1Gb) Nand Flash |
 | DDR3 		| 256MB (4Gb) DDR3 |
 | Standard		| Wi-Fi 6 &nbsp;&nbsp;&nbsp; IEEE 802.11ax/ac/n/a 5 GHz &nbsp;&nbsp;&nbsp; IEEE 802.11ax/n/b/g 2.4 GHz |
 | Speed | AX3000 &nbsp;&nbsp;&nbsp; 5 GHz: 2402Mbps (802.11ax, HE160)  &nbsp;&nbsp;&nbsp; 2.4 GHz: 574 Mbps (802.11ax) |
 | Antennas | 3 x 5dBi 2.4G, 3 x 5dBi 5G |
 | Power Supply | DC 12V/1A |
-| Rated Voltage/ requency  | input:100-240V AC. 50/60Hz |
 | Operating Temperature 	| 0ºC~40ºC |
 | Storage Temperature | -10~70℃ |
 

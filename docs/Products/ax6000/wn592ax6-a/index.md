@@ -6,29 +6,22 @@ WS-WN592AX6 adopts Wi-Fi 6 (802.11ax) technology for faster speeds, greater capa
 
 | SPECIFICATION |											   | 
 | ------------ | -------------------------------------------- |  
-| Ports         | 1 x2.5Gigabit WAN,1 x2.5Gigabit LAN,3 x10/100/1000Mbps LAN  | 
-|  USB |  1 x USB3.0 |
+| Ports         | 1 x 2.5Gigabit WAN,1 x 2.5Gigabit LAN,3 x 10/100/1000Mbps LAN  | 
+|  USB |  1 x USB3.0 | 
 | Button	    | 1 x WPS Button,1 x Reset Button     | 
 | LED	        | 1 x SYS | 
-| Chipset		| MT7986A+ MT7975N + MT7975PN +MT7531AE+ EN8811*2 |
 | Flash			| 128MB (1Gb) |
 | DDR3 		| 512MB (4Gb) |
 | Standard		| Wi-Fi 6 &nbsp;&nbsp;&nbsp; IEEE 802.11ax/ac/n/a 5 GHz &nbsp;&nbsp;&nbsp; IEEE 802.11ax/n/b/g 2.4 GHz |
 | Speed | AX6000 &nbsp;&nbsp;&nbsp; 5 GHz: 4804Mbps (802.11ax, HE160)  &nbsp;&nbsp;&nbsp; 2.4 GHz: 1148 Mbps (802.11ax) |
 | Antennas | 4 x 5dBi 2.4G, 4 x 5dBi 5G |
 | Power Supply | DC 12V/1.5A |
-| Rated Voltage/ requency  | input:100-240V AC. 50/60Hz |
 | Operating Temperature 	| 0ºC~40ºC |
 | Storage Temperature | -10~70℃ |
 
-
-It is important to remind you that the adapter type in each - product package depends on your shipping country/region.
-The package contains the following contents:
-
-
-- 1x WiFi Router
+- 1 x WiFi Router
 - 1 x RJ45 Ethernet Cable
-- 1 xPower Adapter
+- 1 x Power Adapter
 - 1 x Quick Start Guide
 
 

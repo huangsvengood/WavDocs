@@ -11,14 +11,12 @@
 | Ports         | 1 x10/100/1000Mbps WAN\LAN PORT  | 
 | Button	    | 1 x Power On/Off, 1 x smart night light , 1 x Pair Button&wps,1 x Reset     | 
 | LED	        | 2 x LAN, 1 x Status,1 x smart night light   | 
-| Chipset		| MT7981B+MT7976C			   |
 | Flash			| 128MB |
 | SDRAM			| 2Gb |
 | Standard		| IEEE 802.11b/g/n/a/ac/ax  |
 | Speed | 802.11ax: 5GHz 2401Mbps and 2.4GHz 574Mbps &nbsp;&nbsp;Compatible with 802.11a/b/g/n/ac Wi-Fi standards |
 | Antennas | 4x5dBi Omni Directional Antennas |
 | Power Supply | DC5V 2.5A |
-| Rated Voltage/ requency | input:100-240 Va.c. 50/60Hz |
 | Operating Temperature | 0ºC~40ºC |
 | Storage Temperature | -10~70℃ |
 | Unit Dimensions | 159mm  x 73.6mm x 43mm (L x W x H) |
