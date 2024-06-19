@@ -33,7 +33,7 @@ The method of obtaining IPv6 can vary depending on the network environment and p
     <img class="boxshadow" src="/images/ipv6_01.png">
 </div>
 
-## __Configure ipv6 you should check these :__
+__Configure ipv6 you should check these :__
 
 __Check network support__ : First, make sure your network environment supports IPv6. You can contact your ISP or administrator to confirm whether they offer IPv6 connectivity.
 
@@ -82,13 +82,27 @@ This method is the most common and simple way to obtain an IPv6 address by autom
 
 
 
-### __[IPv4+IPv6 PPPOE]()__
+### __IPv4+IPv6 PPPOE__
 <p class="text">
-PPPOE (Point-to-Point Protocol Over Ethernet) is a protocol used to establish network connections. IPv4+IPv6 PPPOE is a method of obtaining both IPv4 and IPv6 addresses through a PPPOE connection. It can be used in networks that support PPPOE, such as network connections provided by some broadband access service providers (ISPs). This method may require you to configure the PPPOE username and password in the network settings.
+PPPOE (Point-to-Point Protocol Over Ethernet) is a protocol used to establish network connections. IPv4+IPv6 PPPOE is a method of obtaining both IPv4 and IPv6 addresses through a PPPOE connection. It can be used in networks that support PPPOE, such as network connections provided by some broadband access service providers (ISPs).
 </p>
+!!! danger "Note"
+	IPv4+IPv6 broadband dial-up is to reuse the IPv4 dial-up link. __It will only be enabled when the IPv4 Internet access method is also broadband dial-up.__ After enabling, IPv6 will use the IPv4 account and password for dialing, and there is no need to manually enter the IPv6 broadband account and password. Please note that enabling this function requires operator support. Please choose whether to enable it correctly according to the actual situation.
+
+
+1 . Open the browser, enter __wavlogin.link__ , and enter the password to enter the router management page.
+
+2 . Click __" More Settings > Network > IPv6 "__. Enable the IPv6 function and select IPv6 WAN acquisition method as IPv4+IPv6 broadband dial-up.
 <div style="text-align: center;">
     <img alt="guest wifi" class="boxshadow" src="/images/ipv6_03.png">
 </div>
+3 . Set up IPv6 LAN. The default IPv6 address allocation method is automatic allocation, which can also be modified as needed. If automatic allocation is selected, an IPv6 address will be dynamically allocated by the operator directly; if SLAAC is selected, the router will automatically generate an IPv6 address based on the routing announcement.
+<div style="text-align: center;">
+    <img alt="guest wifi" class="boxshadow" src="/images/ipv6new01.png">
+</div>
+!!! note "About IPv6 address prefix"
+	Manual modification is supported. If you want to restore the default value, click the refresh button on the right side of the prefix box to restore the default value.
+
 
 ### __Static IPv6 Address__
 <p class="text">
@@ -100,7 +114,11 @@ A static IPv6 address is a fixed IPv6 address that you configure manually. When 
 
 Example : 
 
-After setting up, click __Save__ and wait for the configuration application. After refreshing, you can access the ipv6 website.
+1 . Open the browser, enter __wavlogin.link__, and enter the password to enter the router management page.
+
+2 . Click __"More Settings > Network > IPv6"__ to enable the IPv6 function. Select the IPv6 WAN acquisition method as a static IPv6 address, and use the fixed IPv6 address provided by the operator to access the Internet. The subnet prefix length, gateway, DNS server and other Internet access parameters are also provided by the operator. Enter the IPv6 address, gateway, DNS server.
+
+3 . After setting up, click __Save__ and wait for the configuration application. After refreshing, you can access the ipv6 website.
 
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/ipv6010.png">
@@ -138,7 +156,7 @@ In automatic allocation mode, IPv6 LAN addresses are automatically allocated by 
 To use automatic allocation, you need to ensure that there is a router or device in the network that supports DHCPv6 and that the DHCPv6 server has been configured correctly. The device automatically obtains an IPv6 address when connected to the network, no manual configuration is required.
 </p>
 
-### __[SLAAC]()__
+### __SLAAC__
 <p class="text">
 SLAAC(Stateless Address Autoconfiguration) is a stateless address automatic configuration method that automatically assigns IPv6 addresses to devices by taking advantage of IPv6 features. In SLAAC, the device receives a network prefix (Prefix) from the router in the network, and then automatically constructs its own IPv6 address based on the prefix.
 </p>

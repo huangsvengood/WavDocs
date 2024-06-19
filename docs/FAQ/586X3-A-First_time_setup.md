@@ -835,4 +835,4 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		!!! tip "Forgot password solution"
 			Please press and hold the reset button on the router for __more than 6 seconds__. After the router reset, you can log in with the default password.
 	*** 
-Setup complete! Still have questions? Visit our __[Community Forum](/community)__.
+Setup complete! Still have questions? Please don’t hesitate to email contact@wavlink.com to provide feedbacks or contact online customer service, thank you !

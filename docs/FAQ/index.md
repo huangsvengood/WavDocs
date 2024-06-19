@@ -11,7 +11,7 @@ Learn how to use wavlink's devices and how to solve some common problems.
 - __[Indoor Repeater - First Time Setup](/FAQ/indoor_repeater_first_time_setup/)__
 - __[Outdoor AP - First Time Setup](/FAQ/outdoor_ap_first_time_setup/)__
 - __[4G/LTE - First Time Setup](/FAQ/4GLTE-First_time_setup/)__
-
+- __[Travel Router - First Time Setup](/FAQ/travel_router_first_time_setup)__
 ## 4G LTE
 - __[How to solve the problem that the device cannot access the Internet?](/FAQ/How_to_solve_the_problem_that_the_device_cannot_access_the_Internet/)__
 - __[What is APN?](/FAQ/What_is_APN/)__

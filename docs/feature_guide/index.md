@@ -289,83 +289,12 @@ h2 {
 
 
 
-<div class="main">
-	<div>
-		<div class="productMenu en">
-			<h3>
-			Reapeter
-			<em class="underline"></em>
-			</h3>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-<div class="grid-container">
-  <div class="box">
-  <h4>Wireless</h4>
-  <p><a href="/feature_guide/repeaterap_wireless/">Wireless Settings</a></p>
-  </div>
-  <div class="box">
-  <h4>Network</h4>
-  <div class="container">
-  <p class="paragraph"><a href="/FAQ/indoor_repeater_first_time_setup/#section3">Mode selection</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_wan/">WAN</a></p>
-  </div>
-  <div class="container">
-  <p class="paragraph"><a href="/feature_guide/repeaterap_lan/">LAN</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_staticip/">Static IP</a></p>
-  </div>
-  </div>
-</div>
-<div class="grid-container">
-  <div class="box">
-  <h4>Terminal</h4>
-  <p><a href="/feature_guide/repeaterap_terminal/">Terminal Management</a></p>
-  </div>
-  <div class="box">
-  <h4>Mesh</h4>
-  <div class="container">
-  <p class="paragraph"><a href="/FAQ/indoor_repeater_first_time_setup/#section3">Mesh Network</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_mesh/">Mesh Topology</a></p>
-  </div>
-  </div>
-</div>
-<div class="ad-grid-container">
-  <div class="ad-box">
-  <h4>More</h4>
-  <div class="container">
-  <p class="paragraph"><a href="/feature_guide/repeaterap_security/">Security Settings</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_remotecontrol/">Remote Control</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_networkdiagnostics/">Network Diagnostics</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_timezone/">Time Zone</a></p>
-  </div>
-  <div class="container">
-  <p class="paragraph"><a href="/feature_guide/cloud_app/">Led Control</a></p>
-  <p class="paragraph"><a href="/feature_guide/upnp/">Change admin password</p>
-  <p class="paragraph"><a href="/feature_guide/port_forwarding/">Backup and Restore</a></p>
-  <p class="paragraph"><a href="/feature_guide/Hardware/">Firmware Update</a></p>
-  </div>
-  <div class="container">
-  <p class="paragraph"><a href="/feature_guide/alg/">Timing Reboot</a></p>
-  <p class="paragraph"><a href="/feature_guide/DMZ_Management/">Router Reboot</a></p>
-  <p class="paragraph"><a href="/feature_guide/signal_adjustment/">Singal Adjustment</a></p>
-  <p class="paragraph"></a></p>
-  </div>
-  </div>
-</div>
-
-
-
 
 <div class="main">
 	<div>
 		<div class="productMenu en">
 			<h3>
-			AP
+			AP/Repeater
 			<em class="underline"></em>
 			</h3>
 		</div>
@@ -376,17 +305,17 @@ h2 {
 <div class="grid-container">
   <div class="box">
   <h4>Wireless</h4>
-  <p><a href="/feature_guide/repeaterap_wireless/">Wireless Settings</a></p>
+  <p><a href="/feature_guide/repeater_ap/repeaterap_wireless/">Wireless Settings</a></p>
   </div>
   <div class="box">
   <h4>Network</h4>
   <div class="container">
   <p class="paragraph"><a href="/FAQ/outdoor_ap_first_time_setup/#section3">Mode Selection</a></p>
-  <p class="paragraph"><a href="/feature_guide/time/">WAN</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_wan/">WAN</a></p>
   </div>
   <div class="container">
-  <p class="paragraph"><a href="/feature_guide/led_ctrl/">LAN</a></p>
-  <p class="paragraph"><a href="/feature_guide/password_admin/">Static IP</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_lan/">LAN</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_staticip/">Static IP</a></p>
   </div>
   <div class="container">
   </div>
@@ -395,13 +324,13 @@ h2 {
 <div class="grid-container">
   <div class="box">
   <h4>Terminal</h4>
-  <p><a href="/feature_guide/repeaterap_terminal/">Terminal Management</a></p>
+  <p><a href="/feature_guide/repeater_ap/repeaterap_terminal/">Terminal Management</a></p>
   </div>
   <div class="box">
   <h4>Mesh</h4>
   <div class="container">
   <p class="paragraph"><a href="/FAQ/outdoor_ap_first_time_setup/#section3">Mesh Network</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_mesh/">Mesh Topology</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_mesh/">Mesh Topology</a></p>
   </div>
   </div>
 </div>
@@ -409,20 +338,20 @@ h2 {
   <div class="ad-box">
   <h4>More</h4>
   <div class="container">
-  <p class="paragraph"><a href="/feature_guide/repeaterap_security/">Security</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_remotecontrol/">Remote Control</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_networkdiagnostics/">Network Diagnostics</a></p>
-  <p class="paragraph"><a href="/feature_guide/repeaterap_timezone/">Time Zone</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_security/">Security</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_remotecontrol/">Remote Control</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_networkdiagnostics/">Network Diagnostics</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_timezone/">Time Zone</a></p>
   </div>
   <div class="container">
-  <p class="paragraph"><a href="/feature_guide/cloud_app/">Led Control</a></p>
-  <p class="paragraph"><a href="/feature_guide/upnp/">Change admin password</p>
-  <p class="paragraph"><a href="/feature_guide/port_forwarding/">Backup and Restore</a></p>
-  <p class="paragraph"><a href="/feature_guide/Hardware/">Firmware Update</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_led/">Led Control</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_admin/">Change admin password</p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_backup/">Backup and Restore</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_firmware/">Firmware Update</a></p>
   </div>
   <div class="container">
-  <p class="paragraph"><a href="/feature_guide/alg/">Timing Reboot</a></p>
-  <p class="paragraph"><a href="/feature_guide/DMZ_Management/">Router Reboot</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_timing/">Timing Reboot</a></p>
+  <p class="paragraph"><a href="/feature_guide/repeater_ap/repeaterap_reboot_logout/">Router Reboot</a></p>
   <p class="paragraph"><a href="/feature_guide/signal_adjustment/">Singal Adjustment</a></p>
   <p class="paragraph"></a></p>
   </div>
@@ -430,8 +359,124 @@ h2 {
 </div>
 
 
+<div class="main">
+	<div>
+		<div class="productMenu en">
+			<h3>
+			Travel Router
+			<em class="underline"></em>
+			</h3>
+		</div>
+	</div>
+</div>
 
 
+<div class="grid-container">
+  <div class="box">
+  <h4>Wireless</h4>
+  <p><a href="/feature_guide/travel_router/wireless/">Wireless Settings</a></p>
+  <p><a href="/feature_guide/travel_router/guest_network/">Guest WiFi</a></p>
+  </div>
+  <div class="box">
+  <h4>Parental Control and Terminal</h4>
+  <p><a href="/feature_guide/travel_router/parental_wifi/">WiFi Scheduling</a></p>
+  <p><a href="/feature_guide/travel_router/terminal/">Terminal Management</a></p>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="box">
+  <h4>VPN</h4>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/openVPN/">OpenVPN Client</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/openVPN_server/">OpenVPN Server</a></p>
+  </div>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/wireguard/">WireGuard Client</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/wireguard_server/">WireGuard Server</a></p>
+  </div>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/vpnclient/">VPN Client</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/zerotier/">ZeroTier</a></p>
+  </div>
+  </div>
+  
+  <div class="box">
+  <h4>Network</h4>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/pattern_selection/">Mode selection</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/dynamic_dns/">Dynamic DNS</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/repeater_mode/">Repeater Mode</a></p>
+  </div>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/wan/">WAN</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/lan/">LAN</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/multi_wan/">Multi-WAN</a></p>
+  </div>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/ipv6/">IPV6</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/static_ip/">Static IP</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/pattern_selection/"></a></p>
+  </div>
+  </div>
+</div>
+<div class="grid-container">
+  <div class="box">
+  <h4>NAT Forwarding</h4>
+  <p class="paragraph"><a href="/feature_guide/travel_router/DMZ_Management/">DMZ Management</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/cutm_dns-server/">Custom DNS Server</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/adguard/">AD Guard</a></p>
+  </div>
+  <div class="box">
+  <h4>NET Guardian</h4>
+  <p class="paragraph"><a href="/feature_guide/travel_router/upnp/">UPnP</p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/port_forwarding/">Port Forwarding</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/Hardware/">Hardware NAT Settings</a></p>
+  </div>
+</div>
+<div class="grid-container">
+  <div class="box">
+  <h4>USB Management</h4>
+  <p><a href="/feature_guide/travel_router/storage_server/">Storage Server</a></p>
+  <p><a href="/feature_guide/travel_router/usb_tethering/">USB Tethering</a></p>
+  </div>
+  <div class="box">
+  <h4>System</h4>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/time/">Time Zone</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/led_ctrl/">Led Control</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/remote_wakeup/">Remote Wakeup</a></p>
+  
+  </div>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/router_reboot/">Timing Reboot</a></p>
+  
+  <p class="paragraph"><a href="/feature_guide/travel_router/backup/">Backup and Restore</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/network_diango/">Network Diagnostics</a></p>
+  </div>
+  <div class="container">
+  <p class="paragraph"><a href="/feature_guide/travel_router/firmware/">Firmware Update</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/password_admin/">Change admin password</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/router_reboot/"></a></p>
+  </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="box">
+  <h4>Secure and Remote Access</h4>
+  <p class="paragraph"><a href="/feature_guide/travel_router/secure/">Firewall</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/remote_ctrl/">Remote Control</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/cloud_app/">Cloud App Settings</a></p>
+  </div>
+  <div class="box">
+  <h4>Developer options</h4>
+  <p class="paragraph"><a href="/feature_guide/travel_router/ssh/">SSH</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/how_to_install_plugin_in_luci/">LUCI</a></p>
+  <p class="paragraph"><a href="/feature_guide/travel_router/uboot/">UBOOT Upgrade the firmware</a></p>
+  </div>
+  </div>
+</div>
 
 
 
