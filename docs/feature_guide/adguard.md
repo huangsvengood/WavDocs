@@ -51,7 +51,7 @@ AdGuard Home also provides advanced features such as parental controls, statisti
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/adguard008.png">
 </div>
-8 . Click __Next__. After clicking __Open Dashbard__, you need to log in with the user you just set.
+8 . Click __Next__. After clicking __Open Dashboard__, you need to log in with the user you just set.
 <div style="text-align: center;">
 	<img class="boxshadow" src="/images/adguard009.png">
 </div>

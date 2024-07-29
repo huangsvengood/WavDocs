@@ -9,7 +9,7 @@ Implementation method : Control the opening and closing time of the router's wir
 
 1 . Open the browser, enter wavlogin.link, and enter the password to enter the router management page.
 
-2 . Click __"More Settings > Parental Control > Scheduled Internet Access"__. A total of two restriction rules can be set. Click the button next to Rule 1 or 2 to set the restriction rule.
+2 . Click __"More Settings > Parental Control > WiFi Scheduling"__. A total of two restriction rules can be set. Click the button next to Rule 1 or 2 to set the restriction rule.
 
 3 . This rule is used to control the opening and closing time of the router's wireless network (except the guest network).
 	<div style="text-align: center;">

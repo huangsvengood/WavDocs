@@ -14,7 +14,7 @@ By opening and mapping ports, port forwarding enables accessibility of internal 
 __Scenario introduction :__ Access the company's internal file server or internal website at home. This case uses the ftp server as an example. Hereinafter, the company PC is called the remote PC, and the home PC is called the local PC.
 
 <div style="text-align: center;">
-    <img class="boxshadow" src="/images/porttopo.png">
+    <img class="boxshadow" src="/images/portforwardeg.png">
 </div>
 
 1 . Make sure the ftp server on the remote PC is enabled.

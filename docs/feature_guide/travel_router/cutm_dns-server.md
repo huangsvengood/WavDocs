@@ -5,7 +5,7 @@ Custom DNS server that encrypts your DNS traffic, improves security and privacy,
 
 1 . Open the browser, enter __wavlogin.link__, and enter the password to enter the router management page.
 
-2 . Click __"More Settings > Network > Custom DNS Server"__, after selecting the options, click __"Save"__ to complete the setting.
+2 . Click __"More Settings > NET Guardian > Custom DNS Server"__, after selecting the options, click __"Save"__ to complete the setting.
 
 
 

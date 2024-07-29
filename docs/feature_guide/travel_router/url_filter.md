@@ -1,8 +1,8 @@
 URL filtering can filter or block Internet-connected terminals from accessing certain websites based on specific keywords, categories, or content types.
 
-1 . Open the browser, enter wavlogin.link, and enter the password to enter the router management page.
+1 . Open the browser, enter http://wavlogin.link, and enter the password to enter the router management page.
 
-2 . Click __" More Settings > Network Monitoring > URL Filtering "__, click __" + "__ under URL Filtering, Add the keywords or domain names you want to restrict in the fill-in box, and click __"Save"__ after filling in. After successful saving, a notification box of __"Added successfully"__ will pop up.
+2 . Click __" More Settings > NET Guardian > URL Filtering "__, click __" + "__ under URL Filtering, Add the keywords or domain names you want to restrict in the fill-in box, and click __"Save"__ after filling in. After successful saving, a notification box of __"Added successfully"__ will pop up.
 
 <div style="text-align: center;">
     <img class="boxshadow" src="/images/url01.png">

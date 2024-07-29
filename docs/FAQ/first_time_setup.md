@@ -431,7 +431,7 @@ The first setup of most wavlink routers is very similar. We provide you with tut
 		<img class="boxshadow" src="/images/mac05.png">
 		</div>
 		
-		6 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __[DHCP__. If you need to change the Internet connection method, please click the information box below.
+		6 .  After entering the initial configuration interface, the device system will automatically detect the Internet connection method for you. The Internet connection method defaults to __DHCP__. If you need to change the Internet connection method, please click the information box below.
 
 		<div style="text-align: center;">
 		<img class="boxshadow" src="/images/step9.png">

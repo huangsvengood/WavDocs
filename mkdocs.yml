@@ -255,6 +255,21 @@ plugins:
   - search:
       enabled: false
   - tags
+#  - with-pdf:
+#      verbose: true
+#      author: WAVLINK
+#      cover_logo: images/logo1.png
+#      output_path: /tmp/document.pdf
+#      exclude_pages: 
+#        - Firmware/
+#        - wavlink_emulators/
+#        - feature_guide/router/
+#        - feature_guide/repeater_ap/
+#        - FAQ/
+#        - Products/
+#        - /
+#      two_columns_level: 3
+#      ordered_chapter_level: 3
 #  - blog
 #  - search:
 #      separator: '[\s\u200b\-]'
@@ -272,3 +287,5 @@ extra_javascript:
     #- name: Deutsch
      # link: /de/
      # lang: de
+
+

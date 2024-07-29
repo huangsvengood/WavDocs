@@ -32,21 +32,5 @@ Using a static IP address has the following features and advantages :
 	- <p class="text">
 	Security : Static IP addresses provide greater security. By restricting access to static IP addresses, you can strengthen network security and reduce potential security threats.
 	</p>
-<p class="text">
-Here are some things to note when using a static IP address:
-</p>
-!!! note ""
-	- <p class="text">
-	Static IP addresses need to be manually configured on the device or host, including network settings such as IP address, subnet mask, default gateway, and DNS server.
-	</p>
-	- <p class="text">
-	Before using a static IP address, you need to ensure that the address is not in use by other devices and negotiate with your network administrator or service provider to obtain a suitable address.
-	</p>
-	- <p class="text">
-	Static IP addresses may require additional fees or a specific network service plan, so check with your service provider before using them.
-	</p>
-	- <p class="text">
-	Generally speaking, static IP addresses are suitable for scenarios that require stability, remote access, and service hosting, but in some cases, dynamic IPs may be more convenient and economical. Choose the IP address type that suits you based on your specific needs.
-	​</p>
 
 ---
