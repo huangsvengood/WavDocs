@@ -217,8 +217,11 @@ theme:
     - content.tooltips
   favicon: images/logo-icon.png
   icon:
-    annotation: material/arrow-right-circle-outline 
- 
+    annotation: material/arrow-right-circle-outline
+    repo: material/text-recognition 
+repo_url: https://docs-wavlink-xyz.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
+repo_name: Translate
+
 extra_css:
   - stylesheets/extra.css
 
